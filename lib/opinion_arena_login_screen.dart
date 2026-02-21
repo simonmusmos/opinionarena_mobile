@@ -1,6 +1,9 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:local_auth/local_auth.dart';
+import 'package:intra/opinion_arena_faceid_screen.dart';
+import 'package:intra/opinion_arena_pin_screen.dart';
 
 class OpinionArenaLoginScreen extends StatefulWidget {
   const OpinionArenaLoginScreen({super.key});
@@ -11,6 +14,62 @@ class OpinionArenaLoginScreen extends StatefulWidget {
 
 class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
   bool _obscurePassword = true;
+  bool _loginLoading = false;
+
+  final LocalAuthentication _auth = LocalAuthentication();
+
+  /// Returns the best [BiometricType] the device supports, or null if none.
+  Future<BiometricType?> _detectBiometric() async {
+    final bool deviceSupported = await _auth.isDeviceSupported();
+    if (!deviceSupported) return null;
+
+    final bool canCheck = await _auth.canCheckBiometrics;
+    if (!canCheck) return null;
+
+    final List<BiometricType> available =
+        await _auth.getAvailableBiometrics();
+
+    // Face ID / face recognition
+    if (available.contains(BiometricType.face)) return BiometricType.face;
+
+    // Explicit fingerprint (older Android / iOS Touch ID)
+    if (available.contains(BiometricType.fingerprint)) {
+      return BiometricType.fingerprint;
+    }
+
+    // Android API 30+ reports generic strong/weak instead of fingerprint
+    if (available.contains(BiometricType.strong) ||
+        available.contains(BiometricType.weak)) {
+      return BiometricType.fingerprint;
+    }
+
+    return null;
+  }
+
+  Future<void> _onLoginPressed() async {
+    setState(() => _loginLoading = true);
+    try {
+      final BiometricType? type = await _detectBiometric();
+      if (!mounted) return;
+
+      if (type != null) {
+        await Navigator.of(context).push(
+          MaterialPageRoute<void>(
+            builder: (_) => OpinionArenaFaceIdScreen(biometricType: type),
+          ),
+        );
+      } else {
+        // No biometrics on this device – skip straight to PIN setup.
+        await Navigator.of(context).push(
+          MaterialPageRoute<void>(
+            builder: (_) => const OpinionArenaPinScreen(),
+          ),
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _loginLoading = false);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -149,23 +208,34 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
                         width: double.infinity,
                         height: 55,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: _loginLoading ? null : _onLoginPressed,
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFFE63A42),
+                            disabledBackgroundColor:
+                                const Color(0xFFE63A42).withOpacity(0.55),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(14)),
                             elevation: 5,
                             shadowColor: const Color(0xFFE63A42).withOpacity(0.35),
                           ),
-                          child: Text(
-                            'LOG IN',
-                            style: GoogleFonts.epilogue(
-                              color: Colors.white,
-                              fontSize: compact ? 18 : 20,
-                              fontWeight: FontWeight.w700,
-                              letterSpacing: 0,
-                            ),
-                          ),
+                          child: _loginLoading
+                              ? const SizedBox(
+                                  width: 22,
+                                  height: 22,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2.5,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              : Text(
+                                  'LOG IN',
+                                  style: GoogleFonts.epilogue(
+                                    color: Colors.white,
+                                    fontSize: compact ? 18 : 20,
+                                    fontWeight: FontWeight.w700,
+                                    letterSpacing: 0,
+                                  ),
+                                ),
                         ),
                       ),
                       const SizedBox(height: 20),

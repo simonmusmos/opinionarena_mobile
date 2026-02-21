@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intra/opinion_arena_screen.dart';
 import 'package:intra/opinion_arena_login_screen.dart';
+import 'package:intra/opinion_arena_auth_screen.dart';
 
 void main() {
   runApp(const IntraApp());
@@ -23,7 +24,7 @@ class IntraApp extends StatelessWidget {
           ThemeData.light().primaryTextTheme,
         ).apply(fontFamilyFallback: const <String>['Arial', 'sans-serif']),
       ),
-      home: const OpinionArenaLoginScreen(),
+      home: const OpinionArenaAuthScreen(), // TODO: swap back to OpinionArenaLoginScreen() for new users
       // routes: <String, WidgetBuilder>{
       //   '/classic': (_) => const LoginScreen(),
       //   '/opinion': (_) => const OpinionArenaScreen(),
