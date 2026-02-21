@@ -62,6 +62,7 @@ class _OpinionArenaFaceIdScreenState extends State<OpinionArenaFaceIdScreen> {
     final bool compact = width < 390;
 
     return Scaffold(
+      backgroundColor: const Color(0xFFE4528C),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(

@@ -120,8 +120,8 @@ class _OpinionArenaPinScreenState extends State<OpinionArenaPinScreen>
         : 'Re-enter your PIN to confirm.';
 
     return Scaffold(
-      // Let the scaffold resize so the card stays visible above the keyboard
       resizeToAvoidBottomInset: true,
+      backgroundColor: const Color(0xFFE4528C),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(

@@ -10,7 +10,14 @@ Future<bool> _stubVerifyPin(String pin) async {
   return true; // stub always succeeds
 }
 
-enum _AuthMode { detecting, biometric, pin }
+/// Stubbed password verification – replace with real API call when ready.
+Future<bool> _stubVerifyPassword(String email, String password) async {
+  // TODO: POST /auth/login  { "email": email, "password": password }
+  await Future<void>.delayed(const Duration(milliseconds: 700));
+  return true; // stub always succeeds
+}
+
+enum _AuthMode { detecting, biometric, pin, password }
 
 class OpinionArenaAuthScreen extends StatefulWidget {
   const OpinionArenaAuthScreen({super.key});
@@ -38,6 +45,13 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
   bool _pinVerifying = false;
   String? _pinError;
 
+  // Password state
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+  bool _obscurePassword = true;
+  bool _passwordLoading = false;
+  String? _passwordError;
+
   late final AnimationController _shakeController;
   late final Animation<double> _shakeAnim;
 
@@ -62,6 +76,8 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
     _pinController.removeListener(_onPinChanged);
     _pinController.dispose();
     _pinFocus.dispose();
+    _emailController.dispose();
+    _passwordController.dispose();
     _shakeController.dispose();
     super.dispose();
   }
@@ -180,6 +196,42 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
     }
   }
 
+  void _switchToPassword() {
+    _pinFocus.unfocus();
+    setState(() {
+      _mode = _AuthMode.password;
+      _passwordError = null;
+    });
+  }
+
+  Future<void> _loginWithPassword() async {
+    final String email = _emailController.text.trim();
+    final String password = _passwordController.text;
+
+    if (email.isEmpty || password.isEmpty) {
+      setState(() => _passwordError = 'Please fill in both fields.');
+      return;
+    }
+
+    setState(() {
+      _passwordLoading = true;
+      _passwordError = null;
+    });
+    FocusScope.of(context).unfocus();
+
+    try {
+      final bool ok = await _stubVerifyPassword(email, password);
+      if (!mounted) return;
+      if (ok) {
+        _onAuthSuccess();
+      } else {
+        setState(() => _passwordError = 'Incorrect email or password.');
+      }
+    } finally {
+      if (mounted) setState(() => _passwordLoading = false);
+    }
+  }
+
   void _onAuthSuccess() {
     // TODO: navigate to home / dashboard
     ScaffoldMessenger.of(context).showSnackBar(
@@ -196,6 +248,7 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
 
     return Scaffold(
       resizeToAvoidBottomInset: true,
+      backgroundColor: const Color(0xFFE4528C),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -220,7 +273,9 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
                       ? _buildDetecting(compact)
                       : _mode == _AuthMode.biometric
                           ? _buildBiometric(compact)
-                          : _buildPin(compact),
+                          : _mode == _AuthMode.pin
+                              ? _buildPin(compact)
+                              : _buildPassword(compact),
                 ),
                 const SizedBox(height: 26),
                 Padding(
@@ -422,6 +477,8 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
             ),
           ),
         ),
+        const SizedBox(height: 10),
+        _PasswordFallbackLink(compact: compact, onTap: _switchToPassword),
       ],
     );
   }
@@ -602,7 +659,305 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
             ),
           ),
         ],
+        const SizedBox(height: 6),
+        _PasswordFallbackLink(compact: compact, onTap: _switchToPassword),
       ],
+    );
+  }
+
+  // ── Password state ─────────────────────────────────────────────────────────
+  Widget _buildPassword(bool compact) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        _Logo(compact: compact),
+        const SizedBox(height: 28),
+
+        Center(
+          child: Text(
+            'Login with Password',
+            style: GoogleFonts.epilogue(
+              color: const Color(0xFF1B1A29),
+              fontSize: compact ? 20 : 22,
+              fontWeight: FontWeight.w700,
+              letterSpacing: 0,
+            ),
+          ),
+        ),
+        const SizedBox(height: 6),
+        Center(
+          child: Text(
+            'Use your account credentials to continue.',
+            textAlign: TextAlign.center,
+            style: GoogleFonts.epilogue(
+              color: const Color(0xFF5E5974),
+              fontSize: compact ? 13 : 14,
+              fontWeight: FontWeight.w500,
+              height: 1.5,
+              letterSpacing: 0,
+            ),
+          ),
+        ),
+        const SizedBox(height: 24),
+
+        // Email
+        _FieldLabel(text: 'Email', compact: compact),
+        const SizedBox(height: 8),
+        _AuthInput(
+          controller: _emailController,
+          hint: 'Enter your email',
+          compact: compact,
+          keyboardType: TextInputType.emailAddress,
+          prefix: const Icon(Icons.mail_outline, color: Color(0xFF6A6F85)),
+          enabled: !_passwordLoading,
+        ),
+        const SizedBox(height: 14),
+
+        // Password
+        _FieldLabel(text: 'Password', compact: compact),
+        const SizedBox(height: 8),
+        StatefulBuilder(
+          builder: (BuildContext context, StateSetter setLocal) {
+            return _AuthInput(
+              controller: _passwordController,
+              hint: 'Enter your password',
+              compact: compact,
+              obscureText: _obscurePassword,
+              prefix: const Icon(Icons.lock_outline, color: Color(0xFF6A6F85)),
+              enabled: !_passwordLoading,
+              suffix: IconButton(
+                onPressed: () => setState(
+                    () => _obscurePassword = !_obscurePassword),
+                icon: Icon(
+                  _obscurePassword
+                      ? Icons.visibility_outlined
+                      : Icons.visibility_off_outlined,
+                  color: const Color(0xFF6A6F85),
+                ),
+              ),
+            );
+          },
+        ),
+
+        // Error message
+        AnimatedSize(
+          duration: const Duration(milliseconds: 180),
+          child: _passwordError != null
+              ? Padding(
+                  padding: const EdgeInsets.only(top: 10),
+                  child: Text(
+                    _passwordError!,
+                    style: GoogleFonts.epilogue(
+                      color: const Color(0xFFE63A42),
+                      fontSize: compact ? 12 : 13,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                )
+              : const SizedBox.shrink(),
+        ),
+
+        const SizedBox(height: 22),
+
+        // Login button
+        SizedBox(
+          width: double.infinity,
+          height: 55,
+          child: ElevatedButton(
+            onPressed: _passwordLoading ? null : _loginWithPassword,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFE63A42),
+              disabledBackgroundColor:
+                  const Color(0xFFE63A42).withOpacity(0.55),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14)),
+              elevation: 5,
+              shadowColor: const Color(0xFFE63A42).withOpacity(0.35),
+            ),
+            child: _passwordLoading
+                ? const SizedBox(
+                    width: 22,
+                    height: 22,
+                    child: CircularProgressIndicator(
+                        strokeWidth: 2.5, color: Colors.white),
+                  )
+                : Text(
+                    'LOG IN',
+                    style: GoogleFonts.epilogue(
+                      color: Colors.white,
+                      fontSize: compact ? 18 : 20,
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 0,
+                    ),
+                  ),
+          ),
+        ),
+        const SizedBox(height: 14),
+
+        // Back links
+        if (_biometricType != null) ...<Widget>[
+          TextButton(
+            onPressed: () {
+              setState(() => _mode = _AuthMode.biometric);
+              _triggerBiometric();
+            },
+            style: TextButton.styleFrom(
+              minimumSize: const Size(double.infinity, 44),
+            ),
+            child: Text(
+              'Use ${_biometricType == BiometricType.face ? "Face ID" : "Fingerprint"} instead',
+              style: GoogleFonts.epilogue(
+                color: const Color(0xFF7A45D8),
+                fontSize: compact ? 13 : 14,
+                fontWeight: FontWeight.w600,
+                decoration: TextDecoration.underline,
+                decorationColor: const Color(0xFF7A45D8),
+              ),
+            ),
+          ),
+        ] else ...<Widget>[
+          TextButton(
+            onPressed: _switchToPin,
+            style: TextButton.styleFrom(
+              minimumSize: const Size(double.infinity, 44),
+            ),
+            child: Text(
+              'Use PIN instead',
+              style: GoogleFonts.epilogue(
+                color: const Color(0xFF7A45D8),
+                fontSize: compact ? 13 : 14,
+                fontWeight: FontWeight.w600,
+                decoration: TextDecoration.underline,
+                decorationColor: const Color(0xFF7A45D8),
+              ),
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+// ── "Login with password" subtle link ────────────────────────────────────────
+class _PasswordFallbackLink extends StatelessWidget {
+  const _PasswordFallbackLink({required this.compact, required this.onTap});
+  final bool compact;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text(
+            'Forgot your PIN? ',
+            style: GoogleFonts.epilogue(
+              color: const Color(0xFF56506A),
+              fontSize: compact ? 12 : 13,
+              letterSpacing: 0,
+            ),
+          ),
+          Text(
+            'Login with password',
+            style: GoogleFonts.epilogue(
+              color: const Color(0xFF56506A),
+              fontSize: compact ? 12 : 13,
+              fontWeight: FontWeight.w700,
+              decoration: TextDecoration.underline,
+              decorationColor: const Color(0xFF56506A),
+              letterSpacing: 0,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ── Field label ───────────────────────────────────────────────────────────────
+class _FieldLabel extends StatelessWidget {
+  const _FieldLabel({required this.text, required this.compact});
+  final String text;
+  final bool compact;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      style: GoogleFonts.epilogue(
+        color: const Color(0xFF69657D),
+        fontSize: compact ? 14 : 16,
+        fontWeight: FontWeight.w700,
+        letterSpacing: 0,
+      ),
+    );
+  }
+}
+
+// ── Styled text input ─────────────────────────────────────────────────────────
+class _AuthInput extends StatelessWidget {
+  const _AuthInput({
+    required this.controller,
+    required this.hint,
+    required this.compact,
+    this.prefix,
+    this.suffix,
+    this.obscureText = false,
+    this.keyboardType,
+    this.enabled = true,
+  });
+
+  final TextEditingController controller;
+  final String hint;
+  final bool compact;
+  final Widget? prefix;
+  final Widget? suffix;
+  final bool obscureText;
+  final TextInputType? keyboardType;
+  final bool enabled;
+
+  @override
+  Widget build(BuildContext context) {
+    return TextField(
+      controller: controller,
+      obscureText: obscureText,
+      keyboardType: keyboardType,
+      enabled: enabled,
+      textAlignVertical: TextAlignVertical.center,
+      style: GoogleFonts.epilogue(
+        color: const Color(0xFF232032),
+        fontSize: compact ? 17 : 18,
+        letterSpacing: 0,
+      ),
+      decoration: InputDecoration(
+        filled: true,
+        fillColor: const Color(0xFFF5F5F7),
+        hintText: hint,
+        hintStyle: GoogleFonts.epilogue(
+          color: const Color(0xFF757A91),
+          fontSize: compact ? 15 : 17,
+          letterSpacing: 0,
+        ),
+        prefixIcon: prefix,
+        suffixIcon: suffix,
+        contentPadding:
+            const EdgeInsets.symmetric(horizontal: 12, vertical: 15),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(14),
+          borderSide: const BorderSide(color: Color(0xFFCDC8DC), width: 1),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(14),
+          borderSide: const BorderSide(color: Color(0xFFADA5C4), width: 1.5),
+        ),
+        disabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(14),
+          borderSide:
+              const BorderSide(color: Color(0xFFCDC8DC), width: 1),
+        ),
+      ),
     );
   }
 }
