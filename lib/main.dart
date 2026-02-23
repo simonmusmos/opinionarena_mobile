@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:intra/opinion_arena_screen.dart';
 import 'package:intra/opinion_arena_login_screen.dart';
-import 'package:intra/opinion_arena_auth_screen.dart';
 
 void main() {
   runApp(const IntraApp());
@@ -24,7 +22,7 @@ class IntraApp extends StatelessWidget {
           ThemeData.light().primaryTextTheme,
         ).apply(fontFamilyFallback: const <String>['Arial', 'sans-serif']),
       ),
-      home: const OpinionArenaAuthScreen(), // TODO: swap back to OpinionArenaLoginScreen() for new users
+      home: const OpinionArenaLoginScreen(),
       // routes: <String, WidgetBuilder>{
       //   '/classic': (_) => const LoginScreen(),
       //   '/opinion': (_) => const OpinionArenaScreen(),
@@ -174,7 +172,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                             textStyle: const TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.w700,
-                              letterSpacing: 1,
+                              letterSpacing: 0,
                             ),
                           ),
                           child: Text(
@@ -182,7 +180,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                             style: GoogleFonts.barlowSemiCondensed(
                               fontSize: 20,
                               fontWeight: FontWeight.w700,
-                              letterSpacing: 1,
+                              letterSpacing: 0,
                             ),
                           ),
                         ),
@@ -354,7 +352,7 @@ class _Header extends StatelessWidget {
                 color: Colors.white,
                 fontSize: compact ? 36 : 42,
                 fontWeight: FontWeight.w800,
-                letterSpacing: 0.6,
+                letterSpacing: 0,
               ),
             ),
           ],

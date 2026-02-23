@@ -1,7 +1,10 @@
+import 'dart:convert';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:http/http.dart' as http;
 import 'package:local_auth/local_auth.dart';
+import 'package:intra/models/oa_user.dart';
 import 'package:intra/opinion_arena_faceid_screen.dart';
 import 'package:intra/opinion_arena_pin_screen.dart';
 
@@ -15,8 +18,21 @@ class OpinionArenaLoginScreen extends StatefulWidget {
 class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
   bool _obscurePassword = true;
   bool _loginLoading = false;
+  String? _loginError;
 
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
   final LocalAuthentication _auth = LocalAuthentication();
+
+  static const String _loginUrl =
+      'https://devci.opinionarena.com/mobile-api/v1/auth/login';
+
+  @override
+  void dispose() {
+    _emailController.dispose();
+    _passwordController.dispose();
+    super.dispose();
+  }
 
   /// Returns the best [BiometricType] the device supports, or null if none.
   Future<BiometricType?> _detectBiometric() async {
@@ -47,24 +63,67 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
   }
 
   Future<void> _onLoginPressed() async {
-    setState(() => _loginLoading = true);
+    final String email = _emailController.text.trim();
+    final String password = _passwordController.text;
+
+    if (email.isEmpty || password.isEmpty) {
+      setState(() => _loginError = 'Please enter your email and password.');
+      return;
+    }
+
+    setState(() {
+      _loginLoading = true;
+      _loginError = null;
+    });
+
     try {
+      // ── 1. Call login API ──────────────────────────────────────────────
+      final http.Response response = await http.post(
+        Uri.parse(_loginUrl),
+        headers: <String, String>{'Content-Type': 'application/json'},
+        body: jsonEncode(<String, String>{
+          'email': email,
+          'password': password,
+        }),
+      );
+
+      if (!mounted) return;
+
+      final Map<String, dynamic> body =
+          jsonDecode(response.body) as Map<String, dynamic>;
+
+      if (response.statusCode != 200 || body['status'] != 'success') {
+        setState(() => _loginError =
+            (body['message'] as String?) ?? 'Login failed. Please try again.');
+        return;
+      }
+
+      // ── 2. Build user model from API response ──────────────────────────
+      final OAUser user = OAUser.fromApiJson(
+        body['user'] as Map<String, dynamic>,
+      );
+
+      // ── 3. Detect biometrics ───────────────────────────────────────────
       final BiometricType? type = await _detectBiometric();
       if (!mounted) return;
 
       if (type != null) {
         await Navigator.of(context).push(
           MaterialPageRoute<void>(
-            builder: (_) => OpinionArenaFaceIdScreen(biometricType: type),
+            builder: (_) =>
+                OpinionArenaFaceIdScreen(biometricType: type, user: user),
           ),
         );
       } else {
-        // No biometrics on this device – skip straight to PIN setup.
         await Navigator.of(context).push(
           MaterialPageRoute<void>(
-            builder: (_) => const OpinionArenaPinScreen(),
+            builder: (_) => OpinionArenaPinScreen(user: user),
           ),
         );
+      }
+    } on Exception {
+      if (mounted) {
+        setState(() => _loginError = 'Network error. Please check your connection.');
       }
     } finally {
       if (mounted) setState(() => _loginLoading = false);
@@ -147,6 +206,8 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
                       _RoundedInput(
                         hint: 'Enter your email',
                         compact: compact,
+                        controller: _emailController,
+                        keyboardType: TextInputType.emailAddress,
                         prefix: const Icon(Icons.mail_outline, color: Color(0xFF6A6F85)),
                       ),
                       const SizedBox(height: 14),
@@ -155,6 +216,7 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
                       _RoundedInput(
                         hint: 'Enter your password',
                         compact: compact,
+                        controller: _passwordController,
                         obscureText: _obscurePassword,
                         prefix: const Icon(Icons.lock_outline, color: Color(0xFF6A6F85)),
                         suffix: IconButton(
@@ -171,6 +233,23 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
                           ),
                         ),
                       ),
+                      // ── API error message ──────────────────────────────
+                      AnimatedSize(
+                        duration: const Duration(milliseconds: 180),
+                        child: _loginError != null
+                            ? Padding(
+                                padding: const EdgeInsets.only(top: 8),
+                                child: Text(
+                                  _loginError!,
+                                  style: GoogleFonts.epilogue(
+                                    color: const Color(0xFFE63A42),
+                                    fontSize: compact ? 12 : 13,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              )
+                            : const SizedBox.shrink(),
+                      ),
                       const SizedBox(height: 5),
                       Row(
                         children: <Widget>[
@@ -179,7 +258,7 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
                             style: GoogleFonts.epilogue(
                               color: const Color(0xFF56506A),
                               fontSize: compact ? 13 : 15,
-                              letterSpacing: 0.1
+                              letterSpacing: 0
                             ),
                           ),
                           const SizedBox(width: 6),
@@ -197,7 +276,7 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
                                   color: const Color(0xFF242031),
                                   fontSize: compact ? 13 : 15,
                                   fontWeight: FontWeight.w700,
-                                  letterSpacing: 0.1,
+                                  letterSpacing: 0,
                                 ),
                               ),
                             ),
@@ -283,7 +362,7 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
                             style: GoogleFonts.epilogue(
                               color: const Color(0xFF57526A),
                               fontSize: compact ? 13 : 15,
-                              letterSpacing: 0.1,
+                              letterSpacing: 0,
                             ),
                           ),
                           const SizedBox(width: 6),
@@ -301,7 +380,7 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
                                   color: const Color(0xFF222030),
                                   fontWeight: FontWeight.w700,
                                   fontSize: compact ? 13 : 15,
-                                  letterSpacing: 0.1,
+                                  letterSpacing: 0,
                                 ),
                               ),
                             ),
@@ -504,21 +583,27 @@ class _RoundedInput extends StatelessWidget {
   const _RoundedInput({
     required this.hint,
     required this.compact,
+    this.controller,
     this.prefix,
     this.suffix,
     this.obscureText = false,
+    this.keyboardType,
   });
 
   final String hint;
   final bool compact;
+  final TextEditingController? controller;
   final Widget? prefix;
   final Widget? suffix;
   final bool obscureText;
+  final TextInputType? keyboardType;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: controller,
       obscureText: obscureText,
+      keyboardType: keyboardType,
       textAlignVertical: TextAlignVertical.center,
       style: GoogleFonts.epilogue(
         color: const Color(0xFF232032),
@@ -589,7 +674,7 @@ class _SocialButton extends StatelessWidget {
                 color: textColor,
                 fontSize: compact ? 13 : 15,
                 fontWeight: FontWeight.w500,
-                letterSpacing: 0.1
+                letterSpacing: 0
               ),
             ),
           ],

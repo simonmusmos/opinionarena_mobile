@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show FilteringTextInputFormatter, LengthLimitingTextInputFormatter, SystemChannels, TextInputFormatter;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:local_auth/local_auth.dart';
+import 'package:intra/models/oa_user.dart';
+import 'package:intra/opinion_arena_home_screen.dart';
 
 /// Stubbed PIN verification – replace with real API call when ready.
 Future<bool> _stubVerifyPin(String pin) async {
@@ -20,7 +22,13 @@ Future<bool> _stubVerifyPassword(String email, String password) async {
 enum _AuthMode { detecting, biometric, pin, password }
 
 class OpinionArenaAuthScreen extends StatefulWidget {
-  const OpinionArenaAuthScreen({super.key});
+  const OpinionArenaAuthScreen({
+    super.key,
+    // TODO: load from local storage (shared_preferences) after first login
+    this.user,
+  });
+
+  final OAUser? user;
 
   @override
   State<OpinionArenaAuthScreen> createState() => _OpinionArenaAuthScreenState();
@@ -233,9 +241,14 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
   }
 
   void _onAuthSuccess() {
-    // TODO: navigate to home / dashboard
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Authenticated!')),
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute<void>(
+        builder: (_) => OpinionArenaHomeScreen(
+              user: widget.user ??
+                  const OAUser(firstName: '', lastName: '', points: 0),
+            ),
+      ),
+      (Route<dynamic> route) => false,
     );
   }
 

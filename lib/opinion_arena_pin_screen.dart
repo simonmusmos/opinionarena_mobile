@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show FilteringTextInputFormatter, LengthLimitingTextInputFormatter, SystemChannels, TextInputFormatter;
+import 'package:intra/models/oa_user.dart';
+import 'package:intra/opinion_arena_home_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 /// Stubbed API call – replace with real implementation when the endpoint is ready.
@@ -9,7 +11,9 @@ Future<void> _stubSavePin(String pin) async {
 }
 
 class OpinionArenaPinScreen extends StatefulWidget {
-  const OpinionArenaPinScreen({super.key});
+  const OpinionArenaPinScreen({super.key, required this.user});
+
+  final OAUser user;
 
   @override
   State<OpinionArenaPinScreen> createState() => _OpinionArenaPinScreenState();
@@ -98,9 +102,11 @@ class _OpinionArenaPinScreenState extends State<OpinionArenaPinScreen>
       try {
         await _stubSavePin(_pin);
         if (!mounted) return;
-        // TODO: navigate to home / dashboard
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('PIN set successfully!')),
+        Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute<void>(
+            builder: (_) => OpinionArenaHomeScreen(user: widget.user),
+          ),
+          (Route<dynamic> route) => false,
         );
       } finally {
         if (mounted) setState(() => _saving = false);

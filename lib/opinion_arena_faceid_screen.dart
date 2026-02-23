@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:local_auth/local_auth.dart';
+import 'package:intra/models/oa_user.dart';
 import 'package:intra/opinion_arena_pin_screen.dart';
 
 /// Stubbed API call – replace with real implementation when the endpoint is ready.
@@ -13,10 +14,11 @@ class OpinionArenaFaceIdScreen extends StatefulWidget {
   const OpinionArenaFaceIdScreen({
     super.key,
     required this.biometricType,
+    required this.user,
   });
 
-  /// The biometric type detected on this device (face or fingerprint).
   final BiometricType biometricType;
+  final OAUser user;
 
   @override
   State<OpinionArenaFaceIdScreen> createState() =>
@@ -40,7 +42,7 @@ class _OpinionArenaFaceIdScreenState extends State<OpinionArenaFaceIdScreen> {
       if (!mounted) return;
       await Navigator.of(context).push(
         MaterialPageRoute<void>(
-          builder: (_) => const OpinionArenaPinScreen(),
+          builder: (_) => OpinionArenaPinScreen(user: widget.user),
         ),
       );
     } finally {
@@ -51,7 +53,7 @@ class _OpinionArenaFaceIdScreenState extends State<OpinionArenaFaceIdScreen> {
   void _onSkip() {
     Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (_) => const OpinionArenaPinScreen(),
+        builder: (_) => OpinionArenaPinScreen(user: widget.user),
       ),
     );
   }
