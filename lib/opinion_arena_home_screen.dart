@@ -921,8 +921,13 @@ class _ViewAllLink extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 2),
-          const Icon(Icons.chevron_right_rounded,
-              color: Color(0xFF7A45D8), size: 18),
+          Icon(
+            Directionality.of(context) == TextDirection.rtl
+                ? Icons.chevron_left_rounded
+                : Icons.chevron_right_rounded,
+            color: const Color(0xFF7A45D8),
+            size: 18,
+          ),
         ],
       ),
     );
@@ -1004,8 +1009,8 @@ class _NavItemWithBadge extends StatelessWidget {
               children: <Widget>[
                 Icon(icon, color: color, size: 24),
                 if (badge > 0)
-                  Positioned(
-                    right: -7,
+                  PositionedDirectional(
+                    end: -7,
                     top: -5,
                     child: Container(
                       width: 16,

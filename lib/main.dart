@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intra/splash_screen.dart';
 
@@ -22,6 +23,18 @@ class IntraApp extends StatelessWidget {
           ThemeData.light().primaryTextTheme,
         ).apply(fontFamilyFallback: const <String>['Arial', 'sans-serif']),
       ),
+      localizationsDelegates: const <LocalizationsDelegate<dynamic>>[
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const <Locale>[
+        Locale('en'),
+        Locale('ar'),
+        Locale('he'),
+        Locale('fa'),
+        Locale('ur'),
+      ],
       home: const SplashScreen(),
       // routes: <String, WidgetBuilder>{
       //   '/classic': (_) => const LoginScreen(),
