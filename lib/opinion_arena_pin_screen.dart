@@ -2,13 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show FilteringTextInputFormatter, LengthLimitingTextInputFormatter, SystemChannels, TextInputFormatter;
 import 'package:intra/models/oa_user.dart';
 import 'package:intra/opinion_arena_home_screen.dart';
+import 'package:intra/services/auth_service.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-/// Stubbed API call – replace with real implementation when the endpoint is ready.
-Future<void> _stubSavePin(String pin) async {
-  // TODO: POST /auth/set-pin  { "pin": pin }
-  await Future<void>.delayed(const Duration(milliseconds: 600));
-}
 
 class OpinionArenaPinScreen extends StatefulWidget {
   const OpinionArenaPinScreen({super.key, required this.user});
@@ -100,7 +95,11 @@ class _OpinionArenaPinScreenState extends State<OpinionArenaPinScreen>
       setState(() => _saving = true);
       _focusNode.unfocus();
       try {
-        await _stubSavePin(_pin);
+        await AuthService.savePin(_pin);
+        // Only now is setup complete — persist the token so future launches
+        // go through the PIN/biometric screen instead of the login screen.
+        final String? token = widget.user.accessToken;
+        if (token != null) await AuthService.saveToken(token);
         if (!mounted) return;
         Navigator.of(context).pushAndRemoveUntil(
           MaterialPageRoute<void>(

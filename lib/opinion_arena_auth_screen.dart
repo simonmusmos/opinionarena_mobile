@@ -4,20 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:intra/models/oa_user.dart';
 import 'package:intra/opinion_arena_home_screen.dart';
-
-/// Stubbed PIN verification – replace with real API call when ready.
-Future<bool> _stubVerifyPin(String pin) async {
-  // TODO: POST /auth/verify-pin  { "pin": pin }
-  await Future<void>.delayed(const Duration(milliseconds: 500));
-  return true; // stub always succeeds
-}
-
-/// Stubbed password verification – replace with real API call when ready.
-Future<bool> _stubVerifyPassword(String email, String password) async {
-  // TODO: POST /auth/login  { "email": email, "password": password }
-  await Future<void>.delayed(const Duration(milliseconds: 700));
-  return true; // stub always succeeds
-}
+import 'package:intra/services/auth_service.dart';
 
 enum _AuthMode { detecting, biometric, pin, password }
 
@@ -145,7 +132,10 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
       );
       if (!mounted) return;
       if (success) {
-        _onAuthSuccess();
+        // Only proceed if the user hasn't already switched to PIN/password
+        if (_mode == _AuthMode.biometric) {
+          _onAuthSuccess();
+        }
       } else {
         _biometricAttempts++;
         if (_biometricAttempts >= _maxBiometricAttempts) {
@@ -161,6 +151,7 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
   }
 
   void _switchToPin() {
+    _auth.stopAuthentication(); // cancel any in-flight biometric prompt
     setState(() => _mode = _AuthMode.pin);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _pinFocus.requestFocus();
@@ -183,11 +174,11 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
 
   Future<void> _verifyPin(String pin) async {
     setState(() => _pinVerifying = true);
-    _pinFocus.unfocus();
     try {
-      final bool ok = await _stubVerifyPin(pin);
+      final bool ok = await AuthService.verifyPin(pin);
       if (!mounted) return;
       if (ok) {
+        _pinFocus.unfocus();
         _onAuthSuccess();
       } else {
         await _shakeController.forward(from: 0);
@@ -197,7 +188,6 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
           _pinError = 'Incorrect PIN. Try again.';
         });
         _pinController.clear();
-        _pinFocus.requestFocus();
       }
     } finally {
       if (mounted) setState(() => _pinVerifying = false);
@@ -228,7 +218,7 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
     FocusScope.of(context).unfocus();
 
     try {
-      final bool ok = await _stubVerifyPassword(email, password);
+      final bool ok = await AuthService.loginWithPassword(email, password);
       if (!mounted) return;
       if (ok) {
         _onAuthSuccess();

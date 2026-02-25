@@ -101,12 +101,15 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
       // ── 2. Build user model from API response ──────────────────────────
       final Map<String, dynamic> data =
           body['data'] as Map<String, dynamic>;
+      final String? accessToken = data['accessToken'] as String?;
       final OAUser user = OAUser.fromApiJson(
         data['user'] as Map<String, dynamic>,
-        accessToken: data['accessToken'] as String?,
+        accessToken: accessToken,
       );
 
       // ── 3. Detect biometrics ───────────────────────────────────────────
+      // NOTE: token is intentionally NOT saved here. It is saved only after
+      // the user completes PIN setup, so an abandoned setup forces a fresh login.
       final BiometricType? type = await _detectBiometric();
       if (!mounted) return;
 
