@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intra/models/oa_user.dart';
+import 'package:intra/opinion_arena_login_screen.dart';
+import 'package:intra/services/auth_service.dart';
 
 // ── Data models ───────────────────────────────────────────────────────────────
 enum _SurveyStatus { inProgress, isNew }
@@ -59,6 +61,7 @@ class OpinionArenaHomeScreen extends StatefulWidget {
 
 class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
   int _selectedTab = 0;
+  bool _logoutLoading = false;
 
   OAUser get _user => widget.user;
 
@@ -81,23 +84,25 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
           children: <Widget>[
             _buildAppBar(),
             Expanded(
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.only(bottom: 16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    const SizedBox(height: 16),
-                    _buildPointsCard(),
-                    const SizedBox(height: 28),
-                    _buildSurveysSection(),
-                    const SizedBox(height: 28),
-                    _buildRafflesSection(),
-                    const SizedBox(height: 16),
-                    _buildFaqCard(),
-                    const SizedBox(height: 8),
-                  ],
-                ),
-              ),
+              child: _selectedTab == 3
+                  ? _buildProfileTab()
+                  : SingleChildScrollView(
+                      padding: const EdgeInsets.only(bottom: 16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          const SizedBox(height: 16),
+                          _buildPointsCard(),
+                          const SizedBox(height: 28),
+                          _buildSurveysSection(),
+                          const SizedBox(height: 28),
+                          _buildRafflesSection(),
+                          const SizedBox(height: 16),
+                          _buildFaqCard(),
+                          const SizedBox(height: 8),
+                        ],
+                      ),
+                    ),
             ),
           ],
         ),
@@ -531,6 +536,106 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
           ],
         ),
       ),
+    );
+  }
+
+  // ── Profile tab (placeholder) ──────────────────────────────────────────────
+  Widget _buildProfileTab() {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 32),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Container(
+              width: 72,
+              height: 72,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  colors: <Color>[Color(0xFF7A45D8), Color(0xFFE4528C)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+                shape: BoxShape.circle,
+              ),
+              child: Center(
+                child: Text(
+                  _user.initials,
+                  style: GoogleFonts.epilogue(
+                    color: Colors.white,
+                    fontSize: 26,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 12),
+            Text(
+              '${_user.firstName} ${_user.lastName}'.trim(),
+              style: GoogleFonts.epilogue(
+                color: const Color(0xFF1A1A2E),
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            Text(
+              _user.email,
+              style: GoogleFonts.epilogue(
+                color: const Color(0xFF8A8A9A),
+                fontSize: 13,
+              ),
+            ),
+            const SizedBox(height: 32),
+            // TODO: full profile layout coming soon
+            SizedBox(
+              width: double.infinity,
+              height: 50,
+              child: ElevatedButton.icon(
+                onPressed: _logoutLoading ? null : _onLogoutPressed,
+                icon: _logoutLoading
+                    ? const SizedBox(
+                        width: 18,
+                        height: 18,
+                        child: CircularProgressIndicator(
+                          strokeWidth: 2,
+                          color: Colors.white,
+                        ),
+                      )
+                    : const Icon(Icons.logout_rounded, size: 20),
+                label: Text(
+                  _logoutLoading ? 'Logging out...' : 'Log Out',
+                  style: GoogleFonts.epilogue(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFE63A42),
+                  foregroundColor: Colors.white,
+                  disabledBackgroundColor:
+                      const Color(0xFFE63A42).withValues(alpha: 0.55),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  elevation: 0,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _onLogoutPressed() async {
+    setState(() => _logoutLoading = true);
+    await AuthService.logout();
+    if (!mounted) return;
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute<void>(
+        builder: (_) => const OpinionArenaLoginScreen(),
+      ),
+      (Route<dynamic> route) => false,
     );
   }
 

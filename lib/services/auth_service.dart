@@ -61,6 +61,34 @@ class AuthService {
     return id;
   }
 
+  // ── Logout ──────────────────────────────────────────────────────────────────
+
+  /// Calls POST /auth/logout, then clears all local session data.
+  /// Always clears locally even if the API call fails.
+  static Future<void> logout() async {
+    final String? token = await getToken();
+    final String deviceId = await getOrCreateDeviceId();
+
+    if (token != null) {
+      try {
+        await http.post(
+          Uri.parse('$_baseUrl/auth/logout'),
+          headers: <String, String>{
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer $token',
+            'X-Device-Id': deviceId,
+          },
+        );
+      } catch (_) {
+        // Ignore network errors — local cleanup still happens below
+      }
+    }
+
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_keyToken);
+    await prefs.remove(_keyPin);
+  }
+
   // ── Password login (used as PIN fallback from auth screen) ──────────────────
 
   static Future<bool> loginWithPassword(String email, String password) async {
