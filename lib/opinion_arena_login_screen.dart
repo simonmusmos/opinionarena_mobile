@@ -99,8 +99,11 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
       }
 
       // ── 2. Build user model from API response ──────────────────────────
+      final Map<String, dynamic> data =
+          body['data'] as Map<String, dynamic>;
       final OAUser user = OAUser.fromApiJson(
-        body['user'] as Map<String, dynamic>,
+        data['user'] as Map<String, dynamic>,
+        accessToken: data['accessToken'] as String?,
       );
 
       // ── 3. Detect biometrics ───────────────────────────────────────────

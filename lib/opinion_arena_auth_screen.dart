@@ -245,7 +245,7 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
       MaterialPageRoute<void>(
         builder: (_) => OpinionArenaHomeScreen(
               user: widget.user ??
-                  const OAUser(firstName: '', lastName: '', points: 0),
+                  const OAUser(id: '', email: '', firstName: '', lastName: '', points: 0),
             ),
       ),
       (Route<dynamic> route) => false,
