@@ -11,6 +11,7 @@ class AuthService {
   static const String _keyToken = 'auth_token';
   static const String _keyDeviceId = 'device_id';
   static const String _keyPin = 'auth_pin';
+  static const String _keyBiometricEnabled = 'biometric_enabled';
 
   // ── Token storage ───────────────────────────────────────────────────────────
 
@@ -47,6 +48,17 @@ class AuthService {
   static Future<bool> hasPin() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     return prefs.containsKey(_keyPin);
+  }
+
+  // Biometrics preference
+  static Future<void> setBiometricEnabled(bool enabled) async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_keyBiometricEnabled, enabled);
+  }
+
+  static Future<bool> isBiometricEnabled() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    return prefs.getBool(_keyBiometricEnabled) ?? false;
   }
 
   // ── Device ID ───────────────────────────────────────────────────────────────
@@ -87,6 +99,7 @@ class AuthService {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyToken);
     await prefs.remove(_keyPin);
+    await prefs.remove(_keyBiometricEnabled);
   }
 
   // ── Password login (used as PIN fallback from auth screen) ──────────────────

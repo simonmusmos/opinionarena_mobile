@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:intra/models/oa_user.dart';
 import 'package:intra/opinion_arena_pin_screen.dart';
+import 'package:intra/services/auth_service.dart';
 
 /// Stubbed API call – replace with real implementation when the endpoint is ready.
 Future<void> _stubEnableBiometric() async {
@@ -39,6 +40,7 @@ class _OpinionArenaFaceIdScreenState extends State<OpinionArenaFaceIdScreen> {
     setState(() => _loading = true);
     try {
       await _stubEnableBiometric();
+      await AuthService.setBiometricEnabled(true);
       if (!mounted) return;
       await Navigator.of(context).push(
         MaterialPageRoute<void>(
@@ -50,8 +52,10 @@ class _OpinionArenaFaceIdScreenState extends State<OpinionArenaFaceIdScreen> {
     }
   }
 
-  void _onSkip() {
-    Navigator.of(context).push(
+  Future<void> _onSkip() async {
+    await AuthService.setBiometricEnabled(false);
+    if (!mounted) return;
+    await Navigator.of(context).push(
       MaterialPageRoute<void>(
         builder: (_) => OpinionArenaPinScreen(user: widget.user),
       ),

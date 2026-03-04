@@ -7,46 +7,42 @@ import 'package:intra/services/auth_service.dart';
 // ── Data models ───────────────────────────────────────────────────────────────
 enum _SurveyStatus { inProgress, isNew }
 
-class _Survey {
-  const _Survey({
-    required this.title,
-    required this.description,
+// ── Surveys data ──────────────────────────────────────────────────────────────
+class _AvailableSurveyItem {
+  const _AvailableSurveyItem({
+    required this.id,
     required this.minutes,
     required this.points,
     required this.status,
   });
-  final String title;
-  final String description;
+  final String id;
   final int minutes;
   final int points;
   final _SurveyStatus status;
 }
 
-const List<_Survey> _mockSurveys = <_Survey>[
-  _Survey(
-    title: 'Daily Grocery Preferences',
-    description:
-        'Help us understand how you choose your organic products at the supermarket.',
-    minutes: 12,
-    points: 300,
-    status: _SurveyStatus.inProgress,
-  ),
-  _Survey(
-    title: 'Streaming Platform Review',
-    description:
-        'A quick feedback survey about your recent experience with Netflix and Disney+.',
-    minutes: 5,
-    points: 75,
-    status: _SurveyStatus.isNew,
-  ),
-  _Survey(
-    title: 'Consumer Tech Habits 2026',
-    description:
-        'Share your thoughts on the latest smartphone trends and wearable technology.',
-    minutes: 8,
-    points: 150,
-    status: _SurveyStatus.isNew,
-  ),
+const List<_AvailableSurveyItem> _availableSurveyItems = <_AvailableSurveyItem>[
+  _AvailableSurveyItem(id: '#SRV-6413-1166', minutes: 15, points: 500, status: _SurveyStatus.inProgress),
+  _AvailableSurveyItem(id: '#SRV-5413-1762', minutes: 12, points: 450, status: _SurveyStatus.isNew),
+  _AvailableSurveyItem(id: '#SRV-0217-8145', minutes: 20, points: 600, status: _SurveyStatus.isNew),
+];
+
+class _CompletedSurveyItem {
+  const _CompletedSurveyItem({
+    required this.id,
+    required this.minutes,
+    required this.points,
+    required this.date,
+  });
+  final String id;
+  final int minutes;
+  final int points;
+  final String date;
+}
+
+const List<_CompletedSurveyItem> _completedSurveyItems = <_CompletedSurveyItem>[
+  _CompletedSurveyItem(id: '#SRV-6413-1166', minutes: 15, points: 500, date: 'February 15, 2026'),
+  _CompletedSurveyItem(id: '#SRV-0217-8145', minutes: 20, points: 600, date: 'January 27, 2026'),
 ];
 
 // ── Screen ────────────────────────────────────────────────────────────────────
@@ -61,6 +57,7 @@ class OpinionArenaHomeScreen extends StatefulWidget {
 
 class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
   int _selectedTab = 0;
+  int _surveySubTab = 0;
   bool _logoutLoading = false;
 
   OAUser get _user => widget.user;
@@ -78,7 +75,7 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xFFF7F5FF),
       body: SafeArea(
         child: Column(
           children: <Widget>[
@@ -86,7 +83,9 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
             Expanded(
               child: _selectedTab == 3
                   ? _buildProfileTab()
-                  : SingleChildScrollView(
+                  : _selectedTab == 1
+                      ? _buildSurveysTab()
+                      : SingleChildScrollView(
                       padding: const EdgeInsets.only(bottom: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -120,30 +119,40 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
           const Icon(Icons.menu_rounded, color: Color(0xFF4A4A6A), size: 26),
           const SizedBox(width: 12),
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  'WELCOME BACK',
-                  style: GoogleFonts.epilogue(
-                    color: const Color(0xFF9090A8),
-                    fontSize: 10,
-                    fontWeight: FontWeight.w600,
-                    letterSpacing: 0,
+            child: _selectedTab == 1
+                ? Text(
+                    'Surveys',
+                    style: GoogleFonts.epilogue(
+                      color: const Color(0xFF1A1A2E),
+                      fontSize: 24,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 0,
+                    ),
+                  )
+                : Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text(
+                        'WELCOME BACK',
+                        style: GoogleFonts.epilogue(
+                          color: const Color(0xFF9090A8),
+                          fontSize: 10,
+                          fontWeight: FontWeight.w600,
+                          letterSpacing: 0,
+                        ),
+                      ),
+                      Text(
+                        _user.firstName.toUpperCase(),
+                        style: GoogleFonts.epilogue(
+                          color: const Color(0xFF1A1A2E),
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 0,
+                          height: 1.1,
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                Text(
-                  _user.firstName.toUpperCase(),
-                  style: GoogleFonts.epilogue(
-                    color: const Color(0xFF1A1A2E),
-                    fontSize: 20,
-                    fontWeight: FontWeight.w800,
-                    letterSpacing: 0,
-                    height: 1.1,
-                  ),
-                ),
-              ],
-            ),
           ),
           // Gradient avatar
           Container(
@@ -204,6 +213,13 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
             colors: <Color>[Color(0xFF7A45D8), Color(0xFFE4528C)],
           ),
           borderRadius: BorderRadius.circular(20),
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+              color: const Color(0xFF7A45D8).withValues(alpha: 0.30),
+              blurRadius: 24,
+              offset: const Offset(0, 8),
+            ),
+          ],
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -270,17 +286,17 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: _SectionHeader(
             title: 'Available Surveys',
-            subtitle: 'Complete available surveys and keep earning rewards',
+            subtitle: 'Complete surveys and keep earning rewards',
           ),
         ),
         const SizedBox(height: 14),
-        ..._mockSurveys.map((_Survey s) => Padding(
+        ..._availableSurveyItems.take(2).map((_AvailableSurveyItem s) => Padding(
               padding: const EdgeInsets.fromLTRB(16, 0, 16, 10),
-              child: _SurveyCard(survey: s),
+              child: _AvailableSurveyCard(survey: s),
             )),
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 4, 16, 0),
-          child: _ViewAllLink(label: 'View All Survey', onTap: () {}),
+          child: _ViewAllLink(label: 'View All Surveys', onTap: () {}),
         ),
       ],
     );
@@ -310,6 +326,13 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
                 colors: <Color>[Color(0xFF7A45D8), Color(0xFFE4528C)],
               ),
               borderRadius: BorderRadius.circular(18),
+              boxShadow: <BoxShadow>[
+                BoxShadow(
+                  color: const Color(0xFF7A45D8).withValues(alpha: 0.25),
+                  blurRadius: 20,
+                  offset: const Offset(0, 6),
+                ),
+              ],
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -482,59 +505,185 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
         decoration: BoxDecoration(
-          color: const Color(0xFFF4F4F8),
-          borderRadius: BorderRadius.circular(14),
-        ),
-        child: Row(
-          children: <Widget>[
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    'Have questions?',
-                    style: GoogleFonts.epilogue(
-                      color: const Color(0xFF1A1A2E),
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    'Browse FAQs and quick answers',
-                    style: GoogleFonts.epilogue(
-                      color: const Color(0xFF8A8A9A),
-                      fontSize: 12,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ],
-              ),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(18),
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+              color: const Color(0xFF00BFA5).withValues(alpha: 0.12),
+              blurRadius: 20,
+              offset: const Offset(0, 6),
             ),
-            const SizedBox(width: 12),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF00BFA5),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(22)),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 22, vertical: 12),
-                elevation: 0,
-              ),
-              child: Text(
-                'FAQ',
-                style: GoogleFonts.epilogue(
-                  color: Colors.white,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.04),
+              blurRadius: 6,
+              offset: const Offset(0, 2),
             ),
           ],
         ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(18),
+          child: IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Container(
+                  width: 5,
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: <Color>[Color(0xFF00BFA5), Color(0xFF00ACC1)],
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(14, 16, 16, 16),
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                'Have questions?',
+                                style: GoogleFonts.epilogue(
+                                  color: const Color(0xFF1A1A2E),
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                              const SizedBox(height: 3),
+                              Text(
+                                'Browse FAQs and quick answers',
+                                style: GoogleFonts.epilogue(
+                                  color: const Color(0xFF8A8A9A),
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 12),
+                        GestureDetector(
+                          onTap: () {},
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 20, vertical: 10),
+                            decoration: BoxDecoration(
+                              gradient: const LinearGradient(
+                                colors: <Color>[
+                                  Color(0xFF00BFA5),
+                                  Color(0xFF00ACC1),
+                                ],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight,
+                              ),
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: <BoxShadow>[
+                                BoxShadow(
+                                  color: const Color(0xFF00BFA5)
+                                      .withValues(alpha: 0.35),
+                                  blurRadius: 8,
+                                  offset: const Offset(0, 3),
+                                ),
+                              ],
+                            ),
+                            child: Text(
+                              'FAQ',
+                              style: GoogleFonts.epilogue(
+                                color: Colors.white,
+                                fontSize: 13,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  // ── Surveys tab ────────────────────────────────────────────────────────────
+  Widget _buildSurveysTab() {
+    final List<Widget> items = _surveySubTab == 0
+        ? _availableSurveyItems
+            .map((_AvailableSurveyItem s) => Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: _AvailableSurveyCard(survey: s),
+                ))
+            .toList()
+        : _completedSurveyItems
+            .map((_CompletedSurveyItem s) => Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: _CompletedSurveyCard(survey: s),
+                ))
+            .toList();
+
+    return ColoredBox(
+      color: const Color(0xFFF7F5FF),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          const SizedBox(height: 12),
+          // Gradient tab switcher
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: _SurveyTabSwitcher(
+              selected: _surveySubTab,
+              availableCount: _availableSurveyItems.length,
+              completedCount: _completedSurveyItems.length,
+              onChanged: (int i) => setState(() => _surveySubTab = i),
+            ),
+          ),
+          const SizedBox(height: 14),
+          // Survey count label
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              children: <Widget>[
+                Container(
+                  width: 7,
+                  height: 7,
+                  decoration: BoxDecoration(
+                    color: _surveySubTab == 0
+                        ? const Color(0xFF7A45D8)
+                        : const Color(0xFF4CAF50),
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                const SizedBox(width: 7),
+                Text(
+                  _surveySubTab == 0
+                      ? '${_availableSurveyItems.length} AVAILABLE SURVEYS'
+                      : '${_completedSurveyItems.length} COMPLETED SURVEYS',
+                  style: GoogleFonts.epilogue(
+                    color: const Color(0xFF8A8A9A),
+                    fontSize: 11,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 0.5,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 12),
+          // Survey list
+          Expanded(
+            child: ListView(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
+              children: items,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -692,130 +841,6 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
               ),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-// ── Survey card ───────────────────────────────────────────────────────────────
-class _SurveyCard extends StatelessWidget {
-  const _SurveyCard({required this.survey});
-  final _Survey survey;
-
-  @override
-  Widget build(BuildContext context) {
-    final bool inProgress = survey.status == _SurveyStatus.inProgress;
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: const Color(0xFFE8E8F0)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Expanded(
-                child: Text(
-                  survey.title,
-                  style: GoogleFonts.epilogue(
-                    color: const Color(0xFF1A1A2E),
-                    fontSize: 15,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-              _StatusBadge(inProgress: inProgress),
-            ],
-          ),
-          const SizedBox(height: 6),
-          Text(
-            survey.description,
-            style: GoogleFonts.epilogue(
-              color: const Color(0xFF8A8A9A),
-              fontSize: 12,
-              height: 1.5,
-            ),
-          ),
-          const SizedBox(height: 12),
-          Row(
-            children: <Widget>[
-              const Icon(Icons.access_time_rounded,
-                  size: 14, color: Color(0xFF8A8A9A)),
-              const SizedBox(width: 4),
-              Text(
-                '${survey.minutes} mins',
-                style: GoogleFonts.epilogue(
-                  color: const Color(0xFF8A8A9A),
-                  fontSize: 12,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-              const SizedBox(width: 12),
-              const Icon(Icons.star_rounded,
-                  size: 14, color: Color(0xFFFFB800)),
-              const SizedBox(width: 4),
-              Text(
-                '+${survey.points} pts',
-                style: GoogleFonts.epilogue(
-                  color: const Color(0xFF7A45D8),
-                  fontSize: 12,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              const Spacer(),
-              OutlinedButton(
-                onPressed: () {},
-                style: OutlinedButton.styleFrom(
-                  side: const BorderSide(color: Color(0xFFD0D0E0)),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8)),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 7),
-                  minimumSize: Size.zero,
-                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                ),
-                child: Text(
-                  inProgress ? 'Continue' : 'Start',
-                  style: GoogleFonts.epilogue(
-                    color: const Color(0xFF1A1A2E),
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-// ── Status badge ──────────────────────────────────────────────────────────────
-class _StatusBadge extends StatelessWidget {
-  const _StatusBadge({required this.inProgress});
-  final bool inProgress;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
-      decoration: BoxDecoration(
-        color: inProgress ? const Color(0xFFFF6B35) : const Color(0xFF00BFA5),
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Text(
-        inProgress ? 'In Progress' : 'New',
-        style: GoogleFonts.epilogue(
-          color: Colors.white,
-          fontSize: 10,
-          fontWeight: FontWeight.w700,
         ),
       ),
     );
@@ -1044,6 +1069,524 @@ class _NavItemWithBadge extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+// ── Survey tab switcher ────────────────────────────────────────────────────────
+class _SurveyTabSwitcher extends StatelessWidget {
+  const _SurveyTabSwitcher({
+    required this.selected,
+    required this.onChanged,
+    required this.availableCount,
+    required this.completedCount,
+  });
+  final int selected;
+  final ValueChanged<int> onChanged;
+  final int availableCount;
+  final int completedCount;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 50,
+      padding: const EdgeInsets.all(4),
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: <Color>[Color(0xFF7A45D8), Color(0xFFE4528C)],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        borderRadius: BorderRadius.circular(30),
+        boxShadow: <BoxShadow>[
+          BoxShadow(
+            color: const Color(0xFF7A45D8).withValues(alpha: 0.25),
+            blurRadius: 12,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Row(
+        children: <Widget>[
+          Expanded(child: _tab(0, 'Available', availableCount)),
+          Expanded(child: _tab(1, 'Completed', completedCount)),
+        ],
+      ),
+    );
+  }
+
+  Widget _tab(int index, String label, int count) {
+    final bool active = selected == index;
+    return GestureDetector(
+      onTap: () => onChanged(index),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 220),
+        curve: Curves.easeOutCubic,
+        decoration: BoxDecoration(
+          color: active ? Colors.white : Colors.transparent,
+          borderRadius: BorderRadius.circular(26),
+        ),
+        child: Center(
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Text(
+                label,
+                style: GoogleFonts.epilogue(
+                  color: active ? const Color(0xFF7A45D8) : Colors.white,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              const SizedBox(width: 6),
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 220),
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                decoration: BoxDecoration(
+                  color: active
+                      ? const Color(0xFF7A45D8)
+                      : Colors.white.withValues(alpha: 0.25),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  '$count',
+                  style: GoogleFonts.epilogue(
+                    color: Colors.white,
+                    fontSize: 10,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Available survey card ──────────────────────────────────────────────────────
+class _AvailableSurveyCard extends StatelessWidget {
+  const _AvailableSurveyCard({required this.survey});
+  final _AvailableSurveyItem survey;
+
+  @override
+  Widget build(BuildContext context) {
+    final bool inProgress = survey.status == _SurveyStatus.inProgress;
+    final Color accentColor =
+        inProgress ? const Color(0xFF7A45D8) : const Color(0xFF00BCD4);
+
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        boxShadow: <BoxShadow>[
+          BoxShadow(
+            color: accentColor.withValues(alpha: 0.12),
+            blurRadius: 20,
+            offset: const Offset(0, 6),
+          ),
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.04),
+            blurRadius: 6,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(18),
+        child: IntrinsicHeight(
+          child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            // Left accent bar
+            Container(
+              width: 5,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: inProgress
+                      ? const <Color>[Color(0xFF7A45D8), Color(0xFFB24DC0)]
+                      : const <Color>[Color(0xFF00BCD4), Color(0xFF00ACC1)],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                ),
+              ),
+            ),
+            // Card content
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(14, 16, 16, 16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    // Title + badge row
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Expanded(
+                          child: Text(
+                            'Survey ID: ${survey.id}',
+                            style: GoogleFonts.epilogue(
+                              color: const Color(0xFF1A1A2E),
+                              fontSize: 15,
+                              fontWeight: FontWeight.w800,
+                              height: 1.2,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        _SurveyStatusBadge(inProgress: inProgress),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    // Meta row: time + points
+                    Row(
+                      children: <Widget>[
+                        const Icon(Icons.access_time_rounded,
+                            size: 13, color: Color(0xFF8A8A9A)),
+                        const SizedBox(width: 4),
+                        Text(
+                          '${survey.minutes} mins',
+                          style: GoogleFonts.epilogue(
+                              color: const Color(0xFF8A8A9A), fontSize: 12),
+                        ),
+                        const SizedBox(width: 14),
+                        const Icon(Icons.star_rounded,
+                            size: 14, color: Color(0xFFFFB800)),
+                        const SizedBox(width: 3),
+                        Text(
+                          '${survey.points} pts',
+                          style: GoogleFonts.epilogue(
+                            color: const Color(0xFFFF9800),
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ],
+                    ),
+                    // Progress bar for in-progress surveys
+                    if (inProgress) ...<Widget>[
+                      const SizedBox(height: 12),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Text(
+                            'Progress',
+                            style: GoogleFonts.epilogue(
+                              color: const Color(0xFF8A8A9A),
+                              fontSize: 11,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          Text(
+                            '40%',
+                            style: GoogleFonts.epilogue(
+                              color: const Color(0xFF7A45D8),
+                              fontSize: 11,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 5),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(4),
+                        child: LinearProgressIndicator(
+                          value: 0.40,
+                          backgroundColor: const Color(0xFFEEEBF8),
+                          valueColor: const AlwaysStoppedAnimation<Color>(
+                              Color(0xFF7A45D8)),
+                          minHeight: 5,
+                        ),
+                      ),
+                    ],
+                    const SizedBox(height: 14),
+                    // CTA button
+                    GestureDetector(
+                      onTap: () {},
+                      child: Container(
+                        width: double.infinity,
+                        height: 44,
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: <Color>[
+                              Color(0xFF4F6CF2),
+                              Color(0xFF7A45D8),
+                            ],
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                          ),
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: <BoxShadow>[
+                            BoxShadow(
+                              color:
+                                  const Color(0xFF7A45D8).withValues(alpha: 0.35),
+                              blurRadius: 12,
+                              offset: const Offset(0, 4),
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Text(
+                              inProgress ? 'Continue' : 'Start Survey',
+                              style: GoogleFonts.epilogue(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                            const SizedBox(width: 6),
+                            Icon(
+                              inProgress
+                                  ? Icons.play_arrow_rounded
+                                  : Icons.arrow_forward_rounded,
+                              color: Colors.white,
+                              size: 18,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Survey status badge ────────────────────────────────────────────────────────
+class _SurveyStatusBadge extends StatelessWidget {
+  const _SurveyStatusBadge({required this.inProgress});
+  final bool inProgress;
+
+  @override
+  Widget build(BuildContext context) {
+    if (inProgress) {
+      return Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+        decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            colors: <Color>[Color(0xFFFF6B35), Color(0xFFFF3D71)],
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+          ),
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+              color: const Color(0xFFFF6B35).withValues(alpha: 0.30),
+              blurRadius: 6,
+              offset: const Offset(0, 2),
+            ),
+          ],
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            const Icon(Icons.radio_button_checked,
+                size: 8, color: Colors.white),
+            const SizedBox(width: 4),
+            Text(
+              'In Progress',
+              style: GoogleFonts.epilogue(
+                color: Colors.white,
+                fontSize: 10,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
+      decoration: BoxDecoration(
+        color: const Color(0xFFE0F7FA),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: const Color(0xFF00BCD4).withValues(alpha: 0.4)),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          const Icon(Icons.fiber_new_rounded, size: 12, color: Color(0xFF00ACC1)),
+          const SizedBox(width: 3),
+          Text(
+            'New',
+            style: GoogleFonts.epilogue(
+              color: const Color(0xFF00ACC1),
+              fontSize: 10,
+              fontWeight: FontWeight.w700,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ── Completed survey card ──────────────────────────────────────────────────────
+class _CompletedSurveyCard extends StatelessWidget {
+  const _CompletedSurveyCard({required this.survey});
+  final _CompletedSurveyItem survey;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        boxShadow: <BoxShadow>[
+          BoxShadow(
+            color: const Color(0xFF4CAF50).withValues(alpha: 0.10),
+            blurRadius: 20,
+            offset: const Offset(0, 6),
+          ),
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.04),
+            blurRadius: 6,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(18),
+        child: IntrinsicHeight(
+          child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            // Left green accent bar
+            Container(
+              width: 5,
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  colors: <Color>[Color(0xFF43C96A), Color(0xFF2EAF55)],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                ),
+              ),
+            ),
+            // Card content
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(14, 15, 16, 15),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    // Title + checkmark
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        Expanded(
+                          child: Text(
+                            'Survey ID: ${survey.id}',
+                            style: GoogleFonts.epilogue(
+                              color: const Color(0xFF1A1A2E),
+                              fontSize: 15,
+                              fontWeight: FontWeight.w800,
+                              height: 1.2,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Container(
+                          width: 28,
+                          height: 28,
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              colors: <Color>[
+                                Color(0xFF43C96A),
+                                Color(0xFF2EAF55),
+                              ],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                            ),
+                            shape: BoxShape.circle,
+                            boxShadow: <BoxShadow>[
+                              BoxShadow(
+                                color: const Color(0xFF4CAF50)
+                                    .withValues(alpha: 0.35),
+                                blurRadius: 6,
+                                offset: const Offset(0, 2),
+                              ),
+                            ],
+                          ),
+                          child: const Icon(Icons.check_rounded,
+                              color: Colors.white, size: 15),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    // Meta row: time + date
+                    Row(
+                      children: <Widget>[
+                        const Icon(Icons.access_time_rounded,
+                            size: 13, color: Color(0xFF8A8A9A)),
+                        const SizedBox(width: 4),
+                        Text(
+                          '${survey.minutes} mins',
+                          style: GoogleFonts.epilogue(
+                              color: const Color(0xFF8A8A9A), fontSize: 12),
+                        ),
+                        const SizedBox(width: 14),
+                        const Icon(Icons.calendar_today_outlined,
+                            size: 12, color: Color(0xFF8A8A9A)),
+                        const SizedBox(width: 4),
+                        Flexible(
+                          child: Text(
+                            survey.date,
+                            style: GoogleFonts.epilogue(
+                                color: const Color(0xFF8A8A9A), fontSize: 12),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 12),
+                    // Points badge — bottom right
+                    Align(
+                      alignment: AlignmentDirectional.centerEnd,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 12, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFFFF3E0),
+                          borderRadius: BorderRadius.circular(20),
+                          border: Border.all(
+                              color: const Color(0xFFFFB800)
+                                  .withValues(alpha: 0.4)),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            const Icon(Icons.star_rounded,
+                                size: 14, color: Color(0xFFFFB800)),
+                            const SizedBox(width: 4),
+                            Text(
+                              '+${survey.points} pts',
+                              style: GoogleFonts.epilogue(
+                                color: const Color(0xFFE65C00),
+                                fontSize: 13,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
         ),
       ),
     );

@@ -80,6 +80,13 @@ class _OpinionArenaAuthScreenState extends State<OpinionArenaAuthScreen>
   // ── Biometric detection + auto-prompt ──────────────────────────────────────
 
   Future<void> _detectAndAuthenticate() async {
+    final bool biometricEnabled = await AuthService.isBiometricEnabled();
+    if (!mounted) return;
+    if (!biometricEnabled) {
+      _switchToPin();
+      return;
+    }
+
     final BiometricType? type = await _detectBiometric();
     if (!mounted) return;
 
