@@ -129,30 +129,40 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
                       letterSpacing: 0,
                     ),
                   )
-                : Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        'WELCOME BACK',
-                        style: GoogleFonts.epilogue(
-                          color: const Color(0xFF9090A8),
-                          fontSize: 10,
-                          fontWeight: FontWeight.w600,
-                          letterSpacing: 0,
-                        ),
-                      ),
-                      Text(
-                        _user.firstName.toUpperCase(),
+                : _selectedTab == 3
+                    ? Text(
+                        'My Profile',
                         style: GoogleFonts.epilogue(
                           color: const Color(0xFF1A1A2E),
-                          fontSize: 20,
+                          fontSize: 24,
                           fontWeight: FontWeight.w800,
                           letterSpacing: 0,
-                          height: 1.1,
                         ),
+                      )
+                    : Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            'WELCOME BACK',
+                            style: GoogleFonts.epilogue(
+                              color: const Color(0xFF9090A8),
+                              fontSize: 10,
+                              fontWeight: FontWeight.w600,
+                              letterSpacing: 0,
+                            ),
+                          ),
+                          Text(
+                            _user.firstName.toUpperCase(),
+                            style: GoogleFonts.epilogue(
+                              color: const Color(0xFF1A1A2E),
+                              fontSize: 20,
+                              fontWeight: FontWeight.w800,
+                              letterSpacing: 0,
+                              height: 1.1,
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
           ),
           // Gradient avatar
           Container(
@@ -688,95 +698,264 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
     );
   }
 
-  // ── Profile tab (placeholder) ──────────────────────────────────────────────
+  // ── Profile tab ────────────────────────────────────────────────────────────
   Widget _buildProfileTab() {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 32),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Container(
-              width: 72,
-              height: 72,
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  colors: <Color>[Color(0xFF7A45D8), Color(0xFFE4528C)],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-                shape: BoxShape.circle,
+    final String fullName = '${_user.firstName} ${_user.lastName}'.trim();
+    return SingleChildScrollView(
+      padding: const EdgeInsets.only(bottom: 32),
+      child: Column(
+        children: <Widget>[
+          // ── Header banner ──────────────────────────────────────────────────
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.fromLTRB(20, 28, 20, 32),
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: <Color>[Color(0xFF7A45D8), Color(0xFFE4528C)],
               ),
-              child: Center(
-                child: Text(
-                  _user.initials,
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(32),
+                bottomRight: Radius.circular(32),
+              ),
+            ),
+            child: Column(
+              children: <Widget>[
+                Container(
+                  width: 86,
+                  height: 86,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white.withValues(alpha: 0.20),
+                    border: Border.all(
+                      color: Colors.white.withValues(alpha: 0.55),
+                      width: 2.5,
+                    ),
+                  ),
+                  child: Center(
+                    child: Text(
+                      _user.initials,
+                      style: GoogleFonts.epilogue(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontWeight: FontWeight.w800,
+                        height: 1,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 14),
+                Text(
+                  fullName,
                   style: GoogleFonts.epilogue(
                     color: Colors.white,
-                    fontSize: 26,
-                    fontWeight: FontWeight.w700,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 0,
                   ),
                 ),
-              ),
-            ),
-            const SizedBox(height: 12),
-            Text(
-              '${_user.firstName} ${_user.lastName}'.trim(),
-              style: GoogleFonts.epilogue(
-                color: const Color(0xFF1A1A2E),
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-            Text(
-              _user.email,
-              style: GoogleFonts.epilogue(
-                color: const Color(0xFF8A8A9A),
-                fontSize: 13,
-              ),
-            ),
-            const SizedBox(height: 32),
-            // TODO: full profile layout coming soon
-            SizedBox(
-              width: double.infinity,
-              height: 50,
-              child: ElevatedButton.icon(
-                onPressed: _logoutLoading ? null : _onLogoutPressed,
-                icon: _logoutLoading
-                    ? const SizedBox(
-                        width: 18,
-                        height: 18,
-                        child: CircularProgressIndicator(
-                          strokeWidth: 2,
-                          color: Colors.white,
-                        ),
-                      )
-                    : const Icon(Icons.logout_rounded, size: 20),
-                label: Text(
-                  _logoutLoading ? 'Logging out...' : 'Log Out',
+                const SizedBox(height: 4),
+                Text(
+                  _user.email,
                   style: GoogleFonts.epilogue(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w700,
+                    color: Colors.white.withValues(alpha: 0.80),
+                    fontSize: 13,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFE63A42),
-                  foregroundColor: Colors.white,
-                  disabledBackgroundColor:
-                      const Color(0xFFE63A42).withValues(alpha: 0.55),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                  elevation: 0,
-                ),
-              ),
+              ],
             ),
-          ],
-        ),
+          ),
+
+          const SizedBox(height: 24),
+
+          // ── Profile information section ────────────────────────────────────
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  'PROFILE INFORMATION',
+                  style: GoogleFonts.epilogue(
+                    color: const Color(0xFF9090A8),
+                    fontSize: 11,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 0.8,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(16),
+                    boxShadow: <BoxShadow>[
+                      BoxShadow(
+                        color: const Color(0xFF7A45D8).withValues(alpha: 0.08),
+                        blurRadius: 16,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    children: <Widget>[
+                      _ProfileInfoRow(
+                        icon: Icons.person_outline_rounded,
+                        label: 'FULL NAME',
+                        value: fullName.isEmpty ? '—' : fullName,
+                        isFirst: true,
+                      ),
+                      _ProfileInfoRow(
+                        icon: Icons.mail_outline_rounded,
+                        label: 'EMAIL ADDRESS',
+                        value: _user.email.isEmpty ? '—' : _user.email,
+                      ),
+                      _ProfileInfoRow(
+                        icon: Icons.phone_outlined,
+                        label: 'PHONE NUMBER',
+                        value: _user.displayPhone,
+                      ),
+                      _ProfileInfoRow(
+                        icon: Icons.transgender_rounded,
+                        label: 'GENDER',
+                        value: _user.displayGender,
+                      ),
+                      _ProfileInfoRow(
+                        icon: Icons.calendar_today_outlined,
+                        label: 'BIRTHDATE',
+                        value: _user.displayDob,
+                      ),
+                      _ProfileInfoRow(
+                        icon: Icons.location_on_outlined,
+                        label: 'LOCATION',
+                        value: (_user.shippingAddress == null || _user.shippingAddress!.isEmpty) ? '—' : _user.shippingAddress!,
+                        isLast: true,
+                      ),
+                    ],
+                  ),
+                ),
+
+
+                const SizedBox(height: 32),
+
+                // ── Logout button ──────────────────────────────────────────
+                SizedBox(
+                  width: double.infinity,
+                  height: 52,
+                  child: ElevatedButton.icon(
+                    onPressed: _logoutLoading ? null : _onLogoutPressed,
+                    icon: _logoutLoading
+                        ? const SizedBox(
+                            width: 18,
+                            height: 18,
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2,
+                              color: Colors.white,
+                            ),
+                          )
+                        : const Icon(Icons.logout_rounded, size: 20),
+                    label: Text(
+                      _logoutLoading ? 'Logging out...' : 'Log Out',
+                      style: GoogleFonts.epilogue(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFFE63A42),
+                      foregroundColor: Colors.white,
+                      disabledBackgroundColor:
+                          const Color(0xFFE63A42).withValues(alpha: 0.55),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                      elevation: 0,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
 
   Future<void> _onLogoutPressed() async {
+    final bool? confirmed = await showDialog<bool>(
+      context: context,
+      builder: (BuildContext ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        backgroundColor: Colors.white,
+        title: Text(
+          'Log Out?',
+          style: GoogleFonts.epilogue(
+            color: const Color(0xFF1A1A2E),
+            fontSize: 18,
+            fontWeight: FontWeight.w800,
+          ),
+        ),
+        content: Text(
+          'Logging out will require you to enter your credentials again and will reset your PIN and biometric settings.',
+          style: GoogleFonts.epilogue(
+            color: const Color(0xFF5A5A7A),
+            fontSize: 14,
+            height: 1.5,
+          ),
+        ),
+        actionsPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+        actions: <Widget>[
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () => Navigator.of(ctx).pop(true),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFFE63A42),
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                elevation: 0,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+              ),
+              child: Text(
+                'Yes, Log Out',
+                style: GoogleFonts.epilogue(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
+          SizedBox(
+            width: double.infinity,
+            child: TextButton(
+              onPressed: () => Navigator.of(ctx).pop(false),
+              style: TextButton.styleFrom(
+                foregroundColor: const Color(0xFF7A45D8),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                  side: const BorderSide(color: Color(0xFFE0DAF5)),
+                ),
+                padding: const EdgeInsets.symmetric(vertical: 14),
+              ),
+              child: Text(
+                'Cancel',
+                style: GoogleFonts.epilogue(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    if (confirmed != true) return;
+
     setState(() => _logoutLoading = true);
     await AuthService.logout();
     if (!mounted) return;
@@ -843,6 +1022,80 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
           ),
         ),
       ),
+    );
+  }
+}
+
+// ── Profile info row ──────────────────────────────────────────────────────────
+class _ProfileInfoRow extends StatelessWidget {
+  const _ProfileInfoRow({
+    required this.icon,
+    required this.label,
+    required this.value,
+    this.isFirst = false,
+    this.isLast = false,
+  });
+
+  final IconData icon;
+  final String label;
+  final String value;
+  final bool isFirst;
+  final bool isLast;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        if (!isFirst)
+          const Divider(height: 1, thickness: 1, color: Color(0xFFF0EEF8)),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 14, 12, 14),
+          child: Row(
+            children: <Widget>[
+              Container(
+                width: 36,
+                height: 36,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFF0EEF8),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Icon(icon, size: 18, color: const Color(0xFF7A45D8)),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      label,
+                      style: GoogleFonts.epilogue(
+                        color: const Color(0xFF9090A8),
+                        fontSize: 10,
+                        fontWeight: FontWeight.w600,
+                        letterSpacing: 0.5,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      value,
+                      style: GoogleFonts.epilogue(
+                        color: const Color(0xFF1A1A2E),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: Color(0xFFCCCCDD),
+                size: 20,
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
