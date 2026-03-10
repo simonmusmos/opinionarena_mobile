@@ -56,6 +56,7 @@ class OpinionArenaHomeScreen extends StatefulWidget {
 }
 
 class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   int _selectedTab = 0;
   int _surveySubTab = 0;
   bool _logoutLoading = false;
@@ -75,7 +76,9 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor: const Color(0xFFF7F5FF),
+      drawer: _buildDrawer(),
       body: SafeArea(
         child: Column(
           children: <Widget>[
@@ -116,7 +119,20 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
       padding: const EdgeInsets.fromLTRB(16, 12, 16, 4),
       child: Row(
         children: <Widget>[
-          const Icon(Icons.menu_rounded, color: Color(0xFF4A4A6A), size: 26),
+          GestureDetector(
+            onTap: () => _scaffoldKey.currentState?.openDrawer(),
+            child: Container(
+              width: 40,
+              height: 40,
+              decoration: BoxDecoration(
+                color: const Color(0xFFF0EEF8),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const Center(
+                child: Icon(Icons.menu_rounded, color: Color(0xFF7A45D8), size: 22),
+              ),
+            ),
+          ),
           const SizedBox(width: 12),
           Expanded(
             child: _selectedTab == 1
@@ -964,6 +980,210 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
         builder: (_) => const OpinionArenaLoginScreen(),
       ),
       (Route<dynamic> route) => false,
+    );
+  }
+
+  // ── Drawer ─────────────────────────────────────────────────────────────────
+  Widget _buildDrawer() {
+    final String fullName = '${_user.firstName} ${_user.lastName}'.trim();
+    return Drawer(
+      width: 288,
+      backgroundColor: Colors.white,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(24),
+          bottomRight: Radius.circular(24),
+        ),
+      ),
+      child: Column(
+        children: <Widget>[
+          // ── Header ───────────────────────────────────────────────────────
+          Container(
+            width: double.infinity,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: <Color>[Color(0xFF7A45D8), Color(0xFFE4528C)],
+              ),
+              borderRadius: BorderRadius.only(topRight: Radius.circular(24)),
+            ),
+            child: SafeArea(
+              bottom: false,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(20, 20, 16, 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    // Logo + close
+                    Row(
+                      children: <Widget>[
+                        Image.asset('assets/images/header_logo.png',
+                            width: 26, height: 26, fit: BoxFit.contain),
+                        const SizedBox(width: 8),
+                        Text(
+                          'OpinionArena',
+                          style: GoogleFonts.epilogue(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                        const Spacer(),
+                        GestureDetector(
+                          onTap: () => Navigator.of(context).pop(),
+                          child: Container(
+                            padding: const EdgeInsets.all(6),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.15),
+                              shape: BoxShape.circle,
+                            ),
+                            child: const Icon(Icons.close_rounded,
+                                color: Colors.white, size: 14),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 20),
+                    // User info
+                    Row(
+                      children: <Widget>[
+                        Container(
+                          width: 48, height: 48,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.white.withValues(alpha: 0.2),
+                            border: Border.all(
+                                color: Colors.white.withValues(alpha: 0.5),
+                                width: 2),
+                          ),
+                          child: Center(
+                            child: Text(
+                              _user.initials,
+                              style: GoogleFonts.epilogue(
+                                color: Colors.white,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w800,
+                                height: 1,
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                fullName,
+                                style: GoogleFonts.epilogue(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                                overflow: TextOverflow.ellipsis,
+                              ),
+                              const SizedBox(height: 4),
+                              Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: <Widget>[
+                                  const Icon(Icons.star_rounded,
+                                      size: 12, color: Color(0xFFFFD166)),
+                                  const SizedBox(width: 4),
+                                  Text(
+                                    '${_formatPoints(_user.points)} Points',
+                                    style: GoogleFonts.epilogue(
+                                      color: const Color(0xFFFFD166),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          // ── Menu items ────────────────────────────────────────────────────
+          Expanded(
+            child: ListView(
+              padding: const EdgeInsets.fromLTRB(0, 12, 0, 8),
+              children: <Widget>[
+                _DrawerItem(
+                  icon: Icons.home_rounded,
+                  label: 'Home',
+                  selected: _selectedTab == 0,
+                  onTap: () { setState(() => _selectedTab = 0); Navigator.of(context).pop(); },
+                ),
+                _DrawerItem(
+                  icon: Icons.assignment_outlined,
+                  label: 'Surveys',
+                  selected: _selectedTab == 1,
+                  onTap: () { setState(() => _selectedTab = 1); Navigator.of(context).pop(); },
+                ),
+                _DrawerItem(
+                  icon: Icons.card_giftcard_outlined,
+                  label: 'Rewards',
+                  selected: _selectedTab == 2,
+                  onTap: () { setState(() => _selectedTab = 2); Navigator.of(context).pop(); },
+                ),
+                _DrawerItem(
+                  icon: Icons.emoji_events_outlined,
+                  label: 'Win Prizes',
+                  onTap: () => Navigator.of(context).pop(),
+                ),
+                _DrawerItem(
+                  icon: Icons.group_add_outlined,
+                  label: 'Invite Friends',
+                  onTap: () => Navigator.of(context).pop(),
+                ),
+                _DrawerItem(
+                  icon: Icons.redeem_outlined,
+                  label: 'My Rewards',
+                  onTap: () => Navigator.of(context).pop(),
+                ),
+                _DrawerItem(
+                  icon: Icons.person_outline_rounded,
+                  label: 'My Profile',
+                  selected: _selectedTab == 3,
+                  onTap: () { setState(() => _selectedTab = 3); Navigator.of(context).pop(); },
+                ),
+                _DrawerItem(
+                  icon: Icons.help_outline_rounded,
+                  label: 'Support / FAQ',
+                  onTap: () => Navigator.of(context).pop(),
+                ),
+              ],
+            ),
+          ),
+
+          // ── Bottom ────────────────────────────────────────────────────────
+          const Divider(height: 1, thickness: 1, color: Color(0xFFF0EDF8)),
+          _DrawerItem(
+            icon: Icons.settings_outlined,
+            label: 'My Account',
+            showChevron: false,
+            onTap: () { setState(() => _selectedTab = 3); Navigator.of(context).pop(); },
+          ),
+          _DrawerItem(
+            icon: Icons.logout_rounded,
+            label: 'Log Out',
+            iconColor: const Color(0xFFE4528C),
+            labelColor: const Color(0xFFE4528C),
+            iconBg: const Color(0xFFFFEEF3),
+            showChevron: false,
+            onTap: () { Navigator.of(context).pop(); _onLogoutPressed(); },
+          ),
+          const SizedBox(height: 16),
+        ],
+      ),
     );
   }
 
@@ -1840,6 +2060,97 @@ class _CompletedSurveyCard extends StatelessWidget {
             ),
           ],
         ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Drawer menu item ──────────────────────────────────────────────────────────
+class _DrawerItem extends StatelessWidget {
+  const _DrawerItem({
+    required this.icon,
+    required this.label,
+    required this.onTap,
+    this.selected = false,
+    this.showChevron = true,
+    this.iconColor,
+    this.labelColor,
+    this.iconBg,
+  });
+
+  final IconData icon;
+  final String label;
+  final bool selected;
+  final bool showChevron;
+  final Color? iconColor;
+  final Color? labelColor;
+  final Color? iconBg;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final bool custom = iconColor != null;
+    final Color labelCol =
+        labelColor ?? (selected ? const Color(0xFF7A45D8) : const Color(0xFF1A1A2E));
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        splashColor: const Color(0xFF7A45D8).withValues(alpha: 0.06),
+        highlightColor: const Color(0xFF7A45D8).withValues(alpha: 0.03),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          color: selected
+              ? const Color(0xFF7A45D8).withValues(alpha: 0.06)
+              : Colors.transparent,
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+          child: Row(
+            children: <Widget>[
+              // Icon container
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 200),
+                width: 34,
+                height: 34,
+                decoration: BoxDecoration(
+                  color: custom ? iconBg : (selected ? null : const Color(0xFFF0EEF8)),
+                  gradient: (!custom && selected)
+                      ? const LinearGradient(
+                          colors: <Color>[Color(0xFF7A45D8), Color(0xFFE4528C)],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                        )
+                      : null,
+                  borderRadius: BorderRadius.circular(9),
+                ),
+                child: Icon(
+                  icon,
+                  size: 17,
+                  color: custom
+                      ? iconColor
+                      : (selected ? Colors.white : const Color(0xFF6E6E8E)),
+                ),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Text(
+                  label,
+                  style: GoogleFonts.epilogue(
+                    color: labelCol,
+                    fontSize: 14,
+                    fontWeight: selected ? FontWeight.w700 : FontWeight.w400,
+                  ),
+                ),
+              ),
+              if (showChevron)
+                Icon(
+                  Icons.chevron_right_rounded,
+                  size: 17,
+                  color: const Color(0xFFD0D0E0),
+                ),
+            ],
+          ),
         ),
       ),
     );
