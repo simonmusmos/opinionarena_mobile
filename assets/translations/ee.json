@@ -1,0 +1,3033 @@
+{
+  "campaign": {
+    "hero": {
+      "country": "Eestis",
+      "market-research": "Turu-Uuringute",
+      "panel": "MinuArvamusega",
+      "powered-by": "Haldab {company} Tegevus on GDPR-iga kooskõlas",
+      "subtitle": "Liitu {panel}, usaldusväärse turu-uuringute paneeliga {country}",
+      "title": "Liituge {market_research} Paneeliga"
+    },
+    "how-it-works": {
+      "step1": "Liitu",
+      "step2": "Täida küsitlusi",
+      "step3": "Teeni kinkekaarte",
+      "title": "Kuidas see töötab?"
+    },
+    "registration": {
+      "submit": "Registreeru",
+      "title": "Alustame",
+      "verify": "Kinnita"
+    },
+    "trust": {
+      "statement1": "Ei mingit rämpsposti",
+      "statement2": "Ei mingeid müügikõnesid",
+      "statement3": "Andmeid kasutatakse ainult turu-uuringute eesmärgil",
+      "statement4": "Hallatud tunnustatud turu-uuringufirma poolt"
+    }
+  },
+  "captcha": {
+    "verify": {
+      "loading": "Kinnitamine...",
+      "success": "Kinnitatud!"
+    }
+  },
+  "cookie-consent": {
+    "button": {
+      "agree": "Nõustun",
+      "manage": "Halda küpsiseid",
+      "more-info": "Rohkem infot"
+    },
+    "label": {
+      "analytics": "Analüütika",
+      "essential": "Tingimata vajalikud",
+      "third-party": "Kolmandate isikute küpsised"
+    },
+    "message": {
+      "must-agree": "Meile küpsiste kasutamiseks nõusoleku andmiseks klõpsa allpool nuppu \"Nõustun\"."
+    },
+    "subtitle": "Sellel lehel mistahes lingil klõpsates annad meile nõusoleku küpsiste kasutamiseks. {0}",
+    "title": "Kasutame sellel saidil küpsiseid teie kasutajakogemuse parandamise eesmärgil."
+  },
+  "country": {
+    "ae": "Araabia Ühendemiraadid",
+    "al": "Albaania",
+    "ar": "Argentiina",
+    "at": "Austria",
+    "au": "Austraalia",
+    "az": "Aserbaidžaan",
+    "ba": "Bosnia ja Hertsegoviina",
+    "bd": "Bangladesh",
+    "be": "Belgia",
+    "bg": "Bulgaaria",
+    "bn": "Brunei",
+    "bo": "Boliivia",
+    "br": "Brasilia",
+    "by": "Valgevene",
+    "ca": "Kanada",
+    "ch": "Šveits",
+    "ci": "Côte d’Ivoire",
+    "cn": "Hiina",
+    "co": "Colombia",
+    "cr": "Costa Rica",
+    "cu": "Kuuba",
+    "cy": "Küpros",
+    "cz": "Tšehhi",
+    "de": "Saksamaa",
+    "dk": "Taani",
+    "do": "Dominikaani Vabariik",
+    "dz": "Alžeeria",
+    "ec": "Ecuador",
+    "ee": "Eesti",
+    "eg": "Egiptus",
+    "es": "Hispaania",
+    "fi": "Soome",
+    "fr": "Prantsusmaa",
+    "gb": "Ühendkuningriik",
+    "gh": "Ghana",
+    "gr": "Kreeka",
+    "gt": "Guatemala",
+    "hk": "Hongkong",
+    "hn": "Honduras",
+    "hr": "Horvaatia",
+    "hu": "Ungari",
+    "id": "Indoneesia",
+    "ie": "Iirimaa",
+    "il": "Iisrael",
+    "in": "India",
+    "is": "Island",
+    "it": "Itaalia",
+    "jp": "Jaapan",
+    "ke": "Keenia",
+    "kh": "Kambodža",
+    "kr": "Lõuna-Korea",
+    "kw": "Kuveit",
+    "kz": "Kasahstan",
+    "lb": "Liibanon",
+    "lt": "Leedu",
+    "lu": "Luksemburg",
+    "lv": "Läti",
+    "ma": "Maroko",
+    "mc": "Monaco",
+    "md": "Moldova",
+    "me": "Montenegro",
+    "mk": "Põhja-Makedoonia",
+    "mt": "Malta",
+    "mx": "Mehhiko",
+    "my": "Malaisia",
+    "ng": "Nigeeria",
+    "ni": "Nicaragua",
+    "nl": "Madalmaad",
+    "no": "Norra",
+    "nz": "Uus-Meremaa",
+    "pa": "Panama",
+    "pe": "Peruu",
+    "pg": "Paapua Uus-Guinea",
+    "ph": "Filipiinid",
+    "pk": "Pakistan",
+    "pl": "Poola",
+    "pr": "Puerto Rico",
+    "pt": "Portugal",
+    "py": "Paraguay",
+    "qa": "Katar",
+    "ro": "Rumeenia",
+    "rs": "Serbia",
+    "ru": "Venemaa",
+    "sa": "Saudi Araabia",
+    "se": "Rootsi",
+    "sg": "Singapur",
+    "si": "Sloveenia",
+    "sk": "Slovakkia",
+    "sn": "Senegal",
+    "th": "Tai",
+    "tr": "Türgi",
+    "tw": "Taiwan",
+    "ua": "Ukraina",
+    "us": "Ameerika Ühendriigid",
+    "uy": "Uruguay",
+    "vn": "Vietnam",
+    "za": "Lõuna-Aafrika"
+  },
+  "country-selection": {
+    "button": "Jätka",
+    "empty": "Ühtegi riiki ei ole saadaval",
+    "field": {
+      "country": {
+        "placeholder": "Otsi riigi või riigikoodi järgi",
+        "title": "Vali keel"
+      }
+    }
+  },
+  "general": {
+    "date": {
+      "month": {
+        "full": {
+          "1": "a",
+          "2": "b",
+          "3": "c",
+          "4": "l",
+          "5": "mai",
+          "6": "juuni",
+          "7": "juuli",
+          "8": "august",
+          "9": "september",
+          "10": "oktoober",
+          "11": "november",
+          "12": "detsember"
+        },
+        "short": {
+          "1": "a",
+          "2": "b",
+          "3": "märts",
+          "4": "apr",
+          "5": "mai",
+          "6": "juuni",
+          "7": "juuli",
+          "8": "aug",
+          "9": "sept",
+          "10": "okt",
+          "11": "nov",
+          "12": "dets"
+        }
+      },
+      "text": "Kuupäev"
+    },
+    "grid": "Võrk",
+    "list": "Nimekiri",
+    "month": {
+      "text": "Kuu"
+    },
+    "year": {
+      "text": "Aasta"
+    }
+  },
+  "head": {
+    "about-us": {
+      "meta": {
+        "description": "Saage rohkem teada Eesti juhtiva veebituru-uuringute paneeli MinuArvamus kohta. Avastage, kuidas me ühendame tarbijad kaubamärkidega. Liituge meie kogukonnaga!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Saage rohkem teada Eesti juhtiva veebituru-uuringute paneeli MinuArvamus kohta. Avastage, kuidas me ühendame tarbijad kaubamärkidega. Liituge meie kogukonnaga!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Saage rohkem teada Eesti juhtiva veebituru-uuringute paneeli MinuArvamus kohta. Avastage, kuidas me ühendame tarbijad kaubamärkidega. Liituge meie kogukonnaga!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char}MinuArvamus"
+      },
+      "title": "MinuArvamuse kohta"
+    },
+    "change-email": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Muuda meiliaadressi {char} MinuArvamus"
+    },
+    "change-password": {
+      "meta": {
+        "description": "MinuArvamus.ee – teenige oma arvamust avaldades raha ja kinkekaarte!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Muuda salasõna {char} MinuArvamus"
+    },
+    "country": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Vali riik {char} MinuArvamus"
+    },
+    "deactivate-account": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Inaktiveeri konto {char} MinuArvamus"
+    },
+    "faq": {
+      "meta": {
+        "description": "Saate vastused korduma kippuvatele küsimustele MinuArvamus kohta. Siit saate teada, kuidas uuringutes osaleda, preemiaid teenida ja palju muud. Abi leiate siit!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Saate vastused korduma kippuvatele küsimustele MinuArvamus kohta. Siit saate teada, kuidas uuringutes osaleda, preemiaid teenida ja palju muud. Abi leiate siit!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Saate vastused korduma kippuvatele küsimustele MinuArvamus kohta. Siit saate teada, kuidas uuringutes osaleda, preemiaid teenida ja palju muud. Abi leiate siit!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Korduma kippuvad küsimused {char} MinuArvamus"
+    },
+    "forgot-password": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Unustasin salasõna {char} MinuArvamus"
+    },
+    "get-started": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Kuidas teenida Eestis veebiküsitlusele vastates raha"
+    },
+    "home": {
+      "meta": {
+        "description": "Avastage MinuArvamus.ee – teie värav tasuliste veebiküsitluste ja turu-uuringute juurde. Teenige oma arvamuste jagamise eest raha ja kinkekaarte. Liituge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Avastage MinuArvamus.ee – teie värav tasuliste veebiküsitluste ja turu-uuringute juurde. Teenige oma arvamuste jagamise eest raha ja kinkekaarte. Liituge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Avastage MinuArvamus.ee – teie värav tasuliste veebiküsitluste ja turu-uuringute juurde. Teenige oma arvamuste jagamise eest raha ja kinkekaarte. Liituge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Tasustatavad veebiküsitlused Eestis {char} Võimalus kodus raha teenida"
+    },
+    "human": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Turvakontroll {char} MinuArvamus"
+    },
+    "invite-friends": {
+      "meta": {
+        "description": "Saage rohkem teada Filipiinide juhtiva veebituru-uuringute paneeli MinuArvamus kohta. Avastage, kuidas me ühendame tarbijad kaubamärkidega. Liituge meie kogukonnaga!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Saage rohkem teada Filipiinide juhtiva veebituru-uuringute paneeli MinuArvamus kohta. Avastage, kuidas me ühendame tarbijad kaubamärkidega. Liituge meie kogukonnaga!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Saage rohkem teada Filipiinide juhtiva veebituru-uuringute paneeli MinuArvamus kohta. Avastage, kuidas me ühendame tarbijad kaubamärkidega. Liituge meie kogukonnaga!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Kutsu sõpru"
+    },
+    "login": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Logi sisse {char} MinuArvamus"
+    },
+    "lotteries": {
+      "meta": {
+        "description": "Osalege MinuArvamus'l põnevates loosimistes ja võitke suurepäraseid auhindu! Osalege küsitlustes, teenige osaluskordi ja suurendage oma võiduvõimalusi. Liituge meie tasuta loosimisega juba täna!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Osalege MinuArvamus'l põnevates loosimistes ja võitke suurepäraseid auhindu! Osalege küsitlustes, teenige osaluskordi ja suurendage oma võiduvõimalusi. Liituge meie tasuta loosimisega juba täna!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Osalege MinuArvamus'l põnevates loosimistes ja võitke suurepäraseid auhindu! Osalege küsitlustes, teenige osaluskordi ja suurendage oma võiduvõimalusi. Liituge meie tasuta loosimisega juba täna!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Võida auhindu {char} MinuArvamus"
+    },
+    "meta": {
+      "common": {
+        "description": {
+          "about-us": "Lisateave Eesti juhtiva veebipõhise turu-uuringute paneeli kohta. Vaata, kuidas me tarbijaid ja brände kokku viime. Liitu meie kogukonnaga!",
+          "faq": "Loe vastuseid korduma kippuvatele küsimustele MinuArvamus kohta. Uuri, kuidas küsitlustes osaleda, kingitusi teenida ja muud. Abi leiad siit!",
+          "generic": "Liitu veebisaidiga MinuArvamus.ee ning teeni raha ja kinkekaarte veebiküsitlustes ja turu-uuringutes osalemise eest. Avalda arvamust ja mõjuta brände. Registreeru kohe!",
+          "get-started": "Vaata, kui lihtne on MinuArvamus veebiküsitlustega raha teenida. Uuri, kuidas mõne lihtsa sammuga registreeruda, osaleda ja kingitusi teenima hakata.",
+          "home": "Liitu MinuArvamusga ja teeni Eestis veebiküsitlustele vastates raha. Avalda arvamust, teeni raha või kinkekaarte ja hakka juba täna oma kodus tööle!",
+          "lotteries": "Osale MinuArvamus põnevatel loosimistel ja võida vägevaid auhindu! Osale küsitlustes, teeni pileteid ja suurenda oma võiduvõimalusi. Liitu meie tasuta loosimistega!",
+          "my-rewards": "Tutvu MinuArvamus põnevate kingitustega. Vaheta küsitluste punktid rahaks või kinkekaartideks. Vaata, mida saad oma arvamuste eest teenida.",
+          "register": "Registreeru, et töötada MinuArvamus veebiküsitlustega. Liitumine on tasuta, alustada on lihtne ja nii saad veebis arvamust avaldades raha või kingitusi teenida.",
+          "rewards": "Saa tasu küsitluste täitmise eest! Teeni punkte, mille eest saad lunastada kinkekaarte, raha ja muud. Vaata, mida saad MinuArvamusga Eestis teenida.",
+          "support": "Otsi abi MinuArvamus veebiküsitluste ja kingituste kohta. Loe vastuseid sagedasematele küsimustele, lahenda probleeme ja võta ühendust meie kasutajatoega. Meie eesmärk on sind aidata!",
+          "surveys": "Osale MinuArvamus tasustatavates veebiküsitlustes. Avalda arvamust toodete ja teenuste kohta ning teeni kingitusi. Vaata käimas olevaid küsitlusi!"
+        },
+        "keywords": {
+          "generic": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuskingitused, tasustatavad küsitlused, kinkekaardid, turu-uuringud Eestis, tarbijate järeldused, veebipaneel, vastaja kingitused, veebis raha teenimine",
+          "rewards": "küsitlused kinkekaartide eest"
+        },
+        "title": {
+          "generic": "Teenige oma arvamust avaldades raha ja kinkekaarte! {char} MinuArvamus",
+          "get-started": "Kuidas teenida Eestis veebiküsitlusele vastates raha",
+          "home": "Tasustatavad veebiküsitlused Eestis {char} Võimalus kodus raha teenida",
+          "register": "Registreeru ja vasta Eestis tasu eest veebiküsitlustele {char} Tasuta registreerimine",
+          "rewards": "Vastaja kingitused: teeni arvamuse avaldamise eest kinkekaarte ja raha"
+        }
+      }
+    },
+    "more-about-me": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Rohkem minu kohta {char} MinuArvamus"
+    },
+    "my-account": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Minu konto {char} MinuArvamus"
+    },
+    "my-page": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Minu leht {char} MinuArvamus"
+    },
+    "my-profile": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Minu profiil {char} MinuArvamus"
+    },
+    "my-rewards": {
+      "meta": {
+        "description": "Avastage põnevaid auhindu MinuArvamuses. Teisendage oma küsitluspunktid rahaks või kinkekaartideks. Vaadake, mida saate oma arvamustega teenida!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Avastage põnevaid auhindu MinuArvamuses. Teisendage oma küsitluspunktid rahaks või kinkekaartideks. Vaadake, mida saate oma arvamustega teenida!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Avastage põnevaid auhindu MinuArvamuses. Teisendage oma küsitluspunktid rahaks või kinkekaartideks. Vaadake, mida saate oma arvamustega teenida!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Minu auhinnad {char} MinuArvamus"
+    },
+    "not-found": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Lehte ei leitud {char} MinuArvamus"
+    },
+    "privacy": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Privaatsuspoliitika {char} MinuArvamus"
+    },
+    "reactivate-account": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Aktiveeri konto uuesti {char} MinuArvamus"
+    },
+    "register": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Registreeri {char} MinuArvamus"
+    },
+    "reward": {
+      "meta": {
+        "description": "Avastage põnevaid auhindu MinuArvamuses. Teisendage oma küsitluspunktid rahaks või kinkekaartideks. Vaadake, mida saate oma arvamustega teenida!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Avastage põnevaid auhindu MinuArvamuses. Teisendage oma küsitluspunktid rahaks või kinkekaartideks. Vaadake, mida saate oma arvamustega teenida!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Avastage põnevaid auhindu MinuArvamuses. Teisendage oma küsitluspunktid rahaks või kinkekaartideks. Vaadake, mida saate oma arvamustega teenida!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "{title} {char} MinuArvamus"
+    },
+    "rewards": {
+      "meta": {
+        "description": "Avastage põnevaid auhindu MinuArvamuses. Teisendage oma küsitluspunktid rahaks või kinkekaartideks. Vaadake, mida saate oma arvamustega teenida!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Avastage põnevaid auhindu MinuArvamuses. Teisendage oma küsitluspunktid rahaks või kinkekaartideks. Vaadake, mida saate oma arvamustega teenida!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Avastage põnevaid auhindu MinuArvamuses. Teisendage oma küsitluspunktid rahaks või kinkekaartideks. Vaadake, mida saate oma arvamustega teenida!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Auhinnad {char} MinuArvamus"
+    },
+    "support": {
+      "meta": {
+        "description": "Saage abi MinuArvamus veebiküsitluste ja preemiatega. Otsige vastuseid levinud küsimustele, lahendage probleeme ja võtke ühendust meie tugitiimiga. Oleme siin, et teid aidata!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Saage abi MinuArvamus veebiküsitluste ja preemiatega. Otsige vastuseid levinud küsimustele, lahendage probleeme ja võtke ühendust meie tugitiimiga. Oleme siin, et teid aidata!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Saage abi MinuArvamus veebiküsitluste ja preemiatega. Otsige vastuseid levinud küsimustele, lahendage probleeme ja võtke ühendust meie tugitiimiga. Oleme siin, et teid aidata!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Kasutajatugi {char} MinuArvamus"
+    },
+    "support-request": {
+      "meta": {
+        "description": "Saage vastused korduma kippuvatele küsimustele MinuArvamus kohta. Õppige, kuidas küsitlustes osaleda, auhindu teenida ja rohkem. Saage siit abi!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Saage vastused korduma kippuvatele küsimustele MinuArvamus kohta. Õppige, kuidas küsitlustes osaleda, auhindu teenida ja rohkem. Saage siit abi!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Saage vastused korduma kippuvatele küsimustele MinuArvamus kohta. Õppige, kuidas küsitlustes osaleda, auhindu teenida ja rohkem. Saage siit abi!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Kasutajatoe taotlus nr {number} {char} MinuArvamus"
+    },
+    "support-requests": {
+      "meta": {
+        "description": "Saage vastused korduma kippuvatele küsimustele MinuArvamus kohta. Õppige, kuidas küsitlustes osaleda, auhindu teenida ja rohkem. Saage siit abi!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Saage vastused korduma kippuvatele küsimustele MinuArvamus kohta. Õppige, kuidas küsitlustes osaleda, auhindu teenida ja rohkem. Saage siit abi!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Saage vastused korduma kippuvatele küsimustele MinuArvamus kohta. Õppige, kuidas küsitlustes osaleda, auhindu teenida ja rohkem. Saage siit abi!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Kasutajatoe taotlused {char} MinuArvamus"
+    },
+    "support-topic": {
+      "meta": {
+        "description": "Saage abi MinuArvamus veebiküsitluste ja auhindadega. Leidke vastused levinud küsimustele, lahendage probleemid ja võtke ühendust meie tugitiimiga. Me oleme siin, et aidata!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Saage abi MinuArvamus veebiküsitluste ja auhindadega. Leidke vastused levinud küsimustele, lahendage probleemid ja võtke ühendust meie tugitiimiga. Me oleme siin, et aidata!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Saage abi MinuArvamus veebiküsitluste ja auhindadega. Leidke vastused levinud küsimustele, lahendage probleemid ja võtke ühendust meie tugitiimiga. Me oleme siin, et aidata!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "{title} {char} MinuArvamus"
+    },
+    "survey": {
+      "meta": {
+        "description": "Osalege MinuArvamuse tasulistes veebiküsitlustes. Jagage oma mõtteid toodete ja teenuste kohta ning teenige auhindu. Leidke saadaolevad küsitlused nüüd!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Osalege MinuArvamuse tasulistes veebiküsitlustes. Jagage oma mõtteid toodete ja teenuste kohta ning teenige auhindu. Leidke saadaolevad küsitlused nüüd!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Osalege MinuArvamuse tasulistes veebiküsitlustes. Jagage oma mõtteid toodete ja teenuste kohta ning teenige auhindu. Leidke saadaolevad küsitlused nüüd!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Küsitlus {char} MinuArvamus"
+    },
+    "surveys": {
+      "meta": {
+        "description": "Osalege MinuArvamuse tasulistes veebiküsitlustes. Jagage oma mõtteid toodete ja teenuste kohta ning teenige auhindu. Leidke saadaolevad küsitlused nüüd!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Osalege MinuArvamuse tasulistes veebiküsitlustes. Jagage oma mõtteid toodete ja teenuste kohta ning teenige auhindu. Leidke saadaolevad küsitlused nüüd!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Osalege MinuArvamuse tasulistes veebiküsitlustes. Jagage oma mõtteid toodete ja teenuste kohta ning teenige auhindu. Leidke saadaolevad küsitlused nüüd!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Küsitlused {char} MinuArvamus"
+    },
+    "terms": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Kasutustingimused {char} MinuArvamus"
+    },
+    "verify-change-email": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Meiliaadressi muutmise kinnitamine {char} MinuArvamus"
+    },
+    "verify-email": {
+      "meta": {
+        "description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "keywords": "veebiküsitlused, turu-uuringud, tarbijapaneel, arvamuspreemiad, tasulised küsitlused, kinkekaardid, turu-uuring Eestis, tarbijate statistika, veebipaneel, küsitluspreemiad, veebis raha teenimine",
+        "og-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "og-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus",
+        "twitter-description": "Liituge veebisaidiga MinuArvamus.ee ning teenige raha ja kinkekaarte, osaledes veebiküsitlustes ja turu-uuringutes. Jagage oma arvamust ja mõjutage kaubamärke. Registreeruge kohe!",
+        "twitter-title": "Teenige raha ja kinkekaarte oma arvamust avaldades! {char} MinuArvamus"
+      },
+      "title": "Meiliaadressi kinnitamine {char} MinuArvamus"
+    }
+  },
+  "logout": {
+    "confirm": {
+      "button": {
+        "cancel": "Tühista",
+        "submit": "Logi välja"
+      },
+      "subtitle": "Seanss lõpeb {0} sekundi pärast. Kas oled kindel, et soovid välja logida?",
+      "title": "Kinnita väljalogimine"
+    }
+  },
+  "lotteries": {
+    "button": {
+      "empty": "Ava loosimiste leht",
+      "read-less": "Vähem",
+      "read-more": "Rohkem",
+      "view-all": "Vaata kõiki loosimisi"
+    },
+    "empty": {
+      "data": "Loosimisi ei ole",
+      "data-active": "Aktiivseid loosimisi ei ole",
+      "data-filtered": "Ei ole {0} loosimist"
+    },
+    "filter": {
+      "active": "Aktiivsed",
+      "all": "Kõik",
+      "history": "Ajalugu",
+      "last-year": "Eelmine aasta",
+      "this-year": "See aasta"
+    },
+    "item": {
+      "description": "Võitja loositakse välja kõigi meie liikmete vahel, kes osalesid aasta {year} jooksul vähemalt ühes küsitluses. Mida rohkemates uuringutes oled osalenud, seda suurem on sinu võiduvõimalus. Võitja loositakse välja järgmise aasta veebruaris, kui kõik aasta jooksul antud vastused on üle vaadatud. Võitja avaldame meie kodulehel ja teavitame sellest ka meili teel."
+    },
+    "label": {
+      "amount": "Auhind",
+      "id": "Ei. L{0}",
+      "sort-by": "Sorteerimisalus",
+      "tickets": "Teil on {0} piletit",
+      "winner": "Võitja"
+    },
+    "login-for-points": {
+      "button": "Logi sisse",
+      "description": "Logi sisse, et näha, mitu piletit sul on.",
+      "title": "Sisselogimine nõutav"
+    },
+    "subtitle1": "Lisaks küsitlustele vastamise eest punktide teenimisele osaled automaatselt ka meie iga-aastases loosimises. Sinu võiduvõimalus suureneb iga küsitlusega, milles osaled.",
+    "subtitle2": "Iga täidetud küsitluse eest teenid loosipileti sellel aastal toimuva aastaloosi jaoks. Mida rohkemates uuringutes oled osalenud, seda suuremad on sinu võiduvõimalused.",
+    "title": "Osale loosimistes"
+  },
+  "navigation": {
+    "about-us": "Meist",
+    "change-email": "Muuda e-posti aadressi",
+    "faq": "KKK",
+    "get-started": "Kuidas see toimib",
+    "gifts": "Kingitused ja loosimised",
+    "home": "Kodu",
+    "invite-friends": "Kutsu sõpru",
+    "join": "Liitu ja hakka teenima",
+    "login": "Logi sisse",
+    "logout": "Logi välja",
+    "lotteries": "Võida auhindu",
+    "more-about-me": "Rohkem minu kohta",
+    "my-account": "Minu konto",
+    "my-page": "Minu leht",
+    "my-profile": "Minu profiil",
+    "my-rewards": "Minu kingitused",
+    "privacy": "Privaatsuspoliitika",
+    "register": "Registreeri",
+    "rewards": "Kingitused",
+    "support": "Kasutajatugi",
+    "surveys": "Küsitlused",
+    "terms": "Tingimused",
+    "toggle-sidebar": "Lülita küljeriba"
+  },
+  "opinion-arena": "MinuArvamus",
+  "page": {
+    "about-us": {
+      "button": {
+        "faq": "Loe KKK",
+        "get-started": "Kuidas see toimib"
+      },
+      "description1": "Meie liikmed teenivad küsitlusi täites punkte, mida saab vahetada erinevate toodete ja teenuste vastu, nagu kinkekaardid või annetused heategevuseks.",
+      "description2": "Meiega liituvad inimesed, kellele meeldib avaldada arvamust toodete, teenuste, poliitika ja kaubamärkide kohta. Selle lehe eesmärk ei ole midagi müüa ega reklaamida, vaid üksnes arvamusi ja hoiakuid uurida. Meie partnerettevõtted kasutavad saidi MinuArvamus.ee küsitlustega kogutud teavet uute toodete ja teenuste loomiseks ja arendamiseks.",
+      "subtitle": "{0} pakub sulle võimalust osaleda küsitlustes ja saada selle eest tasu.",
+      "title": "Meist pikemalt"
+    },
+    "change-email": {
+      "button": "Muuda meiliaadressi",
+      "description1": "Sinu praegune meiliaadress on {0}. Seda kasutatakse küsitluste kutsete ja sinu valitud kingituste kohta teabe saatmiseks.",
+      "description2": "Meiliaadressi muutmiseks sisesta allolevale väljale oma uus meiliaadress. Saadame sulle lingi uue meiliaadressi kinnitamiseks.",
+      "field": {
+        "email": {
+          "placeholder": "Sisesta oma meiliaadress",
+          "title": "Meiliaadress",
+          "validation": {
+            "invalid": "Sisesta kehtiv meiliaadress.",
+            "required": "Sisesta oma meiliaadress."
+          }
+        }
+      },
+      "success": {
+        "button": "Saada meil uuesti",
+        "description1": "Saatsime sõnumi sinu meiliaadressile: {0}",
+        "description2": "Kui oled sõnumi kätte saanud, ava see ja klõpsa lingil \"Kinnita meiliaadressi muutmine\".",
+        "title": "E-posti aadressi kinnitus saadetud"
+      },
+      "title": "Muuda meiliaadressi",
+      "verification": {
+        "error": {
+          "button": {
+            "login": "Logi sisse",
+            "request-new": "Uue meili taotlemine"
+          },
+          "description1": "Kahjuks sinu kinnituskood ei kehti või on aegunud. Jätkamiseks taotle uuesti meiliaadressi muutmise linki.",
+          "description2": "Enne jätkamist logi sisse.",
+          "title": "Sinu meiliaadressi ei saa muuta"
+        },
+        "success": {
+          "button": "Logi sisse",
+          "description1": "Sinu uus meiliaadress on {0}. Saadame sellel meiliaadressil sulle kutseid küsitlustes osalemiseks ja teavet sinu valitud kingituste kohta.",
+          "description2": "Enne jätkamist logi sisse.",
+          "title": "Sinu meiliaadress on kinnitatud!"
+        },
+        "title": "Kinnita meiliaadressi muutmine"
+      }
+    },
+    "change-password": {
+      "button": "Määra uus salasõna",
+      "error": {
+        "button": "Taotle uut salasõna",
+        "description": "Kahjuks sinu kinnituskood ei kehti või on aegunud. Jätkamiseks taotle uuesti salasõna muutmise linki.",
+        "title": "Link aegunud"
+      },
+      "field": {
+        "new": {
+          "title": "Uus salasõna",
+          "validation": {
+            "minimum": "Sisesta vähemalt 6 märki.",
+            "required": "Sisesta uus salasõna."
+          }
+        },
+        "verify": {
+          "title": "Korda salasõna",
+          "validation": {
+            "match": "Veendu, et salasõnad kattuvad.",
+            "required": "Sisesta oma salasõna uuesti."
+          }
+        }
+      },
+      "success": {
+        "description1": "Sinu salasõna on muudetud.",
+        "description2": "Jätkamiseks logi sisse."
+      },
+      "title": "Muuda salasõna"
+    },
+    "complete-account": {
+      "birthdate": {
+        "description": "Tere tulemast MinuArvamus uuele veebisaidile! Seoses hiljuti tehtud muudatustega vajame, et sa uuendaksid mõningaid oma andmeid.",
+        "title": "Vali oma sünnipäev"
+      },
+      "gender": {
+        "description": "Tere tulemast MinuArvamus uuele veebisaidile! Seoses hiljuti tehtud muudatustega vajame, et sa uuendaksid mõningaid oma andmeid.",
+        "title": "Vali oma sugu"
+      },
+      "location": {
+        "description": "Tere tulemast MinuArvamus uuele veebisaidile! Seoses hiljuti tehtud muudatustega vajame, et sa uuendaksid mõningaid oma andmeid.",
+        "title": "Lisa oma asukoht"
+      },
+      "name": {
+        "description": "Tere tulemast MinuArvamus uuele veebisaidile! Seoses hiljuti tehtud muudatustega vajame, et sa uuendaksid mõningaid oma andmeid.",
+        "title": "Sisesta oma nimi"
+      }
+    },
+    "deactivate": {
+      "text": "Inaktiveeri / kustuta konto"
+    },
+    "deactivate-account": {
+      "auth": {
+        "button": "Jätka sisselogimisega",
+        "description": "Logige sisse, kui soovite oma konto sulgeda.",
+        "subtitle": "Jätkake konto inaktiveerimisega"
+      },
+      "button": {
+        "deactivate": "Jätkake inaktiveerimisega",
+        "not-now": "Hoidke konto avatuna"
+      },
+      "confirm": {
+        "button": "Inaktiveeri konto",
+        "description": "Aitaks, kui võtaksite hetke ja teeksite valiku allolevate valikute hulgast.",
+        "subtitle": "Enne minemist öelge meile, miks soovite oma konto sulgeda"
+      },
+      "description": "Olete oma kontot ajutiselt inaktiveerimas. Kinnituse andmisel ei saa te meilt enam e-kirju, kuid konto andmeid, ajalugu ja punkte säilitatakse 60 päeva juhuks, kui soovite konto kasutamist edaspidi jätkata.",
+      "field": {
+        "reason": {
+          "validation": {
+            "required": "Sisestage põhjus."
+          }
+        }
+      },
+      "reason": {
+        "inbox-full": "Minu postkast on liiga täis",
+        "not-interested": "Ma ei ole enam huvitatud",
+        "not-relevant": "See sisu ei ole minu jaoks asjakohane",
+        "other": "Muu",
+        "received-too-many": "Ma sain liiga palju neid e-kirju",
+        "spam": "Ma ei ole kunagi selle postiloendiga liitunud"
+      },
+      "subtitle": "Kas olete kindel, et soovite oma konto sulgeda?",
+      "success": {
+        "button": "Aktiveeri konto uuesti",
+        "description": "Meil on kahju, et lahkute. Kui otsustate tagasi tulla, saate oma konto uuesti aktiveerida, logides uuesti sisse enne {date}.",
+        "subtitle": "Teie konto on nüüd suletud"
+      },
+      "title": "Inaktiveeri konto"
+    },
+    "faq": {
+      "button": {
+        "contact": "Võtke meiega ühendust",
+        "terms": "Meie kasutustingimused"
+      },
+      "item1": {
+        "answer1": "MinuArvamus pakub teile võimalust osaleda küsitlustes ja saada selle eest hüvitist. Portaali liikmed teenivad punkte, kui nad täidavad küsitlusi; neid punkte saab vahetada erinevate toodete ja teenuste vastu, nagu kinkekaardid või annetused heategevuseks.",
+        "answer2": "MinuArvamus pakub küsitlusi, mida tellivad institutsioonid, turu-uuringufirmad, suured tootmisettevõtted, reklaamifirmad jne. Hoiame teie isikuandmeid konfidentsiaalsena ega jaga neid kunagi teiste ettevõtetega.",
+        "question": "Milleks MinuArvamus on mõeldud?"
+      },
+      "item10": {
+        "answer": "Kasutage meie lehe paremas ülanurgas olevat sisselogimislinki. Sisestage oma e-posti aadress esimesele väljale ja salasõna teisele väljale. Kui registreerusite oma Facebooki või Google'i kontoga, klõpsake sisselogimiseks vastavat linki.",
+        "question": "Kuidas ma MinuArvamusse sisse login?"
+      },
+      "item11": {
+        "answer": "See võib juhtuda erinevatel põhjustel. Proovige järgmist.",
+        "list-item1": "Veenduge, et kasutate sama e-posti aadressi, millega registreerusite. Võimalik, et kasutasite isikliku e-posti aadressi asemel oma töökoha e-posti aadressi.",
+        "list-item2": "Veenduge, et olete sisestanud õige salasõna. Võib-olla olete seda muutnud või selle unustanud.",
+        "list-item3": "Proovige kasutada sisselogimisaknas linki \"Ma unustasin oma salasõna\". Kui see ei tööta, võtke meiega ühendust.",
+        "question": "Miks ma sisse ei saa logida?"
+      },
+      "item12": {
+        "answer1": "Saate teenida sadu punkte, kui osalete MinuArvamus küsitlustes ja vastate küsimustele oma elustiili ja harjumuste kohta. Teenitud punkte saab vahetada kingituste vastu või kasutada heategevuseks annetamiseks.",
+        "answer2": "Teie vastused aitavad ettevõtetel välja töötada uusi tooteid ja teenuseid. Näiteks võidakse teile esitada küsimusi teie arvamuse kohta uue tootenime, pakendi või maitsega seoses. Ettevõtted kasutavad seda MinuArvamuse liikmetelt saadud kvaliteetset tagasisidet oma otsuste tegemisel.",
+        "question": "Miks osaleda?"
+      },
+      "item13": {
+        "answer1": "Punktide arv sõltub küsitluse pikkusest ja keerukusest ning on märgitud kutses, mis saadetakse liikme e-posti aadressile. Iga küsitluse eest, milles osalete, teenite midagi – punkte või osaluse suures loosimises. Punkte saate teenida ka siis, kui selgub, et teie omadustega isikuid ei ole enam vaja.",
+        "answer2": "Teenitud punktide arv on võrdeline vastatud küsimuste arvuga. Paljudes uuringutes esitatakse erinevate omadustega isikutele erinev arv küsimusi.",
+        "question": "Kui palju punkte saan ma teenida?"
+      },
+      "item14": {
+        "answer": "Kui selgub, et vastaja on küsitlust täites valetanud, võime koostöö koheselt lõpetada. Sellistel juhtudel kaotate kõik juba teenitud punktid ja me sulgeme teie konto.",
+        "question": "Mis juhtub, kui ma valetan või üritan anda ebatäpseid vastuseid?"
+      },
+      "item15": {
+        "answer": "MinuArvamus ja küsitlusfirmad, kelle küsimustikke edastame, on koostanud erinevaid meetodeid võimalike puuduste kontrollimiseks ja mõõtmiseks. Allpool on mõned näited:",
+        "list-item1": {
+          "description": "Näiteks esitasime sama faktilise küsimuse (nt vastaja vanuse kohta) kahes erinevas uuringus. Samuti võime küsitluses esitada sama küsimuse kaks korda – alguses ja lõpus. Kui vastaja annab erinevaid vastuseid, loeme seda piisavaks tõendiks, et ta ei ole vastanud ausalt.",
+          "title": "Vastuolulised vastused"
+        },
+        "list-item2": {
+          "description": "Teame, kui palju aega küsitluse täitmine keskmiselt võtab. Kui vastaja püüab kiiresti ja mõtlemata vastata, täidab ta selle tavaliselt palju kiiremini kui keskmine vastaja.",
+          "title": "Teave edastati liiga kiiresti"
+        },
+        "list-item3": {
+          "description": "Lihtne on kontrollida, kas vastaja on valinud erinevatele küsimustele samad vastusevariandid. Näiteks kõigile küsimustele vastatakse vastusevariantidega A või 1.",
+          "title": "Identsed vastused erinevatele küsimustele"
+        },
+        "list-item4": {
+          "description": "Mõnele küsimusele saab vastata avatud tekstiga. Süsteem tuvastab, kui tekstiväli sisaldab ebajärjekindlat teksti või ainult juhuslikke tähemärke.",
+          "title": "Ebaolulised vastused"
+        },
+        "question": "Kuidas MinuArvamus teab, kas keegi on valetanud või andnud absurdseid vastuseid?"
+      },
+      "item16": {
+        "answer": "Kutsete saamise tõenäosuse suurendamiseks täitke kindlasti oma profiil. Kliendid palkavad meid, et leida osalejaid, kes vastavad teatud kriteeriumidele – näiteks võib küsitluse jaoks olla vaja 30-40-aastaseid vastajaid, kes elavad konkreetses piirkonnas.",
+        "question": "Miks ma ei saa uuringukutseid?"
+      },
+      "item17": {
+        "answer": "Kiirküsitlused on lühikesed küsitlused, mida saab täita kohe pärast MinuArvamusse sisselogimist. Kogutud punktide arv on märgitud küsitluse alguses.",
+        "question": "Mis on kiirküsitlus?"
+      },
+      "item18": {
+        "answer": "Küsitlustulemused on absoluutselt konfidentsiaalsed ja ausus on alati tagatud. Teie isikuandmeid ei avaldata ühelegi uurijale. Mõnikord küsime teie kontaktandmeid järelintervjuu jaoks või toodete testimiseks saatmiseks. Kui nii, võite alati vastamise lõpetada.",
+        "question": "Kas minu vastused hoitakse konfidentsiaalsena?"
+      },
+      "item19": {
+        "answer1": "Turu-uuringud on tõsine valdkond. Kogutud teave mõjutab väga olulisi otsuseid. Selleks, et ettevõtted teeksid õigeid valikuid, peaksid küsitlustes osalejad vastama küsimustele täpselt ja ausalt.",
+        "answer2": "MinuArvamus on vastuste kvaliteedi kontrollimiseks kasutusele võtnud mitmeid tehnikaid ja süsteeme. Kui saame selgeid tõendeid, et vastaja ei ole olnud aus, jätame endale õiguse konto sulgeda ja teenitud punktid kustutada.",
+        "question": "Miks on nii oluline vastata täpselt ja ausalt?"
+      },
+      "item2": {
+        "answer": "Punktid on MinuArvamuse \"valuuta\". Liikmed saavad punkte järgmistel juhtudel.",
+        "list-item1": "Küsitlustes osalemise eest",
+        "list-item2": "Uute liikmete kutsumise eest",
+        "list-item3": "Kiirküsitluste täitmise eest",
+        "list-item4": "Kui olete oma profiili täitnud",
+        "question": "Mille eest punkte antakse?"
+      },
+      "item20": {
+        "answer": "Kui kutsute sõbra või sugulase MinuArvamuse liikmeks, teenite pärast seda, kui teie sõber on läbinud kolm küsitlust, 500 punkti. Lihtsalt veenduge, et olete sisse logitud ja sisestage lehel \"Kutsu sõpru\" oma sõbra nimi ja e-posti aadress, mille leiate meie portaali päises olevast menüüst. Pange tähele, et kaotate saadud punktid, kui selgub, et teie sõber ei anna tõsiseid vastuseid.",
+        "question": "Kuidas ma saan teenida punkte uusi liikmeid kutsudes?"
+      },
+      "item3": {
+        "answer": "MinuArvamuse liikmed teenivad küsitluste täitmisel punkte. Punkte saab vahetada teenuste ja toodete vastu. Saate:",
+        "list-item1": "vahetada punktid erinevate kinkekaartide vastu",
+        "list-item2": "annetada punktid heategevuseks",
+        "question": "Mida saate oma punktidega teha?"
+      },
+      "item4": {
+        "answer": "Ei, MinuArvamuse punktid ei aegu kunagi.",
+        "question": "Kas minu MinuArvamuse punktidel on aegumistähtaeg?"
+      },
+      "item5": {
+        "answer1": "MinuArvamusel on küsitlusplatvorme paljudes Euroopa riikides. Meie omanik on Intra Research. Meie liikmed on 14–75-aastased internetikasutajad. Iga liiget premeeritakse küsimustike täitmise ja oma arvamuse jagamise eest.",
+        "answer2": "MinuArvamus viib läbi küsitlusi toodete, teenuste, poliitika ja bränditeadlikkuse kohta. Oleme huvitatud inimeste arvamusest ja hoiakutest; me ei tegele müügi ega turundusega. Küsitlustes saab osaleda arvuti või mobiiltelefoni kaudu. Meie liikmed valivad, millistes küsitlustes ja millal nad osalevad.",
+        "answer3": "Me premeerime oma liikmeid nende vastuste eest. Kui olete registreerunud, hakkate teenima punkte iga küsitluse eest, milles osalete. Seejärel saate nende punktide eest valida erinevaid tooteid või teenuseid. Teenitud punktide arv sõltub küsitluse pikkusest ja keerukusest. Lisaks pakume osalejatele võimalust pärast osalemist suurepäraseid auhindu võita.",
+        "question": "Kas soovite meie kohta rohkem teada saada?"
+      },
+      "item6": {
+        "answer": "Peate olema vähemalt 14-aastane ja teil peab olema isiklik e-posti aadress.",
+        "question": "Kes võivad saada portaali liikmeks?"
+      },
+      "item7": {
+        "answer": "MinuArvamuse liikmeks saamine on lihtne.",
+        "question": "Kuidas ma MinuArvamuse portaali liikmeks saan?",
+        "step1": {
+          "description": "Registreeruge, sisestades selleks oma e-posti aadress.",
+          "title": "Samm 1: {0}"
+        },
+        "step2": {
+          "description": "Teie e-posti aadressile saadetakse kinnitussõnum koos täiendavate juhistega konto aktiveerimiseks.",
+          "title": "Samm 2: {0}"
+        },
+        "step3": {
+          "description": "Kui olete esimest korda sisse loginud, täitke oma profiil portaalis. Mida üksikasjalikum on teie profiil ja mida sagedamini seda uuendate, seda rohkem küsitluste kutseid saate.",
+          "title": "Samm 3: {0}"
+        }
+      },
+      "item8": {
+        "answer": "Kui sisestasite oma e-posti aadressi, kuid ei ole kinnitussõnumit saanud, proovige järgmist.",
+        "button": {
+          "contact-form": "kasutajatoe lehe kaudu"
+        },
+        "list-item1": "1. Vaadake oma rämpsposti kausta – meie kiri võis sinna sattuda. See on kõige levinum põhjus, miks meie sõnumeid kätte ei saada. NB! Selle vältimiseks soovitame märkida MinuArvamus turvaliseks saatjaks.",
+        "list-item2": "2. Kui kinnitussõnum ei ole rämpsposti kaustas, siis võtke meiega ühendust {0}.",
+        "question": "Ma ei ole oma liikmesuse kohta kinnitavat e-kirja saanud. Kas saate selle uuesti saata?"
+      },
+      "item9": {
+        "answer": "Jah, teie teave on hästi kaitstud. MinuArvamus järgib rangelt privaatsusnõudeid. MinuArvamus ei avalda kunagi teie isikuandmeid kolmandatele isikutele ega kasuta neid reklaamimiseks ega muu küsitlustega mitteseotud teabe saatmiseks.",
+        "question": "Kas minu isikuandmeid säilitatakse turvaliselt?"
+      },
+      "subtitle": "Millega saame teid aidata?",
+      "title": "Korduma kippuvad küsimused"
+    },
+    "forgot-password": {
+      "button": {
+        "login": "Logi sisse",
+        "register": "Registreeru siin",
+        "resend": "Saada e-kiri uuesti",
+        "submit": "Muuda oma salasõna"
+      },
+      "description": "Sisestage oma e-posti aadress. Saadame teile e-posti lingi uue salasõna valimiseks.",
+      "email-not-registered": {
+        "description": "Me ei leia kasutajat, kellel on e-posti aadress: {0}",
+        "title": "E-posti aadressi ei ole registreeritud"
+      },
+      "email-sent": {
+        "description1": "Me saatsime teile sõnumi teie e-posti aadressile: {0}",
+        "description2": "Kui olete sõnumi kätte saanud, avage see ja klõpsake lingil \"Muuda salasõna\".",
+        "title": "Salasõna unustamise kohta e-kiri saadetud"
+      },
+      "field": {
+        "email": {
+          "placeholder": "Sisestage oma e-posti aadress",
+          "title": "E-posti aadress",
+          "validation": {
+            "invalid": "Sisestage kehtiv e-posti aadress.",
+            "required": "Sisestage oma e-posti aadress."
+          }
+        }
+      },
+      "label": {
+        "no-account": "Kas ei ole veel kasutajakontot? {0}",
+        "remember": "Kas mäletate oma salasõna? {0}"
+      },
+      "subtitle": "Looge uus salasõna",
+      "title": "Unustasin salasõna"
+    },
+    "get-started": {
+      "button": "Liituge ja hakake teenima",
+      "footer": {
+        "faq-link": "KKK lehte",
+        "main": "Vaata meie {faq}, kust leiad vastuseid küsimustele tasu, küsitluste sageduse ja liikmesusega kaasnevate eeliste kohta."
+      },
+      "step1": {
+        "main": "Liitumiseks {register} oma meiliaadressiga või logi sisse Facebooki või Google’i abil.",
+        "register-link": "registreeru"
+      },
+      "step2": "Avage oma postkast ja kinnitage oma e-posti aadress, klõpsates teile saadetud lingil.",
+      "step3": "Täitke enda kohta teave, et saada kutse teile sobivatesse uuringutesse.",
+      "step4": "Osalege küsitlustes, kuhu teid kutsutakse. Pidage meeles – kõigil küsitlustel on tähtaeg.",
+      "step5": {
+        "main": "Iga täidetud küsitluse eest teenid punkte. Neid punkte saab vahetada raha või populaarsete brändide kinkekaartide vastu. Vaata, millised on meie {rewards}.",
+        "rewards-link": "kingitused"
+      },
+      "step6": {
+        "main": "Lisaks vastamise eest punktide kogumisele on sulle osalemiseks avatud meie {raffles}.",
+        "raffles-link": "aastaloos"
+      },
+      "step7": "Jagage infot oma sõpradega – iga sõber, kes liitub ja täidab küsimustiku, annab teile lisapunkte.",
+      "subtitle": "Küsitlustele vastamisega teenite raha ja kinkekaarte.",
+      "title": "Kuidas alustada"
+    },
+    "gifts": {
+      "title": "Kingitused ja loosimised"
+    },
+    "home": {
+      "footer": {
+        "button": "Liituge ja hakake teenima",
+        "intraresearch": "Intra Research",
+        "signature": "MinuArvamus on ettevõtte {url} registreeritud kaubamärk",
+        "subtitle": "Liituge meie veebipaneeliga kohe!",
+        "title": "Kas olete valmis mõjutama maailma parema tuleviku nimel? Teie arvamus loeb!"
+      },
+      "hero": {
+        "button": "Liitu ja hakka teenima",
+        "subtitle": "{0} on arvamuste ja hoiakute küsitlused mugavalt internetti toonud! Meie liikmed koguvad punkte, mida saab vahetada raha või erinevate ettevõtete kinkekaartide vastu.",
+        "title": "Teenige raha ja kinkekaarte oma arvamust avaldades!"
+      },
+      "how-it-works": {
+        "step1": {
+          "button": "Registreeru",
+          "description": "Liikmeks saamise jaoks registreeruge. Rääkige meile endast, täites ära oma MinuArvamuse profiil.",
+          "title": "Liitu"
+        },
+        "step2": {
+          "button": "Alusta",
+          "description": "Vastake teile määratud küsimustikele. Teenite oma kontole punkte iga täidetud küsitluse eest.",
+          "title": "Osale uuringutes"
+        },
+        "step3": {
+          "button": "Vaata preemiaid",
+          "description": "Lunasta punkte kingituste või raha eest! Teenitud punktid saate vahetada toodete, teenuste ja raha vastu või nendega teha annetuse heategevuseks.",
+          "title": "Tasustamine"
+        },
+        "step4": {
+          "button": "Vaata auhindu",
+          "description": "Lisaks premeeritakse teid meie iga-aastases auhinnamängus osalemisega. Iga täidetud küsimustikuga suurendate oma võiduvõimalusi.",
+          "title": "Võida auhindu"
+        },
+        "title": "Kuidas see toimib?"
+      },
+      "news": {
+        "title": "Uudistevoog"
+      },
+      "partners": {
+        "title": "Meie partnerid"
+      },
+      "quote1": "Küsitluste eesmärk on suunata organisatsioone täpsemate otsuste tegemisel ning ettevõtteid veelgi paremate toodete ja teenuste arendamisel.",
+      "quote2": "Teie arvamus aitab neil seda teha.",
+      "testimonial": {
+        "item1": {
+          "country": "Ühendkuningriik",
+          "country-code": "uk",
+          "flag-code": "uk",
+          "message": "Selle paneeliga liitumine on olnud meeldiv kogemus! Mulle meeldib jagada oma arvamusi ja näha, kuidas need muutuse kaasa toovad. Lisaks on auhinnad head.",
+          "name": "Alex J."
+        },
+        "item2": {
+          "country": "Rootsi",
+          "country-code": "se",
+          "flag-code": "se",
+          "message": "Olen varem proovinud mitut küsitluspaneeli, kuid see paistab silma. Küsitlused on huvitavad, platvormi on lihtne kasutada ja klienditugi on tipptasemel. Soovitan soojalt!",
+          "name": "Maria L."
+        },
+        "item3": {
+          "country": "Iirimaa",
+          "country-code": "ie",
+          "flag-code": "ie",
+          "message": "Siin panelistina osalemine on olnud suurepärane võimalus vabal ajal lisaraha teenida. Küsitlused on lõbusad ja asjakohased ning hindan preemiasüsteemi läbipaistvust ja õiglust.",
+          "name": "James T."
+        },
+        "item4": {
+          "country": "Soome",
+          "country-code": "fi",
+          "flag-code": "fi",
+          "message": "Mulle meeldib selle paneeli juures kõige rohkem kogukond. Tore on kuuluda gruppi, kus minu arvamust hinnatakse ja mis võib tooteid ja teenuseid tegelikult mõjutada. Hüved ja stiimulid on kõige tähtsamad.",
+          "name": "Samantha R."
+        },
+        "item5": {
+          "country": "Saksamaa",
+          "country-code": "de",
+          "flag-code": "de",
+          "message": "See paneel ületas minu ootused. Küsitluste mitmekesisus muudab asjad huvitavaks ja ma tunnen, et minu tagasiside on tõesti oluline. Preemiad on suurepärane boonus!",
+          "name": "Michael K."
+        },
+        "item6": {
+          "country": "Filipiinid",
+          "country-code": "ph",
+          "flag-code": "ph",
+          "message": "Olen olnud panelist juba üle aasta ja see on olnud fantastiline kogemus. Küsitlused on kaasahaaravad ja on tore teada, et minu arvamused aitavad tulevasi tooteid kujundada. Preemiad on vaid boonus!",
+          "name": "Emily W."
+        },
+        "item7": {
+          "country": "Poola",
+          "country-code": "pl",
+          "flag-code": "pl",
+          "message": "See paneel on parim! Mulle meeldib, kui kasutajasõbralik see sait on ja kui kiiresti preemiad lisanduvad. See on lõbus ja lihtne viis oma hääl kuuldavaks teha ja lisaraha teenida.",
+          "name": "David M."
+        },
+        "item8": {
+          "country": "Taani",
+          "country-code": "dk",
+          "flag-code": "dk",
+          "message": "Ma hindan küsitlustes käsitletud teemade mitmekesisust. See hoiab asjad huvitavana ja paneb mind tundma, et minu panust hinnatakse erinevate tööstusharude üleselt. Preemiasüsteem on õiglane ja helde.",
+          "name": "Olivia H."
+        },
+        "item9": {
+          "country": "Madalmaad",
+          "country-code": "nl",
+          "flag-code": "nl",
+          "message": "Selle paneeli liikmeks saamine on olnud suurepärane kõrvaltöö. Küsitlused on sisutihedad ja täpsed ning saan neid täita endale sobival ajal. Preemiad on suureks stiimuliks osalemisega jätkamisel.",
+          "name": "Chris B."
+        },
+        "metrics": {
+          "gift-cards": "50",
+          "respondents": "6000"
+        },
+        "subtitle": "Iga päev vastab meie küsitlustele {0} inimest ja me väljastame {1} kinkekaarti",
+        "title": "Mida inimesed ütlevad?"
+      },
+      "trust": {
+        "anonymous": "Teie andmed jäävad anonüümseks ja neid kasutatakse ainult turu-uuringute eesmärgil.",
+        "confidential": "Oleme pühendunud teie andmete konfidentsiaalsuse kaitsmisele.",
+        "no-spam": "Me ei saada rämpsposti ega reklaame. Me ei jaga teie e-posti aadressi ühegi kolmandast isikust organisatsiooniga.",
+        "title": "Võite meid usaldada."
+      }
+    },
+    "human": {
+      "button": {
+        "next": "Edasi",
+        "start": "Alusta"
+      },
+      "captcha": {
+        "question": "Täitke allolev väljakutse.",
+        "required": "Lõpetage turvalisuse kinnitamine."
+      },
+      "end": {
+        "title": "Täname teid meie küsimustele vastamise eest! Teid suunatakse {0} sekundi pärast ümber."
+      },
+      "start": {
+        "subtitle": "Enne kui suuname teid uuringusse, peame tegema kiire turvakontrolli.",
+        "title": "Vastame mõnele küsimusele"
+      }
+    },
+    "invite-friends": {
+      "activity": {
+        "completed": {
+          "description": "Teie sõber on täitnud {surveys} küsitlust. Kui teie sõbra küsitluse tulemused on kinnitatud, saate preemiaks {points} punkti.",
+          "title": "Lõpetatud"
+        },
+        "credited": {
+          "description": "Palju õnne! Teie sõber täitis {surveys} küsitlused ja olete saanud preemiaks {points} punkti.",
+          "title": "Krediteeritud"
+        },
+        "empty": "Kutsumise tegevus puudub",
+        "friends-invited": "Sõbrad kutsutud",
+        "invited": {
+          "description": "Teie sõber on kutsutud. Kui teie sõber on oma konto kinnitanud ja {surveys} küsitlused täitnud, saate preemiaks {points} punkti.",
+          "title": "Kutsutud"
+        },
+        "last-updated": "Viimati värskendatud {0}",
+        "registered": {
+          "description": "Teie sõber on registreerinud konto. Kui teie sõber on oma konto kinnitanud ja {surveys} küsitlused täitnud, saate preemiaks {points} punkti.",
+          "title": "Registreeritud"
+        },
+        "title": "Vaadake sõpru, kes teie kutse vastu võtsid",
+        "total-reward": "Kogupreemia",
+        "verified": {
+          "description": "Teie sõber on oma konto kinnitanud. Kui ta on {surveys} küsitlused täitnud, saate preemiaks {points} punkti.",
+          "title": "Kinnitatud"
+        }
+      },
+      "email": {
+        "button": "Kutsu",
+        "friend-email": {
+          "invalid": "Sisestage oma sõbra kehtiv e-posti aadress",
+          "placeholder": "Sisestage oma sõbra e-posti aadress",
+          "required": "Sisestage oma sõbra e-posti aadress"
+        },
+        "friend-name": {
+          "placeholder": "Sisestage oma sõbra nimi",
+          "required": "Sisestage oma sõbra nimi"
+        },
+        "subtitle": "Teie sõber saab e-kirja koos lingiga, et registreeruda kasutajaks.",
+        "success": {
+          "button": "Sule",
+          "subtitle": "Teie sõber saab e-kirja koos lingiga, et registreeruda kasutajaks. Kui teie sõber saab liikmeks, saate allpool jälgida oma sõbra edusamme.",
+          "title": "Kutse saadetud"
+        },
+        "title": "Kutsuge sõber e-kirja teel"
+      },
+      "how-it-works": {
+        "step1": {
+          "description": "Sisestage oma sõbra e-posti aadress, ees- ja perekonnanimi ning saadetakse kutse e-kiri koos registreerumislingiga.",
+          "title": "Kutsumine"
+        },
+        "step2": {
+          "description": "Teie sõber klõpsab kutse e-kirjas oleval lingil ja sisestab registreerimisteabe. Kui see on tehtud, saab teie sõber liikmeks.",
+          "title": "Liitumine"
+        },
+        "step3": {
+          "description": "Kui teie sõber täidab {surveys} küsitlust, saate preemiaks {points} punkti.",
+          "title": "Premeerimine"
+        },
+        "title": "Kuidas see toimib?"
+      },
+      "notification": {
+        "button": "Liitu",
+        "title": "Teie sõber {0} kutsub teid liikmeks!"
+      },
+      "social-media": {
+        "button": {
+          "copied": "Kopeeritud",
+          "copy": "Kopeeri",
+          "facebook": "Jaga Facebookis",
+          "line": "Jaga Line'is",
+          "linkedin": "Jaga LinkedInis",
+          "messenger": "Jaga Messengeris",
+          "skype": "Jaga Skype'is",
+          "telegram": "Jaga Telegramis",
+          "threads": "Jaga Threadsis",
+          "twitter": "Jaga Twitteris / X-s",
+          "viber": "Jaga Viberis",
+          "whatsapp": "Jaga WhatsAppis"
+        },
+        "share": {
+          "description": "Saage rohkem teada Eesti juhtiva veebituru-uuringute paneeli MinuArvamus kohta. Avastage, kuidas me ühendame tarbijad kaubamärkidega. Liituge meie kogukonnaga!",
+          "hashtags": "Veebiküsitlused, turu-uuringud, tarbijapaneel",
+          "quote": "Teenige raha ja kinkekaarte oma arvamust avaldades!",
+          "title": "Liituge MinuArvamusega ja teenige oma arvamust avaldades raha ja kinkekaarte!"
+        },
+        "title": "Samuti saate panna oma sõpru registreeruma, kasutades seda linki või sotsiaalmeedia jagamist"
+      },
+      "title": "Kutsuge sõpru",
+      "unverified": {
+        "button": "Kinnita e-post",
+        "subtitle": "Selle funktsiooni avamiseks kinnitage oma e-posti aadress. Saate kutsuda sõpru ja saada kuni {0} punkti!",
+        "title": "{0}, veel üks samm minna!"
+      }
+    },
+    "login": {
+      "button": {
+        "facebook": "Logi sisse Facebookiga",
+        "forgot-password": "Saa uus siit",
+        "google": "Logi sisse Google'iga",
+        "register": "Registreeru siin",
+        "submit": "Logi sisse"
+      },
+      "field": {
+        "email": {
+          "placeholder": "Sisestage oma e-posti aadress",
+          "title": "E-posti aadress"
+        },
+        "password": {
+          "placeholder": "Sisestage oma salasõna.",
+          "title": "Salasõna"
+        }
+      },
+      "label": {
+        "forgot-password": "Kas unustasite salasõna? {0}",
+        "no-account": "Kas ei ole veel kasutajakontot? {0}",
+        "or": "või"
+      },
+      "message": {
+        "account-deactivated": "See konto on praegu suletud."
+      },
+      "title": "Tere tulemast tagasi"
+    },
+    "more-about-me": {
+      "answer": {
+        "checkbox": {
+          "select-multiple": "Te saate valida mitu vastust."
+        },
+        "text": {
+          "placeholder": "Sisestage oma vastus"
+        }
+      },
+      "button": {
+        "save": "Salvesta ja edasi",
+        "skip": "Vasta sellele hiljem"
+      },
+      "completed": {
+        "button": {
+          "edit-answers": "Muuda minu vastuseid",
+          "see-rewards": "Vaata preemiaid"
+        },
+        "description": "Me lisame pidevalt rohkem küsimusi, nii et tulge mõne aja pärast uuesti vaatama.",
+        "title": "Olete praeguseks kõik küsimused ära vastanud."
+      },
+      "edit": {
+        "button": {
+          "save": "Salvesta muudatused"
+        },
+        "empty": {
+          "button": "Muuda minu vastuseid",
+          "description": "Siin saate taustaküsimuste vastuseid värskendada. Minge lehele Minu profiil, et valida üksus, mida soovite muuta.",
+          "title": "Muutmiseks andmeid ei ole."
+        }
+      },
+      "finish": {
+        "button": "Vaata preemiaid",
+        "description": "Olete praeguseks kõik küsimused ära vastanud. Lisame pidevalt rohkem küsimusi, nii et tulge mõne aja pärast uuesti kontrollima.",
+        "title": "Palju õnne!"
+      },
+      "navigation": {
+        "description": "Jagage enda kohta rohkem infot. Teie vastused aitavad meil leida teile sobivamaid küsitlusi. Kõik teie andmed on konfidentsiaalsed ja neid ei jagata kolmandate isikutega. Iga antud vastuse eest premeeritakse teid punktidega.",
+        "label": {
+          "quality-score": "Minu kvaliteediskoor",
+          "questions-answered": "Vastatud küsimused"
+        }
+      },
+      "points": {
+        "description": "Täname teid vastuse eest. Jätkake enda kohta täiendava teabe esitamist, et teenida rohkem punkte ja saada rohkem küsitlusekutseid.",
+        "title": "Te olete teeninud {0} punkti!"
+      },
+      "welcome": {
+        "button": "Jätka",
+        "description1": "Teie konto on loodud ja nüüd palume teil oma e-posti aadress kinnitada. Kontrollige oma postkasti, et leida kinnitus e-kiri. Kui te e-kirja oma postkastis ei näe, kontrollige oma rämpsposti kausta.",
+        "description2": "Seni palun jagage enda kohta rohkem teavet. Teie vastused aitavad meil leida teile sobivamaid küsitlusi.",
+        "title": "Täname teid!"
+      }
+    },
+    "my-account": {
+      "account": {
+        "deactivate": {
+          "description": "Te ei saa meilt enam e-kirju, kuid konto andmed, ajalugu ja punktid salvestatakse juhuks, kui soovite konto kasutamist edaspidi jätkata",
+          "title": "Sule konto"
+        },
+        "delete": {
+          "description": "Teie isikuandmed kustutatakse ja te kaotate teenitud punktid",
+          "title": "Kustutage konto jäädavalt"
+        },
+        "title": "Ma ei taha enam küsitluste kutseid saada"
+      },
+      "birthdate": {
+        "button": {
+          "contact": "võta meiega ühendust",
+          "save": "Salvesta"
+        },
+        "message": {
+          "limit": "Pange tähele, et sünnikuupäeva muutmise kordade arv on piiratud.",
+          "limit-reached": "Olete jõudnud oma sünnikuupäeva muutmise limiidini. Andmete muutmise taotlemiseks {0}."
+        },
+        "title": "Sünnikuupäev"
+      },
+      "connected-accounts": {
+        "button": {
+          "connect": "Ühenda",
+          "disconnect": "Katkesta ühendus"
+        },
+        "facebook": "Facebook",
+        "google": "Google",
+        "label": {
+          "connected": "Ühendatud"
+        },
+        "title": "Lisa sisselogimismeetod või muuda seda"
+      },
+      "contact": {
+        "button": "Salvesta",
+        "message": {
+          "exact-address": "Vajame teie täpset aadressi, et saaksime teile preemiaid saata."
+        },
+        "title": "Võtke ühendust"
+      },
+      "email": {
+        "button": {
+          "change-email": "Muuda e-posti aadressi",
+          "send-verification": "Saada kinnitus e-kiri"
+        },
+        "label": {
+          "verified": "Kinnitatud"
+        },
+        "message": {
+          "check-inbox": "Kontrollige oma postkasti kinnitus e-kirja leidmiseks. Ärge unustage ka rämpsposti kausta kontrollida.",
+          "email-sent": "E-kiri on saadetud.",
+          "verify-email": "Preemiate saamiseks peate oma e-posti aadressi kinnitama."
+        },
+        "title": "E-post"
+      },
+      "gender": {
+        "button": {
+          "contact": "võtke meiega ühendust",
+          "save": "Salvesta"
+        },
+        "message": {
+          "limit": "Pange tähele, et soo muutmise kordade arv on piiratud.",
+          "limit-reached": "Olete jõudnud soo muutmise limiidini. Andmete muutmise taotlemiseks {0}."
+        },
+        "title": "Sugu"
+      },
+      "label": {
+        "verified": "Kinnitatud"
+      },
+      "language": {
+        "button": "Salvesta",
+        "title": "Keel"
+      },
+      "location": {
+        "button": {
+          "contact": "võta meiega ühendust",
+          "save": "Salvesta"
+        },
+        "message": {
+          "limit": "Pange tähele, et oma piirkonna muutmise kordade arv on piiratud.",
+          "limit-reached": "Olete jõudnud oma piirkonna muutmise limiidini. Andmete muutmise taotlemiseks {0}."
+        },
+        "shipping-address": {
+          "helper-text": "Kingituste lunastamiseks on vaja sinu täielikku aadressi."
+        },
+        "title": "Asukoht"
+      },
+      "name": {
+        "button": {
+          "contact": "võta meiega ühendust",
+          "save": "Salvesta"
+        },
+        "message": {
+          "limit": "Pange tähele, et oma nime muutmise kordade arv on piiratud.",
+          "limit-reached": "Olete jõudnud oma nime muutmise limiidini. Andmete muutmise taotlemiseks {0}."
+        },
+        "title": "Nimi"
+      },
+      "password": {
+        "button": {
+          "change": "Muuda salasõna",
+          "forgot": "Unustasin salasõna"
+        },
+        "field": {
+          "current": {
+            "title": "Praegune salasõna",
+            "validation-required": "Sisestage oma praegune salasõna"
+          },
+          "new": {
+            "title": "Uus salasõna"
+          },
+          "verify": {
+            "title": "Korda uut salasõna"
+          }
+        },
+        "title": "Salasõna"
+      },
+      "phone": {
+        "title": "Telefon"
+      },
+      "title": "Minu konto"
+    },
+    "my-page": {
+      "greetings": {
+        "hello": "Tere, {0}",
+        "hi": "Tere, {0}",
+        "welcome": "Tere tulemast, {0}"
+      },
+      "invite-friends": {
+        "button": "Klõpsa täiendava teabe saamiseks!",
+        "subtitle": "Kutsu sõber ja teeni punkte! Niipea, kui su sõber täidab {surveys} küsitlust, saad {points} punkti.",
+        "title": "Kutsu sõber"
+      },
+      "metrics": {
+        "active-lotteries": "Aktiivsed loosimised",
+        "friends-invited": "Kutsutud sõbrad",
+        "points": "Sinu punktid",
+        "quality-score": "Kvaliteediskoor",
+        "questions-answered": "Vastatud küsimused",
+        "rewards-redeemed": "Lunastatud kingitused",
+        "surveys-available": "Saadaolevad küsitlused",
+        "surveys-taken": "Täidetud küsitlused"
+      }
+    },
+    "my-profile": {
+      "completeness": {
+        "address": "Lisa oma täielik aadress",
+        "bg-questions": "Vasta kõigile taustaküsimustele",
+        "email": "Kinnita oma meiliaadress",
+        "phone": "Lisa oma telefoninumber",
+        "subtitle": "Kui profiil on täidetud, on sul suurem võimalus saada rohkem küsitlusi.",
+        "title": "Profiili täidetus"
+      },
+      "edit": "Muuda",
+      "empty": {
+        "button": "Vasta taustaküsimustele",
+        "data": "Vastuseid ei ole"
+      },
+      "title": "Minu profiil"
+    },
+    "my-rewards": {
+      "button": {
+        "cancel": "Tühista",
+        "copied": "Kopeeritud",
+        "copy": "Kopeeri",
+        "explore": "Avasta",
+        "read-less": "Vähem",
+        "read-more": "Rohkem",
+        "see-rewards": "Vaata kingitusi",
+        "view-all": "Vaata kõiki kingitusi",
+        "view-empty": "Ava minu kingituste leht"
+      },
+      "cancel": {
+        "button": {
+          "cancel": "Ei",
+          "confirm": "Jah"
+        },
+        "subtitle": "Kas oled kindel, et soovid kingituse taotluse tühistada?",
+        "title": "Kinnitage tühistamine"
+      },
+      "empty": {
+        "data": "Kingitusi ei ole tellitud",
+        "data-approved": "Kinnitatud kingitusi ei ole",
+        "data-cancelled": "Tühistatud kingitusi ei ole",
+        "data-delivered": "Kohale toimetatud kingitusi ei ole",
+        "data-filtered": "{0} preemiaid ei ole",
+        "data-pending": "Ootel kingitusi ei ole",
+        "data-shipped": "Saadetud kingitusi ei ole"
+      },
+      "filter": {
+        "all": "Kõik",
+        "approved": "Kinnitatud",
+        "canceled": "Tühistatud",
+        "delivered": "Kohale toimetatud",
+        "pending": "Ootel",
+        "shipped": "Saadetud"
+      },
+      "label": {
+        "use-code": "Kasuta kassas koodi"
+      },
+      "points-deducted": "{0} punkti maha arvatud",
+      "points-refunded": "{0} punkti tagastatud",
+      "status": {
+        "approved": {
+          "description": "Sinu kingitus on kinnitatud.",
+          "title": "Kinnitatud"
+        },
+        "canceled": {
+          "description": "Sinu kingitus on tühistatud.",
+          "title": "Tühistatud"
+        },
+        "delivered": {
+          "description": "Sinu kingitus on kohale toimetatud.",
+          "title": "Kohale toimetatud"
+        },
+        "denied": {
+          "description": "Sinu kingituse taotlus lükati tagasi.",
+          "title": "Tagasi lükatud"
+        },
+        "more-info-needed": {
+          "description": "Sinu kingitust ei kinnitatud.",
+          "title": "Vaja rohkem infot"
+        },
+        "pending": {
+          "description": "Sinu kingitus ootab kinnitamist.",
+          "title": "Ootel"
+        },
+        "received": {
+          "description": "Palju õnne! Olete selle preemia edukalt lunastanud.",
+          "title": "Vastu võetud"
+        },
+        "shipped": {
+          "description": "Sinu kingitus saabub peagi.",
+          "title": "Saadetud"
+        }
+      },
+      "subtitle": "Vaata veel saadaolevaid kingitusi",
+      "title": "Minu kingitused"
+    },
+    "not-found": {
+      "title": "Lehte ei leitud"
+    },
+    "privacy": {
+      "date-updated": "19.06.2025",
+      "deleting-nonactive": {
+        "section1": {
+          "description": "Kui sinu kontol ei toimu 12 kuud järjest mingit tegevust, siis kogunenud punktid kustutatakse. Punktid kehtivad seni, kuni sa oled paneeli aktiivne liige, ning neid saab kasutada saadaolevate kingituste või annetuste jaoks. Paneelist lahkumise või eemaldamise korral kõik kasutamata punktid tühistatakse ja neid ei saa rahalise väärtuse vastu vahetada.",
+          "title": "MITTEAKTIIVSE PROFIILI PUNKTIDE KUSTUTAMINE"
+        }
+      },
+      "description1": "See on uuringupaneeli veebisaidi MinuArvamus ja selle teenuste omaniku Intra Research OÜ (edaspidi \"ettevõte\") privaatsuspoliitika. Poliitikas selgitatakse, kuidas ettevõte kogub ja kasutab oma liikmete isikuandmeid. Ettevõte järgib isikuandmete kaitse üldmäärust, California tarbijate privaatsusseadust ning registreeritud turu-uuringu ettevõtete suhtes kohaldatavat käitumiskoodeksit. Ettevõte kogub ja säilitab liikmete kohustuslikke andmeid, nagu nimi, meiliaadress, salasõna, sünniaasta, sugu ja riik, ning konkreetsetele teabenõuetele vastuseks vabatahtlikult antud teavet. Ettevõte jagab isikuandmeid, sealhulgas identifitseerimisnumbreid ja muud teavet teiste turu-uuringu ettevõtetega, et teha kindlaks võimalikke kolmandate isikute küsitlusi, mille tingimustele liige võib vastata. Ettevõte ei avalda isikuandmeid kolmandatele isikutele ilma liikme loata, välja arvatud lepingust tulenevate kohustuste, seadusest tulenevate nõuete või õigusmenetluse tingimuste täitmiseks. Ettevõte rakendab meetmeid enda kontrolli all olevate isikuandmete kaitsmiseks, piirab juurdepääsu andmetele, kasutab selliseid tehnoloogilisi meetmeid nagu tulemüür, krüpteerimine, pahavara kaitse ja sissetungimise tuvastamine ning hoiab poliitika kooskõlas mitmesuguste õiguslike nõuetega. Ettevõte võib luua oma liikmete kohta üldisi koondandmeid ning teha need kättesaadavaks olemasolevatele ja potentsiaalsetele reklaamijatele, äripartneritele ja investoritele. Ettevõte salvestab saidile sisenemisel liikme IP-aadressi alguse, brauseri tüübi ja operatsioonisüsteemi. Ettevõte võib küsitluse ja kvaliteedi tagamise eesmärgil ning kasutajakogemuse parandamiseks kasutada küpsiseid. Liige saab oma teabele juurde pääseda ja seda värskendada saidil pakutava võimaluse kaudu või võttes ühendust ettevõtte kasutajatoega. Ettevõte ei kogu teadlikult isikuandmeid teatud vanusest noorematelt lastelt.",
+      "description2": "Ettevõte järgib registreeritud turu-uuringu ettevõtetele kehtivate tegevusjuhendite (ICC/ESOMAR) juhiseid ja nõudeid ning kõiki kehtivaid kohalikke eeskirju, eriti seoses vastajate andmete kaitsega. Ettevõte rakendab ennetavat lähenemisviisi, et tagada oma klientide, vastajate ja töötajate isikuandmete kaitsmine ja kaitse. Isikuandmete kaitse üldmääruse jõustumise ajaks tagas ettevõte määruse nõuete täitmise kõigis Euroopa riikides, kus ta tegutseb. Kõiki isikuandmeid säilitatakse meie serverite asukohas Eestis Tallinnas ja Madalmaades Amsterdamis ning need on meie töötajatele ülemaailmselt ligipääsetavad.",
+      "item1": {
+        "description": "Liikmeks saamise tingimus on kehtiva meiliaadressi esitamine ja meie küsitluskutsete vastuvõtmisega nõustumine. Kui soovid ükskõik mis ajal pärast registreerimist muuta oma nõusolekut meilt teabe saamise või sinu poolt vabatahtlikult esitatud teabe kasutamise osas, klõpsa linki \"Lahku listist\", mis sisaldub igas meie saadetud meilis. Pärast listist lahkumist lõpetame vastava listiga seotud teabe saatmise. Teise võimalusena võid taotleda oma andmete kustutamist, saates meili meie kasutajatoe meeskonnale või kasutades saidil pakutavat võimalust. Sellisel juhul pead esmalt sisse logima. Ava oma profiil ja klõpsa nuppu \"Ma ei taha enam küsitluste kutseid saada\". Vali \"Kustutage minu konto ja kõik isikuandmed\" ja klõpsake nuppu \"Jätka\". Seejärel vali põhjus ja klõpsa nuppu \"Kinnita\".",
+        "title": "MEILIDEST LOOBUMINE/ANDMETE KUSTUTAMINE"
+      },
+      "item10": {
+        "section1": {
+          "description": "Küpsised on väikesed tekstifailid, mis salvestatakse sinu seadmesse, kui külastad meie veebisaiti. Neid kasutatakse laialdaselt veebisaitide tõhusamaks muutmiseks ja saidi omanikele teabe edastamiseks. Küpsised võimaldavad meil sinu seadet ära tunda ja koguda sellist teavet nagu sinu keele-eelistus, kasutajaseaded ja sirvimisajalugu. See aitab meil isikupärastada sinu kogemust meie veebisaidil ja pakkuda sulle asjakohasemat sisu.",
+          "title": "Mis on küpsised?"
+        },
+        "section2": {
+          "description": "Kasutame oma veebisaidil nii seansiküpsiseid kui ka püsiküpsiseid. Seansiküpsised on ajutised küpsised, mis aeguvad brauseri sulgemisel. Püsiküpsised jäävad sinu seadmesse kindlaksmääratud ajaks või kuni sa need kustutad.",
+          "title": "Milliseid küpsiseid me kasutame?"
+        },
+        "section3": {
+          "description1": "Tingimata vajalikud küpsised: need küpsised on tingimata vajalikud, et saaksid meie veebisaiti sirvida ja selle funktsioone kasutada. Nende hulka kuuluvad küpsised, mis on vajalikud veebisaidi toimimiseks, näiteks saidi turvalistele aladele sisselogimise võimaldamiseks.",
+          "description2": "Analüütilised/jõudlusküpsised: need küpsised koguvad teavet selle kohta, kuidas sa meie veebisaiti kasutad, sealhulgas seda, milliseid lehti sa kõige sagedamini külastad ja kas saad teatud lehtedelt veateateid. Kasutame seda teavet oma veebisaidi täiustamiseks ja selleks, et aidata meil mõista, kuidas meie veebisaiti kasutatakse.",
+          "description3": "Kolmandate isikute küpsised: neid küpsiseid kasutatakse sinu isiku ja huvide järgi sihitud reklaamide edastamiseks. Neid kasutatakse ka selleks, et piirata reklaami nägemiste arvu ja mõõta reklaamikampaaniate tõhusust.",
+          "title": "Kasutame oma veebisaidil järgmisi küpsiseid:"
+        },
+        "section4": {
+          "description": "Kasutame oma veebisaidil kolmandate isikute küpsiseid. Neid küpsiseid salvestab kolmas isik, mitte meie. Näiteks võime kasutada Google Analyticsit, et aidata meil analüüsida, kuidas külastajad meie veebisaiti kasutavad. Google Analyticsi küpsise loodud teave meie veebisaidi kasutamise kohta (sh sinu IP-aadress) edastatakse ja salvestatakse Google'i serveritesse Ameerika Ühendriikides. Google kasutab seda teavet selleks, et hinnata meie veebisaidi kasutamist, koostada veebisaidi haldajatele aruandeid veebisaidil toimuva tegevuse kohta ning pakkuda muid veebisaidi tegevuse ja interneti kasutamisega seotud teenuseid. Google võib seda teavet edastada ka kolmandatele isikutele, kui see on seadusega ette nähtud või kui sellised kolmandad isikud töötlevad teavet Google'i nimel.",
+          "title": "Kolmandate isikute küpsised"
+        },
+        "section5": {
+          "description1": "Sul on võimalik küpsistega nõustuda või nendest keelduda. Enamik veebibrausereid aktsepteerib küpsiseid automaatselt, kuid tavaliselt saad küpsistest keeldumiseks oma brauseri sätteid muuta. Kui otsustad küpsistest keelduda, ei pruugi sul olla võimalik täielikult kogeda meie veebisaidi interaktiivseid funktsioone.",
+          "description2": "Samuti saad küpsised igal ajal oma brauserist kustutada. Kui otsustad küpsised kustutada, kustutatakse ka kõik nende küpsistega juhitavad sätted ja eelistused, sealhulgas reklaamieelistused, ning vajadusel tuleb need uuesti luua.",
+          "title": "Küpsiste haldamine"
+        },
+        "subtitle": "Meie veebisaiti kasutades nõustud meie küpsiste ja muude jälgimistehnoloogiate kasutamisega vastavalt käesolevas poliitikas esitatud kirjeldusele",
+        "title": "KÜPSISED"
+      },
+      "item11": {
+        "footer": "Kui sul on seoses meie andmeedastustavadega küsimusi või muresid, võta meiega ühendust, kasutades selles privaatsuspoliitikas toodud kontaktandmeid.",
+        "section1": {
+          "description1": "Otsused piisavuse kohta: võime edastada isikuandmeid väljaspool EMP-d asuvasse riiki, kui Euroopa Komisjon on kindlaks teinud, et riik tagab isikuandmetele piisava kaitsetaseme.",
+          "description2": "Lepingu tüüptingimused: me kasutame Euroopa Komisjoni poolt vastu võetud lepingu tüüptingimusi tagamaks, et sinu isikuandmete kaitsmiseks on kehtestatud asjakohased kaitsemeetmed.",
+          "description3": "Ettevõtte kohustuslikud reeglid: oleme rakendanud ettevõttes kohustuslikud reeglid isikuandmete edastamiseks meie kontserni piires, mille on heaks kiitnud vastavad andmekaitseasutused.",
+          "description4": "Muud õiguslikult tunnustatud kaitsemeetmed: isikuandmete väljapoole EMP-d edastamisel võime tugineda muudele seaduslikult tunnustatud kaitsemeetmetele, nagu sertifitseerimiskavad või käitumisjuhendid.",
+          "title": "Isikuandmete edastamisel EMP-st väljaspool EMP-d asuvatesse riikidesse tugineme ühele järgmistest kaitsemeetmetest:"
+        },
+        "section2": {
+          "description1": "Otsused piisavuse kohta: võime edastada isikuandmeid väljaspool USA-d asuvasse riiki, kui Föderaalne Kaubanduskomisjon (FTC) on kindlaks teinud, et riik tagab isikuandmetele piisava kaitsetaseme.",
+          "description2": "Lepingu tüüptingimused: me kasutame FTC poolt vastu võetud lepingu tüüptingimusi tagamaks, et sinu isikuandmete kaitsmiseks on kehtestatud asjakohased kaitsemeetmed.",
+          "description3": "Muud õiguslikult tunnustatud kaitsemeetmed: isikuandmete väljapoole USA-d edastamisel võime tugineda muudele seaduslikult tunnustatud kaitsemeetmetele, nagu sertifitseerimiskavad või käitumisjuhendid.",
+          "title": "Isikuandmete edastamisel USA-st väljaspool USA-d asuvatesse riikidesse tugineme ühele järgmistest kaitsemeetmetest:"
+        },
+        "subtitle": "Osana pakutavatest teenustest võime edastada sinu isikuandmeid väljapoole Euroopa Majanduspiirkonda (EMP) ja Ameerika Ühendriike (USA). Isikuandmete edastamisel tagame, et sinu isikuandmete kaitsmiseks on kehtestatud asjakohased kaitsemeetmed.",
+        "title": "ANDMETE EDASTAMINE KOLMANDATELE ISIKUTELE"
+      },
+      "item12": {
+        "description": "Võime teha oma privaatsuspoliitikas aeg-ajalt ja ette teatamata muudatusi, kuid avaldame uusima versiooni alati oma veebisaidil. Kõik muudatused jõustuvad kohe pärast avaldamist ja kehtivad ainult pärast muudatuse kuupäeva kogutud teabele, kui ei ole märgitud teisiti. Kui jätkad saidi ja/või teenuse kasutamist pärast selle privaatsuspoliitika muudatuste avaldamist, nõustud nende muudatustega.",
+        "title": "MEIE PRIVAATSUSPOLIITIKA MUUTMINE"
+      },
+      "item13": {
+        "description": "Kokkuvõttes austab ettevõte sinu privaatsust ja on pühendunud sinu isikuandmete kaitsmisele. Me kogume ja kasutame ainult teavet, mis on vajalik meie äritegevuse jaoks ja sulle teenuse osutamiseks. Me ei müü sinu isikuandmeid kolmandatele isikutele. Me võtame asjakohaseid meetmeid, et kaitsta sinu isikuandmeid ja hoida neid konfidentsiaalsena. Võime kasutada üldisi koondandmeid ärilistel eesmärkidel. Kui sul on seoses meie privaatsuspoliitikaga küsimusi või muresid, võta meiega ühendust.",
+        "title": "KOKKUVÕTE"
+      },
+      "item14": {
+        "description1": "Marina Moshenska",
+        "description2": "Intra Research UAB",
+        "description3": "Svitrigailos st. 11M.",
+        "description4": "LT-03223 Vilnius Leedu",
+        "description5": "Telefon: +371 2021 8080",
+        "description6": "E-post: dpo{'@'}intraresearch.com",
+        "description7": "(09.05.2023)",
+        "subtitle": "Kui sul on selle privaatsusteatise kohta kommentaare või küsimusi, võta ühendust meie andmekaitsespetsialistiga:",
+        "title": "VÕTA MEIEGA ÜHENDUST"
+      },
+      "item2": {
+        "description1": "Kontaktandmed: meie kogutav teave võib hõlmata sinu nime, meiliaadressi, telefoninumbrit, postiaadressi ja muid kontaktandmeid.",
+        "description2": "Demograafiline teave: me võime koguda demograafilist teavet, nagu sinu vanus, sugu, haridustase ja töökoht.",
+        "description3": "Kasutaja loodud sisu: me võime koguda mistahes sisu, mida sa meie veebisaidile postitad või üles laadid, näiteks kommentaarid, arvustused, tagasiside või küsitluste vastused.",
+        "description4": "Tehniline teave: me võime koguda tehnilisi andmeid, sealhulgas sinu IP-aadress, brauseri tüüp, seadme tüüp, operatsioonisüsteem ja muu sarnane teave.",
+        "description5": "Kasutusteave: me võime koguda teavet selle kohta, kuidas sa meie veebisaiti kasutad, näiteks milliseid lehti külastad, kui kaua meie veebisaidil viibid ja milliseid toiminguid teed.",
+        "description6": "Asukohateave: me võime koguda teavet sinu geograafilise asukoha (nt linna või piirkonna) kohta sinu IP-aadressi kaudu või muul viisil.",
+        "description7": "Uudiskirja tellimine: ettevõte pakub kasutajatele uudiskirja tellimise võimalust. Kui sa selle tellid, kogume uudiskirja saatmise võimaldamiseks selliseid isikuandmeid nagu sinu nimi ja meiliaadress. Nende isikuandmete töötlemise õiguslik alus on sinu selgesõnaline nõusolek, mille sa tellimisel annad. Sa võid oma nõusoleku igal ajal tagasi võtta ja uudiskirja tellimusest loobuda, järgides igas meilis sisalduvaid juhiseid või võttes meiega otse ühendust.",
+        "footer": "Sõltuvalt sinu suhtlusest meie veebisaidiga võime koguda ka muud tüüpi isikuandmeid. Kasutame seda teavet oma teenuste pakkumiseks ja täiustamiseks, sinu kasutuskogemuse isikupärastamiseks ja õiguslike kohustuste täitmiseks. Võime seda teavet jagada oma usaldusväärsete kolmandatest isikutest partneritega, nagu on selgitatud meie privaatsuspoliitikas.",
+        "subtitle": "Me kogume oma kasutajatelt erinevat tüüpi isikuandmeid, sealhulgas allpool osutatud andmeid.",
+        "title": "MILLIST TEAVET ME KOGUME"
+      },
+      "item3": {
+        "description1": "Kasutajakontode loomine ja haldamine: kasutajakontode loomiseks kogume selliseid isikuandmeid nagu nimi, meiliaadress ja salasõna. See võimaldab kasutajatel pääseda ligi meie teenustele ja hallata oma kontosid.",
+        "description2": "Uuringute läbiviimine: me kogume isikuandmeid, et viia oma klientide nimel läbi uuringuid. See võib hõlmata demograafilisi andmeid, arvamusi ja teavet käitumise kohta. Analüüsime neid andmeid, et pakkuda klientidele teadmisi, mis aitavad neil oma tooteid ja teenuseid täiustada.",
+        "description3": "Kasutajatega suhtlemine: me võime kasutada isikuandmeid, et suhelda oma kasutajatega meie teenuste, uuenduste ja sooduspakkumistega seotud küsimustes. See hõlmab e-posti, tõuketeateid ja muid suhtlusvorme.",
+        "description4": "Meie teenuste täiustamine: kasutame isikuandmeid oma teenuste täiustamiseks ja kasutajakogemuse parandamiseks. See hõlmab kasutajate käitumise ja eelistuste analüüsimist, samuti küsitluste ja kasutajatestide läbiviimist.",
+        "description5": "Käitumispõhine sihtimine (ilma profiilianalüüsita): ettevõte võib kasutada sinu küsitlustes osalemise teavet sõnumite koostamiseks ja sulle üksnes asjakohaste küsitlusekutsete saatmiseks. See protsess hõlmab käitumispõhist sihtimist meie veebisaidil, aga mitte profiilianalüüsi automaatsete otsuste tegemiseks. Kõiki nimetatud eesmärgil kasutatavaid andmeid töödeldakse kooskõlas andmekaitse suhtes kohaldatavate õigusaktidega ning nende põhjal ei koostata isikute profiile turundamiseks või muul mitteseotud eesmärgil.",
+        "description6": "Õiguslike kohustuste täitmine: me võime kasutada isikuandmeid õiguslike kohustuste täitmiseks, näiteks kohtumäärustele või valitsuse taotlustele vastamiseks.",
+        "footer": "Me võtame vastutust isikuandmete töötlemise eest tõsiselt ja oleme rakendanud meetmeid tagamaks, et kogutav teave on turvatud ja seda kasutatakse ainult sellel eesmärgil, milleks see koguti.",
+        "subtitle": "Me kogume oma kasutajatelt isikuandmeid, et pakkuda oma teenuseid ja parandada kasutajakogemust. Me kasutame teavet järgmistel eesmärkidel.",
+        "title": "ISIKUANDMETE KASUTAMINE"
+      },
+      "item4": {
+        "description1": "Nõusolek: kui registreerud meie veebipõhise uurimispaneeli liikmeks, võime küsida sinu nõusolekut isikuandmete kogumiseks ja töötlemiseks konkreetsetel eesmärkidel, näiteks uuringute läbiviimiseks või sulle turundusteadete saatmiseks. Enne sinu isikuandmete töötlemist küsime selleks selgesõnalise nõusoleku.",
+        "description2": "Lepinguline vajadus: meil võib olla vaja töödelda sinu isikuandmeid, et täita sinuga sõlmitud lepingut, näiteks võimaldada juurdepääsu meie uurimispaneelile ja viia läbi uuringuid.",
+        "description3": "Õigustatud huvi: me võime töödelda sinu isikuandmeid oma õigustatud huvi alusel, näiteks meie uurimispaneeli täiustamiseks, uute uuringute väljatöötamiseks, pettuste või muu ebaseadusliku tegevuse ärahoidmiseks, analüüside tegemiseks.",
+        "description4": "Õiguslik vastavus: me võime töödelda sinu isikuandmeid õiguslike kohustuste täitmiseks, näiteks valitsusasutuste seaduslikele teabenõuetele vastamiseks või regulatiivsete nõuete täitmiseks.",
+        "footer": "Me kogume ja töötleme isikuandmeid ainult siis, kui meil on selleks õiguslik alus, ning tagame alati, et töötlemine on õiglane, läbipaistev ja proportsionaalne andmete töötlemise eesmärkidega.",
+        "subtitle": "Meil on isikuandmete töötlemiseks üks või mitu õiguslikku alust, mis on sätestatud isikuandmete kaitse üldmääruses ja kooskõlas California tarbijate privaatsusseadusega. Meie isikuandmete töötlemise õiguslikud alused on järgmised.",
+        "title": "ÕIGUSLIK ALUS"
+      },
+      "item5": {
+        "description1": "Regulaarne turvariskide hindamine ja haavatavuse testimine võimalike ohtude tuvastamiseks ja nendega tegelemiseks",
+        "description10": "Andmetega seotud rikkumise korral oleme kehtestanud protseduurid rikkumise tuvastamiseks ja ohjeldamiseks, isikutele avalduva riski hindamiseks ning üksikisikute ja ametiasutuste viivitamatuks teavitamiseks vastavalt kohaldatavale õigusele.",
+        "description11": "California tarbijate privaatsusseaduse alusel on sul õigus küsida teavet meie kogutud isikuandmete kategooriate ja allikate kategooriate kohta, selle kohta, kust me isikuandmeid kogusime, isikuandmete kogumise ja jagamise eesmärkide kohta ning kolmandate isikute kategooriate kohta, kellega isikuandmeid jagasime. Lisaks on sul õigus nõuda meilt sinu isikuandmete kustutamist. Järgime kõiki sinu isikuandmetega seotud kehtivaid õigusakte ja eeskirju.",
+        "description12": "Oleme pühendunud isikuandmete turvalisuse kaitsmisele ja rakendame asjakohaseid meetmeid, et käsitleda kõiki turvaintsidente või rikkumisi kooskõlas kohaldatavate õigusaktide ja eeskirjadega.",
+        "description2": "Kõikide isikuandmeid töötlevate töötajate nõuetekohase väljaõppe tagamine andmekaitse- ja turvameetmete osas",
+        "description3": "Isikuandmetele juurdepääsu piiramine volitatud töötajatele teadmisvajaduse alusel",
+        "description4": "Tugeva salasõnapoliitika, pääsukontrollide ja muude turvameetmete rakendamine, et vältida volitamata ligipääsu isikuandmetele",
+        "description5": "Isikuandmete krüpteerimine nende edastamisel ja hoidmisel, et vältida loata ligipääsu või avaldamist",
+        "description6": "Viirusetõrje, pahavaratõrje ja muu turbetarkvara ajakohasena hoidmine, et ennetada ja tuvastada turvaintsidente",
+        "description7": "Tagamine, et meie kolmandast isikust teenusepakkujad rakendavad isikuandmete kaitsmiseks samuti asjakohaseid tehnilisi ja korralduslikke meetmeid.",
+        "description8": "Lisaks vaatame regulaarselt üle ja ajakohastame oma turbepoliitikaid ja protseduure, et tagada nende vastavus uusimate valdkonnastandardite ja parimate tavadega.",
+        "description9": "Lubame sinu isikuandmetele ligi pääseda ainult nendel töötajatel, töövõtjatel ja kolmandast isikust teenusepakkujatel, kellel on neid andmeid vaja oma tööülesannete täitmiseks. Kõik isikuandmeid töötlevad töötajad on kohustatud hoidma nende andmete konfidentsiaalsust.",
+        "subtitle1": "Sinu isikuandmete kaitsmine on meie jaoks oluline. Rakendame asjakohaseid tehnilisi ja korralduslikke meetmeid, et tagada meie töötlemistegevuse riskidele vastav turbetase. Need meetmed hõlmavad krüptimist, pääsukontrolli, regulaarseid turvalisuse hindamisi ja töötajate andmekaitsealast väljaõpet.",
+        "subtitle2": "Mõned meie rakendatud meetmed on loetletud allpool.",
+        "title": "KUIDAS ME ISIKUANDMEID TURVAME"
+      },
+      "item6": {
+        "description1": "Teenusepakkujad: võime jagada sinu isikuandmeid kolmandast isikust teenusepakkujatega, kes aitavad meid meie tegevuses, sealhulgas IT-teenuste pakkujad, turundusagentuurid ja maksetöötlejad. Tagame, et kõik meie teenusepakkujad järgivad isikuandmete kaitse üldmäärust ja California tarbijate privaatsusseadust ning rakendavad isikuandmete kaitsmiseks sobivaid turvameetmeid.",
+        "description2": "Õiguslikud kohustused: võime avaldada sinu isikuandmeid, kui oleme seda kohustatud tegema seaduse alusel või vastusena riigiasutuse seaduslikule taotlusele.",
+        "description3": "Ühinemised ja ülevõtmised: meie ettevõtte ühinemise, omandamise või meie vara täieliku või osalise müügi korral võidakse sinu isikuandmeid edastada selle tehingu raames. Sellistel juhtudel tagame isikuandmete kaitse vastavalt isikuandmete kaitse üldmääruse ja California tarbijate privaatsusseaduse nõuetele.",
+        "description4": "Nõusolek: me võime jagada sinu isikuandmeid kolmandate isikutega, kui oled meile selleks nõusoleku andnud. Enne isikuandmete sel viisil jagamist küsime sinult alati selgesõnalise nõusoleku.",
+        "footer": "Pane tähele, et me ei müü sinu isikuandmeid kolmandatele isikutele ja võtame kõik vajalikud meetmed, et tagada sinu isikuandmete kaitse, kui neid jagatakse kolmandate isikutega vastavalt isikuandmete kaitse üldmääruse ja California tarbijate privaatsusseaduse nõuetele.",
+        "subtitle": "Isikuandmete kaitse üldmääruse ja California tarbijate privaatsusseaduse alusel võime jagada sinu isikuandmeid kolmandate isikutega järgmistel juhtudel.",
+        "title": "ISIKUANDMETE JAGAMINE"
+      },
+      "item7": {
+        "description1": "Õigus olla informeeritud: üksikisikutel on õigus teada, milliseid isikuandmeid me kogume, miks me neid kogume ja kuidas me neid kasutame. See teave on esitatud meie privaatsuspoliitikas.",
+        "description2": "Õigus andmetega tutvuda: isikutel on õigus taotleda võimalust tutvuda meie valduses olevatele nende isikuandmetega. Vastame sellistele taotlustele kooskõlas isikuandmete kaitse üldmääruse ja California tarbijate privaatsusseadusega.",
+        "description3": "Õigus andmete parandamisele: isikutel on õigus nõuda meie valduses olevate isikuandmete ebatäpsuste parandamist või puuduvate andmete lisamist.",
+        "description4": "Õigus kustutamisele: isikutel on õigus nõuda, et me kustutaksime nende isikuandmed teatud asjaoludel, näiteks siis, kui andmed ei ole enam vajalikud eesmärkidel, milleks need koguti, või kui isik võtab oma nõusoleku tagasi.",
+        "description5": "Õigus piirata töötlemist: isikutel on õigus nõuda, et me piiraksime nende isikuandmete töötlemist teatud asjaoludel, näiteks kui andmete õigsus on vaidlustatud või kui isik on esitanud töötlemise suhtes vastuväite.",
+        "description6": "Õigus andmete ülekandmisele: isikutel on õigus nõuda oma isikuandmete koopiat struktureeritud, üldkasutatavas ja masinloetavas vormingus ning edastada neid andmeid teisele vastutavale töötlejale.",
+        "description7": "Õigus esitada vastuväiteid: isikutel on õigus esitada vastuväiteid oma isikuandmete töötlemise suhtes teatud asjaoludel, näiteks kui töötlemine põhineb õigustatud huvil või otseturunduse eesmärgil.",
+        "footer": "Me võtame kõiki andmesubjektide õigustega seotud taotlusi tõsiselt ning vastame neile õigeaegselt ja kooskõlas nii isikuandmete kaitse üldmääruse kui ka California tarbijate privaatsusseadusega.",
+        "subtitle": "Me mõistame, et isikutel on oma isikuandmetega seoses teatud õigused. Seetõttu oleme pühendunud nende õiguste kaitsmisele vastavalt isikuandmete kaitse üldmäärusele ja California tarbijate privaatsusseadusele. Need õigused hõlmavad järgmist.",
+        "title": "MEIE LIIKMETE ÕIGUSED"
+      },
+      "item8": {
+        "description1": "Me kasutame automatiseeritud otsuste tegemise ja profiilianalüüsi protseduure.",
+        "description2": "Küsitluse jaoks sobivate kandidaatide valimine toimub automatiseeritud otsusega. Teatud küsitlusi pakutakse eelnevalt määratletud sihtrühmadele.",
+        "description3": "See võib kaasa tuua selle, et sind ei tunnistata sobivaks kandidaadiks, mis tähendab, et vastavat küsitlust sinule ei saadeta. Automatiseeritud otsust kasutatakse seega sihtrühma kuuluvate inimeste kiireks tuvastamiseks ja selle õiguslik alus on lepinguline suhe vastavalt isikuandmete kaitse üldmääruse artikli 6 lõike 1 punktile b.",
+        "description4": "Õiguslik alus on meie õigustatud huvi kaitsta meid ja sind pettuste eest (isikuandmete kaitse üldmääruse artikli 6 lõike 1 punkt f).",
+        "description5": "Kui sinu arvates on sind automatiseeritud otsusega küsitlusest ekslikult välja jäetud või sulle tasu maksmisest on ekslikult keeldutud, saad kontaktivormi kaudu ühendust võtta meie kasutajatoega ja taotleda, et meie töötaja vaataks selle otsuse üle.",
+        "title": "AUTOMAATNE OTSUSTE TEGEMINE ISIKU KOHTA JA PROFIILIANALÜÜS"
+      },
+      "item9": {
+        "description1": "Me säilitame sinu isikuandmeid ainult seni, kuni see on vajalik nende kogumise eesmärkide täitmiseks, sealhulgas mistahes õigus-, raamatupidamis- või aruandlusnõuete täitmiseks.",
+        "description2": "Uurimise eesmärgil säilitame sinu isikuandmeid maksimaalselt 3 aastat alates kogumise kuupäevast või seni, kuni sa taotled nende kustutamist. Pärast seda perioodi kustutatakse sinu isikuandmed turvaliselt või muudetakse anonüümseks, nii et neid ei saa enam sinuga seostada.",
+        "description3": "Kui oled andnud nõusoleku meilt turundusteadete saamiseks, säilitame sinu isikuandmeid nii kaua, kui see on vajalik nende teadete edastamiseks, välja arvatud juhul, kui võtad oma nõusoleku tagasi või taotled oma isikuandmete kustutamist.",
+        "description4": "Kui kasutad oma õigust kustutamisele, kustutame sinu isikuandmed turvaliselt või muudame need anonüümseks esimesel võimalusel, välja arvatud juhul, kui oleme kohustatud neid säilitama õiguslikel, raamatupidamislikel või aruandluse eesmärkidel.",
+        "description5": "Pane tähele, et meilt võidakse nõuda teatud isikuandmete pikemaajalist säilitamist, et täita muid õiguslikke või regulatiivseid kohustusi.",
+        "description6": "Kui sul on meie säilitustähtaegade kohta küsimusi, võta meiega ühendust, kasutades selle privaatsuspoliitika jaotises „Võta meiega ühendust” esitatud andmeid.",
+        "title": "SÄILITUSPERIOOD"
+      },
+      "provider": {
+        "description1": "Intra Research OÜ",
+        "description2": "Tatari 64",
+        "description3": "10134 Tallinn Eesti",
+        "description4": "Esindaja: Marina Moshenska.",
+        "title": "Selle andmekaitsepoliitika vastutav pakkuja on:"
+      },
+      "subtitle": "Uuendatud {0}",
+      "tax-obligation": {
+        "section1": {
+          "description": "Paneeli liikmed, kes saavad ettevõtte küsitlustes osalemise eest kingitusi või võite, on kohustatud deklareerima need oma riigi pädevale maksuhaldurile. Ettevõte on selliste kingituste maksuhaldurile deklareerimise kohustustest vabastatud. Vajaduse korral pead auhindade jagamise kohta esitama kohalikule maksuhaldurile täiendavat teavet, näiteks maksukohustuslase numbri.",
+          "title": "KINGITUSTEGA SEOTUD MAKSUKOHUSTUS"
+        }
+      },
+      "title": "Privaatsuspoliitika"
+    },
+    "reactivate": {
+      "text": "Sinu konto on inaktiveeritud. Kas soovid selle uuesti aktiveerida?"
+    },
+    "reactivate-account": {
+      "button": "Aktiveeri konto uuesti",
+      "description": "Tere tulemast, {name}! Sinu konto on praegu suletud. Kui otsustad meiega uuesti liituda, on meil sinu andmed alles.",
+      "invalid": {
+        "description": "Saad oma konto kasutamist jätkata.",
+        "subtitle": "Sinu konto on praegu aktiivne"
+      },
+      "subtitle": "Sinu konto on praegu suletud",
+      "success": {
+        "button": "Ava minu leht",
+        "description": "Meil on hea meel, et oled tagasi. Saad nüüd oma konto kasutamist jätkata.",
+        "subtitle": "Sinu konto on uuesti aktiveeritud"
+      },
+      "title": "Aktiveeri konto uuesti"
+    },
+    "register": {
+      "button": {
+        "back": "Tagasi",
+        "continue": "Jätka",
+        "facebook": "Jätka Facebookiga",
+        "google": "Jätkake Google'iga",
+        "login": "Logi sisse",
+        "submit": "Registreeru"
+      },
+      "field": {
+        "agree": {
+          "privacy": "Privaatsuspoliitika",
+          "terms": "Tingimused",
+          "title": "Ma nõustun järgnevaga: {0} ja {1}",
+          "validation": {
+            "required": "Tutvu tingimustega ja klõpsa jätkamiseks seda kasti."
+          }
+        }
+      },
+      "invite-friends": {
+        "button": "Registreeru",
+        "invalid": {
+          "button": "Sule",
+          "subtitle": "Näib, et sinu kutse link on kehtetu või valesti sisestatud, kuid saad siiski registreerumist jätkata.",
+          "title": "Kehtetu link"
+        },
+        "subtitle": "Liitu veebisaidiga MinuArvamus.ee ning teeni raha ja kinkekaarte veebiküsitlustes ja turu-uuringutes osalemise eest. Avalda arvamust ja mõjuta brände. Registreeru kohe!",
+        "title": "{0} on kutsunud teid MinuArvamusega liituma"
+      },
+      "label": {
+        "already-registered": "Kas olete juba registreerunud? {0}",
+        "options": "Sisesta oma meiliaadress ja vali salasõna või kasuta registreerumiseks oma Google'i või Facebooki kontot.",
+        "or": "või",
+        "welcome": "Liituge meiega, et teenida kingitusi ja raha. Esiteks peame teie kohta natuke midagi teadma. See võtab vaid mõne minuti. Alustamiseks täitke vorm.",
+        "welcome1": {
+          "main": "Liitu meiega ja sind ootavad {rewards} Eestis veebiküsitlustes osalemise eest. Alustamiseks vajame sinu kohta veidi andmeid. See võtab kõigest mõne minuti ja registreerumine on täiesti tasuta.",
+          "rewards-link": "raha ja kingitused"
+        },
+        "welcome2": {
+          "how-it-works-link": "Vaata, kuidas see toimib",
+          "main": "Kas soovid enne registreerumist rohkem teavet? {how_it_works}"
+        }
+      },
+      "login-error": {
+        "button": "Jah, ühenda olemasoleva kontoga",
+        "description": "Sinu meiliaadressi {0} kasutab juba teine kasutaja.",
+        "title": "Sisestatud meiliaadress on juba kasutusel"
+      },
+      "login-error-email": {
+        "description": "Logi sellega sisse."
+      },
+      "login-error-facebook": {
+        "description": "Kas soovid ühendada oma Facebooki konto olemasoleva kasutajakontoga? Seejärel saad sisse logida kas oma meiliaadressi ja salasõnaga või Facebooki kontoga. Jätkamiseks pead esmalt sisse logima."
+      },
+      "login-error-google": {
+        "description": "Kas soovid ühendada oma Google’i konto olemasoleva kasutajakontoga? Seejärel saad sisse logida kas oma meiliaadressi ja salasõnaga või Google’i kontoga. Jätkamiseks pead esmalt sisse logima."
+      },
+      "submitted": {
+        "title": "Tere tulemast MinuArvamusse!"
+      },
+      "submitted-email": {
+        "button": {
+          "change-email": "Muuda e-posti aadressi siin",
+          "fill-out-more": "Täida rohkem",
+          "support": "kasutajatoe leht"
+        },
+        "description1": "Oled nüüd registreerunud liikmeks, kuid pole veel oma meiliaadressi kinnitanud. Saadame sinu meiliaadressile kinnitusteate. Kui oled teate kätte saanud, ava see ja klõpsa nuppu \"Kinnita minu meiliaadress\".",
+        "description2": "Saatsime kinnitusmeili aadressile {0}",
+        "description3": "Kas see ei ole õige meiliaadress? {0}",
+        "description4": "Jätkamiseks sisesta enda kohta lisateavet, et teenida rohkem punkte ja suurendada oma võimalusi saada küsitluste kutseid.",
+        "description5": "Kui sa ei ole kümne minuti jooksul pärast meiliaadressi sisestamist kinnitusmeili saanud, võta meiega ühendust: {0}"
+      },
+      "submitted-google": {
+        "button": {
+          "change-email": "Muuda e-posti aadressi siin",
+          "continue": "Jätka"
+        },
+        "description1": "Oled nüüd liikmeks registreeritud.",
+        "description2": "Sinu meiliaadressi {0} kasutatakse küsitluste kutsete ja sinu valitud kingituste kohta teabe saatmiseks.",
+        "description3": "Jätkamiseks sisesta enda kohta lisateavet, et teenida rohkem punkte ja suurendada oma võimalusi saada küsitluste kutseid.",
+        "description4": "Kas soovid saada kutseid teisele meiliaadressile? {0}",
+        "description5": "Oled nüüd liikmeks registreeritud. Sinu meiliaadressi {0} kasutatakse küsitluste kutsete ja sinu valitud kingituste kohta teabe saatmiseks."
+      },
+      "title": "Registreeri konto",
+      "zip-code": {
+        "button": {
+          "known": "Ma tean oma postiindeksit",
+          "locate": "Kasuta postiindeksi otsingut",
+          "next": "Edasi",
+          "unknown": "Ma ei tea oma postiindeksit"
+        },
+        "helper-text": "Asukoha automaatseks leidmiseks sisesta postiindeks.",
+        "invalid": "Sisesta kehtiv postiindeks.",
+        "label": "Kus sa elad?",
+        "placeholder": "Postiindeks",
+        "valid": "Kinnitatud!"
+      }
+    },
+    "reward": {
+      "button": {
+        "read-less": "Vähem",
+        "read-more": "Rohkem"
+      },
+      "how-to-redeem": {
+        "title": "Kuidas lunastada?"
+      },
+      "redeem": {
+        "alert": {
+          "duplicate": {
+            "cancel": "Tühista",
+            "submit": "Jätka",
+            "subtitle": "Oled selle kingituse lunastanud ja seda praegu töödeldakse. Kas soovid jätkata ja lunastada järgmise?",
+            "title": "Kingitus on juba lunastatud"
+          }
+        },
+        "button": "Lunasta",
+        "confirm": {
+          "button": {
+            "cancel": "Tühista",
+            "submit": "Kinnita"
+          },
+          "subtitle": "Oled valimas kingitust {0} / {1}. Sinu kontolt arvestatakse maha {2} punkti. Kas soovid jätkata?",
+          "title": "Kinnitage valik"
+        },
+        "error": {
+          "authentication": {
+            "button": "Logi sisse",
+            "subtitle": "Kingituse valimiseks logi sisse.",
+            "title": "Sisselogimine nõutav"
+          },
+          "incomplete": {
+            "button": "Ava Minu konto",
+            "subtitle": "Enne kingituse valimist sisesta oma aadress ja telefoninumber.",
+            "title": "Mittetäielik profiil"
+          },
+          "unverified": {
+            "button": "Ava Minu konto",
+            "subtitle": "Kingituste saamiseks kinnita oma meiliaadress.",
+            "title": "Kinnita meiliaadress"
+          }
+        },
+        "label": {
+          "insufficient-points": "Selle kingituse lunastamiseks pead teenima veel {0} punkti"
+        },
+        "success": {
+          "button": "Ava minu kingitused",
+          "subtitle": "Oled kingituse tellinud. See on ülevaatamisel ja ootab kinnitamist. Olekut saad vaadata oma profiilis.",
+          "title": "Kinnituse ootel"
+        },
+        "title": "Vali oma kingitus"
+      },
+      "terms": {
+        "title": "Kasutustingimused"
+      },
+      "title": "Kingitused",
+      "view-more": {
+        "subtitle": "Küsitlustes osalemise eest teenitud punktide eest saad valida tuntud partnerite teenuseid ja tooteid ning saata raha oma PayPali kontole.",
+        "title": "Milliseid kingitusi saad valida?"
+      }
+    },
+    "rewards": {
+      "button": {
+        "load-more": "Laadi rohkem",
+        "read-more": "Rohkem",
+        "register": "Liitu ja hakka teenima"
+      },
+      "empty": "Kingitusi ei ole",
+      "label": {
+        "points-from": "Punktid alates: {0}"
+      },
+      "subtitle1": "Teeni küsitlustele vastates raha ja kinkekaarte",
+      "subtitle2": {
+        "how-it-works-link": "Lisateavet leiate siit",
+        "main": "Küsitlustes osalemise eest teenitud punktide eest saad valida tuntud partnerite teenuseid ja tooteid ning saata raha oma PayPali kontole. Kas sind huvitab, kuidas see toimib? {how_it_works}"
+      },
+      "title": "Kingitused"
+    },
+    "support": {
+      "button": {
+        "faq": "Korduma kippuvad küsimused"
+      },
+      "subtitle1": "Kuidas saame aidata?",
+      "subtitle2": "Aitame sul leida lahendusi ja anname kasulikku teavet, kui valid allpool teema.",
+      "subtitle3": "Kui sul on veel küsimusi, pakub täiendavat abi {0}.",
+      "title": "Kasutajatugi"
+    },
+    "support-request": {
+      "alert": {
+        "closed-request1": "See toetaotlus on lahendatud ja suletud. Kui soovid sõnumit saata, esita uus taotlus {0}",
+        "closed-request2": "siin",
+        "message-limit": "Oled jõudnud meie sõnumite limiidini. Enne uue sõnumi saatmist oota, kuni meie administraator on taotluse töödelnud.",
+        "no-reply": "Sellele taotlusele ei ole veel vastuseid. Saadame sulle meili, kui see on töödeldud. Värske teabe vaatamiseks võid vajutada ka seda linki.",
+        "spam1": "See toetaotlus on märgitud rämpspostiks. Kui soovid sõnumit saata, esita uus taotlus {0}",
+        "spam2": "siin"
+      },
+      "chat-bubble": {
+        "admin": "Admin",
+        "you": "Sina"
+      },
+      "close-success": {
+        "button": "Ava avaleht",
+        "subtitle1": "Sinu taotlus on suletud. Kui vajad endiselt abi, saad esitada uue taotluse {0}",
+        "subtitle2": "siin",
+        "title": "Aitame suurima rõõmuga!"
+      },
+      "confirm-close": {
+        "no": "Ei",
+        "title": "Kas soovid selle taotluse sulgeda ja märkida asja lahendatuks?",
+        "yes": "Jah, probleem on lahendatud"
+      },
+      "feedback": {
+        "no": "Ei, ma vajan endiselt abi",
+        "question": "Probleem lahendatud?",
+        "yes": "Jah, probleem lahendatud"
+      },
+      "invalid-link": {
+        "button": "Ava avaleht",
+        "subtitle1": "Kahjuks me ei leia seda taotlust. Kontrolli oma linki või esita uus taotlus {0}",
+        "subtitle2": "siin",
+        "title": "Kehtetu link"
+      },
+      "message-box": {
+        "button-send": "Saada",
+        "placeholder": "Sisesta sõnum...",
+        "title": "Saada uus sõnum"
+      },
+      "number": "Taotlus nr {0}",
+      "reward-question": {
+        "date-redeemed": "Lunastatud {0}"
+      },
+      "survey-question": {
+        "date-invited": "Kutsutud {0}"
+      },
+      "title": "Toetaotlused"
+    },
+    "support-requests": {
+      "alert": {
+        "button": "Täiendava teabe vaatamiseks klõpsa siin",
+        "message": "Sul on praegu {total} toetaotlust. {button}"
+      },
+      "empty": "Toetaotlusi pole",
+      "number": "Taotlus nr {0}",
+      "status": {
+        "closed": "Suletud",
+        "spam": "Märgitud rämpspostiks"
+      }
+    },
+    "support-topic": {
+      "cannot-login": {
+        "forgot-password": "siin",
+        "not-registered": "Me ei näe selle meiliaadressiga kasutajat. Võib-olla kasutasid registreerumisel teist meiliaadressi?",
+        "title": "Mis on põhjused, miks ma ei saa sisse logida?",
+        "verified": "Näib, et olete oma salasõna unustanud. Saate luua uue salasõna {0}."
+      },
+      "change-email": {
+        "button": {
+          "change-email": "Muuda meiliaadressi"
+        },
+        "go-to-process": "Jätka vastavalt meiliaadressi muutmise juhistele.",
+        "title": "Soovin oma e-posti aadressi muuta."
+      },
+      "close-account": {
+        "button": {
+          "close-account": "Sule konto"
+        },
+        "go-to-process": "Jätka vastavalt konto sulgemise juhistele.",
+        "title": "Soovin oma konto sulgeda."
+      },
+      "form": {
+        "button": "Esita",
+        "captcha": {
+          "label": "Jätkamiseks märgista ruut:",
+          "required": "Vii turvakontroll lõpule."
+        },
+        "email": {
+          "invalid": "Sisesta kehtiv meiliaadress.",
+          "label": "Sinu meiliaadress:",
+          "required": "Sisesta oma meiliaadress."
+        },
+        "explanation": {
+          "label": "Lisa selgitus.",
+          "required": "Räägi meile sellest."
+        },
+        "name": {
+          "label": "Sinu nimi:",
+          "required": "Sisesta oma nimi."
+        },
+        "success": "Aitäh! Sinu taotlus on saadetud meie toemeeskonnale."
+      },
+      "helpful": {
+        "no": {
+          "answer": "Ei",
+          "email": {
+            "invalid": "Sisesta kehtiv meiliaadress.",
+            "label": "Sisesta meiliaadress, millega sa registreerusid:",
+            "required": "Sisesta oma meiliaadress.",
+            "submit": "Esita"
+          }
+        },
+        "question": "Kas sellest oli abi?",
+        "yes": {
+          "answer": "Jah",
+          "message": "Suurepärane! Tore, et saime aidata."
+        }
+      },
+      "login-required": {
+        "button": "Logi sisse",
+        "message": "Jätkamiseks logige sisse."
+      },
+      "no-confirmation": {
+        "message": {
+          "not-registered": "Me ei näe, et see meiliaadress oleks registreeritud. Muuda oma kontoga ühendatud meiliaadressi.",
+          "verified": "Sinu meiliaadress on juba kinnitatud. Kõik on korras."
+        },
+        "title": "Ma ei saanud registreerumise kohta kinnitusmeili."
+      },
+      "other": {
+        "title": "Muu (täpsusta)."
+      },
+      "reward-question": {
+        "button": {
+          "see-all": "Vaata kõiki kingitusi"
+        },
+        "date-redeemed": "Lunastatud {0}",
+        "no-request": "Sa ei ole veel kingitusi taotlenud.",
+        "select-reward": {
+          "label": "Need on sinu kingitusetaotlused. Vali kingitus, mille kohta soovid küsida."
+        },
+        "title": "Mul on küsimus kingituse ja sellega seotud punktide kohta."
+      },
+      "survey-question": {
+        "button": {
+          "see-all": "Vaata kõiki küsitlusi"
+        },
+        "date-invited": "Kutsutud {0}",
+        "no-invitation": "Sind ei ole veel küsitlustesse kutsutud.",
+        "select-survey": {
+          "label": "Need on sinu hiljutised küsitlused. Vali küsitlus, mille kohta soovid küsida."
+        },
+        "title": "Mul on küsimus küsitluse ja sellega seotud punktide kohta."
+      },
+      "title": "Teemad",
+      "website-mistake": {
+        "title": "Leidsin portaalis vea."
+      }
+    },
+    "surveys": {
+      "button": {
+        "empty": "Ava küsitluste leht",
+        "read-less": "Vähem",
+        "read-more": "Rohkem",
+        "view": "Ava küsitlus",
+        "view-all": "Vaadake kõiki küsitlusi"
+      },
+      "empty": {
+        "data": "Küsitlusi ei ole",
+        "data-available": "Saadaolevaid küsitlusi ei ole",
+        "data-completed": "Täidetud küsitlusi ei ole",
+        "data-filtered": "{0} küsitlusi ei ole"
+      },
+      "filter": {
+        "available": "Saadaval",
+        "completed": "Täidetud"
+      },
+      "subtitle": "Siin on {0} saadaolevat küsitlust, mis võivad teile huvi pakkuda",
+      "title": "Saadaolevad küsitlused"
+    },
+    "terms": {
+      "date-updated": "23.03.2018",
+      "list": {
+        "title": "Portaali MinuArvamus kasutajaks registreerudes kinnitad, et oled tutvunud selle kasutuslepingu tingimustega (edaspidi \"tingimused\"), nõustud kasutustingimustega ja kohustud neid täitma vastavalt alltoodud sätetele."
+      },
+      "list-item1": "MinuArvamus veebisaidi liikmeks saavad registreeruda kõik, kes on vähemalt 14-aastased. Liikmel võib olla ainult üks konto.",
+      "list-item10": "MinuArvamus jätab endale õiguse sulgeda liikme konto ja kustutada kogutud punktid, kui liige on rikkunud kasutuslepingu tingimusi. Näiteks sulgeme konto, kui liige on loonud mitu kasutajakontot, sisestanud ebaõigeid andmeid või täitnud küsimustikke seosetu teabega.",
+      "list-item11": "MinuArvamus jätab endale õiguse selle kasutuslepingu tingimusi ühepoolselt muuta. Muudatused jõustuvad siis, kui need on MinuArvamuse liikmetele teatavaks tehtud. MinuArvamuse liikmetel on õigus oma liikmesus igal ajal lõpetada, kui nad ei nõustu kasutuslepingu tingimustega.",
+      "list-item2": "MinuArvamuse liikmed kohustuvad esitama oma õiged isikuandmed.",
+      "list-item3": "MinuArvamuse liikmesus ei kohusta liiget küsitlustes osalema ega ühtegi küsitlust täitma.",
+      "list-item4": "Portaali liikmesus on tasuta ja kehtib tähtajatult. Liikmesuse lõpetamine toimub MinuArvamuse portaalis spetsiaalse toiminguga.",
+      "list-item5": "MinuArvamus ei saa tagada oma liikmetele küsitlustes osalemist, kuna osalejad valitakse juhuslikult kõigi liikmete hulgast ning sotsiaalsete ja demograafiliste kriteeriumide tõttu ei pruugi kõik liikmed sobida mõnes küsitluses osalema.",
+      "list-item6": "MinuArvamuse küsitluste kliendid saavad vastused anonüümsel ja üldistatud kujul ning vastuseid ei ole võimalik seostada konkreetsete isikutega.",
+      "list-item7": "MinuArvamus ei avalda isikuandmeid ühelegi kolmandale isikule, välja arvatud juhtudel, kui see on vajalik auhindade üleandmiseks.",
+      "list-item8": "MinuArvamuse liikmed teenivad punkte küsitluste täitmise eest. Küsitluse kutse sisaldab teavet selle kohta, kui palju aega küsitluse täitmine võtab, kui palju punkte saab koguda ja kas selles küsitluses osalejad osalevad ka loosimises.",
+      "list-item9": "MinuArvamuse liikmed teenivad punkte ainult korrektselt täidetud ja lõpetatud küsimustike eest.",
+      "subtitle1": "Muudetud {0}",
+      "subtitle2": "Need tingimused on vajalikud MinuArvamuse portaali kasutamiseks",
+      "title": "Tingimused"
+    },
+    "unsubscribe": {
+      "button": "Jah, lahkun listist",
+      "description": "Sinu meiliaadress {0} on praegu meie meililistis. Kui otsustad listist lahkuda, ei saa sa meilt enam e-kirju. Kas soovid jätkata?",
+      "field": {
+        "reason": {
+          "validation": {
+            "required": "Sisesta põhjus."
+          }
+        }
+      },
+      "reason": {
+        "inbox-full": "Minu postkast on liiga täis",
+        "not-interested": "Ma ei ole enam huvitatud",
+        "not-relevant": "See sisu ei ole minu jaoks asjakohane",
+        "other": "Muu (täpsusta)",
+        "received-too-many": "Ma sain liiga palju meile",
+        "spam": "Ma ei ole kunagi selle meililistiga liitunud"
+      },
+      "resubscribe": {
+        "button": "Uuesti liituda",
+        "description": "Kui see oli viga, saad {0}."
+      },
+      "subtitle": "Kas oled kindel, et soovid kõikide MinuArvamuse meilide saamisest loobuda?",
+      "success": {
+        "button": "Saada tagasisidet",
+        "description": "Meil on kahju, et lahkud. Võta hetk ja anna meile teada, miks sa kirjadest loobud.",
+        "title": "Sind on MinuArvamuse meililistist eemaldatud"
+      },
+      "title": "Lahku listist"
+    },
+    "verify-email": {
+      "error": {
+        "button": {
+          "login": "Logi sisse",
+          "send-verification": "Saada kinnitusmeil"
+        },
+        "description1": "Kahjuks sinu kinnituskood ei kehti või on aegunud. Jätkamiseks taotle oma kinnitatud meiliaadressile uut koodi.",
+        "description2": "Logi sisse ja taotle uut kinnitusmeili.",
+        "title": "Sinu meiliaadressi ei saa kinnitada"
+      },
+      "success": {
+        "button": {
+          "login": "Logi sisse",
+          "next": "Edasi"
+        },
+        "description1": "Sinu meiliaadress {0} on kinnitatud. Saadame sellel meiliaadressil sulle kutseid küsitlustes osalemiseks ja teavet sinu valitud kingituste kohta.",
+        "description2": "Enne jätkamist logi sisse.",
+        "description3": "Jätkamiseks sisesta enda kohta lisateavet, et teenida rohkem punkte ja suurendada oma võimalusi saada küsitluste kutseid.",
+        "message": {
+          "check-inbox": "Vaata, kas su postkastis on kinnitusmeil. Ära unusta ka rämpsposti kausta kontrollida.",
+          "email-sent": "Meil on saadetud."
+        },
+        "title": "Sinu meiliaadress on kinnitatud"
+      },
+      "title": "Meiliaadressi kinnitamine"
+    }
+  },
+  "raffle": {
+    "website-launch": {
+      "btn": "Täida profiil",
+      "subtitle": "Loosimises osalemiseks täida profiil enne {date}",
+      "title": "Võida {amount}!"
+    }
+  },
+  "response": {
+    "activate": {
+      "error": {
+        "already-activated": "Viga: konto on juba aktiveeritud!"
+      },
+      "success": {
+        "activate": "Õnnestus: konto on aktiveeritud! Jätkamiseks logi sisse",
+        "change-email": "Meiliaadress on muudetud! Jätkamiseks logi sisse"
+      }
+    },
+    "changeemail": {
+      "success": "Õnnestus: vaata aktiveerimiskoodi meilist."
+    },
+    "changepassword": {
+      "success": "Õnnestus: jätkamiseks logi sisse"
+    },
+    "changepasswordlogged": {
+      "error": {
+        "invalid-password": "Viga: salasõnad ei ühti",
+        "invalid-user": "Viga: kehtetu kasutaja"
+      },
+      "success": "Õnnestus: salasõna muudetud"
+    },
+    "deactivateaccount": {
+      "success": {
+        "deactivate": "Õnnestus: konto uuesti aktiveerimiseks pead taas sisse logima.",
+        "delete": "Konto kustutatud"
+      }
+    },
+    "error": {
+      "account-doesnt-exist": "Viga: meiliaadressi ei ole",
+      "email-taken": "Viga: meiliaadress on juba kasutusel.",
+      "internal-error": "Tekkis tõrge. Proovi hiljem uuesti.",
+      "invalid-code": "Viga: vale kood"
+    },
+    "forgotpassword": {
+      "success": "Õnnestus: vaata koodi meilist."
+    },
+    "inquiry": {
+      "error": "Viga: tekkis tõrge. Proovi hiljem uuesti.",
+      "success": "Õnnestus: päring on saadetud."
+    },
+    "login": {
+      "error": {
+        "incorrect-details": "Viga: meiliaadress ja salasõna ei ühti",
+        "incorrect-details-and-max-attempt": "Viga: meiliaadress ja salasõna ei ühti. Oled ületanud maksimaalse katsete arvu. Oota mõni minut enne uuesti sisselogimist."
+      },
+      "success": "Õnnestus! Logime sisse"
+    },
+    "reactivate": {
+      "success": "Õnnestus! Sinu konto on uuesti aktiveeritud"
+    },
+    "register": {
+      "success": "Õnnestus! Registreerimine on lõpetatud"
+    },
+    "reward": {
+      "cancel-success": "Õnnestus! Sinu kingitus on tühistatud."
+    },
+    "saveprofile": {
+      "success": "Õnnestus! Profiil on värskendatud"
+    },
+    "sendverificationcode": {
+      "success": "Õnnestus! Vaata aktiveerimiskoodi meilist"
+    },
+    "success": {
+      "changes-saved": "Muudatused on salvestatud."
+    },
+    "validatecode": {
+      "error": {
+        "expired-code": "Viga: kood on aegunud. Vaata uut koodi meilist."
+      },
+      "success": {
+        "new-email": "Õnnestus: meiliaadress muudetud. Jätkamiseks logi sisse",
+        "new-password": "Õnnestus: sisesta uus salasõna"
+      }
+    }
+  },
+  "survey": {
+    "active": {
+      "title": "Aktiivsed küsitlused"
+    },
+    "back": {
+      "btn": "Tagasi küsitluste juurde"
+    },
+    "can-earn": {
+      "text": "Küsitlustega saad teenida punkte"
+    },
+    "can-win": {
+      "short": {
+        "text": "Teeni pilet"
+      },
+      "text": "Selle küsitluse täitmisega teenid pileti järgmisteks loosimisteks: {0}"
+    },
+    "cancel": {
+      "btn": "Ma ei soovi selles küsitluses osaleda"
+    },
+    "confirm-cancel": {
+      "cancel": "Tühista",
+      "proceed": "Jätka",
+      "subtitle": "Kas oled kindel, et ei soovi selles küsitluses osaleda?",
+      "title": "Ma ei soovi osaleda"
+    },
+    "device": {
+      "desktop": "Töölaud",
+      "empty": "Saadaolevaid seadmeid ei ole",
+      "mobile": "Mobiil",
+      "tablet": "Tahvelarvuti"
+    },
+    "earn": {
+      "text": "Teeni"
+    },
+    "end": {
+      "imported-users": {
+        "btn": "Logi sisse",
+        "msg1": "Suur tänu küsitluses osalemise eest",
+        "msg2": "Logi sisse ja värskenda oma profiili andmeid, et osaleda auhinna {amount} loosimises."
+      }
+    },
+    "know": {
+      "more": {
+        "btn": "Lisateave"
+      }
+    },
+    "label": {
+      "device": "Saadaval",
+      "minutes": "{0} min",
+      "points": "Teenitavad punktid",
+      "points-earned": "Teenitud punktid",
+      "tickets": "{0} pilet",
+      "time": "Aega lõpetamiseks"
+    },
+    "minutes": {
+      "text": "minutit"
+    },
+    "no": {
+      "mobile": {
+        "continue": {
+          "text": "Kas sa ei kasuta mobiiltelefoni? Jätka siin."
+        },
+        "text": "Seda küsitlust ei saa täita mobiiltelefoniga. Kasuta sellele küsitlusele vastamiseks arvutit."
+      }
+    },
+    "points": {
+      "text": "punkti"
+    },
+    "preview": {
+      "button": "Vaadake kõiki saadaolevaid küsitlusi",
+      "subtitle": "Meil on sulle pakkuda veel {0} küsitlust. Pärast neile vastamist võid teenida kuni {1} punkti.",
+      "title": "Tutvu teiste küsitlustega"
+    },
+    "quality": {
+      "issue": {
+        "text1": "Küsitluse tellija teatas meile, et sinu vastuste kvaliteet on allpool rahuldavat taset. Sinu vastuste staatust ja saadud punktide arvu on korrigeeritud.",
+        "text2": "Vastuste kvaliteedi kontrollimise ja mõõtmise erinevate meetodite kohta leiad lisateavet meie veebisaidilt.",
+        "title": "Kehva kvaliteediga vastused"
+      },
+      "warning": {
+        "number": "Sul on {warnings} hoiatus(t)",
+        "text": "Said selle uuringu eest hoiatuse"
+      }
+    },
+    "start": {
+      "btn": "Osale küsitluses"
+    },
+    "status": {
+      "badquality": {
+        "short": {
+          "text": "kehva kvaliteediga"
+        }
+      },
+      "cancelled": {
+        "message": "Otsustasid selles küsitluses mitte osaleda. Me ei saada sulle rohkem selle küsitluse kutseid. Kui mõtled ümber, oled teretulnud osalema hiljem.",
+        "short": {
+          "text": "tühistatud"
+        }
+      },
+      "closed": {
+        "text": "Küsitlus on lõpetatud. Kahjuks ei saanud sa seekord osa võtta. Loodame, et saad arvamust avaldada järgmisel korral.",
+        "title": "Küsitlus on suletud"
+      },
+      "completed": {
+        "short": {
+          "text": "lõpetatud"
+        },
+        "text": "Täitsid küsitluse {survey_name} ja teenisid {points} punkti!"
+      },
+      "finished": {
+        "lottery": "Teenisid pileti järgmisele loosimisele: {0}",
+        "short": {
+          "lottery": "Teenis pileti"
+        },
+        "title": "Oled selle küsitluse lõpetanud"
+      },
+      "invited": {
+        "lottery": "Lisaks punktidele loosime kõikide osalejate seast välja võitja, kes saab kingituseks {gift}.",
+        "text": "Sind kutsuti osalema küsitluses {survey_name}. Eeldame, et küsitluses osalemiseks kulub umbes {survey_minute} minutit ja küsitluse eduka lõpetamise eest saad {points_offered} punkti.",
+        "title": "Sind on kutsutud"
+      },
+      "new": {
+        "short": {
+          "text": "uus"
+        }
+      },
+      "opened": {
+        "short": {
+          "text": "avatud"
+        }
+      },
+      "paused": {
+        "survey": {
+          "text": "Küsitlus on ülevaatamisel. Proovi mõne aja pärast uuesti.",
+          "title": "Küsitlus on peatatud"
+        }
+      },
+      "quotafull": {
+        "short": {
+          "text": "kvoot täis"
+        },
+        "text": "Kahjuks on kvoot juba täis. Tänutäheks osalemise eest saad siiski {points} punkti. Loodame, et osaled järgmises küsitluses."
+      },
+      "rejected": {
+        "short": {
+          "text": "tagasi lükatud"
+        },
+        "title": "Kahjuks peame teatama, et sa ei kvalifitseeru sellesse küsitlusse. Inimesed ei pruugi kvalifitseeruda erinevatel põhjustel, sealhulgas mittevastavus valikukriteeriumidele, vastuste kehv kvaliteet või meie lõppkliendi määratletud tehnilised põhjused."
+      },
+      "screenedout": {
+        "short": {
+          "text": "välja jäetud"
+        },
+        "text": "Kahjuks sa ei kuulu küsitluse sihtrühma. Tänutäheks osalemise eest saad siiski {points} punkti. Loodame, et osaled järgmises küsitluses."
+      },
+      "started": {
+        "message": "Avasid küsitluse, kuid ei ole seda veel täitnud. Jätka endale sobival ajal.",
+        "short": {
+          "text": "alustatud"
+        }
+      },
+      "unknown": {
+        "survey": {
+          "text": "Seda küsitlust ei eksisteeri"
+        }
+      }
+    },
+    "title": {
+      "error": "Midagi läks valesti",
+      "not-available": "Loosimisi ei ole"
+    },
+    "unverified": {
+      "button": "Ava Minu konto",
+      "subtitle": "Küsitlustes osalemiseks peate kinnitama oma meiliaadressi.",
+      "title": "Meiliaadress ei ole kinnitatud"
+    }
+  },
+  "question": {
+    "email": {
+      "question": "Meiliaadress",
+      "placeholder": "Sinu meiliaadress on ühtlasi kasutajanimi",
+      "validation": {
+        "required": "Sisestage oma meiliaadress.",
+        "invalid": "Sisesta kehtiv meiliaadress."
+      }
+    },
+    "gender": {
+      "question": "Sa oled",
+      "answer": {
+        "male": "Mees",
+        "female": "Naine"
+      },
+      "validation": {
+        "required": "Vali oma sugu."
+      }
+    },
+    "birthdate": {
+      "question": "Sünnikuupäev",
+      "validation": {
+        "required": "Sisesta oma sünnikuupäev.",
+        "age": "Vanus peab olema vahemikus 15–99 aastat."
+      }
+    },
+    "zip-code": {
+      "question": "Postiindeks",
+      "placeholder": "Vali postiindeks",
+      "validation": {
+        "required": "Vali oma postiindeks."
+      }
+    },
+    "super-region": {
+      "question": "Maakond",
+      "validation": {
+        "required": "Vali oma maakond."
+      },
+      "placeholder": "Valige maakond"
+    },
+    "region": {
+      "question": "Vald või linn",
+      "placeholder": "Vali vald või linn",
+      "validation": {
+        "required": "Vali oma vald või linn."
+      }
+    },
+    "province": {
+      "question": "Küla või linnaosa",
+      "placeholder": "Vali küla või linnaosa",
+      "validation": {
+        "required": "Vali küla või linnaosa."
+      }
+    },
+    "city": {
+      "question": "Linn/vald",
+      "placeholder": "Vali linn/vald",
+      "validation": {
+        "required": "Vali oma linn."
+      }
+    },
+    "password": {
+      "question": "Salasõna",
+      "placeholder": "Sisesta turvaline salasõna",
+      "validation": {
+        "required": "Sisesta salasõna.",
+        "minimum": "Sisesta vähemalt 6 märki."
+      }
+    },
+    "verify-password": {
+      "question": "Korda salasõna",
+      "placeholder": "Sisesta sama salasõna uuesti",
+      "validation": {
+        "required": "Korda salasõna sisestust.",
+        "match": "Veendu, et salasõnad kattuvad."
+      }
+    },
+    "last-name": {
+      "question": "Perekonnanimi",
+      "validation": {
+        "required": "Sisesta oma perekonnanimi."
+      }
+    },
+    "first-name": {
+      "question": "Eesnimi",
+      "validation": {
+        "required": "Sisesta oma eesnimi."
+      }
+    },
+    "middle-name": {
+      "question": "Keskmine nimi (nimed)"
+    },
+    "age": {
+      "question": "Vanus"
+    },
+    "user-language": {
+      "question": "Vali eelistatud keel"
+    },
+    "living-situation": {
+      "question": "Kus sa praegu elad?",
+      "answer": {
+        "rented-apartment": "Üürikorteris",
+        "owned-apartment": "Oma korteris",
+        "rented-house": "Üürimajas",
+        "owned-house": "Oma majas",
+        "farm": "Talus",
+        "living-with-my-parents": "Elan koos vanematega",
+        "other": "Muu"
+      }
+    },
+    "occupation": {
+      "question": "Mis on su praegune tegevusala?",
+      "answer": {
+        "student": "Üliõpilane",
+        "retired": "Pensionil",
+        "unemployed": "Töötu",
+        "maternity/paternity": "Ema-/isapuhkusel",
+        "full-time-employed": "Täiskohaga tööl",
+        "part-time-employed": "Osalise tööajaga tööl",
+        "self-employed": "Füüsilisest isikust ettevõtja",
+        "other": "Muu"
+      }
+    },
+    "education": {
+      "question": "Mis on sinu kõrgeim lõpetatud haridustase?",
+      "answer": {
+        "primary-school": "Algkool (algharidus) – lasteaed kuni 7. klass",
+        "junior-high-school": "Põhikool (põhiharidus) – 7. kuni 11. klass",
+        "senior-high-school": "Keskkool (keskharidus) – 11. kuni 13. klass",
+        "vocational-school": "Kutsekool",
+        "undergraduate": "Esimese astme kõrgharidus (bakalaureusekraad)",
+        "postgraduate": "Teise astme kõrgharidus (magistrikraad)",
+        "doctoral": "Doktorikraad (PhD)"
+      }
+    },
+    "marital-status": {
+      "question": "Mis on sinu perekonnaseis?",
+      "answer": {
+        "single": "Vallaline",
+        "domestic": "Kooselu / elan partneriga",
+        "married": "Abielus",
+        "married-separate": "Abielus, kuid elame eraldi",
+        "widowed": "Lesk"
+      }
+    },
+    "household-living": {
+      "question": "Mitu inimest elab sinu leibkonnas (koos sinuga)?",
+      "answer": {
+        "1-person": "1 inimene",
+        "2-persons": "2 inimest",
+        "3-persons": "3 inimest",
+        "4-persons": "4 inimest",
+        "5-persons": "5 inimest",
+        "6-persons": "6 inimest",
+        "7-more": "7 või enam inimest"
+      }
+    },
+    "children": {
+      "question": "Kui teil on alla 18-aastaseid lapsi, täpsustage sünniaasta.",
+      "answer": {
+        "no-children": "Mul ei ole lapsi"
+      }
+    },
+    "car-access": {
+      "question": "Kas sul on võimalik kasutada autot?",
+      "answer": {
+        "i-own-car": "Ma oman autot",
+        "i-lease-car": "Ma liisin/oman ametiautot",
+        "i-have-access-car": "Ma saan autot kasutada",
+        "no-access-car": "Ei, ma ei saa autot kasutada"
+      }
+    },
+    "car-fuel": {
+      "question": "Kui sa omad/liisid autot, siis millist kütust see kasutab?",
+      "answer": {
+        "i-do-not-have-a-car": "Mul ei ole autot",
+        "petrol-car": "Bensiinimootoriga auto",
+        "diesel-car": "Diiselmootoriga auto",
+        "fully-electric-car": "Täiselektriauto (100% elektrisõiduk)",
+        "plug-in-hybrid-electric-car": "Pistikühendusega hübriidauto",
+        "hybrid-car": "Hübriidauto (iselaadiv auto)",
+        "other-type-of-car": "Muu auto"
+      }
+    },
+    "car-brand": {
+      "question": "Kui sa omad/liisid autot, siis mis on selle mark?",
+      "answer": {
+        "i-do-not-own-car": "Ma ei oma/liisi autot",
+        "another-brand": "Muu mark"
+      }
+    },
+    "car-type": {
+      "question": "Mis liiki auto sul on?",
+      "answer": {
+        "i-do-not-own-lease-a-car": "Ma ei oma/liisi autot",
+        "small-city-car": "Väike linnaauto (nt Smart Fortwo)",
+        "supermini": "Supermini (nt Toyota Yaris)",
+        "mid-range": "Keskklass (nt VW Golf)",
+        "family-car": "Pereauto",
+        "luxury-car": "Luksusauto / äriklassi auto (nt BMW 7. seeria / Mercedes-Benzi S-klass)",
+        "sports-car": "Sportauto",
+        "minivan": "Väikebuss",
+        "suv": "Maastur/krossover/nelikveoga auto",
+        "van": "Kaubik",
+        "camper-van": "Matkaauto",
+        "another-type-of-car": "Muud tüüpi auto"
+      }
+    },
+    "car-brand-age": {
+      "question": "Mis aastal teie auto(d) toodetud on?",
+      "answer": {
+        "i-do-not-own-lease-a-car": "Ma ei oma/liisi autot"
+      }
+    },
+    "motorcycle-access": {
+      "question": "Kas sul on mootorratas?",
+      "answer": {
+        "yes": "Jah",
+        "no": "Ei"
+      }
+    },
+    "motorcycle-brand": {
+      "question": "Kui sul on mootorratas, siis mis marki see on?",
+      "answer": {
+        "i-do-not-own-motorcycle": "Ma ei oma/liisi mootorratast",
+        "another-brand": "Muu mark"
+      }
+    },
+    "tech-savvy": {
+      "question": "Kas pead end tehnikas asjatundlikuks ja sulle meeldib uusi vidinaid proovida?",
+      "answer": {
+        "yes": "Jah",
+        "no": "Ei"
+      }
+    },
+    "smartphone-brand": {
+      "question": "Kui sul on nutitelefon, siis mis marki see on?",
+      "answer": {
+        "not-a-smartphone": "Minu mobiil ei ole nutitelefon",
+        "another-brand": "Muu mark"
+      }
+    },
+    "pets": {
+      "question": "Millised lemmikloomad/loomad sul on?",
+      "answer": {
+        "no-pets": "Mul ei ole lemmikloomi",
+        "cat": "Kass(id)",
+        "dog": "Koer(ad)",
+        "bird": "Lind (linnud)",
+        "fish": "Kalad",
+        "reptile": "Roomaja(d)",
+        "horse": "Hobune (hobused)",
+        "other": "Muu"
+      }
+    },
+    "travel-flying": {
+      "question": "Kas oled viimase 12 kuu jooksul lennukiga reisinud?",
+      "answer": {
+        "i-do-not-travel": "Ma ei reisi lennukiga",
+        "business-trips": "Tööreisil",
+        "holiday-trips": "Puhkusereisil",
+        "both-trips": "Nii töö- kui puhkusereisil"
+      }
+    },
+    "travel-flight-type": {
+      "question": "Milliseid lende oled viimase 12 kuu jooksul teinud?",
+      "answer": {
+        "domestic": "Riigisiseseid",
+        "international": "Rahvusvahelisi",
+        "both-domestic-and-international": "Nii riigisiseseid kui ka rahvusvahelisi",
+        "neither-no-plane": "Mitte kumbagi, ma ei reisi lennukiga"
+      }
+    },
+    "travel-vacation": {
+      "question": "Kus sa tavaliselt puhkamas käid?",
+      "answer": {
+        "golf-trips": "Golfireisidel",
+        "gourmet-trips": "Toidureisidel",
+        "fishing-holidays": "Kalapüügi-/merepuhkusel",
+        "all-inclusive-trips": "Kõik-hinnas reisidel",
+        "holiday-mix": "Kruiisi- ja hotellipuhkusel",
+        "cruises": "Kruiisidel",
+        "visits-to-friends": "Sõprade ja sugulaste juures",
+        "hiking": "Mägedes või looduses matkamas",
+        "weekend-trips": "Nädalavahetuse reisidel",
+        "shopping-trips": "Ostureisidel",
+        "beach-holidays": "Rannapuhkusel",
+        "ski-trips": "Suusareisidel",
+        "camping": "Telkimas",
+        "package-vacation": "Pakettpuhkusel",
+        "tours": "Ekskursioonidel",
+        "none-of-the-above": "Mitte ükski nendest",
+        "no-vacations": "Ma ei käi puhkamas"
+      }
+    },
+    "income-monthly-household": {
+      "question": "Kui suur on sinu leibkonna igakuine brutosissetulek?",
+      "answer": {
+        "less-than-php-5000": "Vähem kui 5001 PHP",
+        "php-300000-and-above": "300 000 PHP või rohkem",
+        "do-not-want-to-answer": "Ei soovi vastata"
+      }
+    },
+    "income-monthly-personal": {
+      "question": "Kui suur on sinu igakuine isiklik brutosissetulek?",
+      "answer": {
+        "less-than-php-5000": "Vähem kui 5001 PHP",
+        "php-300000-and-above": "300 000 PHP ja rohkem",
+        "do-not-want-to-answer": "Ei soovi vastata"
+      }
+    },
+    "glasses-contact-lenses": {
+      "question": "Kas sa kannad prille või kontaktläätsi?",
+      "answer": {
+        "i-dont-use-glasses": "Ma ei kanna prille/kontaktläätsi",
+        "glasses": "Prille",
+        "contact-lenses": "Kontaktläätsi",
+        "both-glasses-and-contact-lenses": "Nii prille kui ka kontaktläätsi"
+      }
+    },
+    "dietary-preference": {
+      "question": "Mis on sinu peamine toitumiseelistus?",
+      "answer": {
+        "omnivore": "Kõigesööja (sööb liha, linnuliha, kala ja taimne toit)",
+        "vegetarian": "Taimetoitlane (ei söö liha, linnuliha ega kala)",
+        "vegan": "Vegan (ei söö loomseid saadusi, sealhulgas piimatooteid ja mune)",
+        "pescatarian": "Kala-taimetoitlane (ei söö liha ega linnuliha, kuid sööb kala)",
+        "other": "Muu"
+      }
+    },
+    "beverages-non-alcoholic": {
+      "question": "Milliseid järgmistest jookidest tarbid regulaarselt?",
+      "answer": {
+        "water": "Gaseerimata või gaseeritud vesi",
+        "coffee": "Kohv",
+        "tea": "Tee",
+        "regular-soda": "Tavalised karastusjoogid",
+        "juice": "Mahl",
+        "milk-products": "Piimatooted",
+        "energy-drinks": "Energiajoogid"
+      }
+    },
+    "tobacco-products-access": {
+      "question": "Kas sa suitsetad või kasutad tubakatooteid?",
+      "answer": {
+        "yes": "Jah",
+        "no": "Ei"
+      }
+    },
+    "tobacco-products-type": {
+      "question": "Kas tarvitad mõnda järgmistest tubakatoodetest?",
+      "answer": {
+        "i-do-not-use-tobacco": "Ma ei tarvita tubakatooteid.",
+        "cigars": "Sigarid",
+        "pipe": "Piip",
+        "cigarillos": "Sigarillod",
+        "snus": "Snus (nikotiinipadjad)",
+        "snuff": "Nuusktubakas (dip, snus)",
+        "chewing-tobacco": "Närimistubakas",
+        "vaporizer": "Aurusti",
+        "vape-pens": "Veibipliiatsid",
+        "e-cigars": "E-sigarid",
+        "disposable-vapes": "Ühekordsed veibid",
+        "pod-systems": "Kapslisüsteemid",
+        "heated-tobacco-products": "Kuumutatavad tubakatooted",
+        "roll-your-own-tobacco": "Isekeeratav tubakas",
+        "cigarettes": "Sigaretid",
+        "other-smokeless-tobacco": "Muu suitsuvaba tubakas"
+      }
+    },
+    "tobacco-products-brand": {
+      "question": "Kui suitsetad sigarette, vali tüüp, mida kõige sagedamini suitsetad.",
+      "answer": {
+        "do-not-use-tobacco": "Ma ei tarvita tubakatooteid.",
+        "another-brand": "Muu mark"
+      }
+    },
+    "beverages-alcoholic": {
+      "question": "Milliseid järgmistest alkohoolsetest jookidest oled tarbinud viimase 12 kuu jooksul?",
+      "answer": {
+        "wine": "Vein",
+        "beer": "Õlu",
+        "sparkling-wine": "Vahuvein",
+        "cider": "Siider",
+        "vodka": "Viin",
+        "rum": "Rumm",
+        "whiskey": "Viski",
+        "brandy": "Brändi",
+        "cognac": "Konjak",
+        "gin": "Džinn",
+        "tequila": "Tekiila",
+        "liqueurs": "Liköörid",
+        "alcopops": "Alkoholiga kokteilisegud",
+        "soju": "Soju"
+      }
+    },
+    "media-type": {
+      "question": "Milliseid järgnevatest teabevahenditest sa jälgid vähemalt kord nädalas?",
+      "answer": {
+        "television": "Televisioon",
+        "radio": "Raadio",
+        "newspapers": "Ajalehed",
+        "magazines": "Ajakirjad",
+        "social-media": "Sotsiaalmeedia",
+        "video-sharing-platform": "Videojagamisplatvorm",
+        "streaming-services": "Voogedastusteenused",
+        "other": "Muu"
+      }
+    },
+    "media-type-social": {
+      "question": "Milliseid suhtlusvõrgustikke sa kasutad?",
+      "answer": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn",
+        "x": "X (endine Twitter)",
+        "youtube": "YouTube",
+        "tiktok": "TikTok",
+        "flickr": "Flickr",
+        "other": "Muu",
+        "none": "Mitte ühtegi"
+      }
+    },
+    "media-messaging-apps": {
+      "question": "Milliseid järgmistest sõnumsiderakendustest sa kõige sagedamini kasutad?",
+      "answer": {
+        "whatsapp": "WhatsApp",
+        "messenger": "Messenger (Facebook)",
+        "instagram": "Instagram",
+        "x": "X (endine Twitter)",
+        "skype": "Skype",
+        "teams": "Teams",
+        "zoom": "Zoom",
+        "slack": "Slack",
+        "telegram": "Telegram",
+        "viber": "Viber",
+        "imessage": "iMessage",
+        "snapchat": "Snapchat",
+        "line": "Liin",
+        "kakaotalk": "KakaoTalk",
+        "other": "Muu",
+        "none": "Mitte ühtegi"
+      }
+    },
+    "tv-access": {
+      "question": "Mitu tundi nädalas sa telerit vaatad?",
+      "answer": {
+        "5-hours-or-less": "5 tundi või vähem",
+        "6-10-hours": "6-10 tundi",
+        "11-20-hours": "11-20 tundi",
+        "more-than-20-hours": "Rohkem kui 20 tundi",
+        "i-do-not-watch-tv": "Ma ei vaata telerit"
+      }
+    },
+    "sports-access": {
+      "question": "Milliseid spordialasid sa tavaliselt vaatad või jälgid?",
+      "answer": {
+        "basketball": "Korvpall",
+        "football": "Jalgpall (Ameerika või klassikaline jalgpall)",
+        "baseball": "Pesapall",
+        "hockey": "Jäähoki",
+        "tennis": "Tennis",
+        "golf": "Golf",
+        "boxing": "Poks",
+        "mma": "MMA",
+        "formula-1": "Vormel 2",
+        "nascar": "NASCAR",
+        "e-sports": "E-sport",
+        "olympics": "Olümpiamängud",
+        "other": "Muu",
+        "do-not-follow-sports": "Ma ei jälgi sporti"
+      }
+    },
+    "living-area": {
+      "question": "Mis kirjeldab kõige paremini sinu praeguse elupaiga suurust ja tüüpi?",
+      "answer": {
+        "rural": "Maakoht",
+        "semi-rural": "Pooleldi maakoht",
+        "village": "Küla",
+        "city": "Linn",
+        "metropolitan": "Suurlinn",
+        "reading": "Lugemine",
+        "gaming": "Mängimine",
+        "sports": "Sport",
+        "music": "Muusika",
+        "art": "Kunst",
+        "travel": "Reisimine",
+        "cooking": "Toiduvalmistamine",
+        "television-and-streaming": "Teleri vaatamine või voogesitusteenuste kasutamine",
+        "other": "Muu"
+      }
+    },
+    "hobbies": {
+      "question": "Millist järgmistest tegevustest pead oma hobiks?",
+      "answer": {
+        "reading": "Lugemine",
+        "gaming": "Mängimine",
+        "sports": "Sport",
+        "music": "Muusika",
+        "art": "Kunst",
+        "travel": "Reisimine",
+        "cooking": "Toiduvalmistamine",
+        "television-and-streaming": "Teleri vaatamine või voogedastusteenuste kasutamine",
+        "other": "Muu"
+      }
+    },
+    "cinema-access": {
+      "question": "Kui tihti te kinos käite?",
+      "answer": {
+        "i-do-not-go-to-the-cinema": "Ma ei käi kinos",
+        "a-few-times-a-year": "Paar korda aastas",
+        "less-than-once-a-month": "Vähem kui kord kuus",
+        "once-a-month": "Kord kuus",
+        "2-3-times-a-month": "2-3 korda kuus",
+        "more-than-three-times-a-month": "Rohkem kui kolm korda kuus"
+      }
+    },
+    "gambling": {
+      "question": "Milliseid hasartmänge sa mängid?",
+      "answer": {
+        "i-do-not-gamble": "Ma ei mängi hasartmänge",
+        "betting-on-the-internet": "Internetis panustamine",
+        "lotteries-on-the-internet": "Internetiloteriid",
+        "poker-casino-games-on-the-internet": "Pokker/kasiinomängud internetis",
+        "instant-lotteries": "Kiirloteriid",
+        "sports-betting": "Spordiennustamine",
+        "bingo": "Bingo",
+        "slot-machines": "Mänguautomaadid",
+        "casino": "Pokker/blackjack/rulett kasiinos",
+        "motorsports-betting": "Motospordi ennustus",
+        "other": "Muu"
+      }
+    },
+    "shipping-address": {
+      "question": "Tarneaadress"
+    },
+    "phone-prefix": {
+      "question": "Telefoninumbri alguskood",
+      "validation": {
+        "required": "Vali alguskood."
+      }
+    },
+    "postal-code": {
+      "question": "Postiindeks"
+    },
+    "phone": {
+      "question": "Telefon"
+    },
+    "income-monthly-personal-after": {
+      "question": "Kui suur on sinu igakuine isiklik netosissetulek?",
+      "answer": {
+        "less-than-600": "Vähem kui 600 eurot kuus",
+        "between-600-1000": "Vahemikus 600 kuni 1 000 eurot kuus",
+        "between-1000-2000": "Vahemikus 1 000 kuni 2 000 eurot kuus",
+        "more-than-2000": "Rohkem kui 2 000 eurot kuus",
+        "do-not-want-to-answer": "Eelistan mitte vastata"
+      }
+    }
+  }
+}

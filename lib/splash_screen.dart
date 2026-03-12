@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-
 import 'package:intra/models/oa_user.dart';
 import 'package:intra/opinion_arena_auth_screen.dart';
 import 'package:intra/opinion_arena_login_screen.dart';
 import 'package:intra/services/auth_service.dart';
+import 'package:intra/utils/locale_utils.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -23,6 +23,8 @@ class _SplashScreenState extends State<SplashScreen> {
     final OAUser? user = await AuthService.validateToken();
     if (!mounted) return;
 
+    if (user != null) _applyLocale(user.language);
+
     Navigator.of(context).pushReplacement(
       MaterialPageRoute<void>(
         builder: (_) => user != null
@@ -30,6 +32,10 @@ class _SplashScreenState extends State<SplashScreen> {
             : const OpinionArenaLoginScreen(),
       ),
     );
+  }
+
+  void _applyLocale(String? language) {
+    LocaleUtils.apply(context, language);
   }
 
   @override

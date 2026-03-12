@@ -9,7 +9,11 @@
       "Bash(python3.exe:*)",
       "Bash(where python3:*)",
       "Bash(dart:*)",
-      "mcp__ide__getDiagnostics"
+      "mcp__ide__getDiagnostics",
+      "Bash(grep -rn \"lang\" \"E:\\\\projects\\\\intraresearch\\\\intra\\\\lib\\\\\" --include=\"*.dart\" | head -20)",
+      "Bash(cd \"E:/projects/intraresearch/intra\" && flutter build apk --debug 2>&1 | tail -30)",
+      "Bash(cd \"E:/projects/intraresearch/intra\" && grep \"version:\" pubspec.lock | head -5 && flutter logs 2>&1 | head -5 || true)",
+      "Bash(cd \"E:/projects/intraresearch/intra\" && flutter run --debug 2>&1 | head -60)"
     ]
   }
 }

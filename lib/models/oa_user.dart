@@ -12,6 +12,7 @@ class OAUser {
     this.genderCode,
     this.dob,
     this.shippingAddress,
+    this.language,
   });
 
   factory OAUser.fromApiJson(
@@ -25,7 +26,7 @@ class OAUser {
     final int points = rawPoints is int
         ? rawPoints
         : int.tryParse(rawPoints?.toString() ?? '0') ?? 0;
-
+    print(json);
     return OAUser(
       id: id,
       email: json['email']?.toString() ?? '',
@@ -41,6 +42,7 @@ class OAUser {
           : int.tryParse(json['gender']?.toString() ?? ''),
       dob: json['dob']?.toString().trim(),
       shippingAddress: json['shippingAddress']?.toString().trim(),
+      language: json['userLanguage']?.toString().trim(),
     );
   }
 
@@ -56,6 +58,7 @@ class OAUser {
   final int? genderCode;
   final String? dob;
   final String? shippingAddress;
+  final String? language;
 
   String get initials {
     final String f = firstName.isNotEmpty ? firstName[0].toUpperCase() : '';

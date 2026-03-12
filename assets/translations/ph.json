@@ -1,0 +1,2937 @@
+{
+  "campaign": {
+    "hero": {
+      "country": "Pilipinas",
+      "market-research": "Market Research",
+      "panel": "Opinion Arena",
+      "powered-by": "Pinatatakbo ng {company} alinsunod sa GDPR",
+      "subtitle": "Sumali sa OpinionArena, isang pinagkakatiwalaang market research panel sa Pilipinas",
+      "title": "Maging bahagi ng {market_research} panel"
+    },
+    "how-it-works": {
+      "step1": "Sumali",
+      "step2": "Kumpletuhin ang mga survey",
+      "step3": "Makakuha ng mga reward",
+      "title": "Paano?"
+    },
+    "registration": {
+      "submit": "Mag Sign Up",
+      "title": "Simulan na natin",
+      "verify": "Kumpirmahin"
+    },
+    "trust": {
+      "statement1": "Walang spam",
+      "statement2": "Walang mga tawag na may layuning magbenta",
+      "statement3": "Ang data ay gagamitin lamang para sa pagsasaliksik",
+      "statement4": "PInamamahalaan ng kilalang Research Company"
+    }
+  },
+  "captcha": {
+    "verify": {
+      "loading": "Vineverify...",
+      "success": "Na-verify!"
+    }
+  },
+  "cookie-consent": {
+    "button": {
+      "agree": "Sang-ayon ako.",
+      "manage": "I-Manage ang Mga Cookie",
+      "more-info": "Karagdagang Impormasyon"
+    },
+    "label": {
+      "analytics": "Analytics",
+      "essential": "Lubhang Kinakailangan",
+      "third-party": "Mga Third-Party Cookie "
+    },
+    "message": {
+      "must-agree": "I-click ang pindutang nagsasabing “Sang-ayon ako” sa ibaba upang magbigay ng pahintulot sa paggamit namin ng mga cookie."
+    },
+    "subtitle": "Sa pamamagitan ng pag-click sa anumang link sa pahinang ito, ibinibigay mo ang iyong pahintulot sa amin na magtakda ng mga cookie. {0}",
+    "title": "Gumagamit kami ng mga cookie sa site na ito upang mapaunlad ang iyong karanasan sa paggamit nito."
+  },
+  "country": {
+    "ae": "United Arab Emirates",
+    "al": "Albania",
+    "ar": "Argentina",
+    "at": "Austria",
+    "au": "Australia",
+    "az": "Azerbaijan",
+    "ba": "Bosnia at Herzegovina",
+    "bd": "Bangladesh",
+    "be": "Belgium",
+    "bg": "Bulgaria",
+    "bn": "Brunei",
+    "bo": "Bolivia",
+    "br": "Brazil",
+    "by": "Belarus",
+    "ca": "Canada",
+    "ch": "Switzerland",
+    "ci": "Ivory Coast",
+    "cn": "Tsina",
+    "co": "Colombia",
+    "cr": "Costa Rica",
+    "cu": "Cuba",
+    "cy": "Cyprus",
+    "cz": "Czech Republic",
+    "de": "Alemanya",
+    "dk": "Denmark",
+    "do": "Dominican Republic",
+    "dz": "Algeria",
+    "ec": "Ecuador",
+    "ee": "Estonia",
+    "eg": "Ehipto",
+    "es": "Espanya",
+    "fi": "Finland",
+    "fr": "Pransya",
+    "gb": "United Kingdom",
+    "gh": "Ghana",
+    "gr": "Gresya",
+    "gt": "Guatemala",
+    "hk": "Hong Kong",
+    "hn": "Honduras",
+    "hr": "Croatia",
+    "hu": "Hungary",
+    "id": "Indonesia",
+    "ie": "Ireland",
+    "il": "Israel",
+    "in": "India",
+    "is": "Iceland",
+    "it": "Italya",
+    "jp": "Hapon",
+    "ke": "Kenya",
+    "kh": "Kambodya",
+    "kr": "Timog Korea",
+    "kw": "Kuwait",
+    "kz": "Kazakhstan",
+    "lb": "Lebanon",
+    "lt": "Lithuania",
+    "lu": "Luxembourg",
+    "lv": "Latvia",
+    "ma": "Morocco",
+    "mc": "Monaco",
+    "md": "Moldova",
+    "me": "Montenegro",
+    "mk": "Hilagang Macedonia",
+    "mt": "Malta",
+    "mx": "Mexico",
+    "my": "Malaysia",
+    "ng": "Nigeria",
+    "ni": "Nicaragua",
+    "nl": "Netherlands",
+    "no": "Norway",
+    "nz": "New Zealand",
+    "pa": "Panama",
+    "pe": "Peru",
+    "pg": "Papua New Guinea",
+    "ph": "Pilipinas",
+    "pk": "Pakistan",
+    "pl": "Poland",
+    "pr": "Puerto Rico",
+    "pt": "Portugal",
+    "py": "Paraguay",
+    "qa": "Qatar",
+    "ro": "Romania",
+    "rs": "Serbia",
+    "ru": "Rusya",
+    "sa": "Saudi Arabia",
+    "se": "Sweden",
+    "sg": "Singapore",
+    "si": "Slovenia",
+    "sk": "Slovakia",
+    "sn": "Senegal",
+    "th": "Thailand",
+    "tr": "Turkey",
+    "tw": "Taiwan",
+    "ua": "Ukraine",
+    "us": "Estados Unidos",
+    "uy": "Uruguay",
+    "vn": "Vietnam",
+    "za": "Timog Aprika"
+  },
+  "country-selection": {
+    "button": "Magpatuloy",
+    "empty": "Walang mga available na bansa",
+    "field": {
+      "country": {
+        "placeholder": "Maghanap ayon sa bansa o code ng bansa",
+        "title": "Saan ka matatagpuan?"
+      }
+    }
+  },
+  "general": {
+    "date": {
+      "text": "Petsa"
+    },
+    "grid": "Grid",
+    "list": "Listahan",
+    "month": {
+      "text": "Buwan"
+    },
+    "year": {
+      "text": "Taon"
+    }
+  },
+  "head": {
+    "about-us": {
+      "meta": {
+        "description": "@:head.meta.common.description.about-us",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.about-us",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.about-us",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Tungkol sa OpinionArena"
+    },
+    "change-email": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Baguhin ang Email {char} OpinionArena"
+    },
+    "change-password": {
+      "meta": {
+        "description": "OpinionArena.com - Earn money and gift cards by expressing your opinion!",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Baguhin ang Password {char} OpinionArena"
+    },
+    "country": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Pumili ng Bansa {char} OpinionArena"
+    },
+    "deactivate-account": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "I-Deactivate ang Account {char} OpinionArena"
+    },
+    "faq": {
+      "meta": {
+        "description": "@:head.meta.common.description.faq",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.faq",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.faq",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Mga Madalas na Itinatanong {char} OpinionArena"
+    },
+    "forgot-password": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Nakalimutan ang Password {char} OpinionArena"
+    },
+    "get-started": {
+      "meta": {
+        "description": "@:head.meta.common.description.get-started",
+        "og-description": "@:head.meta.common.description.get-started",
+        "og-title": "@:head.meta.common.title.get-started",
+        "twitter-description": "@:head.meta.common.description.get-started",
+        "twitter-title": "@:head.meta.common.title.get-started"
+      },
+      "title": "Paano Magsimula {char} OpinionArena"
+    },
+    "home": {
+      "meta": {
+        "description": "@:head.meta.common.description.home",
+        "og-description": "@:head.meta.common.description.home",
+        "og-title": "@:head.meta.common.title.home",
+        "twitter-description": "@:head.meta.common.description.home",
+        "twitter-title": "@:head.meta.common.title.home"
+      },
+      "title": "OpinionArena"
+    },
+    "human": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Security Check {char} OpinionArena"
+    },
+    "invite-friends": {
+      "meta": {
+        "description": "@:head.meta.common.description.about-us",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.about-us",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.about-us",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Mag-aya ng Kaibigan"
+    },
+    "login": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Login {char} OpinionArena"
+    },
+    "lotteries": {
+      "meta": {
+        "description": "@:head.meta.common.description.lotteries",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.lotteries",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.lotteries",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Manalo ng mga Premyo {char} OpinionArena"
+    },
+    "meta": {
+      "common": {
+        "description": {
+          "about-us": "Alamin ang tungkol sa OpinionArena, isang nangungunang online market research panel sa Pilipinas. Tuklasin kung paano namin iugnay ang mga mamimili sa mga brand. Sumali sa aming komunidad!",
+          "faq": "Kumuha ng mga sagot sa mga madalas na itinatanong tungkol sa OpinionArena. Alamin kung paano lumahok sa mga survey, makaipon ng mga reward, at marami pang iba. Maghanap ng tulong dito!",
+          "generic": "Sumali sa OpinionArena.com at kumita ng pera at mga gift card sa pamamagitan ng pagsali sa mga online survey at market research. Ibahagi ang iyong mga opinyon at hikayatin ang mga brand. Mag-sign up na!",
+          "get-started": "Sumali sa OpinionArena.com at kumita ng pera at mga gift card sa pamamagitan ng pagsali sa mga online survey at market research. Ibahagi ang iyong mga opinyon at hikayatin ang mga brand. Mag-sign up na!",
+          "home": "Tuklasin ang OpinionArena.com - Ang iyong gateway sa mga bayad na online survey at market research. Kumita ng pera at mga gift card para sa pagbabahagi ng iyong mga opinyon. Sali na!",
+          "lotteries": "Sumali sa mga kapana-panabik na raffles sa OpinionArena at manalo ng mga papremyo! Lumahok sa mga survey, mag-ipon ng mga entry, at pataasin ang iyong tsansa na manalo. Sali na sa aming mga libreng raffle!",
+          "my-rewards": "Tuklasin ang mga kapana-panabik na reward sa OpinionArena. I-convert ang iyong mga puntos sa survey sa cash o mga gift card. Alamin kung ano ang maaari mong makuha kapalit ng iyong mga opinyon!",
+          "register": "Sumali sa OpinionArena.com at kumita ng pera at mga gift card sa pamamagitan ng pagsali sa mga online survey at market research. Ibahagi ang iyong mga opinyon at hikayatin ang mga brand. Mag-sign up na!",
+          "rewards": "Tuklasin ang mga kapana-panabik na reward sa OpinionArena. I-convert ang iyong mga puntos sa survey sa cash o mga gift card. Alamin kung ano ang maaari mong makuha kapalit ng iyong mga opinyon!",
+          "support": "Humingi ng tulong sa mga online survey at reward ng OpinionArena. Maghanap ng mga sagot sa mga karaniwang tanong, mag-troubleshoot ng mga isyu, at makipag-ugnayan sa aming support team. Narito kami para tulungan ka!",
+          "surveys": "Makilahok sa mga bayad na online survey sa OpinionArena. Ibahagi ang iyong mga saloobin sa mga produkto at serbisyo, at mag-ipon ng mga reward. Maghanap ng mga available na survey! "
+        },
+        "keywords": {
+          "generic": "mga online survey, market research, panel ng mamimili, mga opinion reward, mga bayad na survey, mga gift card, market research sa Pilipinas, mga pananaw ng mamimili, online panel, mga survey reward, kumita ng pera online",
+          "rewards": "mga online survey, market research, panel ng mamimili, mga opinion reward, mga bayad na survey, mga gift card, market research sa Pilipinas, mga pananaw ng mamimili, online panel, mga survey reward, kumita ng pera online"
+        },
+        "title": {
+          "generic": "Kumita ng pera at mga gift card sa pamamagitan ng pagpapahayag ng iyong opinyon! {char} OpinionArena",
+          "get-started": "Kumita ng pera at mga gift card sa pamamagitan ng pagpapahayag ng iyong opinyon! {char} OpinionArena",
+          "home": "Kumita ng pera at mga gift card sa pamamagitan ng pagpapahayag ng iyong opinyon! {char} OpinionArena",
+          "register": "Kumita ng pera at mga gift card sa pamamagitan ng pagpapahayag ng iyong opinyon! {char} OpinionArena",
+          "rewards": "Kumita ng pera at mga gift card sa pamamagitan ng pagpapahayag ng iyong opinyon! {char} OpinionArena"
+        }
+      }
+    },
+    "more-about-me": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Tungkol sa Akin {char} OpinionArena"
+    },
+    "my-account": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Ang Aking Account {char} OpinionArena"
+    },
+    "my-page": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Ang Aking Pahina {char} OpinionArena"
+    },
+    "my-profile": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Ang Aking Profile {char} OpinionArena"
+    },
+    "my-rewards": {
+      "meta": {
+        "description": "@:head.meta.common.description.my-rewards",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.my-rewards",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.my-rewards",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Ang Aking Mga Reward {char} OpinionArena"
+    },
+    "not-found": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Hindi Natagpuan ang Pahina {char} OpinionArena"
+    },
+    "privacy": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Privacy Policy {char} OpinionArena"
+    },
+    "reactivate-account": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Muling I-Activate ang Account {char} OpinionArena"
+    },
+    "register": {
+      "meta": {
+        "description": "@:head.meta.common.description.register",
+        "og-description": "@:head.meta.common.description.register",
+        "og-title": "@:head.meta.common.title.register",
+        "twitter-description": "@:head.meta.common.description.register",
+        "twitter-title": "@:head.meta.common.title.register"
+      },
+      "title": "Magrehistro {char} OpinionArena"
+    },
+    "reward": {
+      "meta": {
+        "description": "@:head.meta.common.description.rewards",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.rewards",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.rewards",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "{title} {char} OpinionArena"
+    },
+    "rewards": {
+      "meta": {
+        "description": "@:head.meta.common.description.rewards",
+        "keywords": "@:head.meta.common.keywords.rewards",
+        "og-description": "@:head.meta.common.description.rewards",
+        "og-title": "@:head.meta.common.title.rewards",
+        "twitter-description": "@:head.meta.common.description.rewards",
+        "twitter-title": "@:head.meta.common.title.rewards"
+      },
+      "title": "Mga Reward {char} OpinionArena"
+    },
+    "support": {
+      "meta": {
+        "description": "@:head.meta.common.description.support",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.support",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.support",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Support {char} OpinionArena"
+    },
+    "support-request": {
+      "meta": {
+        "description": "@:head.meta.common.description.faq",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.faq",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.faq",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Support Request #{number} {char} OpinionArena"
+    },
+    "support-requests": {
+      "meta": {
+        "description": "@:head.meta.common.description.faq",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.faq",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.faq",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Mga Support Request {char} OpinionArena"
+    },
+    "support-topic": {
+      "meta": {
+        "description": "@:head.meta.common.description.support",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.support",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.support",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "{title} {char} OpinionArena"
+    },
+    "survey": {
+      "meta": {
+        "description": "@:head.meta.common.description.surveys",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.surveys",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.surveys",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Survey {char} OpinionArena"
+    },
+    "surveys": {
+      "meta": {
+        "description": "@:head.meta.common.description.surveys",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.surveys",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.surveys",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Mga Survey {char} OpinionArena"
+    },
+    "terms": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "Mga Tuntunin at Kondisyon {char} OpinionArena"
+    },
+    "verify-change-email": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "I-Verify ang Pagbabago ng Email {char} OpinionArena"
+    },
+    "verify-email": {
+      "meta": {
+        "description": "@:head.meta.common.description.generic",
+        "keywords": "@:head.meta.common.keywords.generic",
+        "og-description": "@:head.meta.common.description.generic",
+        "og-title": "@:head.meta.common.title.generic",
+        "twitter-description": "@:head.meta.common.description.generic",
+        "twitter-title": "@:head.meta.common.title.generic"
+      },
+      "title": "I-Verify ang Email {char} OpinionArena"
+    }
+  },
+  "logout": {
+    "confirm": {
+      "button": {
+        "cancel": "Kanselahin",
+        "submit": "Logout"
+      },
+      "subtitle": "Ang iyong session ay malapit nang matapos sa loob ng {0} segundo. Sigurado ka bang gusto mong mag-log out?",
+      "title": "Kompirmahin ang pag-log out"
+    }
+  },
+  "lotteries": {
+    "button": {
+      "empty": "Pumunta sa pahina ng mga raffle",
+      "read-less": "Magbasa nang mas kaunti",
+      "read-more": "Magbasa nang higit pa",
+      "view-all": "Tingnan ang lahat ng raffle"
+    },
+    "empty": {
+      "data": "Walang available na raffle",
+      "data-active": "Walang aktibong raffle"
+    },
+    "filter": {
+      "active": "Aktibo",
+      "all": "Lahat",
+      "history": "History",
+      "last-year": "Noong nakaraang taon",
+      "this-year": "Ngayong taon"
+    },
+    "item": {
+      "description": "Isang kalahok ang mananalo mula sa lahat ng miyembro na sumali sa kahit isang survey sa {year}. Mas maraming pag-aaral na sinalihan, mas malaki ang tsansang manalo."
+    },
+    "label": {
+      "amount": "Premyo",
+      "id": "Numero. L{0}",
+      "sort-by": "Ayusin ayon sa",
+      "tickets": "Mayroon kang {0} tiket",
+      "winner": "Panalo"
+    },
+    "login-for-points": {
+      "button": "Mag-log in",
+      "description": "Mangyaring mag-log in upang makita kung ilan ang iyong tickets.",
+      "title": "Kailangang mag-log in"
+    },
+    "subtitle1": "Bukod sa pag-iipon ng mga puntos para sa pagsagot sa aming mga survey, ikaw rin ay awtomatikong lalahok sa aming taunang raffle. Ang iyong tsansang manalo ay tumataas sa bawat survey na iyong sinasagutan.",
+    "subtitle2": "Sa bawat nakompletong survey, ikaw ay nakaiipon ng raffle ticket para sa Annual Raffle sa taong ito. Mas maraming pag-aaral na sinalihan, mas malaki ang tsansa na manalo.",
+    "title": "Sumali sa mga raffle"
+  },
+  "navigation": {
+    "about-us": "Tungkol sa Amin",
+    "faq": "FAQ",
+    "get-started": "Paano Magsimula",
+    "gifts": "Mga Regalo at Raffle",
+    "invite-friends": "Mag-aya ng Kaibigan",
+    "join": "Sumali at magsimulang kumita",
+    "login": "Mag-log in",
+    "logout": "Mag-log out",
+    "lotteries": "Manalo ng mga Premyo",
+    "more-about-me": "Tungkol sa Akin",
+    "my-account": "Ang Aking Account",
+    "my-page": "Ang Aking Pahina",
+    "my-profile": "Ang Aking Profile",
+    "my-rewards": "Ang Aking Mga Reward",
+    "privacy": "Privacy Policy",
+    "rewards": "Mga Reward",
+    "support": "Support",
+    "surveys": "Mga Survey",
+    "terms": "Mga Tuntunin"
+  },
+  "opinion-arena": "OpinionArena",
+  "page": {
+    "about-us": {
+      "button": {
+        "faq": "Basahin ang FAQ",
+        "get-started": "Paano Magsimula"
+      },
+      "description1": "Ang ating mga miyembro ay nakaiipon ng mga puntos kapag nakakokompleto sila ng mga survey; ang mga puntos ay maaaring ipalit sa iba’t ibang produkto at serbisyo tulad ng mga gift certificate o donasyon sa kawanggawa.",
+      "description2": "Kami ay isang lugar para sa mga taong nais magbahagi ng kanilang mga opinyon tungkol sa mga produkto, serbisyo, patakaran, at brand. Ang layunin ng pahinang ito ay hindi para magbenta o mag-promote ng anumang bagay—kami ay nagsasaliksik lamang ng mga opinyon at saloobin.",
+      "subtitle": "Ang {0} ay nag-aalok sa iyo ng pagkakataon na lumahok sa mga survey at tumanggap ng kabayaran para dito.",
+      "title": "Tungkol sa {0}"
+    },
+    "change-email": {
+      "button": "Baguhin ang iyong email",
+      "description1": "Ang kasalukuyan mong email address ay {0}. Ginagamit ito para magpadala sa iyo ng mga imbitasyon sa mga survey at impormasyon tungkol sa iyong mga napiling regalo. ",
+      "description2": "Upang baguhin ang iyong email, mangyaring maglagay ng bagong email address sa ibaba. Padadalhan ka namin ng email na may link para i-verify ang iyong bagong email.",
+      "field": {
+        "email": {
+          "placeholder": "Ilagay ang iyong email",
+          "title": "Email",
+          "validation": {
+            "invalid": "Maglagay ng isang wastong email.",
+            "required": "Ilagay ang iyong email."
+          }
+        }
+      },
+      "success": {
+        "button": "Muling ipadala ang email",
+        "description1": "Nagpadala kami ng mensahe sa iyong email: {0}",
+        "description2": "Kapag natanggap mo na ang mensahe, buksan ito at i-click ang link na “Aprubahan ang pagbabago ng email.”",
+        "title": "Ipinadala na ang email address verification"
+      },
+      "title": "Baguhin ang Email",
+      "verification": {
+        "error": {
+          "button": {
+            "login": "Login",
+            "request-new": "Mag-request ng bagong email"
+          },
+          "description1": "Paumanhin, maaaring hindi wasto o nag-time out na ang iyong verification code. Upang magpatuloy, mangyaring mag-request ng bagong link upang mabago ang iyong email.",
+          "description2": "Mangyaring mag-log in muna bago magpatuloy.",
+          "title": "Hindi mabago ang iyong email"
+        },
+        "success": {
+          "button": "Mag-log in",
+          "description1": "Pinalitan na ang iyong email bilang {0}. Gagamitin namin itong email address para magpadala ng mga imbitasyon sa mga survey at impormasyon tungkol sa iyong mga napiling regalo.",
+          "description2": "Mangyaring mag-log in muna bago magpatuloy.",
+          "title": "Na-verify na ang iyong email!"
+        },
+        "title": "I-Verify ang Pagbabago ng Email"
+      }
+    },
+    "change-password": {
+      "button": "Magtakda ng bagong password",
+      "error": {
+        "button": "Mag-request ng bagong password",
+        "description": "Paumanhin, maaaring hindi wasto o nag-time out na ang iyong verification code. Upang magpatuloy, mangyaring mag-request ng bagong link upang baguhin ang iyong password.",
+        "title": "Nag-Expire Na ang Link"
+      },
+      "field": {
+        "new": {
+          "title": "Bagong Password",
+          "validation": {
+            "minimum": "Maglagay ng hindi bababa sa 6 na karakter.",
+            "required": "Maglagay ng bagong password."
+          }
+        },
+        "verify": {
+          "title": "Ulitin ang password.",
+          "validation": {
+            "match": "Tiyaking magkatugma ang iyong mga password.",
+            "required": "I-type muli ang iyong password."
+          }
+        }
+      },
+      "success": {
+        "description1": "Nabago na ang iyong password.",
+        "description2": "Mangyaring mag-log in para magpatuloy."
+      },
+      "title": "Baguhin ang Password"
+    },
+    "complete-account": {
+      "birthdate": {
+        "description": "Maligayang pagdating sa bagong website ng OpinionArena! Bilang bahagi ng mga kamakailang pagbabago, kailangan naming i-update mo ang ilan sa iyong mga detalye.",
+        "title": "Piliin ang Iyong Kaarawan"
+      },
+      "gender": {
+        "description": "Maligayang pagdating sa bagong website ng OpinionArena! Bilang bahagi ng mga kamakailang pagbabago, kailangan naming i-update mo ang ilan sa iyong mga detalye.",
+        "title": "Piliin ang Iyong Kasarian"
+      },
+      "location": {
+        "description": "Maligayang pagdating sa bagong website ng OpinionArena! Bilang bahagi ng mga kamakailang pagbabago, kailangan naming i-update mo ang ilan sa iyong mga detalye.",
+        "title": "Idagdag ang Iyong Lokasyon"
+      },
+      "name": {
+        "description": "Maligayang pagdating sa bagong website ng OpinionArena! Bilang bahagi ng mga kamakailang pagbabago, kailangan naming i-update mo ang ilan sa iyong mga detalye.",
+        "title": "Ilagay ang Iyong Pangalan"
+      }
+    },
+    "deactivate-account": {
+      "auth": {
+        "button": "Magpatuloy sa pag-log in",
+        "description": "Mangyaring mag-log in kung nais mong isara ang iyong account.",
+        "subtitle": "Magpatuloy sa pag-deactivate ng account"
+      },
+      "button": {
+        "deactivate": "Magpatuloy sa pag-deactivate",
+        "not-now": "Panatilihing bukas ang account"
+      },
+      "confirm": {
+        "button": "I-deactivate ang account",
+        "description": "Makakatulong kung maglalaan ka ng ilang sandali upang pumili mula sa mga opsyon sa ibaba:",
+        "subtitle": "Bago ka umalis, sabihin kung bakit mo nais na isara ang iyong account"
+      },
+      "description": "Malapit mo nang i-deactivate ang iyong account pansamantala. Kapag nakompirma, hindi ka na makatatanggap ng anumang email mula sa amin, ngunit ang datos ng iyong account, history, at mga puntos ay mananatiling nakaimbak sa loob ng 60 araw kung sakaling nais mong magpatuloy sa paggamit ng account sa hinaharap.",
+      "field": {
+        "reason": {
+          "validation": {
+            "required": "Maglagay ng dahilan."
+          }
+        }
+      },
+      "reason": {
+        "inbox-full": "Puno na ang inbox ko",
+        "not-interested": "Hindi na ako interesado",
+        "not-relevant": "Hindi angkop sa akin ang nilalaman nito",
+        "other": "Iba pa",
+        "received-too-many": "Ang dami ko nang natatanggap na ganitong email.",
+        "spam": "Hindi ako kailanman nag-subscribe sa email list na ito"
+      },
+      "subtitle": "Sigurado ka bang gusto mong isara ang iyong account?",
+      "success": {
+        "button": "Muling i-activate ang account",
+        "description": "Ikinalulungkot naming makita kang umalis. Kung magpasya kang bumalik, maaari mong muling i-activate ang iyong account sa pamamagitan ng pag-log in bago {date}.",
+        "subtitle": "Sarado na ang iyong account"
+      },
+      "title": "I-deactivate ang account"
+    },
+    "faq": {
+      "button": {
+        "contact": "Makipag-Ugnayan Sa Amin",
+        "terms": "Ang Aming Mga Tuntunin sa Paggamit"
+      },
+      "item1": {
+        "answer1": "Ang OpinionArena ay nagbibigay sa iyo ng pagkakataon na lumahok sa mga survey at makatanggap ng kabayaran para rito. Ang mga miyembro ng portal ay nakakakuha ng mga puntos kapag nakompleto nila ang mga survey; ang mga puntos na ito ay maaaring ipagpalit sa iba’t ibang produkto at serbisyo tulad ng mga gift certificate o mga donasyon sa kawanggawa.",
+        "answer2": "Ang OpinionArena ay nagbibigay ng mga survey na iniutos ng mga institusyon, mga kompanya na pang-market research, malalaking kompanya ng produksyon, mga kompanya ng advertising, atbp. Pinapanatili naming kompidensiyal ang iyong personal na impormasyon at hindi kailanman ibinabahagi ito sa iba pang mga kompanya.",
+        "question": "Para saan ang OpinionArena?"
+      },
+      "item10": {
+        "answer": "Gamitin ang link sa pag-login sa kanang bahagi sa tuktok ng aming pahina. Ilagay ang iyong email address sa unang field at ang iyong password sa pangalawa. Kung nag-sign up ka gamit ang iyong Facebook o Google account, i-click ang tamang link upang mag-log in.",
+        "question": "Paano mag-log in sa OpinionArena?"
+      },
+      "item11": {
+        "answer": "Maaari itong mangyari sa iba’t ibang kadahilanan. Subukan ang mga sumusunod:",
+        "list-item1": "Tiyaking gamit mo ang parehong email address sa pag-sign up. Posibleng ginamit mo ang iyong email sa trabaho sa halip na ang iyong personal na email address.",
+        "list-item2": "Tiyaking nailagay mo ang tamang password. Maaaring binago o nakalimutan mo ito.",
+        "list-item3": "Subukang gamitin ang link ng “Nakalimutan ko ang aking password” sa login window. Kung hindi ito gumagana, mangyaring makipag-ugnayan sa amin.",
+        "question": "Bakit hindi ako maka-log in?"
+      },
+      "item12": {
+        "answer1": "Maaari kang makakuha ng daan-daang puntos kapag lumahok ka sa mga survey mula sa OpinionArena at sumagot sa mga tanong tungkol sa iyong pamumuhay at mga gawi. Ang mga nakuhang puntos ay maaaring ipagpalit sa mga regalo o gamitin sa pagbibigay ng donasyon sa kawanggawa.",
+        "answer2": "Ang iyong mga sagot ay nakatutulong sa mga kompanya na bumuo ng mga bagong produkto at serbisyo. Halimbawa, maaari kang tanungin tungkol sa iyong opinyon sa isang bagong pangalan, packaging, o panlasa ng produkto. Ginagamit ng mga kompanya ang mataas na kalidad ng feedback mula sa mga miyembro ng OpinionArena sa kanilang pagdedesisyon.",
+        "question": "Bakit dapat sumali?"
+      },
+      "item13": {
+        "answer1": "Ang bilang ng mga puntos ay depende sa haba at hirap ng survey at nakasaad sa imbitasyong ipinapadala sa email address ng miyembro. Sa bawat survey na iyong sasalihan, may makukuha ka—maaaring puntos o pagkakataong lumahok sa mga Grand Raffle. Makakakuha ka rin ng mga puntos kahit hindi na kinakailangan na ang mga sumasagot ay may katulad mong katangian.",
+        "answer2": "Ang bilang ng mga puntos na nakuha ay proporsyonal sa bilang ng mga tanong na sinagot. Sa karamihan sa mga survey, ang bilang ng mga tanong ay nag-iiba depende sa katangian ng sumasagot.",
+        "question": "Ilang puntos ang puwede kong makuha?"
+      },
+      "item14": {
+        "answer": "Kung lumilitaw na ang isang respondent ay nagsinungaling sa isang survey, maaari naming agad na wakasan ang kooperasyon. Sa gayong mga kaso, mawawala ang lahat ng nakuha mong puntos at isasara namin ang iyong account.",
+        "question": "Ano ang mangyayari kapag nagsisinungaling ako o nagsisikap na magbigay ng hindi wastong sagot?"
+      },
+      "item15": {
+        "answer": "Ang OpinionArena at mga kompanyang nagsasagawa ng survey ay may iba’t ibang paraan upang suriin at sukatin ang mga posibleng pagkukulang. Narito ang ilang halimbawa:",
+        "list-item1": {
+          "description": "Halimbawa, inilagay namin ang parehong paktuwal na tanong (hal., tungkol sa edad ng respondent) sa dalawang magkaibang survey. Maaari din naming ilagay ang magkaparehong tanong nang dalawang beses sa isang survey—sa simula at sa dulo. Kung ang respondent ay nagbibigay ng iba’t ibang sagot, itinuturing namin ito bilang sapat na patunay na hindi sila sumasagot nang tapat.",
+          "title": "Hindi magkatugma ang mga sagot"
+        },
+        "list-item2": {
+          "description": "Alam namin ang karaniwang oras na kinakailangan upang makompleto ang isang survey. Kung ang respondent ay pinipilit na tumugon nang mabilis nang hindi nag-iisip, karaniwang makokompleto nila ito nang mas mabilis kaysa sa karaniwang sumasagot.",
+          "title": "Impormasyong ibinigay nang masyadong mabilis"
+        },
+        "list-item3": {
+          "description": "Madaling makita kung ang respondent ay pumili ng parehong pagpipilian sa sagot para sa iba’t ibang katanungan. Halimbawa, sinagot ang lahat ng mga tanong gamit lamang ang opsyong A o 1.",
+          "title": "Magkakatulad na sagot sa iba’t ibang tanong"
+        },
+        "list-item4": {
+          "description": "Ang ilan sa mga tanong ay maaaring masagot sa pamamagitan ng open text. Kinikilala ng sistema kung ang text field ay naglalaman nang hindi magkakatugmang teksto o random na mga karakter lamang.",
+          "title": "Mga walang kaugnayang sagot"
+        },
+        "question": "Paano malalaman ng OpinionArena kung may nagsinungaling o nagbigay ng mga sagot na walang kabuluhan?"
+      },
+      "item16": {
+        "answer": "Upang mapataas ang tsansa mong makatanggap ng mga imbitasyon, mangyaring tiyakin na nakompleto mo ang iyong profile. Kinukuha kami ng mga kliyente upang makahanap ng mga kalahok na tugma sa ilang pamantayan—halimbawa, maaaring kailanganin ng isang survey ng mga respondent na nasa 30–40 taong gulang na nakatira sa isang partikular na rehiyon.",
+        "question": "Bakit hindi ako nakakakuha ng mga imbitasyon para sa mga survey?"
+      },
+      "item17": {
+        "answer": "Ang mga quick poll ay maiikling survey na maaaring makompleto kaagad pagkatapos mag-log in sa OpinionArena. Ang bilang ng mga puntos na maaaring makuha ay nakasaad sa simula ng survey.",
+        "question": "Ano ang quick poll?"
+      },
+      "item18": {
+        "answer": "Ang mga resulta ng survey ay ganap na kompidensiyal at ang integridad nito ay palaging garantisado. Ang iyong personal na impormasyon ay hindi ibinubunyag sa sinumang imbestigador. Minsan, hinihingi namin ang iyong impormasyon sa pakikipag-ugnayan para sa isang follow-up na panayam o upang magpadala sa iyo ng mga produkto para subukan. Kung gayon, maaari kang huminto sa pagsagot anumang oras.",
+        "question": "Mananatili bang kompidensiyal ang mga sagot ko?"
+      },
+      "item19": {
+        "answer1": "Ang market research ay isang seryosong larangan. Ang impormasyon na aming tinitipon ay nakakaapekto sa mahahalagang desisyon. Upang makagawa ng tamang desisyon ang mga kompanya, dapat sagutin ng mga lumalahok sa mga survey ang mga tanong nang tapat at wasto.",
+        "answer2": "Nagpatupad ang OpinionArena ng ilang pamamaraan at sistema upang masuri ang kalidad ng mga sagot. Kung may makalap kaming malinaw na ebidensiya na hindi naging tapat ang isang respondent, may karapatan kaming isara ang account at burahin ang naipong puntos.",
+        "question": "Bakit napakahalagang sumagot nang tumpak at tapat?"
+      },
+      "item2": {
+        "answer": "Mga puntos ang “pera” sa OpinionArena. Nakakakuha ng mga puntos ang mga miyembro sa mga sumusunod na kaso:",
+        "list-item1": "Sa paglahok sa mga survey",
+        "list-item2": "Sa pag-imbita ng mga bagong miyembro",
+        "list-item3": "Sa pagkompleto ng quick polls",
+        "list-item4": "Kapag nakompleto mo ang iyong profile",
+        "question": "Para saan ang mga puntos?"
+      },
+      "item20": {
+        "answer": "Kapag nag-imbita ka ng kaibigan o kamag-anak na sumali sa OpinionArena, makakatanggap ka ng 500 puntos bilang gantimpala matapos nilang makompleto ang tatlong survey. Siguraduhin lamang na naka-log in ka at ilagay ang pangalan at email address ng iyong kaibigan sa pahina ng “Mag-Imbita ng Mga Kaibigan” na makikita mo sa menu sa header ng aming portal. Mangyaring tandaan na mawawala ang mga naipon na puntos kung mapatunayang hindi seryoso ang mga sagot ng iyong kaibigan.",
+        "question": "Paano ako maaaring kumita ng mga puntos sa pamamagitan ng pag-anyaya sa mga bagong miyembro?"
+      },
+      "item3": {
+        "answer": "Maaaring kumita ng mga puntos ang mga miyembro ng OpinionArena kapag nakompleto nila ang mga survey. Ang mga puntos ay maaaring ipagpalit sa mga serbisyo at produkto. Maaari mong:",
+        "list-item1": "Ipagpalit ang mga puntos sa iba’t ibang gift card",
+        "list-item2": "I-donate ang mga puntos sa kawanggawa",
+        "question": "Anong puwede mong gawin sa iyong mga puntos?"
+      },
+      "item4": {
+        "answer": "Hindi, hindi nag-e-expire ang mga puntos sa OpinionArena.",
+        "question": "Mayroon bang expiration date ang mga puntos ko sa OpinionArena?"
+      },
+      "item5": {
+        "answer1": "Ang OpinionArena ay may mga panel sa iba’t ibang bansa sa Europa. Kami ay bahagi ng IntraResearch. Ang aming mga miyembro ay mga Internet user na may edad 14 hanggang 75 taon. Ang bawat miyembro ay ginagantimpalaan sa pagkompleto ng mga questionnaire at pagbabahagi ng kanilang mga opinyon.",
+        "answer2": "Nagsasagawa ang OpinionArena ng mga survey ukol sa mga produkto, serbisyo, patakaran, at brand awareness. Interesado kami sa mga opinyon at saloobin ng mga tao; hindi kami nakikibahagi sa mga pagbebenta o marketing. Maaari kang lumahok sa mga survey sa pamamagitan ng computer o mobile phone. Pinipili ng aming mga miyembro kung aling mga survey ang sasagutan at kailan sila lalahok.",
+        "answer3": "Ginagantimpalaan namin ang aming mga miyembro sa kanilang mga tugon. Kapag nakapagrehistro ka na, magsisimula ka nang makakuha ng mga puntos sa bawat survey na lalahukan mo. Pagkatapos, maaari mong gamitin ang iyong mga puntos upang pumili ng iba’t ibang produkto o serbisyo. Ang bilang ng mga puntos na nakukuha ay depende sa haba at hirap ng survey. Bukod dito, nagbibigay kami ng tsansa sa mga lumalahok na manalo ng magagandang premyo pagkatapos sumali.",
+        "question": "Interesado ka bang matuto nang higit pa tungkol sa amin?"
+      },
+      "item6": {
+        "answer": "Kailangang ikaw ay hindi bababa sa 14 taong gulang at may personal na email address.",
+        "question": "Sino ang puwedeng maging miyembro ng portal?"
+      },
+      "item7": {
+        "answer": "Madali lang maging miyembro ng OpinionArena.",
+        "question": "Paano maging miyembro ng portal ng OpinionArena?",
+        "step1": {
+          "description": "Magrehistro sa pamamagitan ng paglalagay ng iyong email address.",
+          "title": "Hakbang 1: {0}"
+        },
+        "step2": {
+          "description": "Magpapadala kami ng kompirmasyon sa iyong email na may karagdagang mga tagubilin para sa pag-activate ng iyong account.",
+          "title": "Hakbang 2: {0}"
+        },
+        "step3": {
+          "description": "Kapag nakapag-log in ka na sa unang pagkakataon, kompletuhin ang iyong profile sa portal. Kapag mas detalyado ang iyong profile at mas madalas mong i-update ito, mas maraming imbitasyon sa mga survey ang matatanggap mo.",
+          "title": "Hakbang 3: {0}"
+        }
+      },
+      "item8": {
+        "answer": "Kapag nailagay mo na ang iyong email ngunit hindi mo natanggap ang mensahe ng kompirmasyon, subukan ang sumusunod.",
+        "button": {
+          "contact-form": "support form"
+        },
+        "list-item1": "1. Tingnan ang iyong spam folder—maaaring napunta roon ang aming mensahe. Ito ang pinakakaraniwang dahilan kung bakit hindi natatanggap ang aming mga mensahe. P.S. Upang maiwasan ito, inirerekomenda naming markahin ang OpinionArena bilang safe sender.",
+        "list-item2": "2. Kung ang mensahe ng kompirmasyon ay wala sa spam folder, makipag-ugnayan sa amin sa pamamagitan ng: {0}.",
+        "question": "Wala pa akong natatanggap na confirmation email para sa aking membership. Puwede mo bang ipadala muli?"
+      },
+      "item9": {
+        "answer": "Oo, ang iyong impormasyon ay labis na protektado. Mahigpit na sumusunod ang OpinionArena sa mga alituntunin ukol sa privacy. Hindi kailanman ibubunyag ng OpinionArena ang iyong personal na impormasyon sa mga third party at hindi ito ginagamit para sa advertising o pagpapadala ng iba pang impormasyon na walang kaugnayan sa mga survey.",
+        "question": "Ligtas bang maiimbak ang aking personal na datos?"
+      },
+      "subtitle": "Ano ang maitutulong namin sa iyo?",
+      "title": "Mga Madalas na Itinatanong"
+    },
+    "forgot-password": {
+      "button": {
+        "login": "Mag-log in",
+        "register": "Magrehistro Rito",
+        "resend": "Muling ipadala ang email",
+        "submit": "Baguhin ang iyong password"
+      },
+      "description": "Mangyaring ilagay ang iyong email address. Padadalhan ka namin ng email link para pumili ng bagong password.",
+      "email-not-registered": {
+        "description": "Hindi namin mahanap ang isang user na may email na: {0}",
+        "title": "Hindi nakarehistro ang email"
+      },
+      "email-sent": {
+        "description1": "Nagpadala kami ng mensahe sa iyong email: {0}",
+        "description2": "Kapag natanggap mo na ang mensahe, buksan ito at i-click ang link na “Baguhin ang Password.”",
+        "title": "Naipadala na ang email patungkol sa paglimot sa password"
+      },
+      "field": {
+        "email": {
+          "placeholder": "Ilagay ang iyong email",
+          "title": "Email",
+          "validation": {
+            "invalid": "Maglagay ng isang wastong email.",
+            "required": "Ilagay ang iyong email."
+          }
+        }
+      },
+      "label": {
+        "no-account": "Wala pang user account? {0}",
+        "remember": "Naaalala mo ba ang iyong password? {0}"
+      },
+      "subtitle": "Gumawa ng bagong password",
+      "title": "Nakalimutan ang Password"
+    },
+    "get-started": {
+      "button": "Sumali at magsimulang kumita",
+      "step1": {
+        "main": "Magrehistro gamit ang iyong email address o mag-log in sa pamamagitan ng Facebook o Google."
+      },
+      "step2": "Buksan ang iyong mailbox at i-verify ang iyong email sa pamamagitan ng pag-click sa link na ipinadala namin sa iyo.",
+      "step3": "Punan ang impormasyon tungkol sa iyong sarili upang makakuha ng imbitasyon sa mga survey na angkop sa iyo.",
+      "step4": "Makibahagi sa mga survey kung saan ka inanyayahan. Tandaan—lahat ng survey ay may deadline.",
+      "step5": {
+        "main": "Sa bawat sagot ay makakapagkolekta ka ng mga puntos na maaari mong ipalit sa mga reward."
+      },
+      "step6": {
+        "main": "Bukod sa mga puntos, makikibahagi ka rin sa aming taunang raffle."
+      },
+      "step7": "Ibahagi ang impormasyon sa iyong mga kaibigan—makakatanggap ka ng karagdagang puntos sa bawat kaibigang sumali at kompletuhin ang questionnaire.",
+      "subtitle": "Kumita ng pera at mga gift card kapag sumasagot sa mga survey.",
+      "title": "Paano Magsimula"
+    },
+    "gifts": {
+      "title": "Mga Regalo at Raffle"
+    },
+    "home": {
+      "footer": {
+        "button": "Sumali at magsimulang kumita",
+        "intraresearch": "Intra Research",
+        "signature": "Ang OpinionArena ay isang rehistradong trademark ng {url}",
+        "subtitle": "Sumali Na Sa Aming Online Panel!",
+        "title": "Handa ka na bang baguhin ang mundo para sa mas magandang bukas? Mahalaga ang iyong opinyon!"
+      },
+      "hero": {
+        "button": "Sumali at magsimulang kumita",
+        "subtitle": "Inihahatid ng {0} ang mga survey tungkol sa mga opinyon at pananaw sa internet! Nag-iipon ang aming mga miyembro ng puntos na maaari nilang ipagpalit sa pera o gift card mula sa iba’t ibang kompanya.",
+        "title": "Kumita ng pera at mga gift card sa pamamagitan ng pagpapahayag ng iyong opinyon!"
+      },
+      "how-it-works": {
+        "step1": {
+          "button": "Magrehistro",
+          "description": "Magrehistro para maging member. Kompletuhin ang iyong OpinionArena profile para mas makilala ka namin.",
+          "title": "Sumali"
+        },
+        "step2": {
+          "button": "Magsimula",
+          "description": "Sagutin ang mga questionnaire na nakatalaga sa iyo. Makakakuha ka ng puntos para sa iyong account sa bawat nakompletong survey.",
+          "title": "Kompletuhin ang mga Survey"
+        },
+        "step3": {
+          "button": "Tingnan ang mga reward",
+          "description": "Magtubos ng puntos para sa Mga Regalo o Pera! Maaari mong ipalit ang naipong puntos sa mga produkto, serbisyo, pera, o gumawa ng donasyon sa kawanggawa.",
+          "title": "Kumita"
+        },
+        "step4": {
+          "button": "Tingnan ang mga premyo",
+          "description": "Bukod dito, makakatanggap ka ng entry sa aming taunang prize draw. Sa bawat nakompletong questionnaire, pinatataas mo ang iyong tsansang manalo.",
+          "title": "Manalo ng mga Premyo"
+        },
+        "title": "Paano ito gumagana?"
+      },
+      "partners": {
+        "title": "Ang Aming Partners"
+      },
+      "quote1": "Ang layunin ng mga survey ay upang gabayan ang mga organisasyon sa paggawa ng mas wastong desisyon at ang mga kompanya sa pagbuo ng mas mahusay na mga produkto at serbisyo.",
+      "quote2": "Ang iyong opinyon ay makatutulong sa kanilang gawin iyon.",
+      "testimonial": {
+        "item1": {
+          "country": "United Kingdom",
+          "message": "Napakasulit na karanasan ang pagsali sa panel na ito! Gustung-gusto kong magbahagi ng aking mga opinyon at makita kung paano sila nakakatulong sa pagbabago. Dagdag pa, ibang klase ang mga reward at palagi itong natatanggap sa tamang oras.",
+          "name": "Alex J."
+        },
+        "item2": {
+          "country": "Sweden",
+          "message": "Nakasubok na ako ng iba’t ibang survey panel noon, ngunit ito ay namumukod-tangi. Kawili-wili ang mga survey, madaling gamitin ang platform, at mahusay ang customer support. Lubos kong inirerekomenda ito!",
+          "name": "Maria L."
+        },
+        "item3": {
+          "country": "Ireland",
+          "message": "Ang pagiging panelist dito ay naging mahusay na paraan upang kumita ng karagdagang pera kapag may oras ako. Masaya at makabuluhan ang mga survey, at gusto ko ang pagiging tapat at patas ng sistema ng mga reward.",
+          "name": "James T."
+        },
+        "item4": {
+          "country": "Finlandiya",
+          "message": "Ang pinakagusto ko sa panel na ito ay ang komunidad. Masarap maging bahagi ng isang grupo kung saan pinahahalagahan ang aking opinyon at may tunay na impluwensiya sa mga produkto at serbisyo. Ang mga perk at incentive ay parang bonus na lamang sa lahat ng ito.",
+          "name": "Samantha R."
+        },
+        "item5": {
+          "country": "Alemanya",
+          "message": "Humigit sa aking inaasahan ang panel na ito. Kawili-wili ang mga pagkakaiba ng mga survey, at pakiramdam kong tunay na mahalaga ang aking feedback. Ang mga reward ay isang magandang bonus!",
+          "name": "Michael K."
+        },
+        "item6": {
+          "country": "Pilipinas",
+          "message": "Mahigit isang taon na akong panelist at napakahusay ng aking karanasan. Nakakaengganyo ang mga survey, at ang sarap sa pakiramdam na ang aking mga opinyon ay nakakatulong sa paghubog ng mga produkto sa hinaharap. Ang mga reward ay bonus lamang!",
+          "name": "Emily W."
+        },
+        "item7": {
+          "country": "Polandiya",
+          "message": "Ang panel na ito ang pinakamaganda! Gustung-gusto ko ang pagka-user-friendly ng site at kung gaano kabilis naiipon ang mga reward. Isa itong masaya at madaling paraan upang maibahagi ang aking opinyon at kumita ng karagdagang pera.",
+          "name": "David M."
+        },
+        "item8": {
+          "country": "Denmark",
+          "message": "Nagustuhan ko ang lawak ng mga paksa na sakop sa mga survey. Pinapanatili nito ang mga bagay na kawili-wili at ramdam kong pinahahalagahan ang aking opinyon sa iba’t ibang industriya. Ang sistema ng mga reward ay patas at mapagbigay.",
+          "name": "Olivia H."
+        },
+        "item9": {
+          "country": "Netherlands",
+          "message": "Ang pagiging bahagi ng panel na ito ay naging isang mahusay na side hustle. Maikli at direkta ang mga survey, at maaari ko silang makompleto sa oras na pinakaangkop sa akin. Ang mga gantimpala ay isang mahusay na incentive upang patuloy na makilahok.",
+          "name": "Chris B."
+        },
+        "metrics": {
+          "gift-cards": "50",
+          "respondents": "6000"
+        },
+        "subtitle": "Araw-araw, {0} tao ang tumutugon sa aming mga survey at nag-iisyu kami ng {1} gift card",
+        "title": "Ano ang sinasabi ng mga tao?"
+      },
+      "trust": {
+        "anonymous": "Ang iyong datos ay nananatiling anonymous at ginagamit lamang para sa market research.",
+        "confidential": "Nakatuon kami sa pangangalaga ng pagiging kompidensiyal ng iyong datos.",
+        "no-spam": "Hindi kami nagpapadala ng spam o mga patalastas. Hindi namin ibinabahagi ang iyong email address sa anumang mga third-party na organisasyon.",
+        "title": "Mapagkakatiwalaan kami."
+      }
+    },
+    "human": {
+      "button": {
+        "next": "Susunod",
+        "start": "Simulan"
+      },
+      "captcha": {
+        "question": "Sinusuri kung ikaw ay tao…",
+        "required": "Mangyaring kompletuhin ang security verification."
+      },
+      "end": {
+        "title": "Salamat sa pagsagot sa aming mga tanong! Ikaw ay muling mada-direct sa {0} segundo."
+      },
+      "start": {
+        "subtitle": "Bago ka namin i-direct muli sa survey, kailangan naming magsagawa ng mabilis na security check.",
+        "title": "Magsagot tayo ng ilang katanungan"
+      }
+    },
+    "invite-friends": {
+      "activity": {
+        "completed": {
+          "description": "Nakakompleto na ang iyong kaibigan ng {surveys} survey. Kapag na-verify na ang resulta ng survey ng iyong kaibigan, makakatanggap ka ng {points} puntos bilang gantimpala.",
+          "title": "Nakompleto na"
+        },
+        "credited": {
+          "description": "Binabati kita! Nakakompleto ang iyong kaibigan ng {surveys} survey at nakatanggap ka ng {points} puntos bilang gantimpala.",
+          "title": "Na-credit na"
+        },
+        "empty": "Walang pag-imbita",
+        "friends-invited": "Mga Kaibigan na Inanyayahan",
+        "invited": {
+          "description": "Naimbitahan na ang kaibigan mo. Kapag na-verify ng kaibigan mo ang kaniyang account at nakakompleto ng {surveys} survey, makakatanggap ka ng {points} puntos bilang gantimpala.",
+          "title": "Inanyayahan"
+        },
+        "last-updated": "Huling na-update {0}",
+        "registered": {
+          "description": "Nagrehistro na ng account ang kaibigan mo. Kapag na-verify ng kaibigan mo ang kaniyang account at nakakompleto ng {surveys} survey, makakatanggap ka ng {points} puntos bilang gantimpala.",
+          "title": "Rehistrado"
+        },
+        "title": "Tingnan ang mga kaibigan na tumanggap sa iyong imbitasyon",
+        "total-reward": "Kabuoang Gantimpala",
+        "verified": {
+          "description": "Na-verify na ng iyong kaibigan ang kaniyang account. Kapag nakakompleto sila ng {surveys} survey, makakatanggap ka ng {points} puntos bilang gantimpala.",
+          "title": "Na-verify"
+        }
+      },
+      "email": {
+        "button": "Mag-imbita",
+        "friend-email": {
+          "invalid": "Ilagay ang valid email address ng iyong kaibigan",
+          "placeholder": "Ilagay ang email address ng iyong kaibigan",
+          "required": "Ilagay ang email address ng iyong kaibigan"
+        },
+        "friend-name": {
+          "placeholder": "Ilagay ang pangalan ng iyong kaibigan",
+          "required": "Ilagay ang pangalan ng iyong kaibigan"
+        },
+        "subtitle": "Makakatanggap ang iyong kaibigan ng email na may link upang magrehistro bilang user.",
+        "success": {
+          "button": "Isara",
+          "subtitle": "Makakatanggap ang iyong kaibigan ng email na may link upang magrehistro bilang user. Maaari mong subaybayan ang kaniyang progreso sa ibaba kapag miyembro na ang iyong kaibigan.",
+          "title": "Naipadala na ang imbitasyon"
+        },
+        "title": "Mag-imbita ng kaibigan sa pamamagitan ng pag-email"
+      },
+      "how-it-works": {
+        "step1": {
+          "description": "Ilagay ang email address, pangalan, at apelyido ng iyong kaibigan, at padadalhan siya ng invitation email na mayroong sign-up link.",
+          "title": "Pag-anyaya"
+        },
+        "step2": {
+          "description": "Ikinlik ng iyong kaibigan ang link sa invitation email at pinupunan niya na ang mga detalye ng pagpaparehistro. Kapag nakompleto ito, magiging miyembro ang iyong kaibigan.",
+          "title": "Sumasali"
+        },
+        "step3": {
+          "description": "Kapag nakakompleto ang iyong kaibigan ng {surveys} survey, matatanggap mo ang iyong reward na {points} puntos.",
+          "title": "Pagbibigay ng Reward"
+        },
+        "title": "Paano ito gumagana?"
+      },
+      "notification": {
+        "button": "Sumali",
+        "title": "Inaanyayahan ka ng iyong kaibigan na si {0} na maging miyembro!"
+      },
+      "social-media": {
+        "button": {
+          "copied": "Nakopya na",
+          "copy": "Kopyahin",
+          "facebook": "Ibahagi sa Facebook",
+          "line": "Ibahagi sa Line",
+          "linkedin": "Ibahagi sa LinkedIn",
+          "messenger": "Ibahagi sa Messenger",
+          "skype": "Ibahagi sa Skype",
+          "telegram": "Ibahagi sa Telegram",
+          "threads": "Ibahagi sa Threads",
+          "twitter": "Ibahagi sa Twitter / X",
+          "viber": "Ibahagi sa Viber",
+          "whatsapp": "Ibahagi sa WhatsApp"
+        },
+        "share": {
+          "description": "Alamin ang tungkol sa OpinionArena, isang nangungunang online market research panel sa Pilipinas. Tuklasin kung paano namin iugnay ang mga mamimili sa mga brand. Sumali sa aming komunidad!",
+          "hashtags": "MgaOnlineSurvey,MarketResearch,ConsumerPanel",
+          "quote": "Kumita ng pera at mga gift card sa pamamagitan ng pagpapahayag ng iyong opinyon!",
+          "title": "Sumali sa OpinionArena at kumita ng pera at mga gift card sa pamamagitan ng pagpapahayag ng iyong opinyon!"
+        },
+        "title": "Maaari mo ring anyayahan ang iyong mga kaibigan na mag-sign up gamit ang link na ito o sa pamamagitan ng pagbabahagi sa social media."
+      },
+      "title": "Mag-aya ng Kaibigan",
+      "unverified": {
+        "button": "I-Verify ang Email",
+        "subtitle": "Mangyaring i-verify ang iyong email upang ma-unlock ang feature na ito. Maaari kang mag-imbita ng mga kaibigan at makatanggap ng hanggang {0} puntos!",
+        "title": "{0}, isang hakbang na lamang!"
+      }
+    },
+    "login": {
+      "button": {
+        "facebook": "Mag-sign in gamit ang Facebook",
+        "forgot-password": "Kumuha ng bago rito",
+        "google": "Mag-sign in gamit ang Google",
+        "register": "Magrehistro Rito",
+        "submit": "Mag-log in"
+      },
+      "field": {
+        "email": {
+          "placeholder": "Ilagay ang iyong email",
+          "title": "Email"
+        },
+        "password": {
+          "placeholder": "Ilagay ang iyong password",
+          "title": "Password"
+        }
+      },
+      "label": {
+        "forgot-password": "Nakalimutan mo ba ang iyong password? {0}",
+        "no-account": "Wala pang user account? {0}",
+        "or": "o"
+      },
+      "message": {
+        "account-deactivated": "Ang account na ito ay kasalukuyang sarado."
+      },
+      "title": "Maligayang Pagbabalik"
+    },
+    "more-about-me": {
+      "answer": {
+        "checkbox": {
+          "select-multiple": "Maaaring pumili ng maraming sagot."
+        },
+        "text": {
+          "placeholder": "Ilagay ang iyong sagot"
+        }
+      },
+      "button": {
+        "save": "I-save at susunod",
+        "skip": "Sagutin ito mamaya"
+      },
+      "completed": {
+        "button": {
+          "edit-answers": "I-edit ang aking mga sagot",
+          "see-rewards": "Tingnan ang mga reward"
+        },
+        "description": "Patuloy kaming magdaragdag ng mga katanungan, kaya bumalik at tingnan muli pagkatapos ng ilang sandali.",
+        "title": "Nakompleto mo na ang lahat ng tanong sa ngayon."
+      },
+      "edit": {
+        "button": {
+          "save": "I-save ang mga pagbabago"
+        },
+        "empty": {
+          "button": "I-edit ang aking mga sagot",
+          "description": "Maaari mong i-update ang iyong mga sagot para sa mga background na tanong dito. Pumunta sa pahina ng Ang Aking Profile upang pumili ng isang aytem na nais mong baguhin.",
+          "title": "Walang datos na ie-edit."
+        }
+      },
+      "finish": {
+        "button": "Tingnan ang mga reward",
+        "description": "Nakompleto mo na ang lahat ng tanong sa ngayon. Patuloy kaming magdaragdag ng mga katanungan, kaya bumalik at tingnan muli pagkatapos ng ilang sandali.",
+        "title": "Binabati kita!"
+      },
+      "navigation": {
+        "description": "Mangyaring magbahagi ng karagdagang impormasyon tungkol sa iyong sarili. Ang iyong mga sagot ay makatutulong sa aming makahanap ng mga mas angkop na survey para sa iyo. Ang lahat ng iyong datos ay kompidensiyal at hindi ibabahagi sa mga third party. Gagantimpalaan ka ng mga puntos sa bawat sagot na iyong ibibigay.",
+        "label": {
+          "questions-answered": "Mga Tanong na Nasagot"
+        }
+      },
+      "points": {
+        "description": "Salamat sa iyong sagot. Magpatuloy sa paglalagay ng karagdagang impormasyon tungkol sa iyong sarili upang makakuha ng mas maraming puntos at makatanggap ng mas maraming imbitasyon sa mga survey.",
+        "title": "Nakakuha ka ng {0}puntos!"
+      },
+      "welcome": {
+        "button": "Magpatuloy",
+        "description1": "Nagawa na ang iyong account, at ngayon, maaaring i-verify ang iyong email address. Mangyaring tingnan ang iyong mailbox para sa verification email. Kung hindi mo makita ang email sa iyong inbox, mangyaring tingnan ang iyong spam folder.",
+        "description2": "Samantala, mangyaring magbahagi ng karagdagang impormasyon tungkol sa iyong sarili. Ang iyong mga sagot ay makatutulong sa aming makahanap ng mga mas angkop na survey para sa iyo.",
+        "title": "Salamat!"
+      }
+    },
+    "my-account": {
+      "account": {
+        "deactivate": {
+          "description": "Hindi ka na makakatanggap ng anumang email mula sa amin, ngunit ang datos ng iyong account, history, at mga puntos ay mananatiling nakaimbak kung sakaling nais mong magpatuloy sa paggamit ng account sa hinaharap.",
+          "title": "Isara ang account"
+        },
+        "delete": {
+          "description": "Ang iyong personal na datos ay mabubura at mawawala ang mga naipon mong puntos.",
+          "title": "Permanenteng burahin ang account"
+        },
+        "title": "Ayoko nang makatanggap ng mga imbitasyon sa mga survey"
+      },
+      "birthdate": {
+        "button": {
+          "contact": "makipag-ugnayan sa amin",
+          "save": "I-save"
+        },
+        "message": {
+          "limit": "Mangyaring tandaan na may limitasyon sa kung ilang beses ka maaaring magpalit ng iyong araw ng kapanganakan.",
+          "limit-reached": "Naabot mo na ang hangganan sa pagbago ng petsa ng kapanganakan. Mangyaring {0} upang makapag-request ng pagbabago sa datos."
+        },
+        "title": "Petsa ng kapanganakan"
+      },
+      "connected-accounts": {
+        "button": {
+          "connect": "Kumonekta",
+          "disconnect": "Mag-disconnect"
+        },
+        "facebook": "Facebook",
+        "google": "Google",
+        "label": {
+          "connected": "Nakakonekta"
+        },
+        "title": "Magdagdag o baguhin ang paraan ng pag-log in"
+      },
+      "contact": {
+        "button": "I-save",
+        "message": {
+          "exact-address": "Kailangan namin ang iyong eksaktong address upang maipadala ang mga reward."
+        },
+        "title": "Makipag-ugnayan"
+      },
+      "email": {
+        "button": {
+          "change-email": "Baguhin ang email",
+          "send-verification": "Magpadala ng verification email"
+        },
+        "label": {
+          "verified": "Na-verify"
+        },
+        "message": {
+          "check-inbox": "Mangyaring tingnan ang iyong inbox para sa verification email. Huwag kalimutang i-check ang Junk folder.",
+          "email-sent": "Naipadala na ang email.",
+          "verify-email": "Kailangan mong i-verify ang iyong email upang makuha ang mga reward."
+        },
+        "title": "Email"
+      },
+      "gender": {
+        "button": {
+          "contact": "makipag-ugnayan sa amin",
+          "save": "I-save"
+        },
+        "message": {
+          "limit": "Mangyaring tandaan na may limitasyon sa kung ilang beses ka maaaring magpalit ng iyong kasarian.",
+          "limit-reached": "Naabot mo na ang limit sa pagbago ng iyong kasarian. Mangyaring {0} upang makapag-request ng pagbabago sa datos."
+        },
+        "title": "Kasarian"
+      },
+      "label": {
+        "verified": "Na-verify"
+      },
+      "language": {
+        "button": "I-save",
+        "title": "Wika"
+      },
+      "location": {
+        "button": {
+          "contact": "makipag-ugnayan sa amin",
+          "save": "I-save"
+        },
+        "message": {
+          "limit": "Mangyaring tandaan na may limitasyon sa kung ilang beses ka maaaring magpalit ng rehiyon.",
+          "limit-reached": "Naabot mo na ang limit sa pagbago ng iyong rehiyon. Mangyaring {0} upang makapag-request ng pagbabago sa datos."
+        },
+        "shipping-address": {
+          "helper-text": "Ang iyong buong address ay kailangan para sa pagkuha ng mga reward"
+        },
+        "title": "Lokasyon"
+      },
+      "name": {
+        "button": {
+          "contact": "makipag-ugnayan sa amin",
+          "save": "I-save"
+        },
+        "message": {
+          "limit": "Mangyaring tandaan na may limitasyon sa kung ilang beses ka maaaring magpalit ng iyong pangalan.",
+          "limit-reached": "Naabot mo na ang limit sa pagbago ng iyong pangalan. Mangyaring {0} upang makapag-request ng pagbabago sa datos."
+        },
+        "title": "Pangalan"
+      },
+      "password": {
+        "button": {
+          "change": "Baguhin ang Password",
+          "forgot": "Nakalimutan ang Password"
+        },
+        "field": {
+          "current": {
+            "title": "Kasalukuyang Password",
+            "validation-required": "Ilagay ang kasalukuyang password"
+          },
+          "new": {
+            "title": "Bagong Password"
+          },
+          "verify": {
+            "title": "Ulitin ang Bagong Password"
+          }
+        },
+        "title": "Password"
+      },
+      "phone": {
+        "title": "Telepono"
+      },
+      "title": "Ang Aking Account"
+    },
+    "my-page": {
+      "greetings": {
+        "hello": "Hello, {0}",
+        "hi": "Hi, {0}",
+        "welcome": "Maligayang pagdating, {0}"
+      },
+      "invite-friends": {
+        "button": "I-click para sa karagdagang impormasyon!",
+        "subtitle": "Mag-imbita ng kaibigan para makakuha ng puntos! Kapag nakakompleto ang iyong kaibigan ng {surveys} survey, makakakuha ka ng {points} puntos.",
+        "title": "Mag-aya ng Kaibigan"
+      },
+      "metrics": {
+        "active-lotteries": "Mga Aktibong Raffle",
+        "friends-invited": "Mga Kaibigan na Inanyayahan",
+        "points": "Ang Iyong Puntos",
+        "quality-score": "Quality Score",
+        "questions-answered": "Mga Tanong na Nasagot",
+        "rewards-redeemed": "Mga Nakuhang Reward",
+        "surveys-available": "Mga Available na Survey",
+        "surveys-taken": "Mga Survey na Sinagot"
+      }
+    },
+    "my-profile": {
+      "completeness": {
+        "address": "Idagdag ang iyong kompletong tirahan",
+        "bg-questions": "Sagutin ang lahat ng mga background na tanong",
+        "email": "I-verify ang iyong email address",
+        "phone": "Ilagay ang iyong numero sa telepono",
+        "subtitle": "Sa pagkompleto ng iyong profile, mas tataas ang tsansa mong makatanggap ng maraming survey.",
+        "title": "Pagkakompleto ng Profile"
+      },
+      "edit": "I-edit",
+      "empty": {
+        "button": "Sagutin ang mga background na tanong",
+        "data": "Walang mga sagot"
+      },
+      "title": "Ang Aking Profile"
+    },
+    "my-rewards": {
+      "button": {
+        "cancel": "Kanselahin",
+        "copied": "Nakopya na",
+        "copy": "Kopyahin",
+        "explore": "Tumuklas",
+        "read-less": "Magbasa nang mas kaunti",
+        "read-more": "Magbasa nang higit pa",
+        "see-rewards": "Tingnan ang mga reward",
+        "view-all": "Tingnan ang lahat ng mga reward",
+        "view-empty": "Pumunta sa pahina ng aking mga reward"
+      },
+      "cancel": {
+        "button": {
+          "cancel": "Hindi",
+          "confirm": "Oo"
+        },
+        "subtitle": "Sigurado ka bang gusto mong kanselahin ang iyong reward request?",
+        "title": "Kompirmahin ang pagkansela"
+      },
+      "empty": {
+        "data": "Walang in-order na mga reward",
+        "data-approved": "Walang na-aprobahang reward",
+        "data-cancelled": "Walang kinanselang reward",
+        "data-delivered": "Walang nai-deliver na reward",
+        "data-pending": "Walang naka-pending reward",
+        "data-shipped": "Walang naipadalang reward"
+      },
+      "filter": {
+        "all": "Lahat",
+        "approved": "Inaprubahan",
+        "canceled": "Kinansela",
+        "delivered": "Naihatid",
+        "pending": "Naka-pending",
+        "shipped": "Naipadala"
+      },
+      "label": {
+        "use-code": "Gumamit ng code sa checkout"
+      },
+      "points-deducted": "{0} puntos ang binawas",
+      "points-refunded": "{0} puntos ang binalik",
+      "status": {
+        "approved": {
+          "description": "Naaprubahan na ang iyong reward.",
+          "title": "Inaprubahan"
+        },
+        "canceled": {
+          "description": "Nakansela na ang iyong reward.",
+          "title": "Kinansela"
+        },
+        "delivered": {
+          "description": "Ang iyong reward ay matagumpay na naihatid.",
+          "title": "Naihatid"
+        },
+        "denied": {
+          "description": "Hindi inaprubahan ang iyong reward.",
+          "title": "Hindi inaprubahan"
+        },
+        "more-info-needed": {
+          "description": "Hindi pa naaprubahan ang iyong reward.",
+          "title": "Kailangan ng Karagdagang Impormasyon"
+        },
+        "pending": {
+          "description": "Naka-pending pa ang pag-apruba ng iyong reward.",
+          "title": "Naka-pending"
+        },
+        "received": {
+          "description": "Binabati kita! Matagumpay mong nakuha ang reward na ito.",
+          "title": "Natanggap"
+        },
+        "shipped": {
+          "description": "Malapit mo nang matanggap ang iyong reward.",
+          "title": "Naipadala"
+        }
+      },
+      "subtitle": "Tingnan ang iba pang reward na available para sa iyo.",
+      "title": "Ang Aking Mga Reward"
+    },
+    "not-found": {
+      "title": "Hindi natagpuan ang pahina"
+    },
+    "privacy": {
+      "date-updated": "45827",
+      "deleting-nonactive": {
+        "section1": {
+          "description": "Kung walang aktibidad sa iyong account sa loob ng 12 buwang magkakasunod, ang anumang naipong puntos ay tatanggalin. Ang mga puntos ay nananatiling valid hangga't ikaw ay isang aktibong miyembro ng panel at maaaring gamitin para sa mga available na reward o donasyon. Kapag nag-unsubscribe ka o tinanggal ka sa panel, ang anumang hindi nagamit na puntos ay mawawala at hindi maaaring ipalit sa pera.",
+          "title": "PAGTANGGAL SA MGA PUNTOS NG HINDI AKTIBONG PROFILE"
+        }
+      },
+      "description1": "Isa itong privacy policy ng Intra Research OU (tinutukoy mula rito bilang “Kompanya”), ang may ari ng survey panel website na OpinionArena at mga serbisyo nito. Ipinaliliwanag ng policy kung paano kinokolekta at ginagamit ng kompanya ang personal na impormasyon ng mga miyembro nito. Sumusunod ang kompanya sa GDPR, CCPA, at professional code of conduct na naaangkop sa mga rehistradong kompanya na pang-market research. Ang kompanya ay nangongolekta at nag-iimbak ng kinakailangang impormasyon ng miyembro, tulad ng pangalan, email, password, taon ng kapanganakan, kasarian, at bansa, at kusang-loob na ibinigay ang impormasyon bilang tugon sa mga tiyak na kahilingan sa impormasyon. Ibinabahagi ng kompanya ang personal na impormasyon, kabilang ang mga identification number at iba pang detalye, sa iba pang kompanya na pang-market research upang matukoy ang mga third-party na survey na maaaring angkop para sa miyembro. Hindi ibubunyag ng kompanya ang personal na impormasyon sa anumang third party nang walang pahintulot ng miyembro maliban sa pagtupad sa mga obligasyon mula sa kontrata, pagsunod sa mga legal na alituntunin, o pagsunod sa isang legal na pamamaraan. Nagpapatupad ang kompanya ng mga hakbang upang maprotektahan ang personal na datos sa ilalim ng pamamahala nito upang malimitahan ang pag-access sa datos, gamit ang mga teknolohiya tulad ng mga firewall, pag-encrypt, proteksyon sa malware, at pag-detect ng intrusion, at pagpapanatili ng mga patakaran na nakahanay sa iba’t ibang legal na alituntunin. Maaaring lumikha ang kompanya ng general aggregate datos tungkol sa mga miyembro nito at gawin itong available sa mga kasalukuyan at potensiyal na advertiser, kasosyo sa negosyo, at investor. Itinatala ng kompanya ang unang bloke ng IP address ng miyembro, uri ng browser, at operating system kapag na-access nila ang site. Maaaring gumamit ang kompanya ng mga cookie para sa survey at quality assurance at upang mapabuti ang karanasan ng user. Maaaring ma-access at i-update ng miyembro ang kaniyang impormasyon sa pamamagitan ng pasilidad na ibinigay sa site o pagkontak sa company support. Hindi nangongolekta ang kompanya ng personal na datos mula sa mga batang wala pa sa itinakdang edad.",
+      "description2": "Sumusunod ang kompanya sa gabay at mga alituntunin ng propesyonal na code of conduct na naaangkop sa mga rehistradong kompanya na pang-market research (ICC/ESOMAR) at lahat ng kasalukuyang umiiral na lokal na regulasyon, lalo na pagdating sa proteksyon ng datos ng mga respondent. Ang kompanya ay nagsagawa ng maagap na mga hakbang upang matiyak ang seguridad at proteksyon ng personal na datos ng mga customer, respondent, at empleyado nito. Sa pagsisimula ng pagpapatupad ng GDPR, matagumpay na naipatupad ng kompanya ang mga alituntunin ng GDPR sa lahat ng bansang Europeo kung saan ito nagpapatakbo. Ang lahat ng personal na makikilalang impormasyon (“PII”) ay nakaimbak sa Tallinn, Estonia, at sa Amsterdam, Netherlands, kung saan matatagpuan ang aming mga server at naa-access ng aming mga empleyado sa buong mundo.",
+      "item1": {
+        "description": "Bilang kondisyon ng membership, kailangan mong magbigay ng wastong email address at sumang-ayon na makatanggap ng mga imbitasyon sa survey mula sa amin. Kung magbago ang iyong isip tungkol sa pagtanggap ng impormasyon mula sa amin o sa paggamit ng impormasyong ibinigay mo anumang oras matapos magparehistro, mangyaring i-click ang “unsubscribe” na link na makikita sa bawat email na ipinapadala namin. Pagkatapos mong mag-unsubscribe, ititigil namin ang pagpapadala ng impormasyong hindi mo na nais matanggap. Bilang alternatibo, maaari kang mag-request ng pagbura ng iyong impormasyon sa pamamagitan ng pagpapadala ng email sa aming support team o gamit ang opsyon na makikita sa Site. Sa ganoong kaso, kailangan mo munang mag-log in. Buksan ang Iyong Profile at i-click ang “Ayoko nang makatanggap ng imbitasyon sa mga survey.” Piliin ang “Burahin ang aking account at lahat ng personal na datos” at i-click ang “Magpatuloy.” Panghuli, piliin ang dahilan at i-click ang “Kompirmahin.”",
+        "title": "PAGLIBAN / PAGBURA NG IMPORMASYON"
+      },
+      "item10": {
+        "section1": {
+          "description": "Ang mga cookie ay maliliit na text file na inilalagay sa iyong device kapag ina-access mo ang aming Website. Karaniwan itong ginagamit upang mapagana ang mga website nang mas epektibo at upang magbigay ng impormasyon sa may-ari ng site. Nagbibigay-daan ang mga cookie upang matukoy namin ang iyong device at makapagkolekta ng impormasyon tulad ng nais na wika, mga user setting, at browsing history. Nakakatulong ito sa amin na i-personalize ang iyong karanasan sa aming Website at magpakita ng mas angkop na nilalaman para sa iyo.",
+          "title": "Ano ang mga Cookie?"
+        },
+        "section2": {
+          "description": "Ginagamit namin ang parehong session at persistent na mga cookie sa aming Website. Ang mga session cookie ay mga pansamantalang cookie na nag-e-expire kapag isinara mo ang iyong browser. Ang mga persistent cookie ay nananatili sa iyong device sa loob ng itinakdang panahon o hanggang sa tanggalin mo ang mga ito.",
+          "title": "Anong Mga Cookie ang ginagamit namin?"
+        },
+        "section3": {
+          "description1": "Mahahalagang Cookie: Ang mga cookie na ito ay kinakailangan upang makapag-browse ka sa aming Website at magamit ang mga feature nito. Kabilang dito ang mga cookie na kinakailangan para sa pagpapatakbo ng aming Website, tulad ng mga nagpapahintulot sa iyo na mag-log in sa mga protektadong parte ng aming Website.",
+          "description2": "Mga Analytical/Performance Cookie: Ang mga cookie na ito ay nangongolekta ng impormasyon tungkol sa kung paano mo ginagamit ang aming Website, kabilang ang mga pahinang madalas mong binibisita at kung nakakatanggap ka ng mga error message mula sa ilang pahina. Ginagamit namin ang impormasyong ito upang mapabuti at upang maunawaan kung paano ginagamit ang aming Website.",
+          "description3": "Mga Third-Party Cookie: Ang mga cookie na ito ay ginagamit upang maipapakita ang mga patalastas na mas naaangkop sa iyo at sa iyong mga interes. Ginagamit din ang mga ito upang limitahan ang bilang ng beses na makikita mo ang isang patalastas at upang sukatin ang bisa ng mga kampanyang pang-promosyon.",
+          "title": "Ginagamit namin ang mga sumusunod na uri ng cookie sa aming Website:"
+        },
+        "section4": {
+          "description": "Gumagamit kami ng mga third-party cookie sa aming Website. Ang mga cookie na ito ay itinakda ng isang third party maliban sa amin. Halimbawa, maaari kaming gumamit ng Google Analytics upang suriin kung paano ginagamit ng mga bisita ang aming Website. Ang impormasyong nabuo ng cookie ng Google Analytics tungkol sa iyong paggamit ng aming Website (kabilang ang iyong IP address) ay ipapadala at iiimbak ng Google sa mga server sa Estados Unidos. Gagamitin ng Google ang impormasyong ito upang suriin ang iyong paggamit ng aming Website, bumuo ng mga ulat tungkol sa aktibidad ng Website para sa mga tagapangasiwa nito, at magbigay ng iba pang serbisyo na may kaugnayan sa aktibidad ng Website at paggamit ng Internet. Maaari ding ilipat ng Google ang impormasyong ito sa mga third party kung kinakailangan base sa nakasaad na batas o kung saan ipinoproseso ng naturang mga third party ang impormasyon sa ngalan ng Google.",
+          "title": "Mga Third-Party Cookie"
+        },
+        "section5": {
+          "description1": "Maaari mong tanggapin o tanggihan ang mga cookie. Karamihan sa mga web browser ay awtomatikong tumatanggap ng mga cookie, ngunit madalas ay maaari mong mabago ang mga setting ng iyong browser upang tanggihan ang mga cookie kung nais mo. Kung pipiliin mong tanggihan ang mga cookie, maaaring hindi mo lubos na maranasan ang mga interactive na feature ng aming Website.",
+          "description2": "Maaari mo ring tanggalin ang mga cookie mula sa iyong browser anumang oras. Gayunpaman, kung pipiliin mong tanggalin ang mga cookie, ang anumang mga setting at preference na kinokontrol ng mga cookie na iyon, kabilang ang mga preference sa advertising, ay mabubura at maaaring kailanganing muling likhain.",
+          "title": "Pagma-Manage ng Mga Cookie"
+        },
+        "subtitle": "Sa pamamagitan ng paggamit ng aming Website, sumasang-ayon ka sa aming paggamit ng mga cookie at iba pang teknolohiya sa pagsubaybay tulad ng inilarawan sa Policy na ito.",
+        "title": "MGA COOKIE"
+      },
+      "item11": {
+        "footer": "Kung mayroon kang anumang katanungan o alalahanin tungkol sa aming mga pamamaraan sa paglilipat ng datos, mangyaring makipag-ugnayan sa amin gamit ang mga contact detail na nakasaad sa privacy policy na ito.",
+        "section1": {
+          "description1": "Mga desisyon sa angkop na proteksyon: Maaari naming ilipat ang personal na datos sa isang bansa sa labas ng EEA kung natukoy ng European Commission na ang naturang bansa ay nagbibigay ng sapat na antas ng proteksyon para sa personal na datos.",
+          "description2": "Mga standard contractual clause: Gumagamit kami ng mga standard contractual clause na pinagtibay ng European Commission upang matiyak na may naaangkop na mga pananggalang para protektahan ang iyong personal na datos.",
+          "description3": "Mga binding corporate rule: Nagpatupad kami ng mga binding corporate rule para sa mga paglilipat ng personal na datos sa loob ng aming grupo ng mga kompanya, na siyang inaprubahan ng mga kaugnay na awtoridad sa proteksyon ng datos.",
+          "description4": "Iba pang legal na kinikilalang pananggalang: Maaari kaming magbase sa iba pang legal na kinikilalang pananggalang, katulad ng mga certification scheme o code of conduct, sa paglilipat ng personal na datos sa labas ng EEA.",
+          "title": "Para sa paglilipat ng personal na datos mula sa EEA sa mga bansa sa labas ng EEA, umaasa kami sa isa sa mga sumusunod na pananggalang:"
+        },
+        "section2": {
+          "description1": "Mga desisyon sa kasapatan: Maaari naming ilipat ang personal na datos sa isang bansa sa labas ng Estados Unidos kung natukoy ng Federal Trade Commission (FTC) na ang bansa ay nagbibigay ng sapat na antas ng proteksyon para sa personal na datos.",
+          "description2": "Mga standard contractual clause: Gumagamit kami ng mga standard contractual clause na pinagtibay ng FTC upang matiyak na mayroong angkop na mga pananggalang upang maprotektahan ang iyong personal na datos.",
+          "description3": "Iba pang legal na kinikilalang pananggalang: Maaari kaming umasa sa iba pang legal na kinikilalang pananggalang, katulad ng mga certification scheme o code of conduct, sa paglipat ng personal na datos sa labas ng Estados Unidos.",
+          "title": "Para sa mga paglilipat ng personal na datos mula Estados Unidos patungo sa mga bansa sa labas ng Estados Unidos, umaasa kami sa isa sa mga sumusunod na pananggalang:"
+        },
+        "subtitle": "Maaari naming ilipat ang iyong personal na datos sa labas ng European Economic Area (EEA) at Estados Unidos bilang bahagi ng aming mga serbisyo. Kapag naglipat kami ng personal na datos, sinisiguro namin na mayroong naaangkop na mga pananggalang upang maprotektahan ang iyong personal na datos.",
+        "title": "PAGLILIPAT NG DATOS SA MGA THIRD PARTY"
+      },
+      "item12": {
+        "description": "Maaari kaming gumawa ng mga pagbabago sa aming Privacy Policy paminsan-minsan at nang walang paunang abiso, maliban na palagi naming inilalathala ang pinakabagong bersyon sa aming website. Agad na magiging epektibo ang anumang pagbabago sa pagkalathala at ilalapat lamang sa impormasyong nakolekta pagkatapos ng petsa ng pagbabago, maliban kung may ibang itinakda. Ang iyong patuloy na paggamit ng Site at/o Serbisyo kasunod ng paglathala ng mga pagbabago sa Privacy Policy na ito ay mangangahulugan na tinatanggap mo ang mga pagbabago.",
+        "title": "MGA PAGBABAGO SA AMING PRIVACY POLICY"
+      },
+      "item13": {
+        "description": "Sa kabuoan, iginagalang ng Kompanya ang iyong privacy at nakatuon ito sa pagprotekta sa iyong personal na impormasyon. Kinokolekta at ginagamit lamang namin ang impormasyon na kinakailangan namin upang maisagawa ang aming operasyon at maibigay sa iyo ang Serbisyo. Hindi namin ibinebenta ang iyong personal na impormasyon sa mga third party. Gumagawa kami ng mga naaangkop na hakbang upang pangalagaan ang iyong personal na impormasyon at panatilihin itong kompidensiyal. Maaari naming gamitin ang pangkalahatang pinagsama-samang datos para sa mga layunin ng operasyon. Kung mayroon kang anumang katanungan o agam-agam tungkol sa aming Privacy Policy, mangyaring huwag mag-atubiling makipag-ugnayan sa amin.",
+        "title": "KONKLUSYON"
+      },
+      "item14": {
+        "description1": "Marina Moshenska",
+        "description2": "Intra Research, UAB",
+        "description3": "Svitrigailos St. 11M.",
+        "description4": "LT-03223 Vilnius, Lithuania",
+        "description5": "Telepono: +371 20 21 8080",
+        "description6": "Email: dpo{'@'}intraresearch.com",
+        "description7": "(2023-05-09)",
+        "subtitle": "Kung mayroon kang anumang komento o katanungan tungkol sa Privacy Policy na ito, mangyaring makipag-ugnayan sa aming Data Processing Officer:",
+        "title": "MAKIPAG-UGNAYAN SA AMIN"
+      },
+      "item2": {
+        "description1": "Impormasyon sa Pakikipag-Ugnayan: Maaari naming kuhanin ang iyong pangalan, email address, numero ng telepono, postal address, at iba pang mga detalye sa pakikipag-ugnayan.",
+        "description2": "Impormasyong Demograpiko: Maaari kaming kumuha ng impormasyong demograpiko katulad ng iyong edad, kasarian, antas ng edukasyon, at hanapbuhay.",
+        "description3": "User-Generated Content: Maaari naming kuhanin ang anumang nilalaman na iyong ipo-post o ia-upload sa aming website, katulad ng mga komento, pagsusuri, feedback, o mga tugon sa survey.",
+        "description4": "Teknikal na Impormasyon: Maaari kaming kumuha ng teknikal na datos, kabilang ang iyong IP address, uri ng browser, uri ng aparato, operating system, at iba pang katulad na impormasyon.",
+        "description5": "Impormasyon sa Paggamit: Maaari kaming kumuha ng impormasyon tungkol sa iyong paggamit ng aming website, katulad ng kung aling mga pahina ang iyong binibisita, gaano katagal ka nananatili sa aming website, at kung anong mga aksiyon ang ginagawa mo.",
+        "description6": "Impormasyon sa Lokasyon: Maaari kaming kumuha ng impormasyon tungkol sa iyong heograpikal na lokasyon, katulad ng iyong lungsod o rehiyon, sa pamamagitan ng iyong IP address o iba pang paraan.",
+        "footer": "Maaari din kaming kumuha ng iba pang mga uri ng personal na datos depende sa likas na katangian ng iyong interaksyon sa aming website. Ginagamit namin ang impormasyong ito upang maihatid at mapabuti ang aming mga serbisyo, iangkop ang iyong karanasan sa paggamit, at sumunod sa mga legal na obligasyon. Maaari naming ibahagi ang impormasyong ito sa aming pinagkakatiwalaang third-party na kasosyo, katulad ng ipinaliwanag sa aming privacy policy.",
+        "subtitle": "Kinokolekta namin ang iba’t ibang uri ng personal na datos mula sa mga user, kabilang ang:",
+        "title": "ANONG URI NG IMPORMASYON ANG KINOKOLEKTA NAMIN"
+      },
+      "item3": {
+        "description1": "Lumikha at panatilihin ang mga user account: Kinokolekta namin ang personal na impormasyon katulad ng pangalan, email address, at password upang lumikha ng mga user account. Nagbibigay-daan ito sa mga user na ma-access ang aming mga serbisyo at i-manage ang kanilang mga account.",
+        "description2": "Magsagawa ng pananaliksik: Kinokolekta namin ang personal na datos upang magsagawa ng pananaliksik sa ngalan ng aming mga kliyente. Maaaring kabilang dito ang impormasyon tungkol sa demograpiko, opinyon, at pag-uugali. Sinusuri namin ang datos na ito upang magbigay ng mga pananaw sa aming mga kliyente na makatutulong sa pagpapabuti ng kanilang mga produkto at serbisyo.",
+        "description3": "Makipag-ugnayan sa mga user: Maaari naming gamitin ang personal na datos upang makipag-ugnayan sa mga user tungkol sa aming mga serbisyo, update, at promosyong iniaalok. Kabilang dito ang email, push notification, at iba pang anyo ng pakikipag-ugnayan.",
+        "description4": "Pagbutihin ang aming mga serbisyo: Gumagamit kami ng personal na datos upang mapabuti ang aming mga serbisyo at mapahusay ang karanasan ng mga user. Kabilang dito ang pagsusuri ng pag-uugali at kagustuhan ng user, pati na rin ang pagsasagawa ng mga survey at user testing.",
+        "description5": "Sumunod sa mga legal na obligasyon: Maaari naming gamitin ang personal na datos upang sumunod sa mga legal na obligasyon, katulad ng pagtugon sa mga utos ng korte o mga request ng pamahalaan.",
+        "footer": "Pinangangalagaan namin ang paghawak ng personal na datos nang may lubos na pananagutan at ipinapatupad ang mga hakbang upang matiyak na ang impormasyong kinokolekta namin ay ligtas at ginagamit lamang para sa tamang layunin.",
+        "subtitle": "Kinokolekta namin ang personal na datos ng mga user upang makapagbigay ng aming mga serbisyo at mapabuti ang karanasan sa paggamit. Ginagamit namin ang impormasyon upang:",
+        "title": "PAGGAMIT NG PERSONAL NA IMPORMASYON"
+      },
+      "item4": {
+        "description1": "Pahintulot: Kapag nag-sign up ka sa aming online research panel, maaari naming hingin ang iyong pahintulot na mangolekta at iproseso ang iyong personal na datos para sa mga partikular na layunin, katulad ng pagsasagawa ng pananaliksik o pagpapadala sa iyo ng mga mensaheng pangpromosyon. Sisiguraduhin naming makuha ang iyong tahasang pahintulot bago iproseso ang iyong personal na impormasyon.",
+        "description2": "Pangangailangan ayon sa kontrata: Maaaring kailanganin naming iproseso ang iyong personal na datos upang matupad ang aming mga obligasyon ayon sa kontrata, katulad ng pagbibigay ng access sa aming research panel at pagsasagawa ng pananaliksik.",
+        "description3": "Mga lehitimong interes: Maaari naming iproseso ang iyong personal na datos batay sa aming lehitimong interes, katulad ng pagpapabuti ng aming research panel, pagbuo ng bagong pananaliksik, o pagpigil sa pandaraya, pagsasagawa ng analytics, o iba pang gawaing labag sa batas.",
+        "description4": "Pagsunod sa batas: Maaari naming iproseso ang iyong personal na datos upang matugunan ang mga legal na obligasyon, katulad ng pagtugon sa mga lehitimong request para sa impormasyon mula sa mga awtoridad ng pamahalaan o pagsunod sa mga alituntunin sa regulasyon.",
+        "footer": "Kokolektahin at ipoproseso lamang namin ang personal na datos kung saan mayroon kaming legal na batayan para sa paggawa nito, at palagi naming titiyakin na ang pagproseso ay patas, malinaw, at naaayon sa mga layunin ng pagkolekta ng datos.",
+        "subtitle": "Kinokolekta at pinoproseso namin ang personal na datos batay sa isa o higit pang mga legal na batayan ayon sa nakasaad sa General Data Protection Regulation (GDPR) at alinsunod sa California Consumer Privacy Act (CCPA). Ang mga legal na batayan para sa aming pagproseso ng personal na impormasyon ay isa o higit pa sa mga sumusunod:",
+        "title": "LEGAL NA BATAYAN"
+      },
+      "item5": {
+        "description1": "Regular na pagsasagawa ng mga pagtatasa sa panganib sa seguridad at pagsubok sa kahinaan upang matukoy at matugunan ang mga potensiyal na banta",
+        "description10": "Sa kaganapan ng pagkompromiso sa datos, mayroon kaming mga nakahandang hakbang upang matukoy at pigilan ito, masuri ang posibleng panganib sa mga indibidwal, at agad itong maipaalam sa mga indibidwal at awtoridad ayon sa naaangkop na batas.",
+        "description11": "Sa ilalim ng CCPA, mayroon kang karapatang mag-request ng impormasyon tungkol sa mga kategorya ng personal na datos na aming nakolekta, mga kategorya kung saan namin ito nakuha, ang mga layunin ng aming pagkolekta at pamamahagi nito, at ang mga kategorya ng mga third party na siyang pinamamahagian namin nito. Bukod dito, mayroon kang karapatang ipabura ang personal na datos. Susunod kami sa lahat ng naaangkop na batas at regulasyon hinggil sa iyong personal na datos.",
+        "description12": "Nakatuon kami sa pagprotekta sa seguridad ng personal na datos at isinasagawa namin ang naaangkop na aksiyon upang matugunan ang anumang insidente o pagkompromiso sa seguridad alinsunod sa naaangkop na mga batas at regulasyon.",
+        "description2": "Pagtiyak na lahat ng empleyadong humahawak ng personal na datos ay may sapat na pagsasananay sa pagprotekta ng datos at mga hakbang na panseguridad",
+        "description3": "Paglilimita sa pag-access ng personal na datos sa mga awtorisadong tauhan lamang batay sa pangangailangan ng kaalaman",
+        "description4": "Pagpapatupad ng mahigpit na mga patakaran sa password, mga kontrol sa pag-access, at iba pang hakbang na panseguridad upang maiwasan ang hindi awtorisadong pag-access sa personal na datos",
+        "description5": "Pag-encrypt ng personal na datos habang ipinapadala at habang nakaimbak upang maiwasan ang hindi awtorisadong pag-access o pagsisiwalat",
+        "description6": "Pagpapanatili ng napapanahong antivirus, anti-malware, at iba pang software na panseguridad upang maiwasan at matukoy ang anumang insidente sa seguridad",
+        "description7": "Pagtiyak na ang aming mga third-party service provider ay nagpapatupad din ng naaangkop na mga teknikal at pang-organisasyong hakbang upang maprotektahan ang personal na datos.",
+        "description8": "Bukod dito, regular naming sinusuri at ina-update ang aming mga patakarang at prosesong panseguridad upang matiyak na naaayon ang mga ito sa pinakabagong pamantayan at pinakamahusay na kasanayan sa industriya.",
+        "description9": "Nililimitahan namin ang pag-access sa iyong personal na datos sa mga empleyado, kontratista, at third-party service providers na kailangang malaman ang datos upang maisagawa ang kanilang mga tungkulin. Lahat ng tauhang humahawak ng personal na datos ay kinakailangang panatilihin ang pagiging kompidensiyal ng naturang datos.",
+        "subtitle1": "Ang pagprotekta ng iyong personal na datos ay mahalaga sa amin. Nagpapatupad kami ng angkop na mga teknikal at pang-organisasyong hakbang upang matiyak ang antas ng seguridad na angkop sa posibleng panganib ng aming mga aktibidad sa pagproseso. Kabilang sa mga panukalang ito ang pag-encrypt, mga kontrol sa pag-access, regular na pagsusuri ng seguridad, at pagsasanay ng kawani sa proteksyon ng datos.",
+        "subtitle2": "Ang ilan sa mga hakbang na ipinatupad namin ay:",
+        "title": "PAANO NAMIN PINANANATILI ANG SEGURIDAD NG PERSONAL NA DATOS"
+      },
+      "item6": {
+        "description1": "Mga service provider: Maaari naming ibahagi ang iyong personal na datos sa mga third-party service provider na tumutulong sa amin na mapatakbo ang aming operasyon, kabilang ang mga service provider sa IT, marketing agency, at payment processor. Tinitiyak namin na ang lahat ng aming mga service provider ay sumusunod sa GDPR at CCPA at may naaangkop na mga hakbang na panseguridad upang maprotektahan ang iyong personal na datos.",
+        "description2": "Mga legal na obligasyon: Maaari naming isiwalat ang iyong personal na datos kung kinakailangan sa ilalim ng batas o bilang tugon sa isang lehitimong request mula sa isang pampublikong awtoridad.",
+        "description3": "Mga pagsasanib at pagkuha ng kompanya: Kung kami ay lumahok sa isang pagsasanib, pagkuha, o pagbebenta ng kabuoan o bahagi ng aming mga ari-arian, ang iyong personal na datos ay maaaring ilipat bilang bahagi ng nasabing transaksyon. Sa gayong mga kaso, titiyakin naming protektado ang iyong personal na datos alinsunod sa mga itinakdang alituntunin ng GDPR at CCPA.",
+        "description4": "Pahintulot: Maaari naming ibahagi ang iyong personal na datos sa mga third party kung ipinagkaloob mo ang iyong pahintulot para gawin ito. Palagi naming kukunin ang iyong tahasang pahintulot bago ibahagi ang iyong personal na datos sa ganitong paraan.",
+        "footer": "Mangyaring tandaan na hindi namin ibinebenta ang iyong personal na datos sa mga third party, at ginagawa namin ang lahat ng kinakailangang hakbang upang matiyak na ang iyong personal na datos ay protektado kapag ito ay ibinahagi sa mga third party alinsunod sa mga itinakdang alituntunin ng GDPR at CCPA.",
+        "subtitle": "Sa ilalim ng GDPR at CCPA, maaari naming ibahagi ang iyong personal na datos sa mga third party sa mga sumusunod na pangyayari:",
+        "title": "PAGBABAHAGI NG PERSONAL NA DATOS"
+      },
+      "item7": {
+        "description1": "Ang karapatang mapagbigyang-alam: May karapatan ang bawat indibidwal na malaman kung anong personal na datos ang aming kinokolekta, kung bakit ito kinokolekta, at kung paano ito ginagamit. Ang impormasyong ito ay nakasaad sa aming Privacy Policy.",
+        "description2": "Ang karapatan sa pag-access: May karapatan ang bawat indibidwal na mag-request ng access sa kanilang personal na datos na hawak namin. Tutugunan namin ang mga naturang request alinsunod sa GDPR at CCPA.",
+        "description3": "Ang karapatan sa pagwawasto: May karapatan ang bawat indibidwal na mag-request ng pagwawasto o pagkompleto ng anumang kamalian o kakulangan sa kanilang personal na datos na hawak namin.",
+        "description4": "Ang karapatan sa pagbubura: May karapatan ang bawat indibidwal na mag-request ng pagbura ng kanilang personal na datos sa ilang pagkakataon, tulad ng kapag hindi na kinakailangan ang datos para sa layunin kung saan ito kinolekta, o kapag binawi ng indibidwal ang kanilang pahintulot.",
+        "description5": "Ang karapatan sa paghihigpit sa pagproseso: May karapatan ang bawat indibidwal na mag-request ng paghihigpit sa pagproseso ng kanilang personal na datos sa ilang pagkakataon, tulad ng kapag mayroong pagtatalo sa katiyakan ng datos, o kapag tumututol ang indibidwal sa pagproseso nito.",
+        "description6": "Ang karapatan sa data portability: May karapatan ang bawat indibidwal na mag-request ng kopya ng kanilang personal na datos sa isang format na maayos, karaniwang ginagamit, at nababasa ng makina, at ilipat ito sa ibang tagapagkontrol.",
+        "description7": "Ang karapatang tumutol: May karapatan ang bawat indibidwal na tumutol sa pagproseso ng kanilang personal na datos sa ilang pagkakataon, tulad ng kapag ang pagproseso ay batay sa mga lehitimong interes o para sa mga layunin ng direktang promosyon.",
+        "footer": "Seryoso naming tinutugunan ang lahat ng mga request kaugnay sa karapatan ng data subject at sinisigurong angkop at maagap ang aming pagsagot, alinsunod sa GDPR at CCPA.",
+        "subtitle": "Nauunawaan namin na mayroong partikular na karapatan ang mga indibidwal tungkol sa kanilang personal na datos. Dahil dito, nakatuon kami sa pagtataguyod ng mga karapatang ito alinsunod sa GDPR at CCPA. Kabilang sa mga karapatang ito ang:",
+        "title": "MGA KARAPATAN NG AMING MGA MIYEMBRO"
+      },
+      "item8": {
+        "description1": "Gumagamit kami ng mga pamamaraan para sa automated na paggawa ng desisyon at pag-profile.",
+        "description2": "Ang pagpili ng mga angkop na kandidato para sa isang survey ay nagaganap sa pamamagitan ng isang automated na pagdedesisyon. Ang ilang survey ay inaalok para sa paunang natukoy na mga target na grupo.",
+        "description3": "Maaaring magresulta ito sa iyong hindi pagkakapili bilang isang angkop na kalahok, at nangangahulugan ito na ang nasabing survey ay hindi maipapadala sa iyo. Sa gayon, ang automated na desisyon ay ginagamit upang mabilis na matukoy ang mga indibidwal sa isang target na grupo at nakabatay sa legal na batayan ng Art. 6, para. 1, lit. b ng GDPR sa konteksto ng kontraktwal na relasyon.",
+        "description4": "Ang legal na batayan ay ang aming lehitimong interes (Art. 6, para. 1, lit. f ng DSGVO) upang maprotektahan kami at kayo sa mga mapanlinlang na gawain.",
+        "description5": "Kung naniniwala ka na hindi ka dapat ibinukod mula sa isang survey sa pamamagitan ng naturang automated na desisyon, o hindi ka dapat pinagkaitan ng isang payout, maaari kang makipag-ugnayan sa aming Customer Support sa pamamagitan ng contact form at mag-request ng pagsusuri sa desisyong ito ng isa sa aming mga empleyado.",
+        "title": "INDIBIDWAL NA AUTOMATED NA PAGDEDESISYON AT PAG-PROFILE"
+      },
+      "item9": {
+        "description1": "Itatago lamang namin ang iyong personal na datos hangga’t kinakailangan upang matupad ang mga layunin kung saan ito nakolekta, kabilang ang pagtugon sa anumang alituntunin na legal, accounting, o pag-uulat.",
+        "description2": "Para sa mga layuning pananaliksik, pananatilihin namin ang iyong personal na datos nang hindi hihigit sa 3 taon mula sa petsa ng pagkolekta o hanggang sa humiling ka na burahin namin ito. Pagkatapos ng panahong ito, ang iyong personal na datos ay ligtas na mabubura o itatago namin ang iyong pagkakakilanlan upang hindi na ito maiugnay sa iyo.",
+        "description3": "Kung pumapayag kang makatanggap ng mga promosyon mula sa amin, pananatilihin namin ang iyong personal na datos hangga’t kinakailangan upang maipadala sa iyo ang mga ito, maliban kung babawiin mo ang iyong pahintulot o magre-request na burahin namin ang iyong personal na datos.",
+        "description4": "Kung gagamitin mo ang iyong karapatan sa pagbura, ligtas naming tatanggalin o itatago ang iyong pagkakakilanlan sa iyong personal na datos sa lalong madaling panahon, maliban kung kinakailangan naming panatilihin ito para sa mga layuning legal, pang-accounting, o pag-uulat.",
+        "description5": "Mangyaring tandaan na maaari ding kailanganin naming panatilihin ang ilang personal na datos nang mas mahabang panahon alinsunod sa iba pang mga legal o regulasyon na obligasyon.",
+        "description6": "Kung mayroon kang anumang katanungan tungkol sa kung gaano katagal pananatilihin ang iyong personal na datos, mangyaring makipag-ugnayan sa amin gamit ang impormasyon sa ilalim ng “Makipag-Ugnayan sa Amin” ng privacy policy na ito.",
+        "title": "TAGAL NG PAGPAPANATILI"
+      },
+      "provider": {
+        "description1": "Intra Research OU",
+        "description2": "Tatari 64",
+        "description3": "10134 Tallinn, Estonia.",
+        "description4": "Kinakatawan ni: Marina Moshenska",
+        "title": "Ang responsable sa pagpapatupad ng data protection policy na ito ay si:"
+      },
+      "subtitle": "Na-update {0}",
+      "tax-obligation": {
+        "section1": {
+          "description": "Ang mga miyembro ng panel na tumatanggap ng mga reward o premyo sa pamamagitan ng paglahok sa mga survey ng kumpanya ay may pananagutang iulat ang mga ito sa mga kinauukulang awtoridad sa buwis sa kanilang bansa ng paninirahan. Ang kumpanya ay hindi sakop ng mga pananagutan sa pag-uulat ng buwis na nauugnay sa mga reward na ito. Maaaring hilingin sa iyong magbigay ng karagdagang impormasyon, tulad ng isang tax identification number, kung iniaatas ng mga lokal na awtoridad sa buwis para sa pamamahagi ng premyo.",
+          "title": "PANANAGUTAN SA BUWIS PARA SA MGA REWARD"
+        }
+      },
+      "title": "Privacy Policy"
+    },
+    "reactivate": {
+      "text": "Na-disable ang iyong account. Gusto mo ba itong i-activate muli?"
+    },
+    "reactivate-account": {
+      "button": "Muling i-activate ang account",
+      "description": "Maligayang pagdating, {name}! Kasalukuyang sarado ang iyong account.Naka-save pa rin sa amin ang iyong datos kung sakaling magpasya kang muling sumali.",
+      "invalid": {
+        "description": "Maaari mong ipagpatuloy ang paggamit ng iyong account.",
+        "subtitle": "Kasalukuyang aktibo ang iyong account"
+      },
+      "subtitle": "Kasalukuyang sarado ang iyong account",
+      "success": {
+        "button": "Pumunta sa ang aking pahina",
+        "description": "Masaya kaming muli kang makasama! Maaari mo nang ipagpatuloy ang paggamit ng iyong account.",
+        "subtitle": "Muling na-activate ang iyong account"
+      },
+      "title": "Muling i-activate ang account"
+    },
+    "register": {
+      "button": {
+        "back": "Bumalik",
+        "continue": "Magpatuloy",
+        "facebook": "Magpatuloy gamit ang Facebook",
+        "google": "Magpatuloy gamit ang Google",
+        "login": "Mag-log in",
+        "submit": "Magrehistro"
+      },
+      "field": {
+        "agree": {
+          "privacy": "Privacy Policy",
+          "terms": "Mga Tuntunin",
+          "title": "Sang-ayon ako sa {0} at {1}",
+          "validation": {
+            "required": "Suriin ang mga tuntunin at i-click ang kahong ito upang magpatuloy."
+          }
+        }
+      },
+      "invite-friends": {
+        "button": "Mag-sign up",
+        "invalid": {
+          "button": "Isara",
+          "subtitle": "Mukhang hindi wasto o mali ang paglalagay ng iyong invitation link ngunit maaari ka pa ring magpatuloy sa pagrerehistro.",
+          "title": "Hindi Wastong Link"
+        },
+        "subtitle": "Sumali sa OpinionArena.com at kumita ng pera at mga gift card sa pamamagitan ng pagsali sa mga online survey at market research. Ibahagi ang iyong mga opinyon at hikayatin ang mga brand. Mag-sign up na!",
+        "title": "Inimbitahan ka ni {0} na sumali sa OpinionArena"
+      },
+      "label": {
+        "already-registered": "Nakapagrehistro na ba? {0}",
+        "options": "Mangyaring ilagay ang iyong email at pumili ng password o gamitin ang iyong Google o Facebook account upang magrehistro.",
+        "or": "o"
+      },
+      "login-error": {
+        "button": "Oo, kumonekta sa kasalukuyang account",
+        "description": "Ang iyong email {0} ay ginagamit na ng ibang user.",
+        "title": "Ang email na iyong ibinigay ay ginagamit na"
+      },
+      "login-error-email": {
+        "description": "Mangyaring mag-sign in na lang."
+      },
+      "login-error-facebook": {
+        "description": "Gusto mo bang ikonekta ang iyong Facebook account login sa kasulukuyang user account? Pagkatapos, maaari ka nang mag-log in gamit ang iyong email at password o gamit ang iyong Facebook account. Upang magpatuloy, kailangan munang mag-log in."
+      },
+      "login-error-google": {
+        "description": "Gusto mo bang ikonekta ang iyong Google account login sa kasulukuyang user account? Pagkatapos, maaari ka nang mag-log in gamit ang iyong email at password o gamit ang iyong Google account. Upang magpatuloy, kailangan munang mag-log in."
+      },
+      "submitted": {
+        "title": "Maligayang pagdating sa OpinionArena!"
+      },
+      "submitted-email": {
+        "button": {
+          "change-email": "Baguhin ang email address dito",
+          "fill-out-more": "Punan pa ang iba",
+          "support": "pahina ng suporta"
+        },
+        "description1": "Nakarehistro ka na bilang miyembro ngunit hindi mo pa na-verify ang iyong email address. Magpapadala kami ng mensahe ng kompirmasyon sa iyong email. Kapag natanggap mo na ang mensahe, buksan ito at i-click ang “I-verify ang aking email address.”",
+        "description2": "Nagpadala kami ng verification email sa address na ito: {0}",
+        "description3": "Hindi ito ang tamang email? {0}",
+        "description4": "Ngayon, patuloy na punan ang ilan pang impormasyon tungkol sa iyong sarili upang makakuha ng karagdagang puntos at madagdagan ang iyong tsansang maimbitahan sa mga survey.",
+        "description5": "Kung hindi mo pa natatanggap ang confirmation email sa loob ng sampung minuto ng paglalagay ng iyong email address, mangyaring makipag-ugnayan sa amin sa {0}"
+      },
+      "submitted-google": {
+        "button": {
+          "change-email": "Baguhin ang email address dito",
+          "continue": "Magpatuloy"
+        },
+        "description1": "Nakarehistro ka na bilang miyembro.",
+        "description2": "Ang iyong email address {0} ay gagamitin upang magpadala ng mga imbitasyon sa mga survey at impormasyon tungkol sa iyong mga napiling regalo.",
+        "description3": "Ngayon, mangyaring magpatuloy na punan ang ilan pang impormasyon tungkol sa iyong sarili upang makakuha ng karagdagang puntos at madagdagan ang iyong tsansang maimbitahan sa mga survey.",
+        "description4": "Gusto mo bang makatanggap ng mga imbitasyon sa ibang email address? {0}",
+        "description5": "Nakarehistro ka na bilang miyembro. Ang iyong email address {0} ay gagamitin upang magpadala ng mga imbitasyon sa mga survey at impormasyon tungkol sa iyong mga napiling regalo."
+      },
+      "title": "Gumawa ng Iyong Account",
+      "zip-code": {
+        "button": {
+          "known": "Alam ko ang aking Postal / ZIP Code",
+          "locate": "Gamitin ang Postal / ZIP Code Finder upang mahanap",
+          "next": "Susunod",
+          "unknown": "Hindi ko alam ang aking Postal / ZIP Code"
+        },
+        "helper-text": "Ilagay ang Postal / ZIP code upang awtomatikong punan ang lokasyon.",
+        "invalid": "Maglagay ng wastong Postal / ZIP Code.",
+        "label": "Saan ka nakatira?",
+        "placeholder": "Postal / ZIP Code",
+        "valid": "Na-verify!"
+      }
+    },
+    "reward": {
+      "button": {
+        "read-less": "Magbasa nang mas kaunti",
+        "read-more": "Magbasa nang higit pa"
+      },
+      "how-to-redeem": {
+        "title": "Paano i-redeem?"
+      },
+      "redeem": {
+        "alert": {
+          "duplicate": {
+            "cancel": "Kanselahin",
+            "submit": "Magpatuloy",
+            "subtitle": "Na-redeem mo na ang reward at kasalukuyan itong pinoproseso.",
+            "title": "Na-Redeem Na Ang Reward"
+          }
+        },
+        "button": "I-redeem",
+        "confirm": {
+          "button": {
+            "cancel": "Kanselahin",
+            "submit": "Kompirmahin"
+          },
+          "subtitle": "Pipili ka na ng reward{0} mula sa {1}. {2} puntos ang ibabawas mula sa iyong account. Sigurado ka bang gusto mong magpatuloy?",
+          "title": "Kompirmahin ang pinili"
+        },
+        "error": {
+          "authentication": {
+            "button": "Mag-log in",
+            "subtitle": "Mangyaring mag-log in upang pumili ng reward.",
+            "title": "Kailangang mag-log in"
+          },
+          "incomplete": {
+            "button": "Pumunta sa Ang Aking Account",
+            "subtitle": "Mangyaring punan ang iyong address at numero ng telepono bago pumili ng reward.",
+            "title": "Hindi kompleto ang profile"
+          },
+          "unverified": {
+            "button": "Pumunta sa Ang Aking Account",
+            "subtitle": "Mangyaring i-verify ang iyong email upang makuha ang mga reward.",
+            "title": "I-verify ang iyong email"
+          }
+        },
+        "label": {
+          "insufficient-points": "Kumita ng {0} pang puntos upang ma-redeem ang reward na ito"
+        },
+        "success": {
+          "button": "Pumunta sa aking mga reward",
+          "subtitle": "Matagumpay kang nakapag-order ng reward. Ito ay kasalukuyang sinusuri at naghihintay ng pag-apruba. Maaari mong tingnan ang status sa iyong profile.",
+          "title": "Naghihintay ng pag-apruba"
+        },
+        "title": "Piliin ang iyong reward"
+      },
+      "terms": {
+        "title": "Mga Tuntunin at Kundisyon"
+      },
+      "title": "Mga Reward",
+      "view-more": {
+        "subtitle": "Maaari kang pumili ng mga serbisyo at produkto mula sa mga kilalang kasosyo, pati na rin pera sa iyong PayPal account, para sa mga puntos na nakuha sa pamamagitan ng pakikilahok sa mga survey.",
+        "title": "Anong mga reward ang maaari mong piliin?"
+      }
+    },
+    "rewards": {
+      "button": {
+        "load-more": "Mag-load nang higit pa",
+        "read-more": "Magbasa nang higit pa"
+      },
+      "empty": "Walang available na reward",
+      "label": {
+        "points-from": "Mga puntos mula sa: {0}"
+      },
+      "subtitle1": "Anong mga reward ang maaari mong piliin?",
+      "subtitle2": {
+        "main": "Maaari kang pumili ng mga serbisyo at produkto mula sa mga kilalang kasosyo, pati na rin pera sa iyong PayPal account, para sa mga puntos na nakuha sa pamamagitan ng pakikilahok sa mga survey."
+      },
+      "title": "Mga Reward"
+    },
+    "support": {
+      "button": {
+        "faq": "Mga Madalas na Itinatanong"
+      },
+      "subtitle1": "Paano ka namin matutulungan?",
+      "subtitle2": "Nandito kami upang matulungan kang makahanap ng solusyon gamit ang kapaki-pakinabang na impormasyon sa pamamagitan ng pagpili ng isang paksa sa ibaba.",
+      "subtitle3": "Kung mayroon ka pang ibang alalahanin, mangyaring sumangguni sa {0} para sa karagdagang tulong.",
+      "title": "Support"
+    },
+    "support-request": {
+      "alert": {
+        "closed-request1": "Nalutas na ang support request na ito at sarado na. Kung nais mong magpadala ng mensahe, mangyaring magsumite ng panibagong request {0}",
+        "closed-request2": "dito",
+        "message-limit": "Naabot mo na ang aming limitasyon sa pagmensahe. Mangyaring hintayin na iproseso ng aming admin ang request bago magpadala ng panibagong mensahe.",
+        "no-reply": "Wala pang mga reply sa request na ito. Magpapadala kami ng email sa sandaling ito ay naproseso, o maaari mong bisitahin ang link na ito para sa mga update.",
+        "spam1": "Ang support request na ito ay minarkahan bilang spam. Kung nais mong magpadala ng mensahe, mangyaring magsumite ng panibagong request {0}",
+        "spam2": "dito"
+      },
+      "chat-bubble": {
+        "admin": "Admin",
+        "you": "Ikaw"
+      },
+      "close-success": {
+        "button": "Pumunta sa home page",
+        "subtitle1": "Ang iyong request ay isinara na. Kung kailangan mo pa rin ng tulong, maaaring magsumite ng panibagong request {0}",
+        "subtitle2": "dito",
+        "title": "Ikinalulugod naming tumulong!"
+      },
+      "confirm-close": {
+        "no": "Hindi",
+        "title": "Gusto mo bang isara ang request na ito at markahan ang tiket bilang nalutas na?",
+        "yes": "Oo, ang problema ay nalutas na"
+      },
+      "feedback": {
+        "no": "Hindi, kailangan ko pa rin ng tulong",
+        "question": "Nalutas na ba ang problema?",
+        "yes": "Oo, nalutas na ang problema"
+      },
+      "invalid-link": {
+        "button": "Pumunta sa home page",
+        "subtitle1": "Paumanhin, hindi namin mahanap ang request na ito. Mangyaring i-double-check ang iyong link o magsumite ng panibagong request {0}",
+        "subtitle2": "dito",
+        "title": "Hindi Wastong Link"
+      },
+      "message-box": {
+        "button-send": "Ipadala",
+        "placeholder": "Mag-type ng mensahe …",
+        "title": "Magpadala ng bagong mensahe"
+      },
+      "number": "Request #{0}",
+      "reward-question": {
+        "date-redeemed": "Na-redeem {0}"
+      },
+      "survey-question": {
+        "date-invited": "Inanyayahan {0}"
+      },
+      "title": "Mga Support Request"
+    },
+    "support-requests": {
+      "alert": {
+        "button": "I-click ito upang makita ang ibang detalye",
+        "message": "Sa kasalukuyan, mayroon kang {total} support request. {button}"
+      },
+      "empty": "Walang mga support request",
+      "number": "Request #{0}",
+      "status": {
+        "closed": "Sarado",
+        "spam": "Minarkahan bilang Spam"
+      }
+    },
+    "support-topic": {
+      "cannot-login": {
+        "forgot-password": "dito",
+        "not-registered": "Wala kaming nakikitang user na may ganitong email address. Marahil ay ibang email ang ginamit mo sa pagrehistro?",
+        "title": "Ano ang mga dahilan kung bakit hindi ako maka-log in?",
+        "verified": "Mukhang nakalimutan mo ang iyong password. Maaari kang gumawa ng panibagong password {0}."
+      },
+      "change-email": {
+        "button": {
+          "change-email": "Baguhin ang Email"
+        },
+        "go-to-process": "Magpatuloy sa pamamagitan ng pagsunod sa proseso ng pagbabago ng email.",
+        "title": "Nais kong palitan ang aking email address."
+      },
+      "close-account": {
+        "button": {
+          "close-account": "Isara ang Account"
+        },
+        "go-to-process": "Magpatuloy sa pamamagitan ng pagsunod sa proseso ng pagsasara ng account.",
+        "title": "Nais kong isara ang aking account."
+      },
+      "form": {
+        "button": "Isumite",
+        "captcha": {
+          "label": "Mangyaring i-tick ang kahon para magpatuloy:",
+          "required": "Mangyaring kompletuhin ang security verification."
+        },
+        "email": {
+          "invalid": "Maglagay ng isang wastong email.",
+          "label": "Ang iyong email:",
+          "required": "Ilagay ang iyong email."
+        },
+        "explanation": {
+          "label": "Mangyaring magdagdag ng paliwanag.",
+          "required": "Ipaalam sa amin."
+        },
+        "name": {
+          "label": "Ang iyong pangalan:",
+          "required": "Ilagay ang iyong pangalan."
+        },
+        "success": "Salamat! Ang iyong request ay naipinadala na sa aming Support Team."
+      },
+      "helpful": {
+        "no": {
+          "answer": "Hindi",
+          "email": {
+            "invalid": "Maglagay ng isang wastong email.",
+            "label": "Mangyaring ilagay ang email address na iyong inirehistro:",
+            "required": "Ilagay ang iyong email.",
+            "submit": "Isumite"
+          }
+        },
+        "question": "Nakatulong ba ito?",
+        "yes": {
+          "answer": "Oo",
+          "message": "Ayos! Ikinalulugod naming makatulong."
+        }
+      },
+      "login-required": {
+        "button": "Mag-log in",
+        "message": "Mangyaring mag-log in para magpatuloy."
+      },
+      "no-confirmation": {
+        "message": {
+          "not-registered": "Hindi namin nakikitang nakarehistro ang naturang email address. Mangyaring baguhin ang email address na konektado sa iyong account.",
+          "verified": "Na-verify na ang iyong email. Walang problema."
+        },
+        "title": "Wala akong natanggap na confirmation email para sa aking pagrehistro."
+      },
+      "other": {
+        "title": "Iba pa (mangyaring tukuyin)."
+      },
+      "reward-question": {
+        "button": {
+          "see-all": "Tingnan ang lahat ng mga reward"
+        },
+        "date-redeemed": "Na-redeem {0}",
+        "no-request": "Wala ka pang nire-request na reward.",
+        "select-reward": {
+          "label": "Narito ang iyong mga reward request. Piliin ang reward na gusto mong ipagtanong."
+        },
+        "title": "May tanong ako tungkol sa reward at sa mga puntos na kaugnay nito."
+      },
+      "survey-question": {
+        "button": {
+          "see-all": "Tingnan ang lahat ng mga survey"
+        },
+        "date-invited": "Inanyayahan {0}",
+        "no-invitation": "Hindi ka pa naimbitahan sa anumang survey.",
+        "select-survey": {
+          "label": "Narito ang iyong mga pinakabagong survey. Piliin ang survey na gusto mong ipagtanong."
+        },
+        "title": "May tanong ako tungkol sa isang survey at sa mga puntos na kaugnay nito."
+      },
+      "title": "Mga Paksa",
+      "website-mistake": {
+        "title": "May nakita akong mali sa website."
+      }
+    },
+    "surveys": {
+      "button": {
+        "empty": "Pumunta sa pahina ng mga survey",
+        "read-less": "Magbasa nang mas kaunti",
+        "read-more": "Magbasa nang higit pa",
+        "view": "Pumunta sa survey",
+        "view-all": "Tingnan ang lahat ng survey"
+      },
+      "empty": {
+        "data": "Walang available na mga survey",
+        "data-available": "Walang available na survey",
+        "data-completed": "Walang natapos na survey"
+      },
+      "filter": {
+        "available": "Available",
+        "completed": "Nakompleto na"
+      },
+      "subtitle": "Narito ang mga {0} available na survey na maaaring magustuhan mo",
+      "title": "Mga Available na Survey"
+    },
+    "terms": {
+      "date-updated": "43182",
+      "list": {
+        "title": "Sa pamamagitan ng pagrehistro bilang isang User ng portal ng OpinionArena, kinokompirma mo na nabasa mo ang mga tuntunin ng User Agreement na ito (tinutukoy mula rito bilang “Mga Tuntunin”), sumasang-ayon sa Mga Tuntunin at Kundisyon, at nangangakong susundin ang mga ito tulad ng itinakda sa ibaba:"
+      },
+      "list-item1": "Ang sinumang hindi bababa sa 14 taong gulang ay maaaring magrehistro bilang miyembro ng website ng OpinionArena. Ang isang indibidwal ay dapat lamang magkaroon ng isang account upang maging isang miyembro.",
+      "list-item10": "May karapatan ang OpinionArena na isara ang account ng isang miyembro at tanggalin ang mga nakolektang puntos nito kung ang miyembro ay lumabag sa mga tuntunin at kundisyon ng User Agreement. Halimbawa, isinasara namin ang account kung ang isang miyembro ay lumikha ng maraming user account, naglagay ng maling impormasyon, o pinunan ang mga questionnaires sa hindi maayos na paraan.",
+      "list-item11": "May karapatan ang OpinionArena na baguhin nang unilateral ang mga tuntunin ng User Agreement na ito. Ang mga pagbabago ay magkakabisa habang ipinapahayag ang mga ito sa mga miyembro ng OpinionArena. Ang mga miyembro ng OpinionArena ay may karapatang wakasan ang kanilang membership anumang oras kung hindi nila tinatanggap ang mga tuntunin at kundisyon ng User Agreement.",
+      "list-item2": "Ang mga miyembro ng OpinionArena ay may pananagutan na magbigay ng tamang personal na impormasyon.",
+      "list-item3": "Ang membership ng OpinionArena ay hindi nag-oobliga sa miyembro na lumahok sa mga survey o punan ang anumang survey.",
+      "list-item4": "Ang membership sa portal ay libre at may bisa hanggang sa karagdagang abiso. Maaari mong wakasan ang membership sa pamamagitan ng pagsasagawa ng isang partikular na proseso sa portal ng OpinionArena.",
+      "list-item5": "Hindi matitiyak ng OpinionArena ang pakikilahok ng mga miyembro nito sa mga survey sapagkat ang mga kalahok ay pinipili nang random mula sa lahat ng mga miyembro, at sa ilang survey, hindi lahat ng mga miyembro ay angkop batay sa panlipunan at demograpikong pamantayan.",
+      "list-item6": "Natatanggap ng mga kliyente ng mga survey sa OpinionArena ang mga sagot sa anyong walang pagkakakilanlan at hindi pangkalahatan, at ang mga sagot ay hindi maaaring maiugnay sa sinumang indibidwal.",
+      "list-item7": "Hindi ibinubunyag ng OpinionArena ang personal na impormasyon sa anumang third party maliban kung kinakailangan para sa paghahatid ng mga premyo.",
+      "list-item8": "Ang mga miyembro ng OpinionArena ay nakakakuha ng mga puntos para sa pagkompleto ng mga survey. Ang imbitasyon sa isang survey ay naglalaman ng impormasyon tungkol sa tinatayang oras ng pagsagot, bilang ng puntos na maaaring makuha, at kung makikibahagi rin sa raffle ang mga kalahok ng kasalukuyang survey.",
+      "list-item9": "Ang mga miyembro ng OpinionArena ay nakakakuha lamang ng mga puntos kapag maayos at kompleto ang kanilang pagsagot sa mga questionnaires.",
+      "subtitle1": "Na-update {0}",
+      "subtitle2": "Ang mga Tuntunin na ito ay kinakailangan para sa paggamit ng portal ng OpinionArena:",
+      "title": "Mga Tuntunin"
+    },
+    "unsubscribe": {
+      "button": "Oo, mag-unsubscribe",
+      "description": "Ang iyong email address {0} ay kasalukuyang naka-subscribe sa aming mga email. Kung magpapasya kang mag-unsubscribe, hindi ka na makatatanggap ng anumang email mula sa amin. Gusto mo bang magpatuloy?",
+      "field": {
+        "reason": {
+          "validation": {
+            "required": "Maglagay ng dahilan."
+          }
+        }
+      },
+      "reason": {
+        "inbox-full": "Puno na ang inbox ko",
+        "not-interested": "Hindi na ako interesado",
+        "not-relevant": "Hindi angkop sa akin ang nilalaman nito",
+        "other": "Iba pa (mangyaring tukuyin)",
+        "received-too-many": "Ang dami ko nang natatanggap na ganitong email.",
+        "spam": "Hindi ako kailanman nag-subscribe sa email list na ito"
+      },
+      "resubscribe": {
+        "button": "Mag-subscribe muli",
+        "description": "Kung ito ay isang pagkakamali, maaari mong {0}."
+      },
+      "subtitle": "Sigurado ka bang gusto mong mag-unsubscribe mula sa lahat ng mga email ng OpinionArena?",
+      "success": {
+        "button": "Magpadala ng feedback",
+        "description": "Ikinalulungkot naming makita kang umalis. Mangyaring maglaan ng sandali upang ipaalam sa amin kung bakit ka nag-unsubscribe.",
+        "title": "Na-unsubscribe ka na mula sa lahat ng mga email ng OpinionArena"
+      },
+      "title": "Mag-unsubscribe"
+    },
+    "verify-email": {
+      "error": {
+        "button": {
+          "login": "Mag-log in",
+          "send-verification": "Magpadala ng verification email"
+        },
+        "description1": "Paumanhin, maaaring hindi wasto o nag-time out na ang iyong verification code. Upang magpatuloy, mangyaring mag-request ng panibagong code upang i-verify ang iyong email.",
+        "description2": "Mangyaring mag-log in at mag-request ng bagong verification email.",
+        "title": "Hindi ma-verify ang iyong email"
+      },
+      "success": {
+        "button": {
+          "login": "Mag-log in",
+          "next": "Susunod"
+        },
+        "description1": "Matagumpay na na-verify ang iyong email {0}. Gagamitin namin ang email address na ito para magpadala sa iyo ng mga imbitasyon sa mga survey at impormasyon tungkol sa iyong napiling mga regalo.",
+        "description2": "Mangyaring mag-log in muna bago magpatuloy.",
+        "description3": "Ngayon, patuloy na punan ang ilan pang impormasyon tungkol sa iyong sarili upang makakuha ng karagdagang puntos at tumaas ang tsansang maimbitahan sa mga survey.",
+        "message": {
+          "check-inbox": "Mangyaring tingnan ang iyong inbox para sa verification email. Huwag kalimutang i-check ang Junk folder.",
+          "email-sent": "Naipadala na ang email."
+        },
+        "title": "Na-verify na ang iyong email"
+      },
+      "title": "Pag-Verify ng Email"
+    }
+  },
+  "raffle": {
+    "website-launch": {
+      "btn": "Punan ang profile",
+      "subtitle": "Kumpletuhin ang iyong profile bago ang {date} upang makilahok sa raffle",
+      "title": "Manalo ng {amount}!"
+    }
+  },
+  "response": {
+    "activate": {
+      "error": {
+        "already-activated": "Error: Na-activate na ang account!"
+      },
+      "success": {
+        "activate": "Tagumpay: Na-activate ang account! Mangyaring mag-log in upang magpatuloy",
+        "change-email": "Nabago na ang email! Mangyaring mag-log in upang magpatuloy"
+      }
+    },
+    "changeemail": {
+      "success": "Tagumpay: Mangyaring tingnan ang iyong email para sa activation code."
+    },
+    "changepassword": {
+      "success": "Tagumpay: Mangyaring mag-log in upang magpatuloy"
+    },
+    "changepasswordlogged": {
+      "error": {
+        "invalid-password": "Error: Hindi tugma ang password",
+        "invalid-user": "Error: Hindi wastong user"
+      },
+      "success": "Tagumpay: Binago ang password"
+    },
+    "deactivateaccount": {
+      "success": {
+        "deactivate": "Tagumpay: Upang muling ma-activate ang account, kailangang mag-log in muli.",
+        "delete": "Binura ang Account"
+      }
+    },
+    "error": {
+      "account-doesnt-exist": "Error: Walang naturang email",
+      "email-taken": "Error: Ginagamit na ang email",
+      "internal-error": "Nagkaroon ng error. Mangyaring subukang muli mamaya.",
+      "invalid-code": "Error: Hindi wastong code"
+    },
+    "forgotpassword": {
+      "success": "Tagumpay: Mangyaring tingnan ang iyong email para sa code."
+    },
+    "inquiry": {
+      "error": "Error: Nagkaroon ng error. Mangyaring subukang muli mamaya.",
+      "success": "Tagumpay: Ipinadala ang Inquiry"
+    },
+    "login": {
+      "error": {
+        "incorrect-details": "Error: Hindi tugma ang email at password",
+        "incorrect-details-and-max-attempt": "Error: Hindi tugma ang email at password. Lumagpas ka na sa limit ng bilang ng pagsubok. Mangyaring maghintay ng ilang minuto bago mag-log in muli."
+      },
+      "success": "Tagumpay! Inila-log in ka"
+    },
+    "reactivate": {
+      "success": "Tagumpay! Ang iyong account ay muli nang na-activate"
+    },
+    "register": {
+      "success": "Tagumpay! Kompleto Na ang Pagpaparehistro"
+    },
+    "reward": {
+      "cancel-success": "Tagumpay! Nakansela ang iyong reward."
+    },
+    "saveprofile": {
+      "success": "Tagumpay! Na-Update Na ang Profile"
+    },
+    "sendverificationcode": {
+      "success": "Tagumpay! Mangyaring tingnan ang iyong email para sa activation code"
+    },
+    "success": {
+      "changes-saved": "Nai-save na ang iyong mga pagbabago."
+    },
+    "validatecode": {
+      "error": {
+        "expired-code": "Error: Nag-expire ang code. Mangyaring tingnan ang iyong email para sa bagong code."
+      },
+      "success": {
+        "new-email": "Tagumpay: Nabago ang email! Mangyaring mag-log in upang magpatuloy",
+        "new-password": "Tagumpay: Mangyaring maglagay ng bagong password"
+      }
+    }
+  },
+  "survey": {
+    "active": {
+      "title": "Mga aktibong survey"
+    },
+    "back": {
+      "btn": "Bumalik sa mga survey"
+    },
+    "can-earn": {
+      "text": "Maaari kang makakuha ng mga puntos sa mga survey"
+    },
+    "can-win": {
+      "short": {
+        "text": "Makakuha ng tiket"
+      },
+      "text": "Sa pagkompleto ng survey na ito, makakakuha ka ng tiket sa mga sumusunod na raffle: {0}"
+    },
+    "cancel": {
+      "btn": "Ayaw kong sumali"
+    },
+    "confirm-cancel": {
+      "cancel": "Kanselahin",
+      "proceed": "Magpatuloy",
+      "subtitle": "Sigurado ka bang ayaw mong sumali sa survey na ito?",
+      "title": "Ayaw kong sumali"
+    },
+    "device": {
+      "desktop": "Desktop",
+      "empty": "Walang available na mga device",
+      "mobile": "Mobile",
+      "tablet": "Tablet"
+    },
+    "earn": {
+      "text": "Makakuha"
+    },
+    "end": {
+      "imported-users": {
+        "btn": "Mag-log in",
+        "msg1": "Salamat sa pakikilahok sa survey.",
+        "msg2": "Mangyaring mag-log in at i-update ang iyong impormasyon sa profile upang makapasok sa raffle para sa premyo na {amount}."
+      }
+    },
+    "know": {
+      "more": {
+        "btn": "Alamin ang higit pa"
+      }
+    },
+    "label": {
+      "device": "Available sa",
+      "minutes": "{0} min",
+      "points": "Mga puntos na puwedeng makuha",
+      "points-earned": "Mga puntos na nakuha",
+      "tickets": "{0} tiket",
+      "time": "Oras ng pagkompleto"
+    },
+    "minutes": {
+      "text": "minuto"
+    },
+    "no": {
+      "mobile": {
+        "continue": {
+          "text": "Hindi gumagamit ng mobile phone? Magpatuloy dito."
+        },
+        "text": "Ang survey na ito ay hindi available sa mobile phone. Mangyaring gumamit ng computer kapag sumasagot sa survey na ito."
+      }
+    },
+    "points": {
+      "text": "puntos"
+    },
+    "preview": {
+      "button": "Tingnan ang lahat ng available na survey",
+      "subtitle": "Mayroon pa kaming {0} na available na survey para sa iyo. Maaari kang makakuha ng hanggang {1} puntos pagkatapos sagutin ang mga ito.",
+      "title": "Tingnan ang iba pang survey"
+    },
+    "quality": {
+      "issue": {
+        "text1": "Ipinabatid sa amin ng tagapagpatakbo ng survey na hindi sapat ang kalidad ng iyong mga sagot. Naayos na ang status ng iyong mga sagot at ang bilang ng mga puntos na natanggap.",
+        "text2": "Alamin pa ang iba’t ibang paraan ng pagsuri at pagsukat ng kalidad ng mga sagot sa aming website.",
+        "title": "Mababang kalidad na mga sagot"
+      },
+      "warning": {
+        "number": "May {warnings} kang babala",
+        "text": "Nakatanggap ka ng babala para sa pag-aaral na ito"
+      }
+    },
+    "start": {
+      "btn": "Makibahagi sa survey"
+    },
+    "status": {
+      "badquality": {
+        "short": {
+          "text": "mababa ang kalidad"
+        }
+      },
+      "cancelled": {
+        "message": "Pinili mong hindi lumahok sa survey na ito. Sisiguraduhin naming hindi ka na makakatanggap ng mga susunod pang imbitasyon para sa survey na ito.Kung magbago ang isip mo, palagi kang welcome na sumali muli sa ibang pagkakataon.",
+        "short": {
+          "text": "kanselado"
+        }
+      },
+      "closed": {
+        "text": "Nakompleto na ang survey. Sa kasamaang palad, hindi ka maaaring sumali sa pagkakataong ito. Umaasa kami na magagawa mong ipahayag ang iyong opinyon sa susunod!",
+        "title": "Sarado na ang survey"
+      },
+      "completed": {
+        "short": {
+          "text": "nakompleto na"
+        },
+        "text": "Nakompleto mo ang survey {survey_name} at nakakuha ka ng {points} puntos!"
+      },
+      "finished": {
+        "lottery": "Nakakuha ka ng tiket para sa sumusunod na raffle: {0}",
+        "short": {
+          "lottery": "Nakakuha ng tiket"
+        },
+        "title": "Natapos mo na ang survey na ito"
+      },
+      "invited": {
+        "lottery": "Bukod sa mga puntos, pipili rin kami ng isang mananalo na makakatanggap ng regalong {gift}.",
+        "text": "Naanyayahan kang sumali sa survey {survey_name}. Tinatayang aabutin ito ng {survey_minutes} minuto at makatatanggap ka ng {points_offered} puntos para sa matagumpay na pagtatapos ng survey.",
+        "title": "Inaanyayahan ka"
+      },
+      "new": {
+        "short": {
+          "text": "bago"
+        }
+      },
+      "opened": {
+        "short": {
+          "text": "binuksan"
+        }
+      },
+      "paused": {
+        "survey": {
+          "text": "Kasalukuyang sinusuri ang survey. Mangyaring subukang muli sa ilang sandali.",
+          "title": "Pansamantalang ipinagpaliban ang survey"
+        }
+      },
+      "quotafull": {
+        "short": {
+          "text": "puno na ang quota"
+        },
+        "text": "Sa kasamaang-palad, puno na ang quota. Salamat sa pagsali. Nakakakuha ka pa rin ng {points}puntos. Umaasa kami sa iyong paglahok sa susunod na survey."
+      },
+      "rejected": {
+        "short": {
+          "text": "tinanggihan"
+        },
+        "title": "Ikinalulungkot naming ipaalam sa iyo na hindi ka kuwalipikado para sa survey na ito. Maraming dahilan kung bakit hindi kuwalipikado ang isang tao, kabilang na ang, ngunit hindi limitado sa, hindi pagtugma sa mga pamantayan ng screening, pagbibigay ng mababang kalidad na sagot, o mga teknikal na dahilan na itinakda ng aming end client."
+      },
+      "screenedout": {
+        "short": {
+          "text": "na-screen out"
+        },
+        "text": "Sa kasamaang palad, hindi ka kabilang sa survey target group. Salamat sa pagsali. Nakakakuha ka pa rin ng {points}puntos. Umaasa kami sa iyong paglahok sa susunod na survey."
+      },
+      "started": {
+        "message": "Nagbukas ka na ng survey, pero hindi mo pa ito nakompleto. Mangyaring magpatuloy sa anumang oras na naaayon sa iyo.",
+        "short": {
+          "text": "nagsimula na"
+        }
+      },
+      "unknown": {
+        "survey": {
+          "text": "Walang ganitong survey"
+        }
+      }
+    },
+    "title": {
+      "error": "May nangyaring mali",
+      "not-available": "Walang available na mga raffle"
+    },
+    "unverified": {
+      "button": "Pumunta sa Ang Aking Account",
+      "subtitle": "Kailangan i-verify ang iyong email upang makasali sa mga survey.",
+      "title": "Hindi na-verify ang email"
+    }
+  },
+  "question": {
+    "email": {
+      "question": "Email",
+      "placeholder": "Ang iyong email ay ang iyo ring username.",
+      "validation": {
+        "required": "Ilagay ang iyong email.",
+        "invalid": "Maglagay ng isang wastong email."
+      }
+    },
+    "gender": {
+      "question": "Ikaw ay",
+      "answer": {
+        "male": "Lalaki",
+        "female": "Babae"
+      },
+      "validation": {
+        "required": "Piliin ang iyong kasarian."
+      }
+    },
+    "birthdate": {
+      "question": "Petsa ng kapanganakan",
+      "validation": {
+        "required": "Ilagay ang petsa ng iyong kapanganakan.",
+        "age": "Ang edad ay dapat na nasa pagitan ng 15 at 99 taong gulang."
+      }
+    },
+    "zip-code": {
+      "question": "Postal / ZIP Code",
+      "placeholder": "Pumili ng Postal / ZIP Code.",
+      "validation": {
+        "required": "Piliin ang iyong ZIP code."
+      }
+    },
+    "super-region": {
+      "question": "Super Rehiyon",
+      "validation": {
+        "required": "Piliin ang iyong super rehiyon."
+      },
+      "placeholder": "Pumili ng Super Rehiyon."
+    },
+    "region": {
+      "question": "Rehiyon",
+      "placeholder": "Pumili ng Rehiyon.",
+      "validation": {
+        "required": "Piliin ang iyong rehiyon."
+      }
+    },
+    "province": {
+      "question": "Lalawigan",
+      "placeholder": "Pumili ng Lalawigan.",
+      "validation": {
+        "required": "Piliin ang iyong lalawigan."
+      }
+    },
+    "city": {
+      "question": "Lungsod / Munisipalidad",
+      "placeholder": "Pumili ng Lungsod / Munisipalidad.",
+      "validation": {
+        "required": "Piliin ang iyong lungsod."
+      }
+    },
+    "password": {
+      "question": "Password",
+      "placeholder": "Mangyaring maglagay ng isang matatag na password.",
+      "validation": {
+        "required": "Maglagay ng password.",
+        "minimum": "Maglagay ng hindi bababa sa 6 na karakter."
+      }
+    },
+    "verify-password": {
+      "question": "Ulitin ang password.",
+      "placeholder": "Mangyaring ilagay muli ang parehong password.",
+      "validation": {
+        "required": "I-type muli ang iyong password.",
+        "match": "Tiyaking magkatugma ang iyong mga password."
+      }
+    },
+    "last-name": {
+      "question": "Apelyido",
+      "validation": {
+        "required": "Ilagay ang iyong apelyido."
+      }
+    },
+    "first-name": {
+      "question": "Pangalan",
+      "validation": {
+        "required": "Ilagay ang iyong pangalan."
+      }
+    },
+    "middle-name": {
+      "question": "(Mga) Panggitnang Apelyido"
+    },
+    "age": {
+      "question": "Edad"
+    },
+    "user-language": {
+      "question": "Piliin ang nais mong wika."
+    },
+    "living-situation": {
+      "question": "Ano ang sitwasyon ng iyong pamumuhay ngayon?",
+      "answer": {
+        "rented-apartment": "Inuupahang apartment ",
+        "owned-apartment": "Pag-aari na apartment",
+        "rented-house": "Inuupahang bahay",
+        "owned-house": "Pag-aari na bahay",
+        "living-with-my-parents": "Nakatira kasama ang aking mga magulang",
+        "other": "Iba pa"
+      }
+    },
+    "occupation": {
+      "question": "Ano ang hanapbuhay mo ngayon?",
+      "answer": {
+        "student": "Estudyante",
+        "retired": "Nagretiro na",
+        "unemployed": "Walang trabaho",
+        "maternity/paternity": "Maternidad/paternidad",
+        "full-time-employed": "Full-time na empleyado",
+        "part-time-employed": "Part-time na empleyado",
+        "self-employed": "May sariling negosyo",
+        "other": "Iba pa"
+      }
+    },
+    "education": {
+      "question": "Ano ang pinakamataas na antas ng edukasyon na iyong natapos?",
+      "answer": {
+        "primary-school": "Primary School (Pangunahing Edukasyon) - Kinder hanggang Grade 7",
+        "junior-high-school": "Junior High School (Mababang Edukasyong Sekondarya) - Grade 7 hanggang Grade 11",
+        "senior-high-school": "Senior High School (Mataas na Edukasyong Sekondarya) - Grade 11 hanggang Grade 13",
+        "vocational-school": "Paaralang Bokasyonal",
+        "undergraduate": "Undergraduate (Antas ng Batsilyer)",
+        "postgraduate": "Postgraduate (Antas ng Masterado)",
+        "doctoral": "Doktorado (PhD)"
+      }
+    },
+    "marital-status": {
+      "question": "Ano ang iyong marital status?",
+      "answer": {
+        "single": "Walang asawa",
+        "domestic": "Domestic partnership / May kinakasama",
+        "married": "May asawa",
+        "married-separate": "May asawa, ngunit hiwalay na naninirahan",
+        "widowed": "Biyudo/biyuda"
+      }
+    },
+    "household-living": {
+      "question": "Ilan ang naninirahan sa iyong sambahayan (kabilang ang iyong sarili)?",
+      "answer": {
+        "1-person": "1 tao",
+        "2-persons": "2 tao",
+        "3-persons": "3 tao",
+        "4-persons": "4 na tao",
+        "5-persons": "5 tao",
+        "6-persons": "6 na tao",
+        "7-more": "7 o higit pang mga tao"
+      }
+    },
+    "children": {
+      "question": "Kung ikaw ay may mga anak na wala pang 18 taong gulang, mangyaring tukuyin ang taon ng kaniyang kapanganakan.",
+      "answer": {
+        "no-children": "Wala akong anak"
+      }
+    },
+    "car-access": {
+      "question": "Mayroon ka bang (mga) kotse?",
+      "answer": {
+        "i-own-car": "May-ari ako ng (mga) kotse",
+        "i-lease-car": "Nag-uupa ako / Mayroon akong kotse ng kompanya",
+        "i-have-access-car": "Mayroon akong access sa (mga) kotse",
+        "no-access-car": "Hindi, wala akong access sa (mga) kotse"
+      }
+    },
+    "car-fuel": {
+      "question": "Kung ikaw ay may-ari / nag-uupa ng (mga) kotse, anong uri ng gasolina ang ginagamit nito?",
+      "answer": {
+        "i-do-not-have-a-car": "Wala akong kotse",
+        "petrol-car": "Kotseng gumagamit ng petrol",
+        "diesel-car": "Kotseng gumagamit ng diesel",
+        "fully-electric-car": "Ganap na electric car (100% electric vehicle)",
+        "plug-in-hybrid-electric-car": "Plug-in hybrid electric car",
+        "hybrid-car": "Hybrid na kotse (self-charging car)",
+        "other-type-of-car": "Iba pang uri ng kotse"
+      }
+    },
+    "car-brand": {
+      "question": "Kung ikaw ay may-ari/nag-uupa ng (mga) kotse, anong brand ang (mga) kotse mo?",
+      "answer": {
+        "i-do-not-own-car": "Hindi ako nagmamay-ari/nag-uupa ng kotse",
+        "another-brand": "Iba pang brand"
+      }
+    },
+    "car-type": {
+      "question": "Anong uring (mga) kotse mayroon ka?",
+      "answer": {
+        "i-do-not-own-lease-a-car": "Hindi ako nagmamay-ari/nag-uupa ng kotse",
+        "small-city-car": "Maliit na kotseng panlungsod (hal., Smart Fortwo)",
+        "supermini": "Supermini (hal., Toyota Yaris)",
+        "mid-range": "Midrange (hal., VW Golf)",
+        "family-car": "Pampamilyang kotse",
+        "luxury-car": "Luxury/executive car (hal., BMW 7-series / Mercedes Benz S class)",
+        "sports-car": "Kotseng pang-sports",
+        "minivan": "Minivan",
+        "suv": "SUV / crossover / four-wheel drive",
+        "van": "Van",
+        "camper-van": "Camper van",
+        "another-type-of-car": "Iba pang uri ng kotse"
+      }
+    },
+    "car-brand-age": {
+      "question": "Anong taon ginawa ang (mga) kotse mo?",
+      "answer": {
+        "i-do-not-own-lease-a-car": "Hindi ako nagmamay-ari/nag-uupa ng kotse"
+      }
+    },
+    "motorcycle-access": {
+      "question": "May motorsiklo ka ba?",
+      "answer": {
+        "yes": "Oo",
+        "no": "Hindi"
+      }
+    },
+    "motorcycle-brand": {
+      "question": "Kung ikaw ang may-ari/nag-uupa ng (mga) motorsiklo, anong brand ng (mga) motorsiklo mo?",
+      "answer": {
+        "i-do-not-own-motorcycle": "Hindi ako nagmamay ari/nag-uupa ng motorsiklo",
+        "another-brand": "Iba pang brand"
+      }
+    },
+    "tech-savvy": {
+      "question": "Itinuturing mo ba ang sarili mo na tech-savvy at sabik na sumubok ng mga pinakabagong gadget?",
+      "answer": {
+        "yes": "Oo",
+        "no": "Hindi"
+      }
+    },
+    "smartphone-brand": {
+      "question": "Kung may smartphone ka, anong brand ito?",
+      "answer": {
+        "not-a-smartphone": "Ang aking mobile phone ay hindi isang smartphone",
+        "another-brand": "Iba pang brand"
+      }
+    },
+    "pets": {
+      "question": "Anong mga hayop ang inaalagaan mo?",
+      "answer": {
+        "no-pets": "Wala akong mga alagang hayop",
+        "cat": "(Mga) Pusa",
+        "dog": "(Mga) Aso",
+        "bird": "(Mga) Ibon",
+        "fish": "Isda",
+        "reptile": "(Mga) Reptilya",
+        "horse": "(Mga) Kabayo",
+        "other": "Iba pa"
+      }
+    },
+    "travel-flying": {
+      "question": "Bumiyahe ka ba sa pamamagitan ng eroplano sa nakalipas na 12 na buwan?",
+      "answer": {
+        "i-do-not-travel": "Hindi ako bumabiyahe sa pamamagitan ng eroplano",
+        "business-trips": "Mga biyaheng pangnegosyo",
+        "holiday-trips": "Mga biyaheng pambakasyon",
+        "both-trips": "Parehong mga biyaheng pangnegosyo at pambakasyon"
+      }
+    },
+    "travel-flight-type": {
+      "question": "Anong uring mga flight ang iyong nasakyan sa nakalipas na 12 na buwan?",
+      "answer": {
+        "domestic": "Domestic",
+        "international": "Internasyonal",
+        "both-domestic-and-international": "Parehong domestic at internasyonal",
+        "neither-no-plane": "Wala ni isa, hindi ako naglalakbay sa pamamagitan ng eroplano"
+      }
+    },
+    "travel-vacation": {
+      "question": "Anong klaseng mga bakasyon ang karaniwang ginagawa mo?",
+      "answer": {
+        "golf-trips": "Mga biyahe para mag-golf",
+        "gourmet-trips": "Mga biyahe para kumain",
+        "fishing-holidays": "Mga bakasyon sa pangingisda/pandadagat",
+        "all-inclusive-trips": "Mga biyahe na kasama ang lahat",
+        "holiday-mix": "Mga bakasyong may cruise at hotel",
+        "cruises": "Mga cruise",
+        "visits-to-friends": "Mga pagbisita sa mga kaibigan at kamag-anak",
+        "hiking": "Hiking sa kabundukan o kalikasan",
+        "weekend-trips": "Mga biyahe sa katapusan ng linggo",
+        "shopping-trips": "Mga biyaheng pang-shopping",
+        "beach-holidays": "Mga bakasyon sa dagat",
+        "ski-trips": "Mga biyahe para mag-ski",
+        "camping": "Camping",
+        "package-vacation": "Package na bakasyon",
+        "tours": "Mga paglilibot",
+        "none-of-the-above": "Wala sa mga nabanggit",
+        "no-vacations": "Hindi ako nagbabakasyon"
+      }
+    },
+    "income-monthly-household": {
+      "question": "Magkano ang buwanang kita ng iyong sambahayan nang wala pang buwis?",
+      "answer": {
+        "less-than-php-5000": "Wala pang PHP 5,001",
+        "php-300000-and-above": "PHP 300,000 pataas",
+        "do-not-want-to-answer": "Ayaw kong sumagot"
+      }
+    },
+    "income-monthly-personal": {
+      "question": "Magkano ang iyong buwanang kita nang wala pang buwis?",
+      "answer": {
+        "less-than-php-5000": "Wala pang PHP 5,001",
+        "php-300000-and-above": "PHP 300,000 pataas",
+        "do-not-want-to-answer": "Ayaw kong sumagot"
+      }
+    },
+    "glasses-contact-lenses": {
+      "question": "Gumagamit ka ba ng salamin o mga contact lens?",
+      "answer": {
+        "i-dont-use-glasses": "Hindi ako gumagamit ng salamin / mga contact lens",
+        "glasses": "Salamin",
+        "contact-lenses": "Mga contact lens",
+        "both-glasses-and-contact-lenses": "Parehong salamin at contact lens"
+      }
+    },
+    "dietary-preference": {
+      "question": "Ano ang iyong pangunahing kagustuhan sa pagkain?",
+      "answer": {
+        "omnivore": "Omnivore (kumakain ng karne, manok, isda, at mga pagkaing gawa lamang sa halaman)",
+        "vegetarian": "Vegetarian (hindi kumakain ng karne, manok, o isda)",
+        "vegan": "Vegan (hindi kumakain ng anumang produkto ng hayop, kabilang ang dairy at itlog)",
+        "pescatarian": "Pescatarian (hindi kumakain ng karne o manok, ngunit kumakain ng isda)",
+        "other": "Iba pa"
+      }
+    },
+    "beverages-non-alcoholic": {
+      "question": "Alin sa mga sumusunod na inumin ang regular mong kinokonsumo?",
+      "answer": {
+        "water": "Regular o carbonated na tubig",
+        "coffee": "Kape",
+        "tea": "Tsaa",
+        "regular-soda": "Pangkaraniwang soda",
+        "juice": "Juice",
+        "milk-products": "Mga produktong may gatas",
+        "energy-drinks": "Mga energy drink"
+      }
+    },
+    "tobacco-products-access": {
+      "question": "Ikaw ba ay naninigarilyo o gumagamit ng anumang produktong may tabako?",
+      "answer": {
+        "yes": "Oo",
+        "no": "Hindi"
+      }
+    },
+    "tobacco-products-type": {
+      "question": "Ikaw ba ay gumagamit ng alinman sa mga sumusunod na produkto ng tabako?",
+      "answer": {
+        "i-do-not-use-tobacco": "Hindi ako gumagamit ng anumang produkto ng tabako.",
+        "cigars": "Mga rolyo ng tabako",
+        "pipe": "Karga ng tabako",
+        "cigarillos": "Mga manipis na rolyo ng tabako",
+        "snus": "Snus (mga nicotine pouch)",
+        "snuff": "Snuff (dip, snus)",
+        "chewing-tobacco": "Tabakong nginunguya",
+        "vaporizer": "Vaporizer",
+        "vape-pens": "Mga vape pen",
+        "e-cigars": "Mga e-cigar",
+        "disposable-vapes": "Mga disposable vape",
+        "pod-systems": "Mga pod system",
+        "heated-tobacco-products": "Pinainit na mga produkto ng tabako",
+        "roll-your-own-tobacco": "Magrolyo ng sariling tabako",
+        "cigarettes": "Mga sigarilyo",
+        "other-smokeless-tobacco": "Iba pang uri ng tabako na walang usok"
+      }
+    },
+    "tobacco-products-brand": {
+      "question": "Kung ikaw ay kasalukuyang naninigarilyo, mangyaring piliin lamang ang uri na madalas mong ginagamit.",
+      "answer": {
+        "do-not-use-tobacco": "Hindi ako gumagamit ng anumang produkto ng tabako.",
+        "another-brand": "Iba pang brand"
+      }
+    },
+    "beverages-alcoholic": {
+      "question": "Alin sa mga sumusunod na inuming may alkohol ang iyong nainom sa nakalipas na 12 buwan?",
+      "answer": {
+        "wine": "Alak",
+        "beer": "Serbesa",
+        "sparkling-wine": "Sparkling na alak",
+        "cider": "Cider",
+        "vodka": "Vodka",
+        "rum": "Rum",
+        "whiskey": "Whiskey/Scotch/Bourbon",
+        "brandy": "Brandy",
+        "cognac": "Cognac",
+        "gin": "Gin",
+        "tequila": "Tequila",
+        "liqueurs": "Mga liqueur",
+        "alcopops": "Mga alcopop",
+        "soju": "Soju"
+      }
+    },
+    "media-type": {
+      "question": "Alin sa mga sumusunod na media ang kinokonsumo mo kahit isang beses sa isang linggo?",
+      "answer": {
+        "television": "Telebisyon",
+        "radio": "Radyo",
+        "newspapers": "Mga pahayagan",
+        "magazines": "Mga magasin",
+        "social-media": "Social media",
+        "video-sharing-platform": "Online na platform ng pagbabahagi ng video",
+        "streaming-services": "Mga streaming service",
+        "other": "Iba pa"
+      }
+    },
+    "media-type-social": {
+      "question": "Aling mga social media network ang iyong ginagamit?",
+      "answer": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "linkedin": "LinkedIn",
+        "x": "X (dating Twitter)",
+        "youtube": "YouTube",
+        "tiktok": "TikTok",
+        "flickr": "Flickr",
+        "other": "Iba pa",
+        "none": "Wala"
+      }
+    },
+    "media-messaging-apps": {
+      "question": "Alin sa mga sumusunod na messaging app ang madalas mong gamitin?",
+      "answer": {
+        "whatsapp": "WhatsApp",
+        "messenger": "Messenger (Facebook)",
+        "instagram": "Instagram",
+        "x": "X (dating Twitter)",
+        "skype": "Skype",
+        "teams": "Teams",
+        "zoom": "Zoom",
+        "slack": "Slack",
+        "telegram": "Telegram",
+        "viber": "Viber",
+        "imessage": "iMessage",
+        "snapchat": "Snapchat",
+        "line": "Line",
+        "kakaotalk": "KakaoTalk",
+        "other": "Iba pa",
+        "none": "Wala"
+      }
+    },
+    "tv-access": {
+      "question": "Ilang oras kang nanonood ng TV sa isang linggo?",
+      "answer": {
+        "5-hours-or-less": "5 oras o mas mababa",
+        "6-10-hours": "6–10 oras",
+        "11-20-hours": "11–20 mga oras",
+        "more-than-20-hours": "Higit sa 20 oras",
+        "i-do-not-watch-tv": "Hindi ako nanonood ng TV"
+      }
+    },
+    "sports-access": {
+      "question": "Anong sports ang karaniwang pinapanood o sinusundan mo?",
+      "answer": {
+        "basketball": "Basketball",
+        "football": "Football (American o Soccer)",
+        "baseball": "Baseball",
+        "hockey": "Hockey",
+        "tennis": "Tennis",
+        "golf": "Golf",
+        "boxing": "Boxing",
+        "mma": "MMA",
+        "formula-1": "Formula 2",
+        "nascar": "NASCAR",
+        "e-sports": "E-sports",
+        "olympics": "Olympics",
+        "other": "Iba pa",
+        "do-not-follow-sports": "Hindi ko sinusundan ang sports"
+      }
+    },
+    "living-area": {
+      "question": "Alin ang pinakamainam na paglalarawan sa laki at uri ng lugar na kasalukuyan mong tinitirhan?",
+      "answer": {
+        "rural": "Rural",
+        "semi-rural": "Semirural",
+        "village": "Nayon",
+        "city": "Lungsod",
+        "metropolitan": "Kalakhang lugar",
+        "reading": "Pagbabasa",
+        "gaming": "Gaming",
+        "sports": "Sports",
+        "music": "Musika",
+        "art": "Sining",
+        "travel": "Paglalakbay",
+        "cooking": "Pagluluto",
+        "television-and-streaming": "Panonood ng telebisyon o paggamit ng mga streaming service",
+        "other": "Iba pa"
+      }
+    },
+    "hobbies": {
+      "question": "Alin sa mga sumusunod na gawain ang itinuturing mong libangan?",
+      "answer": {
+        "reading": "Pagbabasa",
+        "gaming": "Gaming",
+        "sports": "Sports",
+        "music": "Musika",
+        "art": "Sining",
+        "travel": "Paglalakbay",
+        "cooking": "Pagluluto",
+        "television-and-streaming": "Panonood ng telebisyon o paggamit ng mga streaming service",
+        "other": "Iba pa"
+      }
+    },
+    "cinema-access": {
+      "question": "Gaano ka kadalas pumunta sa sinehan?",
+      "answer": {
+        "i-do-not-go-to-the-cinema": "Hindi ako pumupunta sa sinehan",
+        "a-few-times-a-year": "Ilang beses sa isang taon",
+        "less-than-once-a-month": "Wala pang isang beses sa isang buwan",
+        "once-a-month": "Isang beses sa isang buwan",
+        "2-3-times-a-month": "2–3 beses sa isang buwan",
+        "more-than-three-times-a-month": "Mahigit tatlong beses sa isang buwan"
+      }
+    },
+    "gambling": {
+      "question": "Anong mga larong pansugal ang iyong nilalaro?",
+      "answer": {
+        "i-do-not-gamble": "Hindi ako nagsusugal",
+        "betting-on-the-internet": "Pagtaya sa Internet",
+        "lotteries-on-the-internet": "Mga loterya sa Internet",
+        "poker-casino-games-on-the-internet": "Mga laro ng poker/casino sa Internet",
+        "instant-lotteries": "Mga instant lotto",
+        "sports-betting": "Pagtaya sa sports",
+        "bingo": "Bingo",
+        "slot-machines": "Mga slot machine",
+        "casino": "Poker / Blackjack / ruleta sa isang casino",
+        "motorsports-betting": "Pagtaya sa motorsports",
+        "other": "Iba pa"
+      }
+    },
+    "shipping-address": {
+      "question": "Address Kung Saan Ipadadala"
+    },
+    "phone-prefix": {
+      "question": "Prefix ng Telepono",
+      "validation": {
+        "required": "Pumili ng prefix."
+      }
+    },
+    "postal-code": {
+      "question": "Postal Code"
+    },
+    "phone": {
+      "question": "Telepono"
+    }
+  }
+}

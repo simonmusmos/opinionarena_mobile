@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:intra/l10n/app_locale.dart';
 import 'package:intra/splash_screen.dart';
 
 void main() {
@@ -12,34 +13,26 @@ class IntraApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Intra Login',
-      theme: ThemeData.light().copyWith(
-        textTheme: GoogleFonts.barlowTextTheme(
-          ThemeData.light().textTheme,
-        ).apply(fontFamilyFallback: const <String>['Arial', 'sans-serif']),
-        primaryTextTheme: GoogleFonts.barlowTextTheme(
-          ThemeData.light().primaryTextTheme,
-        ).apply(fontFamilyFallback: const <String>['Arial', 'sans-serif']),
+    return AppLocaleScope(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Intra Login',
+        theme: ThemeData.light().copyWith(
+          textTheme: GoogleFonts.barlowTextTheme(
+            ThemeData.light().textTheme,
+          ).apply(fontFamilyFallback: const <String>['Arial', 'sans-serif']),
+          primaryTextTheme: GoogleFonts.barlowTextTheme(
+            ThemeData.light().primaryTextTheme, 
+          ).apply(fontFamilyFallback: const <String>['Arial', 'sans-serif']),
+        ),
+        localizationsDelegates: const <LocalizationsDelegate<dynamic>>[
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: const <Locale>[Locale('en')],
+        home: const SplashScreen(),
       ),
-      localizationsDelegates: const <LocalizationsDelegate<dynamic>>[
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: const <Locale>[
-        Locale('en'),
-        Locale('ar'),
-        Locale('he'),
-        Locale('fa'),
-        Locale('ur'),
-      ],
-      home: const SplashScreen(),
-      // routes: <String, WidgetBuilder>{
-      //   '/classic': (_) => const LoginScreen(),
-      //   '/opinion': (_) => const OpinionArenaScreen(),
-      // },
     );
   }
 }
@@ -346,18 +339,8 @@ class _Header extends StatelessWidget {
                   height: compact ? 52 : 58,
                   child: Image.asset('assets/images/header_logo.png', fit: BoxFit.contain),
                 ),
-                // Container(
-                //   width: compact ? 46 : 52,
-                //   height: compact ? 46 : 52,
-                //   decoration: const BoxDecoration(
-                //     shape: BoxShape.circle,
-                //     color: Colors.white,
-                //   ),
-                //   child: const Icon(Icons.menu, color: Color(0xFF6F2FB3)),
-                // ),
               ],
             ),
-            // const Spacer(),
             const SizedBox(height: 20),
             Text(
               'WELCOME BACK',
@@ -402,7 +385,7 @@ class _Label extends StatelessWidget {
 
   final String text;
   final bool compact;
- 
+
   @override
   Widget build(BuildContext context) {
     return Text(

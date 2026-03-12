@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import 'package:intra/utils/locale_utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 import 'package:local_auth/local_auth.dart';
@@ -106,6 +107,9 @@ class _OpinionArenaLoginScreenState extends State<OpinionArenaLoginScreen> {
         data['user'] as Map<String, dynamic>,
         accessToken: accessToken,
       );
+
+      // ── Apply locale from user language ───────────────────────────────
+      LocaleUtils.apply(context, user.language);
 
       // ── 3. Detect biometrics ───────────────────────────────────────────
       // NOTE: token is intentionally NOT saved here. It is saved only after

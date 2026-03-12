@@ -1,0 +1,14 @@
+{
+  "navigation": {
+    "my-page": "Home",
+    "surveys": "Surveys",
+    "rewards": "Rewards",
+    "lotteries": "Win Prizes",
+    "invite-friends": "Invite Friends",
+    "my-rewards": "My Rewards",
+    "my-profile": "My Profile",
+    "support": "Support / FAQ",
+    "my-account": "My Account",
+    "logout": "Log Out"
+  }
+}

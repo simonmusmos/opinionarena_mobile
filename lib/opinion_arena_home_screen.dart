@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:intra/l10n/app_locale.dart';
 import 'package:intra/models/oa_user.dart';
 import 'package:intra/opinion_arena_login_screen.dart';
 import 'package:intra/services/auth_service.dart';
@@ -1074,14 +1075,39 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text(
-                                fullName,
-                                style: GoogleFonts.epilogue(
-                                  color: Colors.white,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                                overflow: TextOverflow.ellipsis,
+                              Row(
+                                children: <Widget>[
+                                  Flexible(
+                                    child: Text(
+                                      fullName,
+                                      style: GoogleFonts.epilogue(
+                                        color: Colors.white,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w700,
+                                      ),
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ),
+                                  if (_user.language != null && _user.language!.isNotEmpty) ...<Widget>[
+                                    const SizedBox(width: 6),
+                                    Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                      decoration: BoxDecoration(
+                                        color: Colors.white.withValues(alpha: 0.2),
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                      child: Text(
+                                        _user.language!.toUpperCase(),
+                                        style: GoogleFonts.epilogue(
+                                          color: Colors.white,
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w700,
+                                          letterSpacing: 0.5,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ],
                               ),
                               const SizedBox(height: 4),
                               Row(
@@ -1118,46 +1144,46 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
               children: <Widget>[
                 _DrawerItem(
                   icon: Icons.home_rounded,
-                  label: 'Home',
+                  label: context.tr('navigation.my-page'),
                   selected: _selectedTab == 0,
                   onTap: () { setState(() => _selectedTab = 0); Navigator.of(context).pop(); },
                 ),
                 _DrawerItem(
                   icon: Icons.assignment_outlined,
-                  label: 'Surveys',
+                  label: context.tr('navigation.surveys'),
                   selected: _selectedTab == 1,
                   onTap: () { setState(() => _selectedTab = 1); Navigator.of(context).pop(); },
                 ),
                 _DrawerItem(
                   icon: Icons.card_giftcard_outlined,
-                  label: 'Rewards',
+                  label: context.tr('navigation.my-rewards'),
                   selected: _selectedTab == 2,
                   onTap: () { setState(() => _selectedTab = 2); Navigator.of(context).pop(); },
                 ),
                 _DrawerItem(
                   icon: Icons.emoji_events_outlined,
-                  label: 'Win Prizes',
+                  label: context.tr('navigation.lotteries'),
                   onTap: () => Navigator.of(context).pop(),
                 ),
                 _DrawerItem(
                   icon: Icons.group_add_outlined,
-                  label: 'Invite Friends',
+                  label: context.tr('navigation.invite-friends'),
                   onTap: () => Navigator.of(context).pop(),
                 ),
                 _DrawerItem(
                   icon: Icons.redeem_outlined,
-                  label: 'My Rewards',
+                  label: context.tr('navigation.my-rewards'),
                   onTap: () => Navigator.of(context).pop(),
                 ),
                 _DrawerItem(
                   icon: Icons.person_outline_rounded,
-                  label: 'My Profile',
+                  label: context.tr('navigation.my-profile'),
                   selected: _selectedTab == 3,
                   onTap: () { setState(() => _selectedTab = 3); Navigator.of(context).pop(); },
                 ),
                 _DrawerItem(
                   icon: Icons.help_outline_rounded,
-                  label: 'Support / FAQ',
+                  label: context.tr('navigation.faq'),
                   onTap: () => Navigator.of(context).pop(),
                 ),
               ],
@@ -1168,13 +1194,13 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
           const Divider(height: 1, thickness: 1, color: Color(0xFFF0EDF8)),
           _DrawerItem(
             icon: Icons.settings_outlined,
-            label: 'My Account',
+            label: context.tr('navigation.my-account'),
             showChevron: false,
             onTap: () { setState(() => _selectedTab = 3); Navigator.of(context).pop(); },
           ),
           _DrawerItem(
             icon: Icons.logout_rounded,
-            label: 'Log Out',
+            label: context.tr('navigation.logout'),
             iconColor: const Color(0xFFE4528C),
             labelColor: const Color(0xFFE4528C),
             iconBg: const Color(0xFFFFEEF3),
@@ -1194,30 +1220,27 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
         color: Colors.white,
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.07),
-            blurRadius: 12,
-            offset: const Offset(0, -2),
+            color: Colors.black.withValues(alpha: 0.10),
+            blurRadius: 24,
+            offset: const Offset(0, -4),
           ),
         ],
       ),
       child: SafeArea(
         top: false,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10),
+        child: SizedBox(
+          height: 62,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               _NavItem(
                 icon: _selectedTab == 0
                     ? Icons.home_rounded
                     : Icons.home_outlined,
-                label: 'Home',
                 selected: _selectedTab == 0,
                 onTap: () => setState(() => _selectedTab = 0),
               ),
               _NavItemWithBadge(
                 icon: Icons.assignment_outlined,
-                label: 'Surveys',
                 selected: _selectedTab == 1,
                 badge: 3,
                 onTap: () => setState(() => _selectedTab = 1),
@@ -1226,7 +1249,6 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
                 icon: _selectedTab == 2
                     ? Icons.star_rounded
                     : Icons.star_outline_rounded,
-                label: 'Rewards',
                 selected: _selectedTab == 2,
                 onTap: () => setState(() => _selectedTab = 2),
               ),
@@ -1234,7 +1256,6 @@ class _OpinionArenaHomeScreenState extends State<OpinionArenaHomeScreen> {
                 icon: _selectedTab == 3
                     ? Icons.person_rounded
                     : Icons.person_outline_rounded,
-                label: 'Profile',
                 selected: _selectedTab == 3,
                 onTap: () => setState(() => _selectedTab = 3),
               ),
@@ -1436,39 +1457,36 @@ class _ViewAllLink extends StatelessWidget {
 class _NavItem extends StatelessWidget {
   const _NavItem({
     required this.icon,
-    required this.label,
     required this.selected,
     required this.onTap,
   });
   final IconData icon;
-  final String label;
   final bool selected;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    final Color color =
-        selected ? const Color(0xFF7A45D8) : const Color(0xFFA0A0B8);
-    return GestureDetector(
-      behavior: HitTestBehavior.opaque,
-      onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Icon(icon, color: color, size: 24),
-            const SizedBox(height: 3),
-            Text(
-              label,
-              style: GoogleFonts.epilogue(
-                color: color,
-                fontSize: 11,
-                fontWeight:
-                    selected ? FontWeight.w700 : FontWeight.w500,
-              ),
+    return Expanded(
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: onTap,
+        child: Center(
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 220),
+            curve: Curves.easeInOut,
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+            decoration: BoxDecoration(
+              color: selected
+                  ? const Color(0xFF7A45D8).withValues(alpha: 0.12)
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(24),
             ),
-          ],
+            child: Icon(
+              icon,
+              color: selected ? const Color(0xFF7A45D8) : const Color(0xFFB0B0C8),
+              size: 26,
+            ),
+          ),
         ),
       ),
     );
@@ -1479,40 +1497,47 @@ class _NavItem extends StatelessWidget {
 class _NavItemWithBadge extends StatelessWidget {
   const _NavItemWithBadge({
     required this.icon,
-    required this.label,
     required this.selected,
     required this.badge,
     required this.onTap,
   });
   final IconData icon;
-  final String label;
   final bool selected;
   final int badge;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    final Color color =
-        selected ? const Color(0xFF7A45D8) : const Color(0xFFA0A0B8);
-    return GestureDetector(
-      behavior: HitTestBehavior.opaque,
-      onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            Stack(
+    return Expanded(
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: onTap,
+        child: Center(
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 220),
+            curve: Curves.easeInOut,
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+            decoration: BoxDecoration(
+              color: selected
+                  ? const Color(0xFF7A45D8).withValues(alpha: 0.12)
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(24),
+            ),
+            child: Stack(
               clipBehavior: Clip.none,
               children: <Widget>[
-                Icon(icon, color: color, size: 24),
+                Icon(
+                  icon,
+                  color: selected ? const Color(0xFF7A45D8) : const Color(0xFFB0B0C8),
+                  size: 26,
+                ),
                 if (badge > 0)
                   PositionedDirectional(
-                    end: -7,
-                    top: -5,
+                    end: -8,
+                    top: -6,
                     child: Container(
-                      width: 16,
-                      height: 16,
+                      width: 17,
+                      height: 17,
                       decoration: const BoxDecoration(
                         color: Color(0xFFFF4444),
                         shape: BoxShape.circle,
@@ -1531,17 +1556,7 @@ class _NavItemWithBadge extends StatelessWidget {
                   ),
               ],
             ),
-            const SizedBox(height: 3),
-            Text(
-              label,
-              style: GoogleFonts.epilogue(
-                color: color,
-                fontSize: 11,
-                fontWeight:
-                    selected ? FontWeight.w700 : FontWeight.w500,
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );
